@@ -170,8 +170,11 @@ const sidebars = {
           label: "First Steps",
           items: [
             "fivem-dashboard",
-            "fivem-firststeps-connect",
             "fivem-upvotes",
+            "fivem-txadmin-setup",
+            "fivem-txadmin-features",
+            "fivem-txadmin-import-server-base",
+            "fivem-firststeps-connect",
           ]
         },
         {
@@ -187,7 +190,6 @@ const sidebars = {
             "fivem-useprofiler",
             "fivem-mastodon",
             "fivem-gamebuild",
-            "fivem-gamechange",
             "fivem-steam-web-api-key",
             "fivem-whitelist",
             "fivem-locale",
@@ -231,15 +233,6 @@ const sidebars = {
                 "fivem-qbcore-spawnpoints"
               ]
             }
-          ]
-        },
-        {
-          type: "category",
-          label: "txAdmin",
-          items: [
-            "fivem-txadmin-setup",
-            "fivem-txadmin-features",
-            "fivem-txadmin-import-server-base"
           ]
         },
         {
@@ -469,6 +462,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "afterinfection-firststeps-dashboard",
+            "afterinfection-firststeps-connect"
           ]
         },
       ],
@@ -482,6 +476,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "ats-firststeps-dashboard",
+            "ats-firststeps-connect",
           ]
         },
         "ats-server-modding"
@@ -510,6 +505,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "animalia-survival-firststeps-dashboard",
+            "animalia-survival-firststeps-connect",
           ]
         },
       ],
@@ -587,7 +583,8 @@ const sidebars = {
           type: "category",
           label: "First Steps",
           items: [
-            "assettocorsa-firststeps-dashboard"
+            "assettocorsa-firststeps-dashboard",
+            "assettocorsa-firststeps-connect"
           ]
         },
         "assettocorsa-configure",
@@ -604,6 +601,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "assetto-competizione-firststeps-dashboard",
+            "assetto-competizione-firststeps-connect",
           ]
         },
         "assetto-competizione-becomeadmin",
@@ -619,6 +617,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "astroneer-firststeps-dashboard",
+            "astroneer-firststeps-connect",
           ]
         },
       ],
@@ -647,6 +646,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "bananashooter-firststeps-dashboard",
+            "bananashooter-firststeps-connect",
           ]
         },
       ],
@@ -660,6 +660,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "barotrauma-firststeps-dashboard",
+            "barotrauma-firststeps-connect",
           ]
         },
         "barotrauma-becomeadmin"
@@ -688,6 +689,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "battlegrounds3-firststeps-dashboard",
+            "battlegrounds3-firststeps-connect",
           ]
         },
       ],
@@ -717,6 +719,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "bob-firststeps-dashboard",
+            "bob-firststeps-connect",
           ]
         },
       ],
@@ -730,6 +733,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "beyondthewire-firststeps-dashboard",
+            "beyondthewire-firststeps-connect",
           ]
         },
       ],
@@ -743,6 +747,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "brokeprotocol-firststeps-dashboard",
+            "brokeprotocol-firststeps-connect",
           ]
         },
       ],
@@ -756,6 +761,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "citadel-forgedwithfire-firststeps-dashboard",
+            "citadel-forgedwithfire-firststeps-connect",
           ]
         },
       ],
@@ -769,6 +775,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "colonysurvival-firststeps-dashboard",
+            "colonysurvival-firststeps-connect",
           ]
         },
       ],
@@ -782,6 +789,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "conan-firststeps-dashboard",
+            "conan-firststeps-connect",
           ]
         },
         "conan-becomeadmin",
@@ -824,6 +832,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "craftopia-firststeps-dashboard",
+            "craftopia-firststeps-connect",
           ]
         },
       ],
@@ -837,6 +846,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "cryofall-firststeps-dashboard",
+            "cryofall-firststeps-connect",
           ]
         },
       ],
@@ -973,6 +983,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "ddracenetwork-firststeps-dashboard",
+            "ddracenetwork-firststeps-connect",
           ]
         },
       ],
@@ -993,13 +1004,28 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "DeadPoly",
+      items: [
+        {
+          type: "category",
+          label: "First Steps",
+          items: [
+            "deadpoly-firststeps-dashboard",
+            "deadpoly-firststeps-connect",
+          ]
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Don't Starve Together",
       items: [
         {
           type: "category",
           label: "First Steps",
           items: [
-            "dst-firststeps-dashboard"
+            "dst-firststeps-dashboard",
+            "dst-firststeps-connect"
           ]
         },
         "dst-create-cave"
@@ -1061,6 +1087,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "ets2-firststeps-dashboard",
+            "ets2-firststeps-connect",
           ]
         },
         "ets2-server-modding"
@@ -1091,8 +1118,11 @@ const sidebars = {
           label: "First Steps",
           items: [
             "fivem-dashboard",
-            "fivem-firststeps-connect",
             "fivem-upvotes",
+            "fivem-txadmin-setup",
+            "fivem-txadmin-features",
+            "fivem-txadmin-import-server-base",
+            "fivem-firststeps-connect",
           ]
         },
         {
@@ -1108,7 +1138,6 @@ const sidebars = {
             "fivem-useprofiler",
             "fivem-mastodon",
             "fivem-gamebuild",
-            "fivem-gamechange",
             "fivem-steam-web-api-key",
             "fivem-whitelist",
             "fivem-locale",
@@ -1156,15 +1185,6 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "txAdmin",
-          items: [
-            "fivem-txadmin-setup",
-            "fivem-txadmin-features",
-            "fivem-txadmin-import-server-base"
-          ]
-        },
-        {
-          type: "category",
           label: "Troubleshooting",
           items: [
             "fivem-resolve-dbconnection",
@@ -1199,7 +1219,8 @@ const sidebars = {
           type: "category",
           label: "First Steps",
           items: [
-            "gmod-firststeps-dashboard"
+            "gmod-firststeps-dashboard",
+            "gmod-firststeps-connect"
           ]
         },
         "gmod-servercfg",
@@ -1215,6 +1236,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "groundbranch-firststeps-dashboard",
+            "groundbranch-firststeps-connect",
           ]
         },
       ],
@@ -1256,6 +1278,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "holdfast-firststeps-dashboard",
+            "holdfast-firststeps-connect",
           ]
         },
       ],
@@ -1269,6 +1292,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "humanitz-firststeps-dashboard",
+            "humanitz-firststeps-connect",
           ]
         },
       ],
@@ -1322,6 +1346,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "ironarmada-firststeps-dashboard",
+            "ironarmada-firststeps-connect",
           ]
         },
       ],
@@ -1501,6 +1526,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "miscreated-firststeps-dashboard",
+            "miscreated-firststeps-connect",
           ]
         },
       ],
@@ -1558,6 +1584,7 @@ const sidebars = {
           label: "First Steps",
           items: [
             "necesse-firststeps-dashboard",
+            "necesse-firststeps-connect",
           ]
         },
       ],
@@ -1774,10 +1801,12 @@ const sidebars = {
           label: "First Steps",
           items: [
             "redm-firststeps-dashboard",
+            'redm-upvotes',
+            "redm-txadmin-setup",
+            "redm-txadmin-features",
             "redm-firststeps-connect"
           ]
         },
-        'redm-upvotes',
         {
           type: "category",
           label: "Configuration & Administration",
@@ -1790,12 +1819,11 @@ const sidebars = {
             "redm-steam-web-api-key",
             "redm-locale",
             "redm-devtools",
-            "redm-prohibited-resources"
           ]
         },
         {
           type: "category",
-          label: "Resources & Mods",
+          label: "Resources",
           items: [
             "redm-installresources",
             "redm-sql-file-import"
@@ -1803,10 +1831,10 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "txAdmin",
+          label: "Troubleshooting",
           items: [
-            "redm-txadmin-setup",
-            "redm-txadmin-features",
+            "redm-prohibited-resources"
+
           ]
         },
       ],
@@ -2341,6 +2369,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Wreckfest 2",
+      items: [
+        {
+          type: "category",
+          label: "First Steps",
+          items: [
+            "wreckfest2-firststeps-dashboard",
+            "wreckfest2-firststeps-connect",
+          ]
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Wurm Unlimited",
       items: [
         {
@@ -2452,6 +2494,7 @@ const sidebars = {
         'vserver-linux-openmp',
         'vserver-linux-palworld',
         'vserver-linux-ragemp',
+        'vserver-linux-rust',
         'vserver-linux-satisfactory',
         'vserver-linux-soulmask',
         'vserver-linux-valheim',
@@ -2633,6 +2676,7 @@ const sidebars = {
         'dedicated-linux-openmp',
         'dedicated-linux-palworld',
         'dedicated-linux-ragemp',
+        'dedicated-linux-rust',
         'dedicated-linux-satisfactory',
         'dedicated-linux-soulmask',
         'dedicated-linux-valheim',
