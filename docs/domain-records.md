@@ -1,7 +1,7 @@
 ---
 id: domain-records
 title: "Domain: Domain records settings"
-description: Information about the domain record settings for domains at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to configure and understand different DNS record types to optimize your domain management → Learn more now"
 sidebar_label: Domain Records
 services:
   - domain
@@ -13,11 +13,11 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 Domains can be configured easily by utilising a wide variety of DNS record types which perform different actions. In this guide, we will cover all of the different record types and explain how they work.
 
-
+<InlineVoucher />
 
 ## Configuration
 
-You can configure the domain records in your domain administration under DNS administration. To do this, click on the green **New entry** button. This will open a popup window. From there you can configure and create new records as you wish. 
+You can configure the domain records in your domain administration under DNS administration. To do this, click on the green **New entry** button. This will open a popup window. From there you can configure and create new records as you wish. 
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/5qGjz8jDi4sNGcQ/download)
 
@@ -49,7 +49,7 @@ An AAAA record is used to create a forwarding of a "**sub**" or "**main domain**
 
 | Name (Example)   | Type | Value (Example) | TTL  | Priority |
 | ---------------- | ---- | --------------- | ---- | -------- |
-| zap-hosting.com. | AAA  | IPv6-Adresse    | 1440 | 0        |
+| zap-hosting.com. | AAAA | IPv6-Adresse    | 1440 | 0        |
 
 
 ### CNAME Records
@@ -114,3 +114,5 @@ A TXT record is used to add text of your choice. On some systems, the content is
 ## Conclusion
 
 Congratulations, you have successfully created and configured your DNS records. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

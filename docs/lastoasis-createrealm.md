@@ -1,10 +1,10 @@
 ---
 id: lastoasis-createrealm
 title: "Last Oasis: Create a new Realm"
-description: Information about creating a new realm for your Last Oasis server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to create and authenticate your own Last Oasis realm and oasis for seamless gameplay and server management → Learn more now"
 sidebar_label: Create Realm
 services:
-  - gameserver
+  - gameserver-lastoasis
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -82,3 +82,5 @@ If you wish to connect multiple Oases together in your Realm and have them activ
 :::
 
 You have successfully setup a new Realm and an Oasis for your Last Oasis game server.
+
+<InlineVoucher />

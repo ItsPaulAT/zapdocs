@@ -1,9 +1,10 @@
 ---
 id: dedicated-windows-conan
-title: "Dedicated Server: Conan Exiles Dedicated Server Windows Setup"
-description: Information about setting up an Conan Exiles Dedicated Server on a Windows Dedicated Server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Conan Exiles Dedicated Server Windows Setup"
+description: "Discover how to set up a Conan Exiles Dedicated Server on Windows Dedicated Server for smooth gameplay and server management → Learn more now"
 sidebar_label: Conan Exiles
 services:
+  - vserver
   - dedicated
 ---
 
@@ -11,13 +12,13 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 
-Do you have a Windows Dedicated Server and you want to install the Conan Exiles Dedicated server service on it? You are in the right place. In this guide, we will explain the step by step process of installing this service on your server.
+Do you have a Windows VPS/Dedicated Server and you want to install the Conan Exiles Dedicated server service on it? You are in the right place. In this guide, we will explain the step by step process of installing this service on your server.
 
-<InlineVoucher />
+
 
 ## Preparation
 
-To begin with, connect to your Dedicated Server through Remote Desktop (RDP). Use our [Initial Access (RDP)](vserver-windows-userdp.md) guide if you need help doing this.
+To begin with, connect to your VPS/Dedicated Server through Remote Desktop (RDP). Use our [Initial Access (RDP)](vserver-windows-userdp.md) guide if you need help doing this.
 
 :::note Server Launcher Tool
 As an alternative to using SteamCMD, the developers of Conan Exiles maintain a useful server launcher utility tool that can be utilised on Windows to make it easier to launch a server.
@@ -31,7 +32,7 @@ Create a new folder somewhere on your server, in this scenario we will name it `
 
 Simply run **steamcmd.exe** and await until the installation process is fully completed.
 
-![](https://github.com/zaphosting/docs/assets/42719082/ffb8e8a1-26e3-4d16-9baf-938e17ec1613)
+![](https://screensaver01.zap-hosting.com/index.php/s/JFaor7BeJ6P3nNo/preview)
 
 As soon as the message **Loading Steam API.... OK** is displayed, the process has been completed successfully and you can being with the installation of the Conan Exiles dedicated server in the following section.
 
@@ -50,7 +51,7 @@ force_install_dir C:\Conan-Server
 
 Now run the command `app_update 443030` which will begin the download. The App ID **443030** is the **Conan Exiles** application.
 
-![](https://github.com/zaphosting/docs/assets/42719082/29931eec-fd19-4806-88dc-69e585e42370)
+![](https://screensaver01.zap-hosting.com/index.php/s/RQfzYbWGaiGYCY2/preview)
 
 :::info
 Please do not interrupt the process before it is completed to avoid mistakes. It may take a moment, but it's worth being patient! :)
@@ -60,7 +61,7 @@ Once successful, head over to the download directory where all of the server fil
 
 ### Port Forwarding your server
 
-In order to ensure that your server is accessible to the public, you must alter port forwarding rules for the ports that the dedicated server process is using. You can do this either through Powershell commands directly which is easier, or regularly through the Windows Defender Firewall page.
+In order to ensure that your server is accessible to the public, you must alter port forwarding rules for the ports that the VPS/Dedicated Server process is using. You can do this either through Powershell commands directly which is easier, or regularly through the Windows Defender Firewall page.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -90,7 +91,7 @@ These commands will automatically create firewall rules which are necessary for 
 
 Use the search function on Windows to open up **Windows Firewall Settings with Advanced Security**. You may have to press **Advanced Settings** to open up the necessary window if you open up the base Windows Firewall page.
 
-![](https://github.com/zaphosting/docs/assets/42719082/5fb9f943-7e51-4d8f-9df4-2f5ff60857d3)
+![](https://screensaver01.zap-hosting.com/index.php/s/bzo6Ec6jpQzQ3xn/preview)
 
 You must create new rules for your Conan Exiles server. To do this, click on the incoming and outgoing rules as described below and add them for the following protocols and ports:
 - TCP incoming and outgoing: 7777, 25575
@@ -132,4 +133,6 @@ Now it is time to start your server. Head over to the base directory of your Con
 
 ## Conclusion
 
-Congratulations, you have successfully installed and configured the Conan Exiles server on your dedicated server! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+Congratulations, you have successfully installed and configured the Conan Exiles server on your VPS/Dedicated Server! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+

@@ -1,10 +1,10 @@
 ---
 id: valheim-plus
 title: "Valheim: Valheim Plus Server"
-description: Information about Valheim-Servers from ZAP-Hosting, on which the Valheim Plus Mod is preinstalled - ZAP-Hosting.com documentation
+description: "Discover how to enhance Valheim gameplay with Valheim Plus for improved features and server upgrades → Learn more now"
 sidebar_label: Valheim Plus
 services:
-  - gameserver
+  - gameserver-valheim
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -204,3 +204,5 @@ A list of possible controls would be [here](https://docs.unity3d.com/ScriptRefer
 | swimStaminaDrain | 5 (float) | set the amount of stamina drained when swimming |
 | jumpStaminaUsage | 10 (float) | sets the number of stamina drains for jumping |
 
+
+<InlineVoucher />

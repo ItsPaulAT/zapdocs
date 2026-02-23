@@ -1,10 +1,10 @@
 ---
 id: arma3-altislife-ranks
 title: "Arma 3: Adding ranks to an Altis Life server"
-description: Information on how to add ranks to your Altis Life server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to assign and manage player ranks like Cop, Medic, and Admin in Arma 3 to enhance gameplay and server roles → Learn more now"
 sidebar_label: Altis Life Ranks
 services:
-  - gameserver
+  - gameserver-arma3
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -75,3 +75,5 @@ To save the changes, simply click on the **GO** button at the bottom right:
 
 The ranks have now been saved, so that they become active for the player who has to reconnect to the server once, a restart
 of the server is not necessary.
+
+<InlineVoucher />

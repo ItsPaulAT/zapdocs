@@ -1,10 +1,10 @@
 ---
 id: satisfactory-firststeps-dashboard
 title: "Satisfactory: Dashboard Overview"
-description: Information about the dashboard of a Satisfactory server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to efficiently manage your Satisfactory server and optimize its features for your needs → Learn more now"
 sidebar_label: Dashboard
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -12,9 +12,9 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 
-You are interested in an **XY server** or already own one, but you still lack a comprehensive overview of the administration and the findability of all necessary options? Especially at the beginning, this can be a challenge. But don't worry, we'll provide you with a detailed introduction to the administration of your service below, so you'll have the best possible overview.
+You are interested in an **Satisfactory server** or already own one, but you still lack a comprehensive overview of the administration and the findability of all necessary options? Especially at the beginning, this can be a challenge. But don't worry, we'll provide you with a detailed introduction to the administration of your service below, so you'll have the best possible overview.
 
-After going through this guide, you will easily be able to manage your server efficiently and find all the necessary options and features quickly and easily. Here, you will get a structured overview that will help you step by step to get familiar with the server administration and expand your knowledge in a targeted manner. This way, you can ensure that your **XY server** is optimally adapted to your needs and that you get the most out of the available options.
+After going through this guide, you will easily be able to manage your server efficiently and find all the necessary options and features quickly and easily. Here, you will get a structured overview that will help you step by step to get familiar with the server administration and expand your knowledge in a targeted manner. This way, you can ensure that your **Satisfactory server** is optimally adapted to your needs and that you get the most out of the available options.
 
 <YouTube videoId="gzCvVuPv2x8" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/GTizK4YxpS6d878/preview" title="Setup Satisfactory server in just a MINUTE!" description="Feel like you understand better when you see things in action? We’ve got you! Dive into our video that breaks it all down for you. Whether you're in a rush or just prefer to soak up information in the most engaging way possible!"/>
 
@@ -51,20 +51,21 @@ Thanks to this information, you get a good insight into the usage of your server
 
 ### DDoS Manager
 
-The **DDoS Manager** allows you to view past attacks and thus get a better overview of potential threats. Furthermore, you have the option to activate notifications for ongoing DDoS attacks on your server to be able to react quickly to such incidents.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/pertwX6DzWXECyx/preview)
 
-Moreover, you can customize the protection provided that you have booked your own IP address. There are two different options available:
+View past DDoS attacks to better assess potential threats and patterns. Enable notifications for ongoing DDoS attacks on your server to react quickly when an incident occurs.
 
-- **Sensor Mode:** In this mode the protection is enabled, but inactive. As soon as an attack is detected, the protection becomes active and filters the attack to ensure the stability of your server.
-- **Permanent:** This setting means that the protection is permanently active and enabled. All incoming attacks are continuously filtered to protect your system from possible DDoS attacks. (Only recommended for continuous attacks)
+Depending on the server location and the DDoS protection available there, you can also monitor active attacks in real time. This includes detailed traffic insights, showing both legitimate traffic and the amount of traffic blocked by the mitigation systems. This level of transparency helps you understand how the protection is working and enables you to identify potential risks early.
 
-These customization options allow you to adjust the DDoS protection to your individual needs and thus increase the security of your server.
-
-:::info
-The use of the DDoS Manager is only possible if either an own IP address or the option "DDoS Manager Overview" has been booked as an additional option. If these components are missing from your current package, you can add them at any time by upgrading.
+:::info DDoS manager access missing?
+Use of the DDoS Manager requires either a dedicated IP address or the additional option "DDoS Manager Overview". If your current package does not include these components, you can add them at any time by upgrading your service.
 :::
+
+![](https://screensaver01.zap-hosting.com/index.php/s/ScCCCY52CMLgfyE/preview)
+
+
+
+
 
 
 
@@ -190,6 +191,12 @@ Do you already have an existing save game that you want to integrate into the sa
 
 
 
+### Scheduled Tasks
+
+Create scheduled tasks that run automatically at defined times to automate various processes on your server. You can set whether a task should run once or repeat as needed. Supported task types include starting, stopping or restarting services, restarting the server if it’s online, creating backups or executing custom commands. 
+
+![](https://screensaver01.zap-hosting.com/index.php/s/P6DeWiRC3tDqG2z/preview)
+
 ### Restart planner
 
 Do you want to schedule server restarts at specific times? The Restart Planner allows you to set up scheduled automatic restarts of your game server. With this feature, you can set up restarts at specific times or at regular intervals.
@@ -256,3 +263,5 @@ The **News** provides you with a comprehensive overview of all announcements and
 - Other relevant information that may be relevant to the use of your service
 
 By checking the **News** regularly, you'll stay informed and be able to adjust your service accordingly to get the most out of your server.
+
+<InlineVoucher />

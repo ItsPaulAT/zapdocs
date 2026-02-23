@@ -1,9 +1,10 @@
 ---
 id: satisfactory-connect
 title: "Satisfactory: Connect to the Server"
+description: "Discover how to connect and manage your Satisfactory Server effectively for a seamless gaming experience → Learn more now"
 sidebar_label: Connect to the Server
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -83,3 +84,5 @@ You'll find the HUB easily by following the mark.
 ## Autosave
 The Server saves your progress all 5 minutes, you can see them in the savegame manager in your servers dashboard.
 It will always keep the last 6 saves (30 minutes) of progress.
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: gameserver-reset
 title: "Gameserver: Server Reset (Factory state)"
-description: Information on how to reset (reinstall) your game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to fully reset your game server to restore optimal performance and avoid data loss → Learn more now"
 sidebar_label: Server reset
 services:
   - gameserver
@@ -33,3 +33,5 @@ Congratulations, you have successfully reset the server by reinstalling it.  For
 
 
 
+
+<InlineVoucher />

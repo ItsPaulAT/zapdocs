@@ -1,10 +1,10 @@
 ---
 id: assetto-competizione-slot-requirement
 title: "Assetto Corsa Competizione: Car Slot Prerequisite"
-description: Information on how to increase your Car Slots and set the Prerequisite correctly - ZAP-Hosting.com documentation
+description: "Discover how to unlock more than 10 slots in Assetto Corsa by meeting key prerequisites for enhanced gameplay → Learn more now"
 sidebar_label: Car Slot Prerequisite
 services:
-  - gameserver
+  - gameserver-assetto-competizione
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -54,3 +54,5 @@ Slots | safetyRatingRequirement | trackMedalRequirement
 28 | 70 | 1
 30 | 90 | 0
 30 | 80 | 1
+
+<InlineVoucher />

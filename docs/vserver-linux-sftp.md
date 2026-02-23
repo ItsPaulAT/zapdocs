@@ -1,7 +1,7 @@
 ---
 id: vserver-linux-sftp
 title: "VPS: Establish connection via SFTP"
-description: Information on how to establish a connection via SFTP on your Linux VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to securely transfer files using SFTP and protect your data with encrypted connections → Learn more now"
 sidebar_label: SFTP Connection
 services:
   - vserver
@@ -48,3 +48,5 @@ The first time you connect via SFTP, this message appears because your computer 
 ## Conclusion
 
 Provided that you have followed all the steps, you have successfully established an SFTP connection to your server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

@@ -1,57 +1,50 @@
 ---
 id: 7d2d-becomeadmin
-title: "7 Days to Die: 7 Days to Die Admin werden - Gameserver von ZAP-Hosting"
-description: Anleitung, wie du dich zum Admin für 7 Days to Die Gameserver machst - ZAP-Hosting.com Dokumentation 
+title: "7 Days to Die: So wirst du Admin für 7 Days to Die"
+description: "Entdecke, wie du Administratorrechte vergibst und verwaltest für volle Serverkontrolle und individuelle Admin-Rollen → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-7d2d
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Administrator kannst du alle verfügbaren Optionen und Funktionen, die das Spiel bietet, direkt im Spiel nutzen. Alle Schritte, die du durchführen musst, um Administratorrechte für deinen Server zu vergeben, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
 ## Konfiguration
+Das Hinzufügen eines Admins erfolgt über die **serveradmin.xml**-Konfiguration, die du im Webinterface unter Konfigurationen findest.
 
-Das Hinzufügen eines Admins erfolgt über die **serveradmin.xml** Config, welche du im Webinterface unter Configs findest.
+![](https://screensaver01.zap-hosting.com/index.php/s/wXpLL2qyZE2zCYa/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/QN2kKnt9YGDgXwE/preview)
-
-Deine SteamID64 kannst du ausfindig machen, indem du zunächst dein Steam Profil aufrufst und dort dann an einer beliebigen Stelle einen Rechtsklick machst. Dort klickst du dann auf **Steam URL kopieren**. 
+Deine SteamID64 findest du, indem du dein Steam-Profil öffnest und irgendwo darin mit der rechten Maustaste klickst. Dort wählst du dann **Steam-URL kopieren** aus.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/Q9WJ8GwbHCmTRPx/preview)
 
-
-
-Im Anschluss rufst du dann eine der folgenden Seiten auf:
+Anschließend öffnest du eine der folgenden Seiten und fügst die URL deines Profils dort ein:
 
 - https://steamrep.com/
 - https://steamidfinder.com/
 - https://steamid.io/
 
-
-
-Dadurch erhältst du dort sowohl allgemeine Informationen als auch die Steam ID von deinem Account. In dem Fall benötigen wir nur die SteamID64. Diese wird dann unter ``<admins>...</admins>`` eingetragen. Das sieht dann folgendermaßen aus:
+Dort bekommst du allgemeine Infos sowie die Steam ID deines Accounts. Für uns ist nur die SteamID64 relevant. Die SteamID64 wird dann unter ``<admins>...</admins>`` eingetragen. Das sieht dann so aus:
 
 ```
-  <users>
-    <user steamID="76561198021925107" name="Hint on who this user is" permission_level="0" />
+ <users>
+    <user steamID="76561198021925107" name="Hinweis, wer dieser Nutzer ist" permission_level="0" />
   </users>
 ```
 
-:::danger Admin Eintrag wird nicht erkannt? 
-Achte darauf, die Kommentarzeichen `<!--` und `-->` zu entfernen, damit die Zeile gültig ist. Andernfalls bleibt die Zeile nur ein Kommentar und wird nicht übernommen. Entferne einfach die Zeichen am Anfang und Ende der Zeile, um sie aktiv zu machen.
+:::danger  Admin-Eintrag wird nicht erkannt? 
+Stelle sicher, dass du die Kommentarzeichen `<!--` und `-->` entfernst, damit die Zeile gültig ist. Ansonsten bleibt die Zeile nur ein Kommentar und wird nicht angewendet. Entferne einfach die Zeichen am Anfang und Ende der Zeile, um sie zu aktivieren.
 :::
 
-Das Spiel bietet bei den Administrator-Berechtigungen die Möglichkeit, unterschiedliche Berechtigungsstufen zu definieren. Somit ist es also möglich, verschiedene Administrator Gruppen mit unterschiedlichen Berechtigungen zu definieren. Das Ganze wird über die ``permission_level`` Option definiert. Diese kann von 0 bis 100 eingestellt werden. Je nachdem, wie diese konfiguriert wurde, haben die Administratoren dann Zugriff auf die zugewiesenen Berechtigungen. Wenn das erledigt wurde, dann wurden die Administrator-Berechtigungen erfolgreich zugewiesen. 
+Das Spiel bietet die Möglichkeit, verschiedene Berechtigungsstufen für Administratorrechte zu definieren. Das bedeutet, es können unterschiedliche Admin-Gruppen mit verschiedenen Rechten angelegt werden. Die Stufe wird über die Option ``permission_level`` definiert. Diese kann von 0 bis 1000 eingestellt werden. Je nachdem, wie das konfiguriert ist, haben die Administratoren dann Zugriff auf die zugewiesenen Rechte. Sobald das erledigt ist, wurden die Administratorrechte erfolgreich vergeben. 
 
+## Berechtigungen
 
-
-### Berechtigungen
-
-Unter ``permissions`` können für alle Administrator-Befehle die Berechtigungen bestimmt werden. Dafür muss dann ebenfalls wie beim Hinzufügen von Administratoren das ``permission_level`` angepasst werden. Das sieht dann folgendermaßen aus:
+Die Berechtigungen für alle Admin-Befehle können unter ``permissions`` definiert werden. Dafür muss der ``permission_level`` angepasst werden, genau wie beim Hinzufügen von Administratoren. Das sieht so aus:
 
 ```
 <permissions>
@@ -65,8 +58,10 @@ Unter ``permissions`` können für alle Administrator-Befehle die Berechtigungen
 </permissions>
 ```
 
-Eine Berechtigungsstufe besteht aus einem Wert zwischen 0 und 1000 und legt fest, welche Berechtigungen ein Spieler hat. 1000 ist die niedrigste (keine Berechtigungen) und 0 die höchste (volle Administrator-Berechtigungen). Je nachdem, wie die Zugriffsrechte diesbezüglich sein sollen, muss das dann entsprechend angepasst werden. 
+Eine Berechtigungsstufe ist ein Wert zwischen 0 und 1000 und bestimmt, welche Rechte ein Spieler hat. 1000 ist die niedrigste Stufe (keine Rechte) und 0 die höchste (volle Administratorrechte). Je nachdem, wie die Rechte vergeben werden sollen, muss das entsprechend angepasst werden. 
 
-## Abschluss
+## Fazit
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast die Administratorrechte erfolgreich konfiguriert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung und hilft dir gerne weiter! 🙂
+
+<InlineVoucher />

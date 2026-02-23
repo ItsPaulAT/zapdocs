@@ -1,7 +1,7 @@
 ---
 id: csgo-configuration
 title: "CSGO: Server configuration"
-description: Information on the settings and configuration options of your CS GO server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to configure Counter-Strike servers for various gamemodes and settings to optimize gameplay experience → Learn more now"
 sidebar_label: Server Configration
 services:
   - gameserver
@@ -484,3 +484,5 @@ rcon exec esl5on5
 ```
 
 After that, all ESL command values will be loaded and the game can start!
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: cs2-configuration
 title: "CS2: Server configuration"
-description: Information on the settings and configuration options of your CS2 server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to configure Counter-Strike servers with gamemodes, mapgroups, and GSL tokens for optimized gameplay → Learn more now"
 sidebar_label: Server Configration
 services:
-  - gameserver
+  - gameserver-cs2
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -451,3 +451,5 @@ This command defines how many flash grenades a player can carry.
 **ammo_grenade_limit_total**
 
 This command defines how many grenades a player can carry in total.
+
+<InlineVoucher />

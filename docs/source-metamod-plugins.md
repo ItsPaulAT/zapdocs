@@ -1,7 +1,7 @@
 ---
 id: source-metamod-plugins
 title: Installing plugins
-description: Information on how to install plugins on your source game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage and troubleshoot Sourcemod plugins effectively for enhanced server performance → Learn more now"
 sidebar_label: Plugins
 services:
   - gameserver
@@ -41,3 +41,5 @@ Solutions:
 - Make sure that all prerequisites are met during the plugin setup. Some plugins require a database to work properly. In this case you have to make further adjustments to the **database.cfg** located in theconfig directory.
 - Changes to the source engine occur regularly. Hence, a plugin which has been released a long time ago but hasn't been maintained may no longer be compatible. In this case, the only possibility is to visit the Alliedmodders Forum to find an unofficial fixed version or to use an alternative plugin in general.
 - If none of the above options work, then it's recommended to have a look at the Live Console or the log files. Usually the cause of the issue can be found there.
+
+<InlineVoucher />

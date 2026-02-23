@@ -1,10 +1,10 @@
 ---
 id: scp-becomeadmin
 title: "SCP Secret Laboratory: Become an admin on your own server"
-description: Information on how to become an admin on your SCP server from ZAP-Hosting.com - ZAP-Hosting.com documentation
+description: "Discover how to assign administrator permissions for full server control and manage roles effectively in your game server → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-scp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -74,3 +74,5 @@ To open the remote admin console ingame, once you are logged into the server, yo
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

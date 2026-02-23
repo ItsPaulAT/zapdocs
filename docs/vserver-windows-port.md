@@ -1,7 +1,7 @@
 ---
 id: vserver-windows-port
 title: "VPS: Managing Windows Defender Firewall Rules"
-description: Information on managing Windows Defender Firewall rules, including Port Forwarding, on your Windows VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to manage Windows Defender Firewall rules and optimize port forwarding for secure server communication → Learn more now"
 sidebar_label: Port Forwarding (Firewall)
 services:
   - vserver
@@ -106,3 +106,5 @@ Once ready, finally press the **Finish** button to create the rule.
 ![](https://screensaver01.zap-hosting.com/index.php/s/Ro5k6JgTF73exoH/preview)
 
 You have successfully created your very own Port Rule for your Windows server. You should now repeat this to create an **Outbound Rule** following the same steps, but creating it under the Outbound Rules section.
+
+<InlineVoucher />

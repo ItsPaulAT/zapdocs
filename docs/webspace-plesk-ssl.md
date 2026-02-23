@@ -1,7 +1,7 @@
 ---
 id: webspace-plesk-ssl
 title: "Webspace: Create SSL certificate"
-description: Information on how to create an SSL certificate for your webspace from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to secure your website with SSL encryption and enable HTTPS for safer browsing → Learn more now"
 sidebar_label: Create SSL Certificate
 services:
   - webspace
@@ -110,3 +110,5 @@ If a subdomain is now created, it is already protected:
 ![](https://screensaver01.zap-hosting.com/index.php/s/XLHzsgkeLmwJ55m/preview)
 
 Now the complete data transfer is encrypted to the side, done.
+
+<InlineVoucher />

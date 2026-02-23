@@ -1,10 +1,10 @@
 ---
 id: minecraft-firststeps-java-bedrock-comparison
 title: "Minecraft: Java / Bedrock Comparison"
-description: Information on the similarities and differences between Minecraft Java and Bedrock edition game versions - ZAP-Hosting.com documentation
+description: "Discover the key differences between Minecraft Java and Bedrock editions to choose the best version for your gaming experience → Learn more now"
 sidebar_label: Java vs Bedrock
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -28,7 +28,7 @@ Here is a table which explains some basic information about both Minecraft versi
 
 ## Platforms
 
-The most important question people ask when starting to play Minecraft is: "On which device can I play?". Minecraft *Java* edition, the original game, can only be played on Windows, macOS, and Linux and has higher system prerequisites (especially if you start adding [shaders and other mods](#customization-and-modding)), while Minecraft *Bedrock* edition can be played on almost all devices, from phones to computers and consoles, with full cross-platform capabilities.
+The most important question people ask when starting to play Minecraft is: "On which device can I play?". Minecraft *Java* edition, the original game, can only be played on Windows, macOS, and Linux and has higher system prerequisites (especially if you start adding shaders and other mods), while Minecraft *Bedrock* edition can be played on almost all devices, from phones to computers and consoles, with full cross-platform capabilities.
 
 ## Updates
 
@@ -53,3 +53,5 @@ When booting up the game for the first time, a common trend is for players to ed
 ## Conclusion
 
 We hope this guide helped you gain more knowledge about this wonderful game and decide which version you'll begin exploring the vast open world on. Luckily, if you are still debating which to pick, our [Game Change](gameserver-gameswitch.md) guide allows you to quickly and easily switch the game on your game server, which means you can easily try out both!
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: webspace-mybb
 title: "Webspace: Install MyBB forum software"
-description: Information on how to install the MyBulletinBoard forum software on your webspace from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up and launch your own MyBB forum to build an engaging online community → Learn more now"
 sidebar_label: Install MyBB
 services:
   - webspace
@@ -91,3 +91,5 @@ If you have done this and everything else has been configured successfully, then
 ![](https://screensaver01.zap-hosting.com/index.php/s/9N2jBCbzEYe2iyn/preview)
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/g9iecMjiDX4GoqP/preview)
+
+<InlineVoucher />

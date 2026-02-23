@@ -1,10 +1,10 @@
 ---
 id: scp-newroles
 title: "SCP Secret Laboratory: Server Adding new roles"
-description: Information on how to add new roles to your SCP server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to create and customize server roles with specific permissions for effective remote admin management → Learn more now"
 sidebar_label: Add new roles
 services:
-  - gameserver 
+  - gameserver-scp 
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -54,3 +54,5 @@ Like it is shown in this example:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/kRSiKjYyWsK2RD3/preview)
 
+
+<InlineVoucher />

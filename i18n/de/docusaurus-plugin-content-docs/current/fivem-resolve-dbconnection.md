@@ -1,54 +1,54 @@
 ---
 id: fivem-resolve-dbconnection
-title: "FiveM: Datenbankverbindung auflösen"
-description: Informationen darüber, wie man Probleme mit der oxmysql-Datenbankverbindung auf einem FiveM von ZAP-Hosting behebt - ZAP-Hosting.com Dokumentation
-sidebar_label: Resolve DB Connection
+title: "FiveM: Datenbank-Verbindungsprobleme lösen"
+description: "Entdecke, wie du Verbindungsprobleme deiner FiveM Server-Datenbank behebst und die reibungslose Kommunikation mit deiner Datenbank wiederherstellst → Jetzt mehr erfahren"
+sidebar_label: DB-Verbindung lösen
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Oxmysql ist eine nützliche Open-Source-FiveM-Ressource, die auf deinem FiveM-Server vorinstalliert ist, um die Kommunikation zwischen dem Server und deiner Datenbank zu ermöglichen. Während der Entwicklung kann es vorkommen, dass du Änderungen vornimmst (z.B. neue Datenbankanmeldedaten), die eine Änderung des oxmysql-Verbindungsstrings erfordern. Beispiel für ein Problem mit der Datenbankverbindung:
+Oxmysql ist eine praktische Open-Source FiveM Ressource, die bereits auf deinem FiveM Gameserver vorinstalliert ist, um die Kommunikation zwischen Server und Datenbank zu ermöglichen. Während der Entwicklung kann es vorkommen, dass du Änderungen vornimmst (z.B. das Aktualisieren der Datenbank-Zugangsdaten), die eine Anpassung der oxmysql-Verbindungszeichenfolge erfordern. Beispiel für ein Datenbank-Verbindungsproblem:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/G5zACEEErfP4EHG/preview)
 
-In diese Anleitung werden wir untersuchen, wie du Probleme mit der Datenbankverbindung auf deinem FiveM Server durch die Anpassung des Verbindungsstrings in deiner Serverkonfigurationsdatei lösen kannst.
+In dieser Anleitung zeigen wir dir, wie du Verbindungsprobleme zur Datenbank auf deinem FiveM Gameserver behebst, indem du die Verbindungszeichenfolge in deiner Server-Konfigurationsdatei anpasst.
 
 <InlineVoucher />
 
 ## Automatische Methode
 
-Öffne zunächst das Webinterface deines Servers auf der Website und gehe in den Bereich **Einstellungen**.
+Öffne zuerst das Webinterface deines Servers auf der Website und navigiere zum Bereich **Einstellungen**.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/JDat2JBPe2ddQ4w/download)
+![img](https://screensaver01.zap-hosting.com/index.php/s/nizHMSk7oXCsJS4/download)
 
-Scrolle auf dieser Seite ganz nach unten, wo du die Schaltflächen **Aktionen** findest. Benutze einfach den Button **Reconfigure MySQL connection string** und starte deinen Server neu, um sicherzustellen, dass die Änderungen verarbeitet werden.
+Scrolle auf dieser Seite ganz nach unten, wo du die **Aktionen**-Buttons findest. Klicke einfach auf den Button **MySQL-Verbindungszeichenfolge neu konfigurieren** und starte anschließend deinen Server neu, damit die Änderungen übernommen werden.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/eZoSBJcbCr7422K/preview)
 
-Dadurch wird deine Datei `server.cfg` automatisch mit den korrekten aktuellen Anmeldedaten aktualisiert, so dass deine Datenbank wieder funktionieren sollte.
+Dadurch wird deine `server.cfg` automatisch mit den aktuellen, korrekten Zugangsdaten aktualisiert, sodass deine Datenbank wieder funktionieren sollte.
 
 ## Manuelle Methode
 
-Um das Problem manuell zu beheben, brauchst du Zugang zu deiner Datei `server.cfg`, in der du den Verbindungsstring manuell mit den Anmeldedaten anpasst, die du in deinem Webinterface angegeben hast. Melden dich im txAdmin Interface an und öffne den CFG-Editor. Gehe in einem anderen Tab zum Bereich **Tools->Datenbanken**, wo du deine bestehenden Anmeldedaten einsehen kannst.
+Um das manuell zu beheben, benötigst du Zugriff auf deine `server.cfg` Datei, in der du die Verbindungszeichenfolge mit den Zugangsdaten aus deinem Webinterface manuell anpasst. Melde dich im txAdmin Dashboard an und öffne den CFG-Editor. Öffne in einem weiteren Tab den Bereich **Tools->Datenbanken**, wo du deine aktuellen Zugangsdaten findest.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/TyBqiixBS5wd6bP/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/7JJgtatLzZRXCDM/preview)
 
-Füge in deine Datei `server.cfg` die folgende Zeile ein (oder  ersetze sie, falls sie bereits existiert) und füge die Details mit deinen eigenen Datenbankzugangsdaten aus dem Webinterface ein.
+Füge in deiner `server.cfg` folgende Zeile hinzu (oder **ersetze** sie, falls sie schon existiert) und trage deine eigenen Datenbank-Zugangsdaten aus dem Webinterface ein:
 
 ```
-set mysql_connection_string "mysql://USER:PASSWORD@SERVER:PORT/DATABASE"
+set mysql_connection_string "mysql://USER:PASSWORD@SERVER:3306/DATABASE"
 ```
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/sf9sMJoZyJttHBE/preview)
 
-Sobald dies abgeschlossen wurde, speichere die Datei und starte deinen Server neu.
+Speichere die Datei anschließend ab und starte deinen Server neu.
 
+## Fazit
 
+Beim nächsten Serverstart sollte dein Gameserver wieder problemlos auf die Datenbank zugreifen können und alles wie gewohnt funktionieren. Du hast deine Datenbank-Verbindungsprobleme erfolgreich gelöst. Falls du weitere Fragen hast oder Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
 
-## Abschluss
-
-Wenn der Server das nächste Mal startet, sollte dein Server wieder auf deine Datenbank zugreifen können und somit voll funktionsfähig sein. Du hast die Probleme mit der Datenbankverbindung erfolgreich behoben. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+<InlineVoucher />

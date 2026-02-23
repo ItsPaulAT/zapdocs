@@ -1,7 +1,7 @@
 ---
 id: vserver-linux-firewall
 title: "VPS: Managing Firewall in Linux"
-description: Information on managing UFW or IPTable rules, including Port Forwarding, on your Linux VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to configure a firewall to secure your server and allow necessary external connections → Learn more now"
 sidebar_label: Port Forwarding (Firewall)
 services:
   - vserver
@@ -124,3 +124,5 @@ You can display all rules using this command: `sudo iptables -L --line-numbers`.
 
 You have successfully installed a firewall on your Linux server and created your very own port rules. You can also use this guide for forwarding more ports.
 For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: ark-configuration
 title: "ARK: Server configuration"
-description: Information about the configuration options in the web interface of your ARK server at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to optimize your ARK game server settings for better gameplay and customization → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-ark
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -867,3 +867,5 @@ The number of command lines depends generally on the previously defined level li
 :::info
 Ark is a fast-moving game and therefore also includes many changes at regular intervals. This also affects the server configuration. We therefore recommend to have a look at the official documentation for further and more detailed information: https://ark.fandom.com/wiki/Server_configuration
 :::
+
+<InlineVoucher />

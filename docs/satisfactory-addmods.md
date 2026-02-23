@@ -1,9 +1,10 @@
 ---
 id: satisfactory-addmods
 title: "Satisfactory: Install Mods"
+description: "Discover how to safely manage and install mods for Satisfactory servers while protecting your savegame → Learn more now"
 sidebar_label: Install Mods
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -116,3 +117,5 @@ The selected folders are now dragged and dropped into the previously opened mod 
 ## Server starten
 
 After the mods have been uploaded, the server can simply be started via the web interface. The server should now be joinable which you can learn more via the [Connect to Server](satisfactory-connect.md) guide.
+
+<InlineVoucher />

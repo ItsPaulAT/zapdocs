@@ -1,10 +1,10 @@
 ---
 id: minecraft-playermanagement
 title: "Minecraft: Manage your players with a few clicks"
-description: Information on how to easily manage your players for your Minecraft server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Manage player roles, whitelist access, and bans to control your game server effectively → Learn more now"
 sidebar_label: Player management
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 ## Introduction

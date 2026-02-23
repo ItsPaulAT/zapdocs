@@ -1,10 +1,10 @@
 ---
 id: wreckfest-firststeps-dashboard
 title: "Wreckfest: Dashboard Overview"
-description: Information about the dashboard of a Wreckfest server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to efficiently manage your Wreckfest server with a clear overview of features and options tailored to your needs → Learn more now"
 sidebar_label: Dashboard
 services:
-  - gameserver
+  - gameserver-wreckfest
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -12,11 +12,13 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 
-You are interested in an **Wreckfest server** or already own one, but you still lack a comprehensive overview of the administration and the findability of all necessary options? Especially at the beginning, this can be a challenge. But don't worry, we'll provide you with a detailed introduction to the administration of your service below, so you'll have the best possible overview.
+You are interested in an **Wreckfest Server** or already own one, but you still lack a comprehensive overview of the administration and the findability of all necessary options? Especially at the beginning, this can be a challenge. But don't worry, we'll provide you with a detailed introduction to the administration of your service below, so you'll have the best possible overview.
 
-After going through this guide, you will easily be able to manage your server efficiently and find all the necessary options and features quickly and easily. Here, you will get a structured overview that will help you step by step to get familiar with the server administration and expand your knowledge in a targeted manner. This way, you can ensure that your **Wreckfest server** is optimally adapted to your needs and that you get the most out of the available options.
+After going through this guide, you will easily be able to manage your server efficiently and find all the necessary options and features quickly and easily. Here, you will get a structured overview that will help you step by step to get familiar with the server administration and expand your knowledge in a targeted manner. This way, you can ensure that your **Wreckfest Server** is optimally adapted to your needs and that you get the most out of the available options.
 
-<InlineVoucher />
+<YouTube videoId="9cuWAwFJrJk" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/ZaGBHYwLL2PXzWN/preview" title="Setup Wreckfest server in just a MINUTE!" description="Feel like you understand better when you see things in action? We’ve got you! Dive into our video that breaks it all down for you. Whether you're in a rush or just prefer to soak up information in the most engaging way possible!"/>
+
+
 
 ## Product Administration
 
@@ -28,7 +30,7 @@ In the **Product Administration** section, you will find all the necessary pages
 
 The **Dashboard** of your server is the heart of the administration. All basic and essential information about your service is clearly presented here. This includes, for example, information about the location, status, IP: Port, used memory, game in progress, server name, map and the number of available slots. In addition, the utilization of the CPU, memory and RAM is also displayed.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/jXbFRcDJR3xLwiL/preview)
+![img](https://screensaver01.zap-hosting.com/index.php/s/PG3CHb4CS5xx4sR/preview)
 
 In the dashboard you also have the option of starting, stopping or restarting your service, to have full control over its operation. Furthermore, you can access the live console to get real-time information about the server's state and take direct action if necessary.
 
@@ -37,22 +39,38 @@ In the dashboard you also have the option of starting, stopping or restarting yo
 
 
 
+### Statistics
+
+Under the **Statistics** you get a comprehensive overview of the load values of your server. There you will find information about various aspects such as the load of the available slots, the CPU and the memory. You can view this data for different time periods, for example for the last **60 minutes, 24 hours, 3 days, 7 days** or **30 days.**
+
+![](https://screensaver01.zap-hosting.com/index.php/s/N8jcmdqqG2Xt4Bk/preview)
+
+Thanks to this information, you get a good insight into the usage of your server. Additionally, these statistics are often helpful to identify possible performance issues and narrow down their causes. For example, you can trace back when the utilization has increased and whether this is related to certain events or changes. This is particularly important when sudden problems arise, as it allows you to take targeted steps to troubleshoot and systematically analyze possible causes.
+
+
+
 ### DDoS Manager
 
-The **DDoS Manager** allows you to view past attacks and thus get a better overview of potential threats. Furthermore, you have the option to activate notifications for ongoing DDoS attacks on your server to be able to react quickly to such incidents.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/pertwX6DzWXECyx/preview)
+View past DDoS attacks to better assess potential threats and patterns. Enable notifications for ongoing DDoS attacks on your server to react quickly when an incident occurs.
 
-Moreover, you can customize the protection provided that you have booked your own IP address. There are two different options available:
+Depending on the server location and the DDoS protection available there, you can also monitor active attacks in real time. This includes detailed traffic insights, showing both legitimate traffic and the amount of traffic blocked by the mitigation systems. This level of transparency helps you understand how the protection is working and enables you to identify potential risks early.
 
-- **Sensor Mode:** In this mode the protection is enabled, but inactive. As soon as an attack is detected, the protection becomes active and filters the attack to ensure the stability of your server.
-- **Permanent:** This setting means that the protection is permanently active and enabled. All incoming attacks are continuously filtered to protect your system from possible DDoS attacks. (Only recommended for continuous attacks)
+:::info DDoS manager access missing?
+Use of the DDoS Manager requires either a dedicated IP address or the additional option "DDoS Manager Overview". If your current package does not include these components, you can add them at any time by upgrading your service.
+:::
 
-These customization options allow you to adjust the DDoS protection to your individual needs and thus increase the security of your server.
+![](https://screensaver01.zap-hosting.com/index.php/s/ScCCCY52CMLgfyE/preview)
+
+
+
+
 
 :::warning
 The use of the DDoS Manager is only possible if either an own IP address or the option "DDoS Manager Overview" has been booked as an additional option. If these components are missing from your current package, you can add them at any time by upgrading.
 :::
+
+
 
 
 
@@ -77,10 +95,6 @@ The **Event Log** provides you with a comprehensive overview of all activities r
 
 
 
-Additionally to monitoring the events, you can also send commands directly to the server in the **Live Console**. This can be useful to adjust settings, perform certain actions, or respond quickly to problems that arise.
-
-
-
 ### Service Interruptions
 
 Your server was temporarily offline and you can't explain why? A look into the event log and log files did not provide any information either? It could be that the cause of the problem does not lie directly with your server, but with the host system on which your server is operated.
@@ -88,16 +102,6 @@ Your server was temporarily offline and you can't explain why? A look into the e
 If our monitoring system detects a general interruption, our technicians are automatically notified and take care of the problem as soon as possible.
 
 In this section you will find an overview of the interruptions history of the host system on which your game server service is running. You can find more information and the latest version of our service status on our new [status page](https://status.zap-hosting.com/).
-
-
-
-
-
-
-
-
-
-
 
 
 ## Settings
@@ -109,8 +113,6 @@ In the **Settings** section, you will find all the necessary pages for configuri
 ### Settings
 
 Under the settings you will find an overview of the most common setting options for your server. These also include a short explanation. The use of the settings page is especially recommended for newcomers to server administration.
-
-If you are more confident and want to make more precise changes, we recommend using the Config Editor instead. You can find more information about this in the **Configs** category.
 
 
 
@@ -143,6 +145,12 @@ Moreover, you can also enable the email notification feature for automatic updat
 
 
 
+### Scheduled Tasks
+
+Create scheduled tasks that run automatically at defined times to automate various processes on your server. You can set whether a task should run once or repeat as needed. Supported task types include starting, stopping or restarting services, restarting the server if it’s online, creating backups or executing custom commands. 
+
+![](https://screensaver01.zap-hosting.com/index.php/s/P6DeWiRC3tDqG2z/preview)
+
 ### Restart planner
 
 Do you want to schedule server restarts at specific times? The Restart Planner allows you to set up scheduled automatic restarts of your game server. With this feature, you can set up restarts at specific times or at regular intervals.
@@ -152,6 +160,7 @@ Do you want to schedule server restarts at specific times? The Restart Planner a
 ### DNS settings
 With the ZAP DNS settings, you can create easy-to-remember addresses for your service. You can either use a subdomain of one of our domains or you can create a DNS entry on your own domains and thus have an address that can be better associated with you as a person.
 ![](https://screensaver01.zap-hosting.com/index.php/s/tM5FGTHRSbZA5rN/preview)
+
 
 ## Tools
 
@@ -209,3 +218,5 @@ The **News** provides you with a comprehensive overview of all announcements and
 - Other relevant information that may be relevant to the use of your service
 
 By checking the **News** regularly, you'll stay informed and be able to adjust your service accordingly to get the most out of your server.
+
+<InlineVoucher />

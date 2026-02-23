@@ -1,10 +1,10 @@
 ---
 id: palworld-server-modding
 title: "Palworld: Installing Mods for Palworld"
-description: Information on how to install mods to your Palworld server or game client from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to enhance your Palworld gameplay with mods for servers and clients safely and effectively → Learn more now"
 sidebar_label: Install Mods
 services:
-  - gameserver
+  - gameserver-palworld
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -68,7 +68,7 @@ Within your webinterface, you can use the **Direct Connection** button. This sho
 
 Alternatively, use the credentials that are provided on the FTP-Browser page to manually input this into your FTP Client and connect.
 
-![](https://github.com/zaphosting/docs/assets/42719082/af255f46-3371-441e-b6db-4348e6be2e54)
+![](https://screensaver01.zap-hosting.com/index.php/s/nWYPNMRbnrDbDLF/preview)
 
 Next, you will have to upload the PAK files for the mod which you prepared earlier. You must upload these to the following directory:
 ```
@@ -143,3 +143,5 @@ Do you require additional help? No problem, feel free to join our [Discord Commu
 Do you require official support? Please [create a ticket](https://zap-hosting.com/en/customer/support/) on our website with as much details as possible and we will get back to you as soon as possible! :)
 :::
 
+
+<InlineVoucher />

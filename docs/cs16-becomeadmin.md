@@ -1,10 +1,10 @@
 ---
 id: cs16-becomeadmin
 title: "CS 1.6: Become an admin on your own server"
-description: Information on how to become an admin on your CS 1.6 server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign administrator permissions for full server control and enhanced in-game management → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-cs16
 
 ---
 
@@ -103,3 +103,5 @@ In that case, no password is needed since it is an authentication via Steam. The
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

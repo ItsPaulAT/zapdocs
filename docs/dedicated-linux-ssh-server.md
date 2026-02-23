@@ -1,9 +1,10 @@
 ---
 id: dedicated-linux-ssh-server
-title: "Dedicated Server: Installation of SSH"
-description: Information on how to install SSH Server on on your Linux Dedicated Server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup SSH on a Linux Server - Enable Secure Remote Server Access"
+description: "Discover how to securely install and manage SSH servers on Linux server to ensure safe remote access and enhanced server protection → Learn more now"
 sidebar_label: Install SSH
 services:
+  - vserver
   - dedicated
 ---
 
@@ -13,11 +14,11 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 Secure Shell (SSH) is a secure protocol that enables safe and encrypted access to remote systems. It ensures the confidentiality and integrity of data transmitted across networks.
 
-In this guide, you will understand how to install or reinstall the SSH Server for a range of Linux Distributions that we currently offer across our VPS servers. Most Linux Distros offered through our VPS servers, are equipped with an SSH Server by default which means you can easily manage it through the product's webinterface. You can view how to do this via our guide: [Initial access (SSH)](vserver-linux-ssh.md)
+In this guide, you will understand how to install or reinstall the SSH Server for a range of Linux Distributions that we currently offer across our VPS/Dedicated Server servers. Most Linux Distros offered through our VPS/Dedicated Server servers, are equipped with an SSH Server by default which means you can easily manage it through the product's webinterface. You can view how to do this via our guide: [Initial access (SSH)](vserver-linux-ssh.md)
 
 If you wish to learn more about improving your security on your server, we highly recommend viewing our [Security Tips](vserver-linux-security-tips.md) guide which promotes a range of tools and services that can help secure your server further.
 
-<InlineVoucher />
+
 
 ## Installation
 
@@ -250,4 +251,6 @@ systemctl restart sshd
 </Tabs>
 
 You have now successfully installed the SSH Service on your server and can now access your server via SSH.
+
+
 

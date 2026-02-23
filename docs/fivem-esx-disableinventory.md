@@ -1,10 +1,10 @@
 ---
 id: fivem-esx-disableinventory
 title: "FiveM: Disable inventory (F2)"
-description: Information on how to disable inventory on your FiveM server running ESX from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to disable the default inventory in ESX to customize your server experience → Learn more now"
 sidebar_label: Deactivate the Inventory (F2)
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -50,3 +50,5 @@ Config.EnableDefaultInventory   = false
 
 
 Now we can save the file and restart the server, after we have joined the server, the inventory can no longer be opened.
+
+<InlineVoucher />

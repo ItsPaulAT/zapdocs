@@ -1,8 +1,8 @@
 ---
 id: dedicated-linux-proxy
-title: "Dedicated Server: Reverse-Proxy mit nginx unter Linux einrichten"
-description: Informationen zur Einrichtung eines Reverse-Proxys auf deinem Linux Dedicated Server von ZAP-Hosting - ZAP-Hosting.com-Dokumentation
-sidebar_label: Reverse-Proxy
+title: "Dedicated Server: Reverse Proxy mit nginx auf Linux einrichten"
+description: "Entdecke, wie du einen sicheren und effizienten Reverse Proxy für Webseiten und Gameserver einrichtest, um Zugriff und Schutz zu verbessern → Jetzt mehr erfahren"
+sidebar_label: Reverse Proxy
 services:
   - dedicated
 ---
@@ -13,93 +13,96 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Ein Reverse-Proxy-Server ist ein Server, der als Vermittler zwischen den Endbenutzern und einem anderen Server fungiert. Websites und Gameserver sind beliebte Gründe für die Implementierung eines Reverse-Proxys, die jeweils ihre eigenen verschiedenen Vorteile haben, darunter Sicherheit, einfacher Zugriff und Schutz.
+Ein Reverse Proxy Server ist ein Server, der als Vermittler zwischen den Endnutzern und einem anderen Server fungiert. Webseiten und Gameserver sind beliebte Anwendungsfälle für einen Reverse Proxy, jeweils mit verschiedenen Vorteilen wie Sicherheit, einfacherem Zugriff und Schutz.
 
-In dieser Anleitung werden wir den Prozess der Einrichtung eines universellen Reverse-Proxys für Websites sowie eines auf Gameserver zugeschnittenen Reverse-Proxys untersuchen.
-
-<InlineVoucher />
+In dieser Anleitung zeigen wir dir, wie du einen allgemeinen Reverse Proxy für Webseiten einrichtest sowie einen speziell für Gameserver.
 
 ## Vorbereitung
 
-Für die Einrichtung eines Reverse-Proxys benötigst du einen **Linux-Server** (z. B. einen VPS), der als Host für deinen Proxy-Server dient. In diesem Beispiel verwenden wir Ubuntu als Linux-Distribution, aber die Installationsschritte sollten bei den meisten Linux-Distributionen sehr ähnlich sein.
+Um einen Reverse Proxy einzurichten, benötigst du einen **Linux Server**, der deinen Proxy hostet. In diesem Beispiel verwenden wir Ubuntu als Linux-Distribution, aber die Installationsschritte sind bei den meisten Linux-Distributionen sehr ähnlich.
 
 :::tip Empfohlene VPS-Spezifikationen
-Für einen Reverse-Proxy, der auf Gameserver zugeschnitten ist, empfehlen wir dringend, eine höhere Netzwerkgeschwindigkeit zu erwerben, insbesondere wenn dein Server viele Spieler hat. Das liegt daran, dass dein VPS rohes TCP/UDP direkt zwischen dem Client (Spieler) und dem Gameserver streamen wird. Ansonsten sollte ein Server mit Basisspezifikationen und minimalen Upgrades für einen webbezogenen Proxy ausreichen. :)
+Für einen Reverse Proxy, der auf Gameserver zugeschnitten ist, empfehlen wir dringend, höhere Netzwerkgeschwindigkeiten zu wählen, vor allem wenn dein Server viele Spieler hat. Dein VPS streamt nämlich rohes TCP/UDP direkt zwischen Client (Spieler) und Gameserver. Für einen Web-Proxy reichen in der Regel Basis-Spezifikationen mit minimalen Upgrades. :)
 :::
 
-Wir empfehlen, den Proxy mit einer **Domain** einzurichten, die dir gehört. Für jede Subdomain, die du verwenden möchtest, solltest du einen `A`-DNS-Eintrag erstellen (z. B. `zapdocs.example.com`), der auf die IP-Adresse deines __Linux VPS__ verweist. Dies ist der Zugriff, den Benutzer verwenden, um auf deine Website oder deinen Gameserver zuzugreifen.
+Wir empfehlen, den Proxy mit einer **Domain** einzurichten, die du besitzt. Für jede Subdomain, die du nutzen möchtest, solltest du einen `A` DNS-Eintrag anlegen (z.B. `zapdocs.example.com`), der auf die IP-Adresse deines __Linux VPS__ zeigt. Über diese Subdomain greifen Nutzer dann auf deine Webseite oder deinen Gameserver zu.
 
-### Zugriff auf VPS
+### Zugriff auf den VPS
 
-Wenn dein Linux VPS bereit ist, musst du dich mit ihm verbinden. In unserer Anleitung [Erstzugriff (SSH)](vserver-linux-ssh.md) erfährst du mehr darüber, wie du das machst.
+Sobald dein Linux VPS bereit ist, musst du dich verbinden. Nutze dafür unsere [SSH Erste Schritte](vserver-linux-ssh.md) Anleitung, um zu lernen, wie das geht.
 
 ### Nginx installieren
 
-Du wirst Nginx verwenden, um einen Reverse-Proxy-Server zu hosten, da es ein sehr leistungsfähiger und beliebter Open-Source-Webserver ist.
+Du nutzt Nginx, um den Reverse Proxy zu hosten, da es ein performanter und beliebter Open-Source-Webserver ist.
 
-Nachdem du auf deinen VPS zugegriffen hast, verwende den folgenden Befehl, um Nginx zu installieren.
+Nachdem du dich auf deinem VPS eingeloggt hast, installiere Nginx mit folgendem Befehl:
+
 ```
 sudo apt install nginx
 ```
 
-Nach der Installation musst du deine Firewall anpassen, um sicherzustellen, dass der Dienst über das Internet zugänglich ist. In dieser Anleitung verwenden wir die **UFW Firewall**, da Nginx sich selbst als App registriert, wodurch sich die Einstellungen leicht anpassen lassen. Weitere Informationen zur UFW Firewall findest du in unserer Anleitung [Tipps zur Linux-Sicherheit](vserver-linux-security-tips.md).
+Nach der Installation musst du deine Firewall anpassen, damit der Dienst aus dem Internet erreichbar ist. Für diese Anleitung verwenden wir die **UFW Firewall**, da Nginx sich als App registriert und die Einstellungen so einfach sind. Mehr Infos zur UFW Firewall findest du in unserer [Linux Security Tipps](vserver-linux-security-tips.md) Anleitung.
 
 :::note
-Wenn du andere Firewalls (wie IPtables) verwendest, stelle bitte sicher, dass du Nginx den entsprechenden Firewall-Zugriff gewährst, insbesondere auf Port 80 und 443, wo der Nginx-Dienst ausgeführt wird.
+Falls du andere Firewalls nutzt (z.B. Iptables), stelle sicher, dass Nginx die nötigen Zugriffe auf Port 80 und 443 bekommt, da der Dienst dort läuft.
 :::
 
-Du kannst Nginx-Profile überprüfen, indem du `sudo ufw app list` ausführst. In diesem Szenario würden wir die Option **Nginx Full** auswählen, die den Zugriff auf HTTP für Tests und HTTPS für die Produktion ermöglicht.
+Du kannst die Nginx-Profile mit `sudo ufw app list` anzeigen lassen. Hier wählen wir die Option **Nginx Full**, die HTTP für Tests und HTTPS für den Produktivbetrieb freigibt.
+
 ```
 sudo ufw allow 'Nginx Full'
 ```
 
-Nachdem Nginx nun eingerichtet ist, versuche, über einen Browser auf die Seite zuzugreifen, um sicherzustellen, dass sie wie erwartet funktioniert. Wenn die Testseite wie erwartet funktioniert, kannst du nun mit der Anleitung fortfahren.
+Jetzt kannst du im Browser testen, ob Nginx läuft, indem du die IP-Adresse deines Servers aufrufst:
+
 ```
 http://[deine_serverip]
 ```
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/JaBgE4Cn73L5Xe8/preview)
 
-## Für Websites
+## Für Webseiten
 
-Ein Reverse-Proxy für Websites kann aus verschiedenen Gründen sehr nützlich sein, z. B. für die Umleitung zu internen Serverressourcen wie einer Vaultwarden-Instanz (ohne dass der Port in der URL angegeben werden muss) oder für die Weiterleitung des Benutzers an externe Inhalte, was für die Lastverteilung und den Schutz nützlich ist.
+Ein Reverse Proxy für Webseiten bringt viele Vorteile, z.B. Weiterleitung zu internen Server-Ressourcen wie einer Vaultwarden-Instanz (ohne Port in der URL) oder das Weiterleiten zu externen Inhalten, was für Lastverteilung und Schutz super ist.
 
-Einer der größten Vorteile besteht darin, dass Ihr Server Anfragen von beliebig vielen Quellen/Domains verarbeiten kann, im Gegensatz zu einem einzelnen Webserver, der auf Port 80/443 läuft.
+Ein großer Vorteil ist, dass dein Server Anfragen von beliebig vielen Quellen/Domains verarbeiten kann, im Gegensatz zu einem einzelnen Webserver, der nur auf Port 80/443 läuft.
 
-### Nginx-Einrichtung
+### Nginx Einrichtung
 
-Erstelle zunächst einen Eintrag im Nginx-Verzeichnis für die zuvor ausgewählte Domain, bei der es sich in der Regel um eine Subdomain wie „zapdocs.example.com“ handelt, wie in unserem Beispiel.
+Erstelle zuerst einen Eintrag im Nginx-Verzeichnis für die Domain, die du vorher ausgewählt hast. Das ist meist eine Subdomain wie `zapdocs.example.com` in unserem Beispiel.
 
 :::important
-Stelle sicher, dass du einen `A`-Eintrag einrichtest, der auf die IP-Adresse deines Proxyservers verweist, bevor du fortfährst. Ohne diesen Eintrag funktionieren die Domain und alle nachfolgenden Schritte nicht wie erwartet.
+Stelle sicher, dass du vorher einen `A`-Eintrag angelegt hast, der auf die IP-Adresse deines Proxy Servers zeigt. Ohne diesen funktioniert die Domain und alles Weitere nicht richtig.
 :::
 
-Greife mit dem folgenden Befehl auf den Ordner „server block“ zu. Hier werden alle deine Proxy-Konfigurationen gespeichert.
+Wechsle in den Server-Block-Ordner mit:
+
 ```
 cd /etc/nginx/sites-available/
 ```
 
-Verwende nun den folgenden Befehl, um eine neue Konfigurationsdatei zu erstellen. Wir empfehlen, die verwendete Domain als Dateinamen zu verwenden, um die Identifizierung zu erleichtern (z. B. zapdocs.example.com). Ersetze `[your_filename]` durch den gewünschten Dateinamen.
+Erstelle nun eine neue Konfigurationsdatei. Wir empfehlen, den Domainnamen als Dateinamen zu verwenden, damit du sie leicht findest (z.B. zapdocs.example.com). Ersetze `[your_filename]` durch deinen gewünschten Dateinamen.
+
 ```
-sudo nano [deine_filename]
+sudo nano [your_filename]
 ```
 
-Dies sollte den nano-Editor öffnen, in dem du Inhalte eingeben kannst. Kopiere die folgende Vorlage in den Editor. Du musst `[your_domain]` durch die Domain ersetzen, die du als Proxy verwenden möchtest, gefolgt von `[your_target_server]` für den Zielserver, den du erreichen möchtest.
+Der Nano-Editor öffnet sich. Kopiere die folgende Vorlage hinein. Ersetze `[your_domain]` durch deine Domain, die du proxien möchtest, und `[your_target_server]` durch den Zielserver, zu dem weitergeleitet werden soll.
 
 ```
 upstream targetServer {
-    # Add the target server you aim to reach. This can be either:
-    # Internal "localhost" redirect (e.g. 127.0.0.1:9090)
-    # External server (e.g. 103.146.43.52:9000)
-    server [deine_target_server];
+    # Zielserver, den du erreichen möchtest. Das kann sein:
+    # Interne "localhost"-Weiterleitung (z.B. 127.0.0.1:9090)
+    # Externer Server (z.B. 103.146.43.52:9000)
+    server [your_target_server];
 }
 
 server {
     listen 80;
     listen [::]:80;
 
-    # Domain which should be handled (e.g. zapdocs.example.com)
-    server_name [deine_domain];
+    # Domain, die bedient werden soll (z.B. zapdocs.example.com)
+    server_name [your_domain];
 
     location / {
         proxy_set_header Host $host;
@@ -112,34 +115,47 @@ server {
 }
 ```
 
-Da nun alle Eingabewerte an deine Konfiguration angepasst sind, kannst du die Datei speichern und nano mit `STRG + X` beenden, gefolgt von `Y` zur Bestätigung und schließlich `ENTER`.
+Wenn du alles angepasst hast, speichere die Datei mit `CTRL + X`, bestätige mit `Y` und drücke `ENTER`.
 
-Jetzt musst du die Serverblockdatei aktivieren, indem du einen symbolischen Link zum aktiven Verzeichnis erstellst.
+Aktiviere nun den Server-Block, indem du einen Symlink zum aktiven Verzeichnis erstellst:
+
 ```
-sudo ln -s /etc/nginx/sites-available/[deine_filename] /etc/nginx/sites-enabled/[deine_filename]
+sudo ln -s /etc/nginx/sites-available/[your_filename] /etc/nginx/sites-enabled/[your_filename]
 ```
 
-Um sicherzustellen, dass alles korrekt ist, insbesondere in Bezug auf die Syntax, kannst du mit `sudo nginx -t` überprüfen, ob Probleme auftreten. Wenn die Ausführung erfolgreich ist, besteht der letzte Schritt darin, Nginx neu zu starten, um den neuen Serverblock in Kraft zu setzen.
+Prüfe die Syntax mit:
+
+```
+sudo nginx -t
+```
+
+Wenn alles okay ist, lade Nginx neu, damit die Änderungen wirksam werden:
+
 ```
 systemctl reload nginx.service
 ```
 
-Nach dem Neustart des Dienstes solltest du nun testen, ob du in deinem Browser auf die Domain zugreifen kannst, die du für den Reverse-Proxy verwendet hast. Bei Erfolg sollte die Seite den gewünschten Inhalt laden, den du als Parameter `targetServer` festgelegt hast. Wenn du auf Probleme stößt, empfehlen wir, die Protokolle zur Fehlerbehebung mit `journalctl -f -u nginx.service` zu überprüfen, um mögliche Fehler zu identifizieren.
+Teste jetzt im Browser, ob deine Domain den gewünschten Inhalt lädt, den du als `targetServer` definiert hast. Falls es Probleme gibt, check die Logs mit:
+
+```
+journalctl -f -u nginx.service
+```
+
+um Fehler zu finden.
 
 ## Für Gameserver
 
-Ein Reverse-Proxy für Gameserver kann aus verschiedenen Gründen sehr vorteilhaft sein, unter anderem, weil er eine zusätzliche Sicherheits- und Zuverlässigkeitsebene bietet, indem er die Schadensbegrenzung verbessert und den Zugriff auf den Haupt-Host einschränkt.
+Ein Reverse Proxy für Gameserver bringt viele Vorteile, z.B. eine zusätzliche Sicherheitsschicht und mehr Zuverlässigkeit durch bessere Absicherung und Zugriffsbeschränkung auf den Hauptserver.
 
 :::tip
-Die meisten dedizierten Gameserver sollten mit einem von dir eingerichteten Raw-TCP/UDP-Endpunkt-Proxy einwandfrei funktionieren. Bei einer kleinen Minderheit von Spielen wie BeamMP kann es jedoch sein, dass sie nicht gut mit VPNs und Proxys funktionieren, sodass du sie für jedes Spiel einzeln testen musst.
+Die meisten dedizierten Gameserver funktionieren super mit einem rohen TCP/UDP Endpoint Proxy, den du hier einrichtest. Eine kleine Minderheit von Spielen wie BeamMP kann Probleme mit VPNs und Proxies haben, das musst du also pro Spiel testen.
 :::
 
-### Nginx-Einrichtung
+### Nginx Einrichtung
 
-Für diese Einrichtung wird das **Nginx-Stream**-Modul benötigt, welches nicht Teil des normalen Nginx-Pakets ist.
+Dafür brauchst du das **Nginx Stream** Modul, das nicht standardmäßig in Nginx enthalten ist.
 
-
-#### Nginx-Stream-Modul installieren
+#### Nginx Stream Modul installieren
 
 <Tabs>
 
@@ -157,49 +173,59 @@ sudo dnf -y install nginx-mod-stream
 
 </Tabs>
 
-#### Nginx-Stream konfigurieren
+#### Nginx Stream Konfiguration
 
-Du fügst einen neuen `stream`-Block zur Hauptdatei `nginx.conf` hinzu, in dem du den Upstream-Server und den Port definierst, über den er auf deinem Proxy aufgerufen werden soll.
+Du fügst einen neuen `stream` Block in die Hauptdatei `nginx.conf` ein, in dem du den Upstream-Server und den Port definierst, über den der Proxy erreichbar sein soll.
 
-Öffne die Datei einfach mit dem folgenden Befehl.
+Öffne die Datei mit:
+
 ```
 sudo nano /etc/nginx/nginx.conf
 ```
 
-Kopiere nun die folgende Vorlage in diese Datei, um einen neuen `stream`-Block hinzuzufügen. Du musst `[deine_target_server]` durch den Server ersetzen, zu dem du streamen möchtest, einschließlich des entsprechenden Ports (z. B. `:30120` für FiveM). Ersetze auf ähnliche Weise `[deine_port_listener]` durch den Port, über den Personen über den Proxyserver auf deine Inhalte zugreifen sollen.
+Füge nun diese Vorlage ein. Ersetze `[your_target_server]` durch den Server, zu dem gestreamt werden soll, inklusive Port (z.B. `:30120` für FiveM). Ersetze `[your_port_listener]` durch den Port, über den Nutzer den Proxy erreichen sollen.
 
 ```
 stream {
     upstream targetServer {
-        # Add the target server you aim to reach (e.g. 103.146.43.52:30120)
-        server [deine_target_server];
+        # Zielserver, den du erreichen möchtest (z.B. 103.146.43.52:30120)
+        server [your_target_server];
     }
 
     server {
-        # Listener port which accepts and bridges connections (e.g. 30120)
-        listen [deine_port_listener];
+        # Listener-Port, der Verbindungen annimmt und weiterleitet (z.B. 30120)
+        listen [your_port_listener];
         proxy_pass targetServer;
     }
 }
 ```
 
-Im Wesentlichen lauscht Nginx an dem spezifischen Port auf eingehende Verbindungen und streamt alles an den von dir definierten Zielserver (von deinem Proxyserver zu deinem echten Spielserver).
+Nginx lauscht also auf dem definierten Port und streamt alle Verbindungen an den Zielserver weiter.
 
-Da nun alle Eingabewerte an deine Konfiguration angepasst sind, kannst du die Datei speichern und nano mit `STRG + X` beenden, gefolgt von `Y` zur Bestätigung und schließlich `ENTER`.
+Speichere die Datei mit `CTRL + X`, bestätige mit `Y` und drücke `ENTER`.
 
-Um sicherzustellen, dass alles korrekt ist, insbesondere in Bezug auf die Syntax, kannst du mit `sudo nginx -t` überprüfen, ob Probleme auftreten. Wenn die Ausführung erfolgreich ist, besteht der letzte Schritt darin, Nginx neu zu starten, damit die neue Konfiguration wirksam wird.
+Prüfe die Syntax mit:
+
+```
+sudo nginx -t
+```
+
+Wenn alles passt, lade Nginx neu:
+
 ```
 systemctl reload nginx.service
 ```
 
-Nach dem Neustart des Dienstes solltest du versuchen, dich über die Proxy-Domain mit deinem Spielserver zu verbinden. Bei Erfolg solltest du dich mit dem Spielserver verbinden können, insbesondere mit dem Server, den du als Parameter `targetServer` festgelegt hast. Wenn du auf Probleme stößt, empfehlen wir, die Protokolle mit `journalctl -f -u nginx.service` auf Fehler zu überprüfen, um mögliche Fehler zu identifizieren.
+Teste jetzt, ob du dich über die Proxy-Domain mit deinem Gameserver verbinden kannst. Wenn es Probleme gibt, check die Logs mit:
+
+```
+journalctl -f -u nginx.service
+```
 
 ## SSL-Zertifikat
 
-Nachdem der von dir gewählte Reverse-Proxy nun eingerichtet ist, empfehlen wir dringend, ein SSL-Zertifikat zu deinen verwendeten Domains hinzuzufügen, um sicherzustellen, dass die Website Daten sicher über HTTPS überträgt.
+Wir empfehlen dringend, für deine Domains ein SSL-Zertifikat zu installieren, damit die Daten sicher per HTTPS übertragen werden. Schau dir dazu unsere [Certbot Installation](dedicated-linux-certbot.md) Anleitung an, die den kompletten Prozess für das Anfordern und automatische Erneuern von SSL-Zertifikaten erklärt.
 
-Bitte lies dir unsere Anleitung [Install Certbot](dedicated-linux-certbot.md) durch, die den gesamten Prozess der Beantragung und automatischen Verlängerung von SSL-Zertifikaten für deine Domain(s) abdeckt.
+## Fazit
 
-## Abschluss
-
-Glückwunsch, du hast erfolgreich einen Reverse-Proxy für eine Website oder deinen Gameserver (oder beides :) eingerichtet, der dir verschiedene Verbesserungen in Bezug auf Sicherheit, Zuverlässigkeit und Leistung bietet. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast erfolgreich einen Reverse Proxy für deine Webseite oder deinen Gameserver (oder beides :) eingerichtet und profitierst jetzt von mehr Sicherheit, Zuverlässigkeit und Performance. Bei Fragen oder Problemen steht dir unser Support-Team täglich zur Seite! 🙂

@@ -1,10 +1,10 @@
 ---
 id: fivem-changeloadingscreen
-title: "FiveM: Installation eines individuellen Loading Screen"
-description: Informationen, wie du ein individuellen Loading screens auf deinem FiveM Server von ZAP-Hosting installierst - ZAP-Hosting.com Dokumentation
-sidebar_label: Individuellen Loading Screen installieren
+title: "FiveM: Eigene Loading Screen installieren"
+description: "Entdecke, wie du deinen FiveM Loading Screen individuell anpasst für ein einzigartiges Spielerlebnis und verbesserte Server-Optik → Jetzt mehr erfahren"
+sidebar_label: Eigene Loading Screen installieren
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -13,13 +13,15 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Möchtest du statt dem Standard FiveM Loading Screen einen eigenen individuellen verwenden? Im Folgenden erläutern wir dir, wie du das umsetzt und welche Schritte dafür notwendig sind!
+Du willst deinen eigenen, individuellen Loading Screen statt dem Standard-FiveM Loading Screen nutzen? Hier erklären wir dir, wie das geht und welche Schritte du dafür befolgen musst!
 
 <InlineVoucher />
 
+
+
 ## Vorbereitung
 
-Um einen eigenen Loading Screen zu installieren, musst du zunächst eine für dich passende Ressource heraussuchen. Eine große Auswahl an Ressourcen findest du auf der offiziellen Seite von [Cfx.re webseite](https://forum.cfx.re/c/releases/7). Lade anschließend die Ressource herunter und entpacke sie auf deinem Computer.
+Um deinen eigenen Loading Screen zu installieren, brauchst du zuerst eine passende Resource. Eine große Auswahl findest du auf der offiziellen [Cfx.re Webseite](https://forum.cfx.re/c/releases/7). Lade dir die Resource runter und entpacke sie auf deinem PC.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/zZKWWMWCJPqKonj/preview)
 
@@ -27,24 +29,30 @@ Um einen eigenen Loading Screen zu installieren, musst du zunächst eine für di
 
 ## Installation
 
-Die Installation des Loading Screens erfolgt per FTP. Verbinde dich dementsprechend per FTP mit deinem Gameserver. Solltest du noch nicht wissen, wie du FTP verwendest, dann schaue dir unsere [FTP-Zugriff](gameserver-ftpaccess.md) Anleitung an. 
+Die Installation des Loading Screens erfolgt per FTP. Verbinde dich dazu mit deinem Gameserver via FTP. Falls du noch nicht weißt, wie FTP funktioniert, schau dir gerne unsere [FTP-Zugang](gameserver-ftpaccess.md) Anleitung an.
 
-Sobald du per FTP verbunden bist, navigiere in das Ressource-Verzeichnis. Abhängig von dem installierten Framework findest du deinen Ressourcenordner unter der folgenden Verzeichnisstruktur: `/gXXXXXX/fivem/YOUR_FRAMEWORK/resources`
+Sobald du per FTP verbunden bist, navigiere zum Resource-Ordner. Je nach installiertem Framework findest du den Resource-Ordner unter folgender Struktur: `/gXXXXXX/fivem/YOUR_FRAMEWORK/resources`
 
-Lade in dem Verzeichnis nun den Ordner von deiner Ressource hoch, die du zuvor heruntergeladen und auf deinem Computer entpackt hast.
+Lade den Ordner deiner Resource, den du zuvor auf deinem PC entpackt hast, an diese Stelle hoch.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/qkYBKoMox94EEWK/download)
 
 
 
-Nachdem die Loading Screen Ressource erfolgreich hochgeladen wurde, muss diese noch in der Server Konfigurationsdatei `server.cfg` eingetragen werden. Logge dich dazu im txAdmin Interface ein und öffne den CFG Editor. 
+Nachdem die Loading Screen Resource erfolgreich hochgeladen wurde, muss sie noch in der Server-Konfigurationsdatei `server.cfg` eingetragen werden. Logge dich dazu in die txAdmin-Oberfläche ein und öffne den CFG Editor.
 
-Trage nun in der Config deine Ressource hinzu. Das kannst du mit dem Befehl `start resourcename` machen. In diesem Beispiel wäre es also `start loadingscreen`. 
+Füge dann deine Resource mit dem Befehl `start resourcename` hinzu. In unserem Beispiel wäre das `start loadingscreen`. Speichere die Änderungen und starte den Server neu.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/gxniiKj3HmLGeEE/preview)
 
 
 
-## Abschluss
 
-Vorausgesetzt, dass du alle Schritte befolgt hast, solltest du nach dem nächsten Neustart deines Servers deinen neuen Loading Screen sehen. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+
+
+
+## Fazit
+
+Wenn du alle Schritte befolgt hast, solltest du nach dem nächsten Server-Neustart deinen neuen Loading Screen sehen. Bei Fragen oder Problemen steht dir unser Support-Team täglich zur Seite! 🙂 
+
+<InlineVoucher />

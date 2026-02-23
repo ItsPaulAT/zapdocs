@@ -1,10 +1,10 @@
 ---
 id: fivem-esx-disablehud
 title: "FiveM: Disable/enable HUD"
-description: Information on how to disable/enable the HUD on your FiveM server running ESX from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Understand how to update your ESX server configuration for improved HUD management and server performance → Learn more now"
 sidebar_label: Disable HUD
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -43,3 +43,5 @@ We then search for es_ui and delete this line kpmplett out.
 Now we save again.
 
 When you have done that you only have to restart the server and that's it.
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: beyondthewire-firststeps-connect
-title: "Beyond the Wire: Zum Server verbinden"
-description: Informationen über verschiedene Möglichkeiten, wie du dich mit deinem Beyond the Wire Server von ZAP-Hosting verbinden kannst - ZAP-Hosting Dokumentation
-sidebar_label: Zum Server verbinden
+title: "Beyond the Wire: Verbindung zum Server"
+description: "Entdecke, wie du dich nahtlos mit deinem Beyond the Wire Gameserver verbindest und häufige Probleme für ein reibungsloses Spielerlebnis löst → Jetzt mehr erfahren"
+sidebar_label: Verbindung zum Server
 services:
-  - gameserver
+  - gameserver-beyondthewire
 ---
 
 import Tabs from '@theme/Tabs';
@@ -14,33 +14,33 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Einführung
-
-Unsicher, wie du dich mit deinem **Beyond the Wire** Server verbinden kannst oder was du dafür benötigst? Kein Problem, wir helfen dir weiter! Wir führen dich durch alles, was du benötigst - von den erforderlichen Werkzeugen und Informationen bis hin zum eigentlichen Verbindungsprozess und den wesentlichen Punkten, die für eine reibungslose und störungsfreie Verbindung erforderlich sind. Befolge unsere Anleitung und du wirst in kürzester Zeit verbunden sein!
+Du bist dir nicht sicher, wie du dich mit deinem **Beyond the Wire** Gameserver verbindest oder was du dafür brauchst? Kein Stress, wir haben alles für dich am Start! Wir führen dich durch alles, was du wissen musst. Von den nötigen Tools und Infos bis hin zum eigentlichen Verbindungsprozess – inklusive wichtiger Tipps, damit alles smooth und ohne Probleme läuft. Folge unserer Anleitung und du bist im Handumdrehen verbunden!
 
 <InlineVoucher />
 
 
 
+## Serverdetails besorgen
 
 
-## Server-Details abrufen
+Du brauchst alle relevanten Infos, um dich mit deinem Server zu verbinden. Die Infos zu deinem Server findest du im Dashboard deines Gameserver-Webinterface-Panels. Wichtige Details sind unter anderem:
 
-Du benötigst alle relevanten Informationen, um dich mit deinem Server zu verbinden. Die Informationen zu deinem Server findest du im Dashboard des Webinterfaces deines Gameservers. Zu den wichtigen Informationen gehören die folgenden: 
+- Servername
 
-- Name des Servers
 
-Anhand der oben genannten Informationen solltest du in der Lage sein, deinen Server zu finden und sicherzustellen, dass du dich mit dem richtigen Server verbindest. 
+Mit den oben genannten Infos solltest du deinen Server finden und sicherstellen können, dass du dich mit dem richtigen Server verbindest.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/qcB2Jk52nmF5i3d/preview)
+![img](https://screensaver01.zap-hosting.com/index.php/s/bH4aqgfswLgcRQj/preview)
 
 ## Verbindung zum Server herstellen
 
-Die Verbindung zu einem Gameserver kann häufig auf eine oder mehrere Arten hergestellt werden. Die verfügbaren Methoden werden im Folgenden ausführlich beschrieben und erklärt. 
+
+Die Verbindung zu einem Gameserver kann oft auf eine oder mehrere Arten hergestellt werden. Die verfügbaren Methoden werden im Folgenden detailliert beschrieben und erklärt.
 
 <Tabs>
     <TabItem value="connect_solution_server_browser_ingame" label="Server Browser (Im Spiel)" default>
 
-Um eine Verbindung zu deinem Server herzustellen, öffne das Spiel und navigiere zu **Multiplayer**. Sobald du dort bist, klicke auf **Custom Browser** und suche nach deinem Server, indem du den Servernamen in der Serverliste verwendest.
+Um dich mit deinem Server zu verbinden, öffne das Spiel und gehe zu **Multiplayer**. Klicke dort auf **Custom Browser** und suche deinen Server in der Serverliste mit dem Servernamen.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/47pPXpfgXcRb2dn/download)
 
@@ -52,23 +52,28 @@ Um eine Verbindung zu deinem Server herzustellen, öffne das Spiel und navigiere
 
 ## Mögliche Probleme und Lösungen
 
-Die Verbindung zum Server kann nicht wie erwartet hergestellt werden? Dies kann in bestimmten Situationen vorkommen, z. B. wenn die Verbindung aufgrund von technischen Problemen fehlschlägt. Im Folgenden haben wir die häufigsten Probleme und ihre Lösungen aufgeführt:
+
+Die Verbindung zu einem Gameserver kann oft auf eine oder mehrere Arten hergestellt werden. Die verfügbaren Methoden werden im Folgenden detailliert beschrieben und erklärt.
 
 #### Nicht sichtbar
 
-Eine fehlende Sichtbarkeit des Servers kann auftreten, wenn die Initialisierung nicht erfolgreich abgeschlossen wurde. Dies kann beispielsweise auf eine fehlerhafte Konfiguration oder beschädigte Dateien zurückzuführen sein. Weitere Informationen können in der Regel in der Serverkonsole oder in den Logdateien nachvollzogen werden.
+
+Wenn der Server nicht sichtbar ist, kann das daran liegen, dass die Initialisierung nicht erfolgreich abgeschlossen wurde. Das kann z.B. an einer fehlerhaften Konfiguration oder beschädigten Dateien liegen. Weitere Infos findest du meist in der Serverkonsole oder in den Logdateien.
 
 
 
-#### Fehlende Lösung oder nicht hilfreich
-
-Hast du nach der Fehlersuche weiterhin Probleme? In diesem Fall steht unser Support-Team täglich zur Verfügung, um dir zu helfen. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und erkläre uns dein Problem mit so vielen Einzelheiten wie möglich. Wir werden uns so schnell wie möglich darum kümmern und dir bei der Lösung des Problems helfen!
+#### Keine Lösung gefunden oder nicht hilfreich
 
 
-
-## Abschluss
-
-Glückwunsch, vorausgesetzt, dass du alle Schritte befolgt hast, solltest du erfolgreich eine Verbindung zum Server hergestellt haben. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Du hast nach der Fehlerbehebung immer noch Probleme? Kein Ding, unser Support-Team ist täglich für dich da! Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und beschreibe dein Problem so detailliert wie möglich. Wir schauen uns das schnellstmöglich an und helfen dir, das Problem zu lösen!
 
 
 
+## Fazit
+
+Glückwunsch, wenn du alles befolgt hast, solltest du jetzt erfolgreich mit dem Server verbunden sein. Für weitere Fragen oder Hilfe steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+
+
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: fivem-deletecache
 title: "FiveM: Empty Cache"
-description: Information on how to clear the cache of your FiveM Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how clearing your FiveM server cache improves performance and resolves errors for a smoother gaming experience → Learn more now"
 sidebar_label: Delete Cache
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -53,3 +53,5 @@ Now proceed to restart your FiveM server for this to take effect. When the serve
 ## Conclusion
 
 Provided that you have followed all the steps, you have successfully cleared your server cache. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

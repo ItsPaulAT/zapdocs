@@ -1,10 +1,10 @@
 ---
 id: pathoftitans-becomeadmin
 title: Become admin
-description: Information on how to become an admin on your Path of Titans server at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign and manage administrator permissions for full server control in your game server → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-pathoftitans
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -38,3 +38,5 @@ Click on Save and then restart the server. The admin permissions are now success
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

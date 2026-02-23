@@ -1,7 +1,7 @@
 ---
 id: dedicated-linux-ssh
 title: "Dedicated Server: Initial access with SSH"
-description: Information on how to access your server from ZAP-Hosting with SSH for the first time - ZAP-Hosting.com documentation
+description: "Explore popular SSH clients for managing Linux servers without a GUI and understand how to connect securely via SSH → Learn more now"
 sidebar_label: Initial access (SSH)
 services:
   - dedicated
@@ -26,7 +26,7 @@ Linux server products do not include a graphical management interface by default
 | mRemoteNG  |           Windows            |     Yes      |           [Click](https://mremoteng.org/download)            |
 
 
-<InlineVoucher />
+
 
 ## IP address & access
 
@@ -120,4 +120,6 @@ For optimal use of the SSH client, it is essential to know the basic commands. I
 | netstat | Query status of network interfaces | netstat [OPTIONS] |
 | nslookup | Query DNS information | nslookup |
 | ping | Check network connection | ping [OPTIONS] DESTINATION
+
+
 

@@ -1,10 +1,10 @@
 ---
 id: redm-licensekey
 title: "RedM: Add Custom License Key"
-description: Information on creating a custom license key and adding it to your RedM server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to create and manage your own RedM license key to unlock subscription benefits and customize your server setup → Learn more now"
 sidebar_label: Own License Key
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -58,3 +58,5 @@ Once on the txAdmin interface, navigate to the **CFG Editor** on the left-hand s
 ## Conclusion
 
 After you have setup the custom license key, restart your server to start utilising it. You have successfully added a custom license key to your RedM game server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

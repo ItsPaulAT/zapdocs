@@ -1,7 +1,7 @@
 ---
 id: webspace-backups
 title: "Webspace: Create and manage Backups"
-description: Information on how to create a backup of your webspace from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to safeguard your website by creating and managing manual or automatic backups to ensure data recovery → Learn more now"
 sidebar_label: Backups
 services:
   - webspace
@@ -18,7 +18,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 Backups of a webspace are like a backup copy of your website. If something goes wrong, for example due to an error, you can use a backup to restore everything without losing your progress. A backup allows you to save all relevant components of your website, including important configuration settings, email communication, website content and databases, allowing you to restore them if necessary.
 
 
-## Create Backups
+## Create manual Backups
 
 Select the website (domain) from which you would like to create a backup. Navigate to the Dashboard section and click on **Backup and restore**. When creating the backup, you can select what should be backed up. You can choose between the options **Configuration**, **E-mail messages**, **User files** and **Databases**. 
 
@@ -31,6 +31,12 @@ In the next step, you can select whether the backup should be stored locally or 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/gMdpdnqiBWBeZm3/preview)
 
 
+
+## Create automatic Backups
+
+Along with the option of creating manual backups, automatic backups can also be created. This allows a backup to be created automatically at specific times. Choose between daily, weekly or monthly backups. If you wish, you can also select whether only newly changed data should be backed up or whether a complete backup should be created.
+
+![img](https://screensaver01.zap-hosting.com/index.php/s/JngcgyR8JyZ4Qoe/preview)
 
 
 
@@ -57,3 +63,5 @@ Would you like to save your backup locally as well? That's no problem. You can a
 
 Congratulations, you have successfully created a backup of your webspace package, which you can import again at any time if necessary. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
 
+
+<InlineVoucher />

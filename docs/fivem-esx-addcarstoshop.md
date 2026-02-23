@@ -1,10 +1,10 @@
 ---
 id: fivem-esx-addcarstoshop
 title: "FiveM: Adding cars to the shop"
-description: Information on how to add cars to the shop on your FiveM server with ESX from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage and add vehicles to your database for a customized car shop experience → Learn more now"
 sidebar_label: Add Cars to Dealership
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -61,3 +61,5 @@ Ich habe hier noch ein kleines Beispiel für euch:
 
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/cFrrLYKTALmCnFP/preview)
+
+<InlineVoucher />

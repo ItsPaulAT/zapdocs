@@ -1,10 +1,10 @@
 ---
 id: satisfactory-firststeps-connect
 title: "Satisfactory: Connect to the Server"
-description: Information about connecting to a Satisfactory Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to successfully connect to your game server by understanding the requirements and steps involved → Learn more now"
 sidebar_label: Connect to server
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -78,3 +78,5 @@ A lack of visibility of the server can occur if the initialization was not compl
 
 
 The mentioned solutions have not solved your problem yet or do not apply in your case? In this case, we are also available to you daily in support. Simply create a **[Ticket](https://zap-hosting.com/en/customer/support/)** and explain your problem to us. We will have a look at it as quickly as possible and assist you in solving the problem accordingly! 🙂
+
+<InlineVoucher />

@@ -1,9 +1,10 @@
 ---
 id: dedicated-linux-openvpn
-title: "Dedicated Server: Installation of OpenVPN"
-description: Information on how to install and set up OpenVPN on your server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup OpenVPN on a Linux Server - Create Your Secure VPN Infrastructure"
+description: "Discover how to secure your internet connection and access restricted content using OpenVPN on Linux servers → Learn more now"
 sidebar_label: Install OpenVPN
 services:
+  - vserver
   - dedicated
 ---
 
@@ -13,7 +14,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 OpenVPN is a powerful and versatile VPN software that enables a secure connection over the Internet. It is an open source solution that provides robust and configurable VPN technology to establish an encrypted connection between your device and a VPN server. By using OpenVPN, users can secure their internet connection, protect their online privacy and access geo-restricted content no matter where they are in the world. In this guide, we will explore the process of installing and configuring the **OpenVPN** service on a Linux server.
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -96,3 +97,5 @@ Connect via SFTP to your server to download the created .ovpn file and then dele
 :::info
 In case you have imported several files, you have to select the client you want to use and then click on Connect
 :::
+
+

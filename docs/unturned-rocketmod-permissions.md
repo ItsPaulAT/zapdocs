@@ -1,10 +1,10 @@
 ---
 id: unturned-rocketmod-permissions
 title: "Unturned: Adjusting server permissions"
-description: Information on how to customise the permissions for your Unturned Rocketmod server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Understand how to manage and customize server permissions effectively for better control and security → Learn more now"
 sidebar_label: Adjust Permissions
 services:
-  - gameserver
+  - gameserver-unturned
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -91,3 +91,5 @@ This would look like this in an example as follows:
 So it is always necessary to create a new line for new users who should be assigned to the group.
 If you have entered all desired users, you can save the config by clicking the "Save" button.
 Then start the server and you are assigned to the group in the game!
+
+<InlineVoucher />

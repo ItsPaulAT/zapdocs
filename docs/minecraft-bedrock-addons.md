@@ -1,10 +1,10 @@
 ---
 id: minecraft-bedrock-addons
 title: "Minecraft Bedrock: Install Addons"
-description: Information on how to install Addons on your Minecraft Bedrock server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your Minecraft Bedrock server with addons to expand gameplay and customize your world → Learn more now"
 sidebar_label: Install Addons
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -221,3 +221,5 @@ Start your server, connect to it, and verify that the addons have been installed
 ## Conclusion
 
 Installing addons on your Minecraft Bedrock Server is a great way to expand the gameplay experience and add new content. With this guide, you can easily install addons and customize your server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

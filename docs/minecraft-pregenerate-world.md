@@ -1,10 +1,10 @@
 ---
 id: minecraft-pregenerate-world
 title: "Minecraft: Pregenerate World (Chunks)"
-description: Information on how to pregenerate your world (chunks) on your Minecraft server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to pre-generate Minecraft worlds efficiently with plugins or mods for smoother gameplay and optimized server performance → Learn more now"
 sidebar_label: Pregenerate World (Chunks)
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import Tabs from '@theme/Tabs';
@@ -101,3 +101,5 @@ This section contains all the commands that can be used by Chunky to generate an
 ## Conclusion
 
 By following the steps, you have successfully installed Chunky and can now generate your world (chunks) in advance. Congratulations, provided you have successfully followed everything, you should have successfully established a connection to the server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

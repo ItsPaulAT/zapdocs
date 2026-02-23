@@ -1,10 +1,10 @@
 ---
 id: soulmask-configuration
 title: "Soulmask: Server Configuration"
-description: Information about configuring a Soulmask game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize Soulmask server settings and optimize gameplay configurations for a tailored gaming experience → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-soulmask
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -73,3 +73,5 @@ Head over to the following path and open the **GameXishu.json** file:
 This file consists a significant amount of gameplay configuration options that you can adjust to your liking.
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

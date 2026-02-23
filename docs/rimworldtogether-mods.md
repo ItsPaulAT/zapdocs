@@ -1,13 +1,15 @@
 ---
 id: rimworldtogether-mods
 title: "RimWorld Together: Installing mods"
-description: Information on how to install mods on your RimWorld Together server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your RimWorld Together server with popular mods for seamless online co-op gameplay → Learn more now"
 sidebar_label: Install Mods
 services:
   - gameserver
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableItemList from '@site/src/components/SearchableItemList/SearchableItemList';
+import items from '@site/data/lists/rimworldtogether-mods.json';
 
 ## Introduction
 
@@ -78,3 +80,11 @@ The server must be stopped before adding or editing mods, otherwise any edits ma
 Once you have uploaded the plugins that you wanted to have, simply start your server again. The next time your server starts, all the mods that you have added should be added to the server now.
 
 You have successfully installed new mods to your RimWorld Together gameserver!
+
+## Popular Mods
+
+Still looking for the perfect mods for your server? Browse through our carefully curated list of the most popular and highly recommended mods to enhance your gameplay and give your server the finishing touch it deserves. Get inspired and find exactly the additions that fit your project.
+
+<SearchableItemList items={items} />
+
+<InlineVoucher />

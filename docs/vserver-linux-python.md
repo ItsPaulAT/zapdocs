@@ -1,10 +1,11 @@
 ---
 id: vserver-linux-python
-title: "VPS: Installation of Python"
-description: Information on how to install and run python on your Linux server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup Python on a Linux Server - Enable Development and Automationn"
+description: "Learn how to install and update Python runtime on various Linux distros to ensure a secure and up-to-date environment → Learn more now"
 sidebar_label: Install Python
 services:
   - vserver
+  - dedicated
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -138,3 +139,5 @@ When you have finished working inside the venv you can go back by running the `d
 ## Conclusion
 
 Congratulations, you have successfully installed and configured Python! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

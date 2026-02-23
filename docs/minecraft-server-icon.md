@@ -1,10 +1,10 @@
 ---
 id: minecraft-server-icon
 title: "Minecraft: Add or change server icon"
-description: Information on how to add or change a server icon for your Minecraft server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize your Minecraft server icon for multiplayer display and enhance your server’s appearance → Learn more now"
 sidebar_label: Server Icon
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -47,3 +47,5 @@ If the name and size have now been matched, it is displayed in multiplayer in fr
 ![](https://screensaver01.zap-hosting.com/index.php/s/qzoySiJAPReZDfc/preview)
 
 The icon can also be exchanged or deleted at any time in this way.
+
+<InlineVoucher />

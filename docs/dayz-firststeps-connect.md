@@ -1,10 +1,10 @@
 ---
 id: dayz-firststeps-connect
 title: "DayZ: Connect to the server"
-description: Information about various ways on how to connect to your DayZ server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to connect to your DayZ server smoothly and get all essential tips for a hassle-free gaming experience → Learn more now"
 sidebar_label: Connect to the server
 services:
-  - gameserver
+  - gameserver-dayz
 ---
 
 import Tabs from '@theme/Tabs';
@@ -13,7 +13,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Introduction
-Not sure how to connect to your **DayZ** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need – from the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
+Not sure how to connect to your **DayZ** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need. From the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
 
 <InlineVoucher />
 
@@ -104,3 +104,5 @@ Congratulations, provided you have successfully followed everything, you should 
 
 
 
+
+<InlineVoucher />

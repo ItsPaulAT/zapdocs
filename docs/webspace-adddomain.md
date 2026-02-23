@@ -1,13 +1,15 @@
 ---
 id: webspace-adddomain
 title: "Webspace: Add a domain"
-description: Information on how to add a domain to your webspace from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to create and manage websites and email with Zap-Hosting web space for seamless online presence → Learn more now"
 sidebar_label: Add Domain
 services:
-  - webspace
+  - webspace	
+  - domain
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import InlineServiceLink from '@site/src/components/InlineServiceLink';
 
 ## Introduction
 
@@ -58,3 +60,5 @@ Confirmation may take some time. If you get errors during this change, a possibl
 If there were no problems with the change, this is confirmed in the Plesk interface. In order to be able to use this domain for the web space, the DNS settings must be configured in the domain management. How this works with domains ordered through us can be seen here.
 
 ![Bildschirmfoto vom 2022-05-13 05-19-40](https://screensaver01.zap-hosting.com/index.php/s/TecSRSimmCrRmYj/preview)
+
+<InlineVoucher />

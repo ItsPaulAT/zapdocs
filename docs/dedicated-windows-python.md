@@ -1,9 +1,10 @@
 ---
 id: dedicated-windows-python
-title: 'Dedicated Server: Installation of Python'
-description: Information on how to install and run Python on your Windows server from ZAP-Hosting.com - ZAP-Hosting.com documentation
+title: 'Setup Python on a Windows Server - Enable Development and Automation'
+description: "Learn how to install and set up Python runtime on Windows servers to run your Python programs efficiently → Learn more now"
 sidebar_label: Install Python
 services:
+  - vserver
   - dedicated
 ---
 
@@ -13,7 +14,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 This guide provides steps for the installation of Python runtime on Windows. The steps provided below must be executed via RDP, if you don't know how to connect to your server via RDP, please have a look at our [Initial Access (RDP)](vserver-windows-userdp.md) guide.
 
-<InlineVoucher />
+
 
 ## Installation
 
@@ -81,3 +82,5 @@ When you have finished working inside the venv you can go back by running the `d
 ## Conclusion
 
 Congratulations, you have successfully installed Python. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+

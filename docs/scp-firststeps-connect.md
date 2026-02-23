@@ -1,10 +1,10 @@
 ---
 id: scp-firststeps-connect
 title: "SCP Secret Laboratory: Connect to the server"
-description: Information on how to connect to an SCP Secret Laboratory Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to successfully connect to your game server by understanding prerequisites and server info for a seamless gaming experience → Learn more now"
 sidebar_label: Connect to the server
 services:
-  - gameserver
+  - gameserver-scp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -68,3 +68,5 @@ A lack of visibility of the server can occur if the initialization was not compl
 
 
 The mentioned solutions have not solved your problem yet or do not apply in your case? In this case, we are also available to you daily in support. Simply create a **[Ticket](https://zap-hosting.com/en/customer/support/)** and explain your problem to us. We will have a look at it as quickly as possible and assist you in solving the problem accordingly! 🙂
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: mta-becomeadmin
 title: "Multi Theft Auto: Become an admin on MTA servers"
-description: Information on how to become an admin on your MTA server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign administrator permissions for full server control and efficient game management → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-mta
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -83,3 +83,5 @@ login USERNAME PASSWORD
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
 
+
+<InlineVoucher />

@@ -1,13 +1,15 @@
 ---
 id: voicebot-introduction
 title: "Voicebot: Introduction"
-description: Introduction and information about the Voicebot products from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to enhance your Teamspeak or Discord server with a versatile Voicebot for music and moderation → Learn more now"
 sidebar_label: Introduction
 services:
   - voicebot
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableAccordion from '@site/src/components/SearchableAccordion/SearchableAccordion';
+import items from '@site/data/faqs/voicebot-introduction.json';
 
 ## Introduction
 
@@ -26,3 +28,11 @@ The ordering process is quite simple. Choose your desired configuration for your
 
 ## Areas of application
 The Voicebot for Teamspeak 3 and Discord is a versatile tool used for playing music in voice channels. Use your Voicebot for music, moderation, interactions, and much more!
+
+
+## Frequently Asked Questions
+Got more questions about our Voicebot product? Get answers to everything you want to know about features, benefits, setup and how to use it effectively. This way you get the info you need to make the most of our Voicebot product. And if something is still unclear, just reach out and we are here to help you right away.
+<SearchableAccordion items={items} />
+
+
+<InlineVoucher />

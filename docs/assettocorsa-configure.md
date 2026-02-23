@@ -1,10 +1,10 @@
 ---
 id: assettocorsa-configure
 title: "Assetto Corsa: Configure your server"
-description: Information about the configuration options of your Assetto Corsa server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to configure your Assetto Corsa server with custom maps and cars for optimal gameplay experience → Learn more now"
 sidebar_label: Configure Server
 services:
-  - gameserver
+  - gameserver-assettocorsa
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -87,3 +87,5 @@ These Configs can now be copied via Drag&Drop into the "cfg" folder of your game
 ![](https://screensaver01.zap-hosting.com/index.php/s/YKHtnDMSqBgssDc/preview)
 
 The server can now be started with the new Config.
+
+<InlineVoucher />

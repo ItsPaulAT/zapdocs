@@ -1,10 +1,10 @@
 ---
 id: ark-becomeadmin
 title: "ARK: Become an admin"
-description: Information on how to become an admin on your ARK server at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage your game server with full admin control and enhance gameplay experience → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-ark
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -60,3 +60,5 @@ Afterwards you can execute all server commands as admin. In the following you wi
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

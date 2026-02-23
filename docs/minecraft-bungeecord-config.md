@@ -1,10 +1,10 @@
 ---
 id: minecraft-bungeecord-config
 title: "Minecraft: Bungeecord Server Server Config Settings"
-description: Information about the server config settings for your bungeecord server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Understand how to optimize and manage your BungeeCord server network settings for better performance and player experience → Learn more now"
 sidebar_label: Server Properties
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -123,3 +123,5 @@ Here BungeeCord inserts a randomly generated code. It is recommended not to chan
 ### connection_throttle_limit
 
 This value determines the number of connection attempts the player has until he has to wait for the specified value of *connection_throttle* before he can try to connect to the server again.
+
+<InlineVoucher />

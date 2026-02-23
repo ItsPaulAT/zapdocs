@@ -1,13 +1,15 @@
 ---
 id: webspace-introduction
 title: "Webspace: Introduction"
-description: Introduction and information about the Webspace product from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover affordable web hosting solutions with flexible configurations and instant setup to launch your online presence quickly → Learn more now"
 sidebar_label: Introduction
 services:
   - webspace
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableAccordion from '@site/src/components/SearchableAccordion/SearchableAccordion';
+import items from '@site/data/faqs/webspace-introduction.json';
 
 ## Introduction
 
@@ -52,3 +54,10 @@ Due to the favorable price, performance, extensive access permissions, and the a
 - Websites
 - Databases
 - Mail traffic
+
+
+## Frequently Asked Questions
+Got more questions about our Webspace product? Get answers to everything you want to know about features, benefits, setup and how to use it effectively. This way you get the info you need to make the most of our Webspace product. And if something is still unclear, just reach out and we are here to help you right away.
+<SearchableAccordion items={items} />
+
+<InlineVoucher />

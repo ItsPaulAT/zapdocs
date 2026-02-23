@@ -1,10 +1,10 @@
 ---
 id: minecraft-addop
 title: "Minecraft: Server Assigning OP rights"
-description: Information on how to assign and edit OP rights for your Minecraft server from ZAP-Hosting.com - ZAP-Hosting.com documentation
+description: "Discover how to assign OP rights to players and manage server permissions effectively for better game control → Learn more now"
 sidebar_label: OP-Permissions
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -58,3 +58,5 @@ Now the value of "level" must be set to the desired level for the desired player
 ![](https://screensaver01.zap-hosting.com/index.php/s/WKQkAR3oALsSNAc/preview)
 
 In order for the changes to take effect, the server must be restarted, which is possible by holding the red Stop button in the server interface.
+
+<InlineVoucher />

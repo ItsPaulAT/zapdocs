@@ -1,10 +1,10 @@
 ---
 id: redm-change-servericon
 title: "RedM:  Change icon for server list"
-description: Information on how to change the server icon for RedM servers from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize your RedM server icon with a perfect 96x96 PNG image for a unique look → Learn more now"
 sidebar_label: Change server icon
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -49,3 +49,5 @@ Please ensure that the name of the image file set in the command exactly matches
 ## Conclusion
 
 Provided that you have followed all the steps, your new server icon should be displayed the next time you restart the server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: ats-firststeps-connect
-title: "American Truck Simulator: Zum Server verbinden"
-description: Informationen über verschiedene Möglichkeiten, wie du dich mit deinem American Truck Simulator Server von ZAP-Hosting verbinden kannst - ZAP-Hosting Dokumentation
-sidebar_label: Zum Server verbinden
+title: "American Truck Simulator: Verbindung zum Server herstellen"
+description: "Entdecke, wie du dich nahtlos mit deinem American Truck Simulator Gameserver verbindest und ununterbrochen zockst → Jetzt mehr erfahren"
+sidebar_label: Verbindung zum Server
 services:
-  - gameserver
+  - gameserver-ats
 ---
 
 import Tabs from '@theme/Tabs';
@@ -14,41 +14,42 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Einführung
-
-Unsicher, wie du dich mit deinem **American Truck Simulator** Server verbinden kannst oder was du dafür benötigst? Kein Problem, wir helfen dir weiter! Wir führen dich durch alles, was du benötigst - von den erforderlichen Werkzeugen und Informationen bis hin zum eigentlichen Verbindungsprozess und den wesentlichen Punkten, die für eine reibungslose und störungsfreie Verbindung erforderlich sind. Befolge unsere Anleitung und du wirst in kürzester Zeit verbunden sein!
+Du bist dir nicht sicher, wie du dich mit deinem **American Truck Simulator** Gameserver verbindest oder was du dafür brauchst? Kein Stress, wir helfen dir! Wir zeigen dir alles, was du wissen musst. Von den nötigen Tools und Infos bis hin zum eigentlichen Verbindungsprozess – inklusive wichtiger Tipps, damit alles reibungslos läuft. Folge unserer Anleitung und du bist im Handumdrehen verbunden!
 
 <InlineVoucher />
 
 
 
-## Server-Details abrufen
+## Serverdetails besorgen
 
-Du benötigst alle relevanten Informationen, um dich mit deinem Server zu verbinden. Die Informationen zu deinem Server findest du im Dashboard des Webinterfaces deines Gameservers. Zu den wichtigen Informationen gehören die folgenden: 
 
-- Name des Servers
- - Search Session ID (Live Konsole)
+Du brauchst alle relevanten Infos, um dich mit deinem Server zu verbinden. Diese findest du im Dashboard deines Gameserver-Webinterface-Panels. Wichtige Infos sind unter anderem:
 
-Anhand der oben genannten Informationen solltest du in der Lage sein, deinen Server zu finden und sicherzustellen, dass du dich mit dem richtigen Server verbindest. 
+- Servername
+- Such-Session-ID (Live-Konsole)
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/iWPCFHHzda7Bycc/preview)
+
+Mit diesen Infos kannst du deinen Server finden und sicherstellen, dass du dich mit dem richtigen Server verbindest.
+
+![img](https://screensaver01.zap-hosting.com/index.php/s/nt6QERDL64wpwcs/preview)
 
 ## Verbindung zum Server herstellen
 
-Die Verbindung zu einem Gameserver kann häufig auf eine oder mehrere Arten hergestellt werden. Die verfügbaren Methoden werden im Folgenden ausführlich beschrieben und erklärt. 
+
+Die Verbindung zu einem Gameserver kann oft auf verschiedene Arten erfolgen. Die verfügbaren Methoden werden hier detailliert beschrieben und erklärt.
 
 <Tabs>
     <TabItem value="connect_solution_server_browser_ingame" label="Server Browser (Im Spiel)" default>
 
-Um eine Verbindung zu deinem Server herzustellen, musst du deine Karriere im Spiel beginnen oder fortsetzen. Klicke dann auf **Convoy** und rufe **Convoy Lobby** auf. Es öffnet sich die Serverliste, in der du anhand des Servernamens nach deinem Server suchen kannst.
+Um dich mit einem Server zu verbinden, musst du deine **Karriere** im Spiel starten oder fortsetzen. Klicke dann auf **Konvoi** und öffne die **Konvoi-Lobby**. Die Serverliste öffnet sich, in der du deinen Server über den Servernamen suchen kannst. 
 
 :::warning Server nicht sichtbar?
- Wenn du deinen Server nicht über den Servernamen finden kannst, kannst du alternativ nach der Session Search ID in der Live-Konsole suchen und diese verwenden, um deinen Server zu suchen und zu finden. Kopieren die Search Session ID ohne den Teil „/101“. 
+Wenn du deinen Server über den Servernamen nicht findest, kannst du alternativ die Such-Session-ID aus der Live-Konsole verwenden, um deinen Server zu suchen und zu finden. Kopiere die Such-Session-ID ohne den „/101“-Teil. 
 :::
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/DEFXR75KxXAybxG/download)
 
 </TabItem>
-
 
 </Tabs>
 
@@ -56,23 +57,28 @@ Um eine Verbindung zu deinem Server herzustellen, musst du deine Karriere im Spi
 
 ## Mögliche Probleme und Lösungen
 
-Die Verbindung zum Server kann nicht wie erwartet hergestellt werden? Dies kann in bestimmten Situationen vorkommen, z. B. wenn die Verbindung aufgrund von technischen Problemen fehlschlägt. Im Folgenden haben wir die häufigsten Probleme und ihre Lösungen aufgeführt:
+
+Die Verbindung zu einem Gameserver kann oft auf verschiedene Arten erfolgen. Die verfügbaren Methoden werden hier detailliert beschrieben und erklärt.
 
 #### Nicht sichtbar
 
-Eine fehlende Sichtbarkeit des Servers kann auftreten, wenn die Initialisierung nicht erfolgreich abgeschlossen wurde. Dies kann beispielsweise auf eine fehlerhafte Konfiguration oder beschädigte Dateien zurückzuführen sein. Weitere Informationen können in der Regel in der Serverkonsole oder in den Logdateien nachvollzogen werden.
+
+Wenn der Server nicht sichtbar ist, kann das daran liegen, dass die Initialisierung nicht erfolgreich abgeschlossen wurde. Das kann z.B. an einer fehlerhaften Konfiguration oder beschädigten Dateien liegen. Weitere Infos findest du meist in der Serverkonsole oder in den Logdateien.
 
 
 
-#### Fehlende Lösung oder nicht hilfreich
-
-Hast du nach der Fehlersuche weiterhin Probleme? In diesem Fall steht unser Support-Team täglich zur Verfügung, um dir zu helfen. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und erkläre uns dein Problem mit so vielen Einzelheiten wie möglich. Wir werden uns so schnell wie möglich darum kümmern und dir bei der Lösung des Problems helfen!
+#### Keine Lösung oder nicht hilfreich
 
 
-
-## Abschluss
-
-Glückwunsch, vorausgesetzt, dass du alle Schritte befolgt hast, solltest du erfolgreich eine Verbindung zum Server hergestellt haben. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Du hast nach der Fehlersuche immer noch Probleme? Kein Ding, unser Support-Team ist täglich für dich da! Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und beschreibe dein Problem so genau wie möglich. Wir schauen uns das schnellstmöglich an und helfen dir, das Problem zu lösen!
 
 
 
+## Fazit
+
+Glückwunsch, wenn du alles befolgt hast, solltest du jetzt erfolgreich mit dem Server verbunden sein. Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+
+
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: webspace-wordpress
 title: "Webspace: Install WordPress"
-description: Information on how to install WordPress on your webspace from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up WordPress on your webspace to create and manage your website efficiently → Learn more now"
 sidebar_label: Install
 services:
   - webspace
@@ -108,3 +108,5 @@ Once all fields have been fulfilled, click on **Install WordPress**. The install
 ## Conclusion
 
 Congratulations, you have installed WordPress on your webspace. If you have any further questions or problems, please contact our support team, who are available to help you every day!
+
+<InlineVoucher />

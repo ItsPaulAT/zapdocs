@@ -1,7 +1,7 @@
 ---
 id: vserver-windows-userdp
 title: "VPS: Accessing Windows Server via Remote Desktop (RDP)"
-description: Information on accessing your Windows VPS from ZAP-Hosting using Remote Desktop (RDP) - ZAP-Hosting.com documentation
+description: "Discover how to securely connect to your Windows server remotely using RDP and manage access with ease → Learn more now"
 sidebar_label: Initial Access (RDP)
 services:
   - vserver
@@ -62,3 +62,5 @@ The following programs are great alternatives that are suitable for connecting t
 In modern times, Microsoft provides an official Remote Desktop (RDP) app for both major mobile operating systems. We recommend using these on mobile as they have alot of useful features.
 
 The app can be found here respectively to the platform: [Android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx&hl=en) and [iOS](https://apps.apple.com/us/app/remote-desktop-mobile/id714464092)
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: dedicated-linux-sshkey
 title: "Dedicated Server: Generating and using SSH keys for Linux servers"
-description: Information on how to generate an SSH key for on your Linux Dedicated Server from ZAP-Hosting and how to use the key - ZAP-Hosting.com documentation
+description: "Discover how to securely generate and manage SSH keys for your Linux server to enhance connection safety → Learn more now"
 sidebar_label: SSH Key
 services:
   - dedicated
@@ -9,7 +9,7 @@ services:
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
-<InlineVoucher />
+
 
 ## Generate SSH Key
 
@@ -95,22 +95,4 @@ Once its deceactivated, its no longer possible to reach the server via password 
 The display for "**SSH login via password**" would then also be set to "**Inactive**".
 
 
-### Linux Root server
 
-Unfortunately, this function does not exist with Linux root servers; there it would have to be done manually via SSH. To do this, connect to the server via PuTTY and change the following file with a text editor of your choice. In our example we use "**nano**".
-
-```
-nano /etc/ssh/sshd_config
-```
-
-In this file, "**PasswordAuthentification**" must now be changed from "**yes**" to "**no**".
-In addition, the hash (#) in front of "**PasswordAuthentification**" must be removed.
-
-If "**#PasswordAuthentification yes**" has been changed to "**PasswordAuthentification no**" you can close the file on Nano with "**CTRL**" + "**X**" and save the changes with "**Y**".
-
-
-The SSH service must then be restarted so that the changes are immediately active. Alternatively, these would only be active after a server restart.
-
-```
-service sshd restart
-```

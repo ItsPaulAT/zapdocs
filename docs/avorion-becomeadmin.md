@@ -1,10 +1,10 @@
 ---
 id: avorion-becomeadmin
 title: "Avorion: Become an admin on your own server"
-description: Information on how to become admin on your Avorion server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign administrator permissions for full server control and manage game functions effectively → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-avorion
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -111,3 +111,5 @@ Here you will find an overview of common commands that you can execute as admin.
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

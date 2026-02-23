@@ -1,10 +1,10 @@
 ---
 id: foundry-configuration
 title: "Foundry: Server Configuration"
-description: Information about configuring a Foundry game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize Foundry server settings for optimal gameplay and server management → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-foundry
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -90,3 +90,5 @@ We do not recommending changing the Port settings, as these are automatically co
 | autosave_interval       | 300         | Set how often the server saves in seconds                                         |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

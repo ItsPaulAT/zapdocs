@@ -1,10 +1,10 @@
 ---
 id: fivem-mods-installaddon
 title: "FiveM: Install Addon Carmods on Server"
-description: Information on how to install Addon Carmods on your FiveM server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to easily download and convert car mods for FiveM to enhance your game experience with step-by-step guidance → Learn more now"
 sidebar_label: Install Addon Carmods
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -70,3 +70,5 @@ We can now simply upload these via [Install resources](fivem-installresources.md
 
 
 Done! The Carmods are now installed on your server, after a restart of the server they can be used.
+
+<InlineVoucher />

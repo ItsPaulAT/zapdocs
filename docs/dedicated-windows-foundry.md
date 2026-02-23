@@ -1,9 +1,10 @@
 ---
 id: dedicated-windows-foundry
-title: "Dedicated Server: Foundry Dedicated Server Windows Setup"
-description: Information about setting up a Foundry Dedicated Server on a Windows Dedicated Server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Foundry Dedicated Server Windows Setup"
+description: "Discover how to set up a Foundry Dedicated Server on your Windows server quickly and efficiently → Learn more now"
 sidebar_label: Foundry
 services:
+  - vserver
   - dedicated
 ---
 
@@ -12,15 +13,15 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 
-Do you have a Windows VPS, root server or dedicated server and you want to install the Foundry Dedicated server service on it? You are in the right place. In this guide, we will explain the step by step process of installing this service on your server.
+Do you have a Windows VPS/Dedicated Server and you want to install the Foundry Dedicated server service on it? You are in the right place. In this guide, we will explain the step by step process of installing this service on your server.
 
-<YouTube videoId="bRsZNqKsghA" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/e7inNNGMd5Wwcsp/preview" title="How To Setup Foundry Dedicated Server on Windows VPS!" description="Feel like you understand better when you see things in action? We’ve got you! Dive into our video that breaks it all down for you. Whether you're in a rush or just prefer to soak up information in the most engaging way possible!"/>
+<YouTube videoId="bRsZNqKsghA" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/e7inNNGMd5Wwcsp/preview" title="How To Setup Foundry Dedicated Server on Windows VPS/Dedicated Server!" description="Feel like you understand better when you see things in action? We’ve got you! Dive into our video that breaks it all down for you. Whether you're in a rush or just prefer to soak up information in the most engaging way possible!"/>
 
-<InlineVoucher />
+
 
 ## Preparation
 
-To begin with, connect to your VPS or root server through Remote Desktop (RDP). Use our [Initial Access (RDP)](vserver-windows-userdp.md) guide if you need help doing this.
+To begin with, connect to your VPS/Dedicated Server through Remote Desktop (RDP). Use our [Initial Access (RDP)](vserver-windows-userdp.md) guide if you need help doing this.
 
 Once you have accessed your server, you will need to setup **SteamCMD** in order to be able to download the necessary dedicated server files. SteamCMD is the **command-line (CLI)** version of the Steam client and is the tool which allows you to easily download a range of Steam workshop and dedicated server files. Download [SteamCMD from the official Valve website](https://developer.valvesoftware.com/wiki/SteamCMD) or directly [here](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip).
 
@@ -28,7 +29,7 @@ Create a new folder somewhere on your server, in this scenario we will name it `
 
 Simply run **steamcmd.exe** and await until the installation process is fully completed.
 
-![](https://github.com/zaphosting/docs/assets/42719082/ffb8e8a1-26e3-4d16-9baf-938e17ec1613)
+![](https://screensaver01.zap-hosting.com/index.php/s/XPJF72x6MmBLCt2/preview)
 
 As soon as the message **Loading Steam API.... OK** is displayed, the process has been completed successfully and you can being with the installation of the Foundry dedicated server in the following section.
 
@@ -47,7 +48,7 @@ force_install_dir C:\Foundry-Server
 
 Now run the command `app_update 2915550` which will begin the download. The App ID **2915550** is the **Foundry** application.
 
-![](https://github.com/zaphosting/docs/assets/42719082/b265a784-cf9a-43dc-b100-376f080e18f3)
+![](https://screensaver01.zap-hosting.com/index.php/s/JpS7WeHDTmeqeH7/preview)
 
 :::info
 Please do not interrupt the process before it is completed to avoid mistakes. It may take a moment, but it's worth being patient! :)
@@ -57,7 +58,7 @@ Once successful, head over to the download directory, where all of the server fi
 
 ### Port Forwarding your server
 
-In order to ensure that your server is accessible to the public, you must alter port forwarding rules for the ports that the dedicated server process is using. You can do this either through PowerShell commands directly, which is easier, or regularly through the Windows Defender Firewall page.
+In order to ensure that your server is accessible to the public, you must alter port forwarding rules for the ports that the VPS/Dedicated Server process is using. You can do this either through PowerShell commands directly, which is easier, or regularly through the Windows Defender Firewall page.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -87,7 +88,7 @@ These commands will automatically create firewall rules which are necessary for 
 
 Use the search function on Windows to open up **Windows Firewall Settings with Advanced Security**. You may have to press **Advanced Settings** to open up the necessary window if you open up the base Windows Firewall page.
 
-![](https://github.com/zaphosting/docs/assets/42719082/5fb9f943-7e51-4d8f-9df4-2f5ff60857d3)
+![](https://screensaver01.zap-hosting.com/index.php/s/FnTnwd3dQ6bWMky/preview)
 
 You must create new rules for your Foundry server. To do this, click on the incoming and outgoing rules as described below and add them for the following protocols and ports:
 - TCP incoming and outgoing: 3724, 27015
@@ -126,3 +127,5 @@ You will now be able to direct connect to your server via your IP by heading to 
 If you wish your server to be available in the server list, please check out our [Server Configuration](foundry-configuration.md) guide and add the appropriate `server_name` and `server_is_public` parameters into your configuration file. Save the file once done and run the server executable again.
 
 You have successfully installed Foundry on your Windows Dedicated Server.
+
+

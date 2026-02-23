@@ -1,10 +1,10 @@
 ---
 id: fivem-whitelist
 title: "FiveM: Whitelist"
-description: Information on how to use a whitelist with FiveM Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to restrict server access using whitelists to enhance security and control player entry → Learn more now"
 sidebar_label: Whitelist
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -43,3 +43,5 @@ The player licence Identifier must be whitelisted by a txAdmin administrator. Th
 ## Conclusion
 
 Provided that you have followed all the steps, your have successfully enabled and configured the whitelist for your server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

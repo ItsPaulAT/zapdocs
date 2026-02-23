@@ -1,10 +1,10 @@
 ---
 id: 7d2d-firststeps-connect
 title: "7 Days To Die: Connect to the server"
-description: Information about various ways on how to connect to your 7 Days To Die server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to connect seamlessly to your 7 Days To Die server and troubleshoot common issues for uninterrupted gameplay → Learn more now"
 sidebar_label: Connect to the server
 services:
-  - gameserver
+  - gameserver-7d2d
 ---
 
 import Tabs from '@theme/Tabs';
@@ -13,7 +13,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Introduction
-Not sure how to connect to your **7 Days To Die** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need – from the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
+Not sure how to connect to your **7 Days To Die** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need. From the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
 
 <InlineVoucher />
 
@@ -35,7 +35,7 @@ Using the information mentioned above, you should be able to locate your server 
 The connection to a game server can often be established in one or more ways. Available methods are described and explained in detail below.
 
 <Tabs>
-    <TabItem value="connect_solution_server_direct" label="Dicect connect (In game)" default>
+    <TabItem value="connect_solution_server_direct" label="Direct connect (In game)" default>
 
 To connect to your server open the game. Once in the game, click on **Join a game**. Click **Connect to IP** at the bottom and enter the IP address and port of the server in the window. 
 
@@ -69,3 +69,5 @@ Congratulations, provided you have successfully followed everything, you should 
 
 
 
+
+<InlineVoucher />

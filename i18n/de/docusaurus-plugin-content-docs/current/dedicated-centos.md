@@ -1,7 +1,7 @@
 ---
 id: dedicated-centos
-title: "Dedicated Server: Instalaltion von CentOS"
-description: Informationen zu der Installation des CentOS Betriebssystem auf deinem Dedicated Server von ZAP-Hosting - ZAP-Hosting.com Dokumentation
+title: "Dedicated Server: Installation von CentOS"
+description: "Entdecke, wie du CentOS erfolgreich auf deinem Dedicated Server installierst und konfigurierst für optimale Performance und Sicherheit → Jetzt mehr erfahren"
 sidebar_label: CentOS installieren
 services:
   - dedicated
@@ -11,50 +11,54 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Im Folgenden wird dir Schritt für Schritt erklärt, wie du das CentOS Betriebssystem auf deinem Dedicated Server installieren und konfigurieren kannst. Folge diesen Anweisungen sorgfältig, um sicherzustellen, dass du das Betriebssystem erfolgreich einrichtest und optimal nutzt.
+Im Folgenden erklären wir dir Schritt für Schritt, wie du das CentOS-Betriebssystem auf deinem Dedicated Server installierst und konfigurierst. Folge diesen Anweisungen genau, damit du das Betriebssystem erfolgreich einrichtest und optimal nutzen kannst.
 
 :::info
-Der Aufbau der Anleitung basiert auf der Verwendung des CentOS 8.3 Betriebssystems. Installationen von früheren oder neueren Versionen können hinsichtlich des Prozesses leicht abweichen.
+
+Die Struktur der Anleitung basiert auf der Nutzung von CentOS 8.3. Installationen von älteren oder neueren Versionen können im Ablauf leicht abweichen.
+
 :::
 
-<InlineVoucher />
+
 
 ## Vorbereitung
 
-Für die Installation und Konfiguration eines Betriebssystems ist es zunächst wichtig, dass die entsprechende ISO vom Betriebssystem gemountet wird. Für das Mounten gibt es mehrere mögliche Wege: 
+Für die Installation und Konfiguration eines Betriebssystems ist es zunächst wichtig, das passende ISO-Image des Betriebssystems zu mounten. Es gibt mehrere Möglichkeiten, das ISO zu mounten:
 
 1. Mounten über die Ersteinrichtung
-2. Mounten über die iLO (Virtual Media)
-3. Mounten über die iLO (Remote Console)
+2. Mounten über iLO (Virtual Media)
+3. Mounten über iLO (Remote Console)
 
-Solltest du mit dem Mounten einer ISO-Datei noch nicht vertraut sein, dann schaue dir am besten unsere [Ersteinrichtung](dedicated-setup.md) oder [Eigene ISO](dedicated-iso.md) Anleitung an.
+Wenn du noch nicht vertraut bist mit dem Mounten einer ISO-Datei, empfehlen wir dir unsere [Ersteinrichtung](dedicated-setup.md) oder die [Eigene ISO](dedicated-iso.md) Anleitung.
 
 
 
 ## Installation
-Wenn die ISO erfolgreich geladen wurde, ist der Server erfolgreich im Setup.
+
+Wenn das ISO erfolgreich geladen wurde, befindet sich der Server im Setup-Prozess.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/YFQt6Jmw5wi4QZZ/preview)
 
-* Keyboard
-Wähle hier dein gewünschtes Tastaturlayout
+* Tastatur  
+Wähle dein bevorzugtes Tastaturlayout
 
-* Time & Date 
-Wähle deine gewünschte Zeitzone
+* Zeit & Datum  
+Wähle deine Zeitzone aus
 
-* Root Password
-Wähle das gewünschte Passwort, für den Root-Account
+* Root-Passwort  
+Lege ein Passwort für deinen Root-Account fest. Dieses kann beliebig sein, aber denk daran, ein starkes Passwort zu verwenden und es sicher zu speichern.
 
-* Installation Destination
-Wähle die SSD auf welche CentOS installiert werden soll
+* Installationsziel  
+Wähle die SSD aus, auf der CentOS installiert werden soll
 
-* Network & Hostname
-Aufgrund einer Inkompatibilität im Kernel muss zuerst ein Update eingespielt werden, damit dein Dedicated Server eine Netzwerkverbindung aufbauen kann.
-Die genauen Schritte werden unter Netzwerk erklärt.
+* Netzwerk & Hostname  
+Aufgrund eines Inkompatibilitätsproblems konnte das Netzwerk noch nicht eingerichtet werden, das machen wir am Ende.
 
-Wenn du alles gewünschte konfiguriert hast, klicke auf "Begin Installation"![](https://screensaver01.zap-hosting.com/index.php/s/iqF8KzziQix3jyd/preview)
+Wenn du alle Einstellungen nach deinen Wünschen konfiguriert hast, klicke auf „Installation starten“.
 
-Wenn die Installation abgeschlossen ist, entferne die ISO-Datei von deinem Server und klicke "Reboot System"
+![](https://screensaver01.zap-hosting.com/index.php/s/iqF8KzziQix3jyd/preview)
+
+Nach Abschluss der Installation entferne die ISO-Datei von deinem Server und klicke auf „System neu starten“.
 
 
 
@@ -62,33 +66,32 @@ Wenn die Installation abgeschlossen ist, entferne die ISO-Datei von deinem Serve
 
 ### Netzwerk
 
-In diesem Schritt muss noch die Netzwerkschnittstelle konfiguriert werden, hierzu ist ein Update notwendig.
-Lade unsere ISO-Datei in deinen Server, entweder über deine Remote Console oder die iLO selbst.
+Als nächstes konfigurieren wir das Netzwerkgerät, dafür müssen einige Dateien aktualisiert werden. Bitte mounte diese ISO-Datei auf deinem Server, entweder über die Remote-Konsole oder direkt über iLO.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/skiKLacFGZnMwr9/preview)
 
 ```http://185.223.30.65/dedicatedisos/centos-network-554flb.iso```
 
-Nachdem die ISO-Datei erfolgreich eingebunden ist, müssen wir diese noch mounten, um darauf zugreifen zu können.
+Nachdem die ISO-Datei erfolgreich gemountet wurde, müssen wir sie im System einbinden, um darauf zugreifen zu können.
 
 ```mount /dev/sr0 /mnt```
 
-Die ISO-Datei ist nun nach /mnt gemountet.
+Die ISO-Datei ist jetzt unter `/mnt` gemountet.
 
 ```rpm -i /mnt/be2net.rpm```
 
-Wir müssen jetzt das Update Paket laden.
+Installiere als nächstes das Update-Paket.
 
 ```modprobe be2net```
 
-Nun das Paket ausführen und installieren. Das kann einen kurzen Augenblick dauern.
-Danach kann mit `ip a s` geprüft werden, ob unser Netzwerkadapter `eno1` nun angezeigt wird, falls ja, müssen wir nun das System neu starten.
+In diesem Schritt führen wir das Update aus, das kann ein paar Sekunden dauern.  
+Du kannst jetzt mit `ip a s` prüfen, ob ein Netzwerkgerät namens `eno1` existiert. Falls ja, starte dein System bitte neu.
 
-Nach einem Neustart müssen wir jetzt noch den Netzwerkadapter selbst konfigurieren.
+Nach dem Neustart geht es weiter mit der Konfiguration des Netzwerkgeräts.
 
 ```nano /etc/sysconfig/network-scripts/ifcfg-eno1```
 
-In dieser Datei müssen wir folgenden Inhalt eintragen:
+Trage bitte folgende Daten in die Datei ein:
 
 ```
 DEVICE=eno1
@@ -96,16 +99,18 @@ BOOTPROTO=dhcp
 ONBOOT=yes
 ```
 
-Mit `STRG+X` und `Y` velassen wir nano wieder und speichern die Änderungen.
+Nano verlässt du mit `CTRL+X` und bestätigst mit `Y`.
 
-Als Letztes müssen wir noch den Netzwerkadapter starten, dies kann mit `ifup eno1` erledigt werden.
+Jetzt starten wir unser Netzwerkgerät mit `ifup eno1`.
 
 :::info
-Dein Dedicated Server hat nun eine Internetverbindung
+Dein Dedicated Server sollte jetzt eine funktionierende Internetverbindung haben.
 :::
 
 
 
-## Abschluss
 
-Glückwunsch, du hast das CentOS Betriebssystem erfolgreich installiert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+
+## Fazit
+
+Glückwunsch, du hast CentOS erfolgreich auf deinem Dedicated Server installiert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂

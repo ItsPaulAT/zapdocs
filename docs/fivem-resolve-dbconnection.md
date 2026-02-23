@@ -1,10 +1,10 @@
 ---
 id: fivem-resolve-dbconnection
 title: "FiveM: Resolve Database Connection issues"
-description: Information on how to resolve any issues with database connection on a FiveM from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to fix FiveM server database connection issues and restore seamless communication with your database → Learn more now"
 sidebar_label: Resolve DB Connection
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -54,3 +54,5 @@ Once this has been completed, make sure to save the file and restart your server
 ## Conclusion
 
 The next time the server launches, your database should be accessible again by your server and thus should fully function. You have successfully resolved your database connection issues. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

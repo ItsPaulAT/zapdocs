@@ -1,0 +1,54 @@
+{
+  "title": {
+    "message": "ZAP-Hosting guide",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "ZAP-Hosting",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.General": {
+    "message": "Allmänt",
+    "description": "Navbar item with label General"
+  },
+  "item.label.Gameserver": {
+    "message": "Spelserver",
+    "description": "Navbar item with label Gameserver"
+  },
+  "item.label.VPS": {
+    "message": "VPS",
+    "description": "Navbar item with label VPS"
+  },
+  "item.label.Dedicated Server": {
+    "message": "Dedikerad server",
+    "description": "Navbar item with label Dedicated Server"
+  },
+  "item.label.Domain & Webspace": {
+    "message": "Domän & webbhotell",
+    "description": "Navbar item with label Domain & Webspace"
+  },
+  "item.label.Voicebot & Voiceserver": {
+    "message": "Röstbot & röstserver",
+    "description": "Navbar item with label Voicebot & Voiceserver"
+  },
+  "item.label.Domain": {
+    "message": "Domän",
+    "description": "Navbar item with label Domain"
+  },
+  "item.label.Webspace": {
+    "message": "Webbhotell",
+    "description": "Navbar item with label Webspace"
+  },
+  "item.label.Software": {
+    "message": "Programvara",
+    "description": "Navbar item with label Software"
+  },
+  "item.label.Rent a Server": {
+    "message": "Hyr en server",
+    "description": "Navbar item with label Rent a Server"
+  },
+  "item.label.ZAP-Hosting": {
+    "message": "ZAP-Hosting",
+    "description": "Navbar item with label ZAP-Hosting"
+  }
+}

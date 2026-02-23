@@ -1,7 +1,7 @@
 ---
 id: voiceserver-query
 title: "Voiceserver: Access TeamSpeak Query"
-description: Information on how to set up a TS query login for your Teamspeak server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage your TeamSpeak server externally using Query Login for efficient server control and administration → Learn more now"
 sidebar_label: Query Login
 services:
   - voiceserver
@@ -49,9 +49,9 @@ The Server IP, the Query Port and the Server Port can be viewed on the Dashboard
 ![](https://screensaver01.zap-hosting.com/index.php/s/RGsk8wfBkoCPzA4/preview)
 
 </TabItem>
-<TabItem value="self_hosted" label="Self hosted (vRootserver/Dedicated Server)">
+<TabItem value="self_hosted" label="Self hosted (VPS/Dedicated Server)">
 
-If the Teamspeak server has been installed on your own VPS or root server via the web interface, the normal "Server Admin Query" can be used. The login data can be found in the web interface of the Teamspeak instance. 
+If the Teamspeak server has been installed on your own VPS or Dedicated Server via the web interface, the normal "Server Admin Query" can be used. The login data can be found in the web interface of the Teamspeak instance. 
 
 </TabItem>
 </Tabs>
@@ -71,3 +71,5 @@ By default, an error should occur after an initial installation if you specify a
 ## Conclusion
 
 You have successfully established a connection to the query by using YatQA. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: voiceserver-query
-title: "Voiceserver: Teamspeak Query Login einrichten"
-description: Informationen, wie du einen TS Query Login für deinen Teamspeak Server von ZAP-Hosting einrichten kannst - ZAP-Hosting.com Dokumentation
+title: "Voiceserver: TeamSpeak Query Zugriff"
+description: "Entdecke, wie du deinen TeamSpeak Server extern über Query Login effizient verwaltest und administrierst → Jetzt mehr erfahren"
 sidebar_label: Query Login
 services:
   - voiceserver
@@ -11,76 +11,64 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
-
-
 ## Einführung
 
-Der Query-Login von TeamSpeak ermöglicht dir den Zugriff auf das Server Query Interface, in dem du deinen TeamSpeak Server von außen per Befehl verwalten kannst.
-
-
+Der Query Login von TeamSpeak ermöglicht dir den Zugriff auf die Server Query Schnittstelle, über die du deinen TeamSpeak Server extern per Befehle verwalten kannst.
 
 :::warning Server Admin Query Zugriff
-Unsere Teamspeak Server Produkte beinhalten keinen Server Admin Query Zugang.
+Unsere TeamSpeak Server Produkte beinhalten keinen Server Admin Query Zugriff. 
 :::
 
 <InlineVoucher />
 
-
-
-## Zugangsdaten
-
-
+## Login-Daten
 
 <Tabs>
 <TabItem value="Webinterface" label="TeamSpeak Server Produkt" default>
 
-Aus Sicherheitsgründen ist der **Server Admin Query** Login nicht mit dem **TeamSpeak Server Produkt** verfügbar. Wenn du jedoch über Administratorrechte auf deinem Teamspeak-Server verfügst, kannst du mit den folgenden Schritten dein eigenes Query-Login erstellen.
+Aus Sicherheitsgründen ist der **Server Admin Query** Login beim **TeamSpeak Server Produkt** nicht verfügbar. Wenn du jedoch Admin-Rechte auf deinem TeamSpeak Server hast, kannst du dir einen eigenen Query Login erstellen, indem du folgende Schritte befolgst.
 
 :::info
-Funktionen wie Snapshot importieren, Slots/Ports ändern und ähnliches sind nicht verfügbar. Diese Einstellungen sind von uns vordefiniert und können nicht manuell angepasst werden. 
+Funktionen wie Import von Snapshots, Änderung von Slots/Ports und Ähnliches sind nicht verfügbar. Diese Einstellungen sind von uns vorgegeben und können nicht manuell angepasst werden. 
 :::
 
-Um ein eigenes Query Login zu erstellen, musst du im Teamspeak Client unter Tools auf „Server Query Login“ klicken.
-Anschließend musst du einen Namen für den Login eingeben, dies ist auch der Login-Name z.B. „MyQueryLogin“:
+Um deinen eigenen Query Login zu erstellen, klickst du im TeamSpeak Client unter Werkzeuge auf „Server Query Login“.
+Anschließend musst du einen Namen für den Login eingeben, dieser ist auch der Login-Name, z.B. „MyQueryLogin“:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/gMeQtSTkrtRzbk7/preview)
 
-Nachdem du dies mit „OK“ bestätigt hast, wird ein Passwort angezeigt. 
-Dieses muss gespeichert werden, es kann später nicht mehr geändert werden. 
+Nach Bestätigung mit „OK“ wird ein Passwort angezeigt. Dieses muss gespeichert werden, da es später nicht mehr geändert werden kann.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/c7W3mzRMJ4EP23E/preview)
 
+Mit den nun erstellten Login-Daten kann eine Verbindung z.B. über [YaTQA](https://yat.qa) hergestellt werden. Dafür werden die Server-IP, der Query-Port, der Server-Port sowie der Query Login Name und das Passwort benötigt.
 
-
-Mit den nun erstellten Zugangsdaten kann eine Verbindung z.B. über [YaTQA](https://yat.qa) hergestellt werden. 
-Hierfür werden die Server-IP, der Query-Port, der Server-Port und der Query-Login-Name und das Passwort benötigt. 
-Die Server IP, der Query Port und der Server Port können auf dem Dashboard im Webinterface eingesehen werden: 
+Die Server-IP, der Query-Port und der Server-Port sind im Dashboard im Webinterface einsehbar:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/RGsk8wfBkoCPzA4/preview)
 
 </TabItem>
+<TabItem value="self_hosted" label="Self hosted (VPS/Dedicated Server)">
 
-<TabItem value="self_hosted" label="Self hosted (vRootserver/Dedicated Server)">
-
-Wurde der Teamspeak-Server auf dem eigenen VPS oder Root-Server über das Webinterface installiert, so kann die normale „Server Admin Query“ verwendet werden. 
-Die Zugangsdaten findest du im Webinterface deiner Teamspeak-Instanz. 
+Wenn der TeamSpeak Server auf deinem eigenen VPS oder Dedicated Server über das Webinterface installiert wurde, kann der normale „Server Admin Query“ genutzt werden. Die Login-Daten findest du im Webinterface der TeamSpeak-Instanz.
 
 </TabItem>
 </Tabs>
 
-## Query zugreifen
+## Query Zugriff
 
-Gebe die bereitgestellten/selbst erstellten Zugangsdaten für dein Query Login unter Quick Connect in der YatQA Anwendung ein und klicke dann auf den Connect Button.
+Trage die bereitgestellten bzw. selbst erstellten Login-Daten für deinen Query Login unter Quick Connect in der **YatQA** Anwendung ein und klicke anschließend auf den **Connect-Button**.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/ZaBNRaQxfSjHKwT/download)
 
+:::warning Fehler bei individuellem Query-Port
+Standardmäßig sollte nach einer frischen Installation ein Fehler auftreten, wenn du einen anderen Port als den Standard Query-Port angibst. Das ist normal und lässt sich wie folgt beheben:
 
-
-:::warning Benutzerdefinierter Query Port Error
-Standardmäßig sollte nach einer Erstinstallation ein Fehler auftreten, wenn du einen anderen Port als den Standard-Abfrageport angibst. Dies ist normal und kann wie folgt gelöst werden:
 ![img](https://screensaver01.zap-hosting.com/index.php/s/3mofjG5RKPM9yBW/download)
 :::
 
+## Fazit
 
-## Abschluss
-Du hast mit Hilfe von YatQA erfolgreich eine Verbindung zur Query hergestellt. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Du hast erfolgreich eine Verbindung zur Query über YatQA hergestellt. Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Seite! 🙂
+
+<InlineVoucher />

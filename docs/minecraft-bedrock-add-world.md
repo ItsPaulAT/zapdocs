@@ -1,10 +1,10 @@
 ---
 id: minecraft-bedrock-add-world
 title: "Minecraft Bedrock: Import own World"
-description: Information on how to import an own world into your Minecraft Bedrock Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to import and share your custom Minecraft Bedrock worlds on your server for seamless multiplayer fun → Learn more now"
 sidebar_label: Import own World
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -62,3 +62,5 @@ Connect to your server and verify that the imported world has been loaded correc
 ## Conclusion
 
 Importing a world into your Minecraft Bedrock Server is a simple process that allows you to share your own creations with others. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

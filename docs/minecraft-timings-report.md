@@ -1,10 +1,10 @@
 ---
 id: minecraft-timings-report
 title: "Minecraft: Identify server problems with timings report"
-description: Information on how to identify lag problems on your Minecraft server with a timings report - ZAP-Hosting.com documentation
+description: "Discover how to analyze server performance issues using timing reports to identify lags and optimize your server → Learn more now"
 sidebar_label: Timings-Report
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -89,3 +89,5 @@ In some cases issues are also caused by plugins. To determine that a plugin is p
 If an issue with plugins exists, this can also be investigated in the "Plugins" section. The values are also listed in three columns, which have exactly the same structure as the normal server values above. The difference is that there is no longer a main process shown. Instead, the plugin itself is shown. However, we can still check all processes by clicking on them and investigate the values more closely.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/CzitKykWC2dzExD)
+
+<InlineVoucher />

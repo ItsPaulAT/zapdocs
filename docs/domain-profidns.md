@@ -1,6 +1,7 @@
 ---
 id: domain-profidns
 title: "Domain: ProfiDNS"
+description: "Explore advanced DNS configuration options with ProfiDNS to link services and optimize your domain settings → Learn more now"
 sidebar_label: ProfiDNS
 services:
   - domain
@@ -12,7 +13,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 The **ProfiDNS option** offers the possibility to make advanced configurations to the DNS settings. This allows you to link to ZAP-Hosting's own services as well as to other external services. The possibilities are therefore endless. 
 
-
+<InlineVoucher />
 
 ## Access and use case
 
@@ -45,3 +46,5 @@ We recommend taking a look at the following guides for further important informa
 ## Conclusion
 
 Congratulations, you have successfully configured the DNS settings of your domain. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

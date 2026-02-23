@@ -1,10 +1,11 @@
 ---
 id: vserver-windows-vrising
-title: "VPS: V-Rising Dedicated Server Windows Setup"
-description: Information about setting up a V-Rising Dedicated Server on a Windows VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "V-Rising Dedicated Server Windows Setup"
+description: "Discover how to set up a V Rising dedicated Windows server for optimal gaming performance and seamless hosting → Learn more now"
 sidebar_label: V-Rising
 services:
   - vserver
+  - dedicated
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -122,4 +123,6 @@ After the port release the server is publicly accessible, if it was started.
 
 ## Conclusion
 
-Congratulations, you have successfully installed and configured the V-Rising on your VPS! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+Congratulations, you have successfully installed and configured the V-Rising on your VPS/Dedicated Server! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

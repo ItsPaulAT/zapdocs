@@ -1,10 +1,10 @@
 ---
 id: fivem-txadmin-features
 title: "FiveM: txAdmin Interface"
-description: Overview of TxAdmin interface configuration options for FiveM game servers from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to efficiently manage and monitor your FiveM server with txAdmin’s full-featured web panel → Learn more now"
 sidebar_label: txAdmin Interface
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -174,3 +174,5 @@ You can use the CFG editor to manage and update your server's `server.cfg` confi
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/jqDBDqp55HoKmNB/preview)
 
+
+<InlineVoucher />

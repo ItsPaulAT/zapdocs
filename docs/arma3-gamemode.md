@@ -1,10 +1,10 @@
 ---
 id: arma3-gamemode
 title: "Arma 3: Change game mode"
-description: Information on how to change the game mode on your Arma 3 server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set and load game modes on your Arma 3 server for a customized gameplay experience → Learn more now"
 sidebar_label: Change game mode
 services:
-  - gameserver
+  - gameserver-arma3
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -43,3 +43,5 @@ There you edit the file **server.cfg** and enter the name of your mission file a
 ![](https://screensaver01.zap-hosting.com/index.php/s/7jtRK3YRD7wWiij/preview)
 
 After that, click **Save** and you can start your server. The new mission file will be loaded.
+
+<InlineVoucher />

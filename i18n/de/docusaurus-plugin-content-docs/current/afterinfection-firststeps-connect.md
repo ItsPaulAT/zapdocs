@@ -1,10 +1,10 @@
 ---
 id: afterinfection-firststeps-connect
-title: "Afterinfection: Zum Server verbinden"
-description: Informationen über verschiedene Möglichkeiten, wie du dich mit deinem Afterinfection Server von ZAP-Hosting verbinden kannst - ZAP-Hosting Dokumentation
-sidebar_label: Zum Server verbinden
+title: "Afterinfection: Verbindung zum Server herstellen"
+description: "Entdecke, wie du dich reibungslos und sicher mit deinem Afterinfection-Gameserver verbindest – mit wichtigen Tipps und einer klaren Anleitung → Jetzt mehr erfahren"
+sidebar_label: Verbindung zum Server
 services:
-  - gameserver
+  - gameserver-afterinfection
 ---
 
 import Tabs from '@theme/Tabs';
@@ -14,42 +14,44 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Einführung
-
-Unsicher, wie du dich mit deinem **Afterinfection** Server verbinden kannst oder was du dafür benötigst? Kein Problem, wir helfen dir weiter! Wir führen dich durch alles, was du benötigst - von den erforderlichen Werkzeugen und Informationen bis hin zum eigentlichen Verbindungsprozess und den wesentlichen Punkten, die für eine reibungslose und störungsfreie Verbindung erforderlich sind. Befolge unsere Anleitung und du wirst in kürzester Zeit verbunden sein!
+Du bist dir unsicher, wie du dich mit deinem **Afterinfection**-Gameserver verbindest oder was du dafür brauchst? Kein Stress, wir helfen dir! Wir führen dich durch alles, was du wissen musst. Von den nötigen Tools und Infos bis hin zum eigentlichen Verbindungsprozess – inklusive wichtiger Hinweise, damit alles glatt und ohne Probleme läuft. Folge unserer Anleitung und du bist im Handumdrehen verbunden!
 
 <InlineVoucher />
 
 
 
-## Server-Details abrufen
+## Serverdetails besorgen
 
-Du benötigst alle relevanten Informationen, um dich mit deinem Server zu verbinden. Die Informationen zu deinem Server findest du im Dashboard des Webinterfaces deines Gameservers. Zu den wichtigen Informationen gehören die folgenden: 
+
+Du brauchst alle relevanten Infos, um dich mit deinem Gameserver zu verbinden. Diese findest du im Dashboard deines Gameserver-Webinterface-Panels. Wichtige Infos sind unter anderem:
 
 - IP-Adresse und Port
-- Name des Servers
-- Server-Passwort (optional)
+- Servername
+- Serverpasswort (optional)
 
-Anhand der oben genannten Informationen solltest du in der Lage sein, deinen Server zu finden und sicherzustellen, dass du dich mit dem richtigen Server verbindest. 
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/zjW4mCWR6X2L7Cq/preview)
+Mit diesen Angaben kannst du deinen Server finden und sicherstellen, dass du dich mit dem richtigen Server verbindest.
+
+![img](https://screensaver01.zap-hosting.com/index.php/s/7QRfCLJqS4mQCss/preview)
 
 ## Verbindung zum Server herstellen
 
-Die Verbindung zu einem Gameserver kann häufig auf eine oder mehrere Arten hergestellt werden. Die verfügbaren Methoden werden im Folgenden ausführlich beschrieben und erklärt. 
+
+Die Verbindung zu einem Gameserver kann oft auf verschiedene Arten erfolgen. Die verfügbaren Methoden werden hier detailliert beschrieben und erklärt.
 
 <Tabs>
 
-<TabItem value="connect_solution_server_browser_ingame" label="Server Browser (Im Spiel)" default>
+<TabItem value="connect_solution_server_browser_ingame" label="Serverbrowser (Im Spiel)" default>
 
-Um eine Verbindung zu deinem Server über den Server-Browser im Spiel herzustellen, öffne das Spiel und navigiere zum **Multiplayer**. In der Serverliste kannst du nun anhand des Servernamens nach deinem Server suchen. 
+Um dich über den integrierten Serverbrowser im Spiel zu verbinden, starte das Spiel und gehe zu **Multiplayer**. Dort kannst du deinen Server in der Serverliste über den Servernamen suchen. 
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/yJpWzbfzD8jTSpc/download)
 
 </TabItem>
 
-<TabItem value="connect_solution_direct_ingame" label="Direktverbindung (Im Spiel)">
+<TabItem value="connect_solution_direct" label="Direktverbindung (Im Spiel)">
 
-Anstelle nach deinem Server in der Serverliste zu suchen, kannst du unter **Multiplayer** unten links auch die Direktverbindung verwenden. Trage dazu einfach die IP-Adresse und Port deines Servers ein und klicke auf **Join**.
+Statt deinen Server in der Liste zu suchen, kannst du auch die Direktverbindung nutzen. Diese findest du unter **Multiplayer** unten links. Gib einfach die IP-Adresse und den Port deines Servers ein und klicke auf **Beitreten**.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/7ELrrM23ZFxNY3A/download)
 
@@ -62,23 +64,28 @@ Anstelle nach deinem Server in der Serverliste zu suchen, kannst du unter **Mult
 
 ## Mögliche Probleme und Lösungen
 
-Die Verbindung zum Server kann nicht wie erwartet hergestellt werden? Dies kann in bestimmten Situationen vorkommen, z. B. wenn die Verbindung aufgrund von technischen Problemen fehlschlägt. Im Folgenden haben wir die häufigsten Probleme und ihre Lösungen aufgeführt:
+
+Die Verbindung zu einem Gameserver kann oft auf verschiedene Arten erfolgen. Die verfügbaren Methoden werden hier detailliert beschrieben und erklärt.
 
 #### Nicht sichtbar
 
-Eine fehlende Sichtbarkeit des Servers kann auftreten, wenn die Initialisierung nicht erfolgreich abgeschlossen wurde. Dies kann beispielsweise auf eine fehlerhafte Konfiguration oder beschädigte Dateien zurückzuführen sein. Weitere Informationen können in der Regel in der Serverkonsole oder in den Logdateien nachvollzogen werden.
+
+Wenn dein Server nicht sichtbar ist, kann das daran liegen, dass die Initialisierung nicht erfolgreich abgeschlossen wurde. Das kann z.B. an einer fehlerhaften Konfiguration oder beschädigten Dateien liegen. Weitere Infos findest du meist in der Serverkonsole oder in den Logdateien.
 
 
 
-#### Fehlende Lösung oder nicht hilfreich
-
-Hast du nach der Fehlersuche weiterhin Probleme? In diesem Fall steht unser Support-Team täglich zur Verfügung, um dir zu helfen. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und erkläre uns dein Problem mit so vielen Einzelheiten wie möglich. Wir werden uns so schnell wie möglich darum kümmern und dir bei der Lösung des Problems helfen!
+#### Keine passende Lösung oder keine Hilfe
 
 
-
-## Abschluss
-
-Glückwunsch, vorausgesetzt, dass du alle Schritte befolgt hast, solltest du erfolgreich eine Verbindung zum Server hergestellt haben. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Du hast nach der Fehlerbehebung immer noch Probleme? Kein Ding! Unser Support-Team steht dir täglich zur Seite. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und schildere dein Problem so detailliert wie möglich. Wir schauen uns das schnellstmöglich an und helfen dir, die Sache zu lösen!
 
 
 
+## Fazit
+
+Glückwunsch, wenn du alles befolgt hast, solltest du jetzt erfolgreich mit dem Server verbunden sein. Bei weiteren Fragen oder wenn du Hilfe brauchst, zögere nicht, unseren Support zu kontaktieren – wir sind täglich für dich da! 🙂
+
+
+
+
+<InlineVoucher />

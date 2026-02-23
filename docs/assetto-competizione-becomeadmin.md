@@ -1,10 +1,10 @@
 ---
 id: assetto-competizione-becomeadmin
 title: "Assetto Corsa Competizione: Become an admin on your own server"
-description: Information on how to become an admin on your Assetto Corsa Competizione server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to gain full server control by assigning administrator permissions and managing your game server effectively → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-assetto-competizione
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -40,3 +40,5 @@ Now you are admin on your server!
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

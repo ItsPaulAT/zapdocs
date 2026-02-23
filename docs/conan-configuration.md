@@ -1,10 +1,10 @@
 ---
 id: conan-configuration
 title: "Conan Exiles: Configure your own server"
-description: Information on how to configure your Conan Exiles server from ZAP-Hosting via the web interface - ZAP-Hosting.com documentation
+description: "Discover how to customize your Conan Exiles server settings for optimal gameplay and security → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-conan
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -231,3 +231,5 @@ In the Pets and Hunger settings you will find all the relevant commands about th
 | Animal Pen Crafting Time Multiplier | Multiplies the speed of crafting in animal pens.             | AnimalPenCraftingTimeMultiplier= |
 | Food Container Range multiplier     | Multiplies the distance that Food Containers can feed your companions. | FeedBoxRangeMultiplier=          |
 | Exclusive Diet                      | Determines whether companions exclusively eat items listed on their diet. Disabled means they will eat any food item, in addition to their diet. | ExclusiveDiet=                   |
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: redm-server-customisation
 title: "RedM: Customise server details"
-description: Information on how to customise server details displayed in the server list for RedM servers - ZAP-Hosting.com 
+description: "Discover how to customize your server name with colors and emojis to make it stand out in the server list → Learn more now"
 sidebar_label: Customise Server Details
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import Tabs from '@theme/Tabs';
@@ -36,7 +36,7 @@ Now you can change your server's name, through one of the three methods describe
 sv_hostname "^2ZAP-Hosting ^0| ^4Official Community Server ^0- ^1Events coming ^8soon^1!"
 ```
 
-![](https://github.com/zaphosting/docs/assets/42719082/32bbf492-9ee0-4c78-a391-9c44120369c2)
+![](https://screensaver01.zap-hosting.com/index.php/s/F5TYfEGQkGjXger/preview)
 
 
 
@@ -69,7 +69,7 @@ Setting a server description is useful for providing a short and to the point ov
 sets sv_projectDesc "Join our Discord to stay updated on latest events! discord.gg/zaphosting"
 ```
 
-![](https://github.com/zaphosting/docs/assets/42719082/32bbf492-9ee0-4c78-a391-9c44120369c2)
+![](https://screensaver01.zap-hosting.com/index.php/s/F5TYfEGQkGjXger/preview)
 
 ### Server Tags
 
@@ -79,7 +79,7 @@ Setting server tags can be beneficial to narrowing down what your server is abou
 sets tags "zap, zap-hosting, official, community, zap-community, zap-community-server"
 ```
 
-![](https://github.com/zaphosting/docs/assets/42719082/33407e9f-9e28-4264-9b13-e946ed5b434a)
+![](https://screensaver01.zap-hosting.com/index.php/s/oS2Y3dbPZDFDJPj/preview)
 
 ### Other Misc. Details
 
@@ -108,3 +108,5 @@ You can get a list of all locale tags by viewing [this resource](https://github.
 ## Conclusion
 
 Provided that you have followed all the steps, you have successfully customised your RedM game server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

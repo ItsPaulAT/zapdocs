@@ -1,10 +1,10 @@
 ---
 id: fivem-change-servericon
 title: "FiveM:  Change icon for server list"
-description: Information on how to change the server icon for FiveM servers from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize your FiveM server with a unique 96x96 PNG icon to enhance your server's identity → Learn more now"
 sidebar_label: Change server icon
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -49,3 +49,5 @@ Please ensure that the name of the image file set in the command exactly matches
 ## Conclusion
 
 Provided that you have followed all the steps, your new server icon should be displayed the next time you restart the server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

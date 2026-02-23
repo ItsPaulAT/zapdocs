@@ -1,7 +1,7 @@
 ---
 id: dedicated-linux-fivem
-title: "Dedicated Server: FiveM Dedicated Server Linux Einrichtung (GS/TS3 Interface)"
-description: Informationen zum Einrichten eines FiveM Dedicated Servers auf einem Linux Dedicated Server von ZAP-Hosting - ZAP-Hosting.com Dokumentation
+title: "Dedicated Server: FiveM Dedicated Server Linux Setup (GS/TS3 Interface)"
+description: "Entdecke, wie du deinen eigenen FiveM Dedicated Server mit txAdmin für nahtloses Multiplayer-Gaming einrichtest und betreibst → Jetzt mehr erfahren"
 sidebar_label: FiveM
 services:
   - dedicated
@@ -16,54 +16,53 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Einführung
-Besitzt du einen Dedicated Server und möchtest dort deinen eigenen FiveM Dedicated Server Dienst mit txAdmin installieren? Dann bist du hier genau richtig! Im Folgenden werden dir alle notwendigen Schritte erläutert, wie du diesen genau installierst, konfigurierst und was es dabei zu beachten gibt. 
+Du besitzt einen Dedicated Server und möchtest deinen eigenen FiveM Dedicated Server mit txAdmin installieren und betreiben? Dann bist du hier genau richtig! Im Folgenden erklären wir dir alle notwendigen Schritte zur Installation und Konfiguration und worauf du achten musst.
 
-:::warning Betriebssystem ausgewählt und installiert
-Es wird vorausgesetzt, dass du für deinen Dedicated Server bereits ein Betriebssystem ausgewählt und installiert hast. Solltest du diesen Schritt noch nicht erfüllt haben, so müsstest du zunächst die Schritte aus der [Ersteinrichtung](dedicated-setup.md) Anleitung für Dedicated Server befolgen.
+:::warning  Betriebssystem ausgewählt und installiert
+Es wird vorausgesetzt, dass du bereits ein Betriebssystem für deinen Dedicated Server ausgewählt und installiert hast. Falls du diesen Schritt noch nicht abgeschlossen hast, solltest du zuerst die Schritte in der [Ersteinrichtung](dedicated-setup.md) Anleitung für Dedicated Server befolgen.
 :::
 
 
 
 ## Vorbereitung
 
-Zum Aufsetzen eines FiveM Servers sind ein paar Vorbereitungsschritte notwendig, die umgesetzt werden müssen, bevor mit der eigentlichen Einrichtung des FiveM Dedicated Server begonnen werden kann.
-
+Um einen FiveM Server einzurichten, sind bestimmte Vorbereitungsschritte notwendig, die vor der eigentlichen Einrichtung des FiveM Dedicated Servers umgesetzt werden müssen.
 
 
 ### Datenbank einrichten
 
-Zu unserer GS/TS3 Interface Option stellen wir bereits eigene Datenbanken inklusive zur Verfügung. Solltest du dennoch bevorzugen deinen eigenen Datenbankserver und Datenbank aufsetzen zu wollen, so empfehlen wir einen Blick in die [Datenbank installieren](dedicated-linux-databases.md) Anleitung zu werfen. 
+Für unsere GS/TS3 Interface Option stellen wir bereits eigene Datenbanken inklusive bereit. Falls du jedoch lieber deinen eigenen Datenbankserver und deine eigene Datenbank einrichten möchtest, empfehlen wir dir einen Blick in die [Datenbank installieren](dedicated-linux-databases.md) Anleitung.
 
 :::warning
-Wenn du eine eigene Datenbank verwendest, dann musst du während des txAdmin Setups die vordefinierten Datenbankinformationen mit deinen eigenen ersetzen. 
+Wenn du deine eigene Datenbank nutzt, musst du während der txAdmin Einrichtung die voreingestellten Datenbankinformationen durch deine eigenen ersetzen.
 :::
 
 
 
 ### GS/TS3 Interface installieren
-With the user-friendly GS/TS3 interface you can install your FiveM Dedicated Server with just a few clicks. No prior knowledge is required for this installation. The setup of all required packages, server files, and the actual installation are fully automated, saving you time and effort.
+Mit dem benutzerfreundlichen GS/TS3 Interface kannst du deinen FiveM Dedicated Server mit nur wenigen Klicks installieren. Für diese Installation sind keine Vorkenntnisse nötig. Die Einrichtung aller benötigten Pakete, Serverdateien und die eigentliche Installation laufen vollautomatisch ab, was dir Zeit und Aufwand spart.
 
 :::warning
-Das GS/TS3- Interface Feature kann mit den folgenden Betriebssystemen verwendet werden:
+Das GS/TS3 Interface Feature kann mit folgenden Betriebssystemen genutzt werden:
 
 - Debian: 10, 11
 - Ubuntu: 20.04
 
-(*) Wir arbeiten bereits daran, andere und neuere Betriebssysteme und (Versionen) in naher Zukunft bereitzustellen.
+(*) Wir arbeiten bereits daran, weitere und neuere Betriebssysteme und Versionen in naher Zukunft verfügbar zu machen.
 :::
 
-Solltest du mit dem GS/TS3 Interface noch nicht vertraut sein, dann empfehlen wir einen Blick in unsere [GS/TS3 Interface](dedicated-linux-gs-interface.md) Anleitung zu werfen. 
+Falls du mit dem GS/TS3 Interface noch nicht vertraut bist, empfehlen wir dir einen Blick in unsere [GS/TS3 Interface](dedicated-linux-gs-interface.md) Anleitung.
 
-Vorausgesetzt du hast das GS/TS3 Interface angelegt, rufe nun den neu angelegten Gameserver Dienst auf. Dort angelangt, muss nun noch das Spiel ausgewählt. Navigiere dafür zu der Seite **Spiele**. Klicke auf, verfügbare Spiele, suche dort nach txAdmin und klicke auf den installieren Button. 
+Vorausgesetzt, du hast das GS/TS3 Interface installiert, öffne den neu erstellten Gameserver-Service. Dort muss nun das Spiel ausgewählt werden. Navigiere dazu auf die **Games** Seite. Klicke auf verfügbare Spiele, suche nach txAdmin und klicke auf den Installationsbutton.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/jjtHEbpY8NDeTxK/download)
-
-
+![img](https://screensaver01.zap-hosting.com/index.php/s/jJaHrkd7LQAHx46/download)
 
 
-### FiveM Server Lizensschlüssel erstellen
 
-Jeder FiveM Server benötigt seinen eigenen Lizenzschlüssel, welcher über das neue [Cfx.re Portal](http://portal.cfx.re/) verwaltet wird. Der Lizenzschlüssel wird mit deinem Cfx.re Account verknüpft. Logge dich auf der Seite ein, navigiere zu der **Server** Kategorie und klicke dort auf den **Generate Key** Button.
+
+### FiveM Server Lizenzschlüssel erstellen
+
+Jeder FiveM Server benötigt einen eigenen Lizenzschlüssel, der über das neue [Cfx.re Portal](http://portal.cfx.re/) verwaltet wird. Der Lizenzschlüssel ist an deinen Cfx.re Account gebunden. Melde dich auf der Webseite an, navigiere zur Kategorie **Server** und klicke auf den Button **Generate Key**.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/X6kHcs6o2dcFJqw/preview)
 
@@ -71,26 +70,24 @@ Jeder FiveM Server benötigt seinen eigenen Lizenzschlüssel, welcher über das 
 
 ## Konfiguration
 
-Nun kann mit der Konfiguration des FiveM Server und txAdmin begonnen werden. Öffne dazu das Dashboard deines Gameservers. In dem Abschnitt txAdmin findest du den Link und die Zugangsdaten zu der txAdmin Instanz. Öffne diese und logge dich dort im Anschluss ein. 
+Jetzt kannst du mit der Konfiguration des FiveM Servers und txAdmin starten. Öffne dazu das Dashboard deines Gameservers. Den Link und die Login-Daten für die txAdmin Instanz findest du im txAdmin Bereich. Öffne diesen und logge dich dort ein.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/dgtKoasr73Hn6e6/preview)
-
-
+![img](https://screensaver01.zap-hosting.com/index.php/s/W5xoFtgfZkeZFgQ/preview)
 
 ### txAdmin Einrichtung
 
-Während des txAdmin-Setups wird dein eigener FiveM Server in fünf Schritten installiert und konfiguriert. Folge den Anweisungen im txAdmin Interface und lege zunächst einen **Servernamen** fest. Danach wählst du die gewünschte **Serverart** aus. In diesem Beispiel wird die Installation eines FiveM Servers mit vorinstalliertem QBCore gezeigt.
+Während der txAdmin Einrichtung wird dein eigener FiveM Server in fünf Schritten installiert und konfiguriert. Folge den Anweisungen in der txAdmin Oberfläche und definiere zuerst einen **Servernamen**. Wähle dann den gewünschten **Servertyp** aus. Dieses Beispiel zeigt die Installation eines FiveM Servers mit vorinstalliertem QBCore.
 
-Wähle im Schritt **Deployment Type** die Option **Popular Recipes** und anschließend das **QBCore Framework Template**. Bestätige das gewünschte **Datenverzeichnis** und starte den **Recipe Deployer**, um die Installation abzuschließen.
+Wähle im Schritt **Deployment Type** die Option **Popular Recipes** und dann die **QBCore Framework Template**. Bestätige das gewünschte **Data Directory** und starte den **Recipe Deployer**, um die Installation abzuschließen.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/i7mSNNs29b6QLjz/download)
 
 
 
 
-### Firewall Konfiguration
+### Firewall-Konfiguration
 
-Bei der Installation des FiveM Servers über das GS/TS3 Interface werden alle notwendigen Port Weiterleitungen in der Firewall **automatisch** eingerichtet. Sollte es dennoch zu Problemen kommen, so kannst du die Portweiterleitung auch manuell per SSH mit folgendem Befehl einrichten: 
+Bei der Installation des FiveM Servers über das GS/TS3 Interface wird die gesamte notwendige Portweiterleitung **automatisch** in der Firewall eingerichtet. Sollten Probleme auftreten, kannst du die Portweiterleitung auch manuell via SSH mit folgendem Befehl einrichten:
 
 ```
 iptables -A INPUT -p tcp --dport 30120 -j ACCEPT
@@ -101,7 +98,9 @@ iptables -A OUTPUT -p udp --dport 30120 -j ACCEPT
 
 
 
-## Abschluss
+## Fazit
 
-Du hast auf deinem Dedicated Server nun erfolgreich einen FiveM Dedicated Server Dienst installiert und konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Du hast erfolgreich einen FiveM Dedicated Server Service auf deinem Dedicated Server installiert und konfiguriert. Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Verfügung und hilft dir gerne weiter! 🙂
+
+
 

@@ -1,13 +1,16 @@
 ---
 id: arma3-mods
 title: "Arma 3: Installation of Mods"
-description: Information on installing mods on your Arma 3 game server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to enhance your game server with popular mods and improve gameplay customization → Learn more now"
 sidebar_label: Install Mods
 services:
-  - gameserver
+  - gameserver-arma3
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableItemList from '@site/src/components/SearchableItemList/SearchableItemList';
+import items from '@site/data/lists/arma3-mods.json';
+
 
 ## Introduction
 
@@ -29,6 +32,16 @@ The next step is to start installing the mods. Thanks to the Steam Workshop opti
 
 
 
+## Popular Mods
+
+Still looking for the perfect mods for your server? Browse through our carefully curated list of the most popular and highly recommended mods to enhance your gameplay and give your server the finishing touch it deserves. Get inspired and find exactly the additions that fit your project.
+
+<SearchableItemList items={items} />
+
+
+
 ## Conclusion
 
 Provided that you have followed all the steps, you have successfully installed the mods on your server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

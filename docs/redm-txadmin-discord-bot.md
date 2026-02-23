@@ -1,10 +1,10 @@
 ---
 id: redm-txadmin-discord-bot
 title: "RedM: txAdmin Discord Bot"
-description: Information on how to set up the Discord bot for a RedM txAdmin Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Set up and integrate a Discord bot with your txAdmin RedM server to enhance management and communication → Learn more now"
 sidebar_label: txAdmin Discord Bot
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -56,7 +56,7 @@ Do not reveal the bot token to anyone so that your bot can work undisturbed and 
 
 On the same page, you have to scroll a little down and enable the "Server Members Intent" and save your changes:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/5ypmywwPJxRAFax/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/c5SnKpn4GXtGM38/preview)
 
 ### Inviting Bot to your Discord
 
@@ -104,3 +104,5 @@ Everything in that message can be customized on the Discord settings page within
 ## Conclusion
 
 Setting up a Discord bot for txAdmin allows you to easily display your RedM server status and other information in your Discord server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

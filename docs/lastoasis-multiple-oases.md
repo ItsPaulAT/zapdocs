@@ -1,10 +1,10 @@
 ---
 id: lastoasis-multiple-oases
 title: "Last Oasis: Connecting multiple Oases"
-description: Information about setting up multiple Oases for your Last Oasis server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up and manage multiple Oases in your Last Oasis Realm for enhanced gameplay experience → Learn more now"
 sidebar_label: Multiple Oases
 services:
-  - gameserver
+  - gameserver-lastoasis
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -22,7 +22,7 @@ Begin by heading over to [the official Last Oasis](https://myrealm.lastoasis.gg/
 ## Enabling multi hosting
 On the website, head over to the **Realms** section. On your current Realm, press the **Change** button and switch the hosting mode from **Single -> Multiple**.
 
-![](https://github.com/zaphosting/docs/assets/42719082/9f06547a-f23f-4542-bcd7-e69d0bbfbf19)
+![](https://screensaver01.zap-hosting.com/index.php/s/qDgwQ5D6YwptWER/preview)
 
 :::info
 In order to be able to run multiple Oases at the same time, you must rent one game server per Oasis. You should use the same provider key as the original server for each new server. Make sure to restart your server after changes.
@@ -46,3 +46,5 @@ Once confired, you can finally press **Add Oasis** to create the Oassis and acti
 ![](https://screensaver01.zap-hosting.com/index.php/s/yoeHTdeAeXneC2q/preview)
 
 You should now be able to see multiple active Oasis at the same time under the **Oases** section. You have successfully setup multiple Oases for your Realm.
+
+<InlineVoucher />

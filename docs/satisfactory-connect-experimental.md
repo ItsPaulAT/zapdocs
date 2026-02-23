@@ -1,10 +1,10 @@
 ---
 id: satisfactory-connect-experimental
 title: "Satisfactory: Connect to the Server (Experimental)"
-description: Information on how to connect to your Satisfactory server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up and manage your Satisfactory game server for seamless gameplay and control → Learn more now"
 sidebar_label: Connect to the Server (Experimental)
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -62,3 +62,5 @@ In this step, you need to name your savegame and pick one of the 4 worlds, which
 After that you can join your server in the "Status" tab:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/PDF4ED5FkwCXK6d/preview)
+
+<InlineVoucher />

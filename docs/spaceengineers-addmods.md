@@ -1,10 +1,10 @@
 ---
 id: spaceengineers-addmods
 title: "Space Engineers: Installation of mods"
-description: Information on how to install mods on your Space Engineers server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to safely configure and add mods to your Space Engineers server for a customized gameplay experience → Learn more now"
 sidebar_label: Install mods
 services:
-  - gameserver
+  - gameserver-spaceengineers
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -80,3 +80,5 @@ Here 12345 must be exchanged with the mod ID of your selected mod!
 :::
 
 As can be seen in the GIF, the same steps just have to be repeated again to add a mod. After all desired mods have been added, the config can be saved with **CTRL+S** and the config can be closed. Then the server can be started normally and the mods are then installed automatically.
+
+<InlineVoucher />

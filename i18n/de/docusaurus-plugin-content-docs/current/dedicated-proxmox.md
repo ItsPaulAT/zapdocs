@@ -1,7 +1,7 @@
 ---
 id: dedicated-proxmox
 title: "Dedicated Server: Installation von Proxmox VE"
-description: Informationen, wie du das Proxmox Virtual Environment auf deinem Dedicated Server von ZAP-Hosting installieren kannst - ZAP-Hosting.com Dokumentation
+description: "Entdecke, wie du Proxmox VE für Enterprise-Virtualisierung mit integrierten Tools und hoher Verfügbarkeit einrichtest und verwaltest → Jetzt mehr erfahren"
 sidebar_label: Proxmox installieren
 services:
   - dedicated
@@ -11,144 +11,144 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Proxmox Virtual Environment ist eine komplette Open Source-Virtualisierungsplattform für Server. Es kombiniert KVM- und Container-basierte Virtualisierung und verwaltet virtuelle Maschinen, Container, Storage, virtuelle Netzwerke und Hochverfügbarkeits-Cluster übersichtlich über die zentrale Managementoberfläche.
+Proxmox Virtual Environment ist eine komplette, Open-Source Server-Management-Plattform für Enterprise-Virtualisierung. Sie integriert nahtlos den KVM-Hypervisor und Linux-Container (LXC), softwaredefinierten Speicher und Netzwerkfunktionen auf einer einzigen Plattform. Mit der integrierten webbasierten Benutzeroberfläche kannst du VMs und Container, Hochverfügbarkeit für Cluster oder die integrierten Disaster-Recovery-Tools ganz easy verwalten.
 
-<InlineVoucher />
+
 
 ## Vorbereitung
 
-Zu Beginn muss das Proxmox VE (Virtual Environment) ISO-Installationsprogramm auf deinem dedizierten Server installiert und gebootet werden. Es gibt zwei Möglichkeiten, dies zu tun. Die einfachere Methode über das Webinterface deines dedizierten Servers oder die langwierigere Methode, die manuell über das iLO-Panel deines Servers erfolgt.
+Um zu starten, musst du das Proxmox VE (Virtual Environment) ISO-Installationsmedium auf deinem Dedicated Server mounten und davon booten. Es gibt zwei Wege, das zu machen: Der einfachere Weg läuft über das Webinterface deines Dedicated Servers, der längere manuell über das iLO-Panel deines Servers.
 
 
 
-### ISO über das Webinterface einbinden
+### ISO über das Webinterface mounten
+Gehe zum Bereich **Initial Installation** im Webinterface deines Dedicated Servers. Dort musst du zuerst den grünen Button **enable iLO** drücken. Warte kurz, bis die weiteren Bereiche sichtbar werden. Eventuell musst du die Seite neu laden, damit alles vollständig lädt.
 
-Navigiere zum Abschnitt **Erstinstallation** im Webinterface von deinem dedizierten Server. Hier musst du zunächst auf den grünen Button **iLO aktivieren** drücken. Warte einen kurzen Moment, bis die Abschnitte wieder sichtbar werden. Möglicherweise musst du deine Seite aktualisieren, um sicherzustellen, dass die Seite vollständig geladen wird.
+![](https://screensaver01.zap-hosting.com/index.php/s/r6XNqDqQeEec7wW/preview)
 
-![](https://github.com/zaphosting/docs/assets/42719082/ad471e8b-37af-45dc-94d6-695e439361a5)
+Wähle als Nächstes ein **Proxmox VE** ISO aus dem Dropdown-Menü aus. Wir empfehlen die neueste Version, um immer up-to-date zu bleiben. Dann klicke auf den grünen **Insert** Button.
 
-Wähle als nächstes eine **Proxmox VE** ISO aus dem Dropdown-Menü. Wir empfehlen, die neueste Version zu verwenden, um mit den letzten Änderungen auf dem Laufenden zu bleiben. Klicken nun auf den grünen Button **Einfügen**.
+![](https://screensaver01.zap-hosting.com/index.php/s/xXfWzqtE6JMG9Ka/preview)
 
-![](https://github.com/zaphosting/docs/assets/42719082/ebc1b725-3037-4379-bd7f-ce3e371578b6)
-
-Abschließend musst du deinen dedizierten Server neu starten, um von der ISO booten zu können. Dies kannst du über den Button Neustart unter Schritt 3 tun.
-
-
-
-### ISO über die iLO einbinden
-Bereite deine Proxmox VE-ISO vor, indem du auf die [Proxmox Download-Seite](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso) gehst. Du musst diese dann auf deinen dedizierten Server hochladen und mounten, indem du die [iLO](dedicated-ilo.md) & [Eigene ISO](dedicated-iso.md) befolgst, die zeigen, wie du dich anmeldest und deine benutzerdefinierte ISO hochlädst.
+Zum Schluss musst du deinen Dedicated Server neu starten, damit er vom ISO booten kann. Das geht über den Neustart-Button unter Schritt 3.
 
 
 
-## Einrichtung und Konfiguration
+### ISO über das iLO mounten
+Lade dir dein Proxmox VE ISO auf der [Proxmox Downloadseite](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso) herunter. Anschließend musst du es auf deinen Dedicated Server hochladen und mounten, indem du der [iLO](dedicated-ilo.md) & [Eigene ISO](dedicated-iso.md) Anleitung folgst, die zeigen, wie du dich einloggst und dein eigenes ISO hochlädst.
 
-:::important
-Stelle sicher, dass du deinen Server nach dem Importieren und Mouten der neuen ISO neu gestartet hast, bevor du weitermachst.
-:::
 
-Nachdem du nun dein ISO eingebunden hast, musst du davon booten. Dazu kannst du die **HTML5-Remote-Konsole** bei deiner iLO verwenden. Klicke im Webinterface auf den Hyperlink **Hier öffnen** unter "iLO-Webzugriff", der dich zu deinem Panel führt. Benutze die Anmeldedaten, die du für die Anmeldung erhalten hast.
 
-:::note
-Möglicherweise zeigt dein Browser eine Sicherheitsabfrage an, die du ignorieren und akzeptieren solltest, um fortzufahren.
-:::
-
-Sobald du eingeloggt bist, solltest du unter dem Abschnitt **Übersicht** den Link **HTML5** suchen und benutzen, der unter dem Abschnitt "Integrierte Remote-Konsole" zu finden ist. Dadurch wird ein neues Fenster geöffnet.
-
-![](https://github.com/zaphosting/docs/assets/42719082/3b9ce97e-f974-439b-8e57-ced05f248ef9)
-
-Dein Proxmox sollte sich im Einrichtungsprozess befinden. Verwende die "Pfeiltasten", "Enter" und "Esc", um das System zu aktivieren. Wir empfehlen, die **grafische** Version von Proxmox auszuwählen, da diese in der Anleitung verwendet wird.
-
-![](https://github.com/zaphosting/docs/assets/42719082/614218f2-df12-43ad-95fe-39026b900141)
-
-Warte ein paar Sekunden, bis der Einrichtungsprozess fortgesetzt wird. Du musst die EULA von Proxmox über den Button **Ich stimme zu** unten rechts akzeptieren. Auf der nächsten Seite wirst du aufgefordert, das Ziellaufwerk für deine Umgebung auszuwählen. Wenn du ein einzelnes Laufwerk verwendest, sind die Standardeinstellungen für dich vorgegeben, so dass du einfach über den Button **Next** fortfahren kannst.
-
-![](https://github.com/zaphosting/docs/assets/42719082/090c1f2e-20fe-48f3-b4b4-070c197f4825)
-
-:::note
-Wenn du ein RAID einrichten möchtest, da einige unserer dedizierten Server zwei Laufwerke bieten, musst du den Button **Optionen** verwenden, um den gewünschten `RAID`-Modus auszuwählen. Wir empfehlen `RAID1`, welches die beiden Laufwerke spiegelt.
-
-![](https://github.com/zaphosting/docs/assets/42719082/44e3b6ba-07f3-4313-8d36-b185a6da8089)
-:::
-
-Der nächste Abschnitt enthält allgemeine Angaben wie Sprache und Tastaturauswahl, die automatisch erkannt werden sollten. Füllen diese Felder aus und fahre dann fort.
-
-![](https://github.com/zaphosting/docs/assets/42719082/931e066c-9868-48d9-a638-f07c932579d2)
-
-Nun musst du ein sicheres Passwort und eine E-Mail-Adresse festlegen. Die E-Mail-Adresse wird von deinem Panel verwendet, um wichtige Alarme und Benachrichtigungen zu senden.
+## Einrichtung & Konfiguration
 
 :::important
-Merken dir das Passwort, denn du musst es verwenden, wenn du dich zum ersten Mal nach der Installation am Panel anmeldest! :::
+Stelle sicher, dass du deinen Server nach dem Import und Mounten des neuen ISOs neu gestartet hast, bevor du weitermachst.
+:::
 
-![](https://github.com/zaphosting/docs/assets/42719082/617a504c-9520-4b89-93c3-81fba06e5fdc)
+Jetzt, wo dein ISO gemountet ist, musst du davon booten. Das machst du über die **HTML5 Remote Console** in deinem iLO-Panel. Im Webinterface klickst du auf den Link **Open here** unter `iLO web access`, der dich zu deinem Panel bringt. Melde dich mit den angegebenen Zugangsdaten an.
 
-Der letzte Schritt ist das Einrichten der Netzwerkkonfiguration. Wähle die verfügbare Verwaltungsoberfläche und einen Hostnamen für deinen Server. 
+:::note
+Dein Browser könnte eine Sicherheitswarnung anzeigen – ignorier die einfach und akzeptiere, um weiterzumachen.
+:::
 
-![](https://github.com/zaphosting/docs/assets/42719082/d694a5af-20e2-4c1b-9cdb-c1a8ca684cde)
+Nach dem Login findest du unter **Overview** den Link **HTML5** unter `Integrated Remote Console`. Klick den an, um das Konsolen-Overlay zu öffnen.
 
-Gehen nun zum Abschnitt **IP-Adressen** auf dem Webinterface des dedizierten Servers, um eine verfügbare IP zu finden.![](https://github.com/zaphosting/docs/assets/42719082/9e8149c8-6917-4577-8161-7d254c3dc118)
+![](https://screensaver01.zap-hosting.com/index.php/s/HPWJ3oksyo3SdW6/preview)
 
-Wählen eine IP-Adresse, die du für dein Proxmox-Panel verwenden möchtest. Gebe die IP-Adresse, die Netzmaske und das Gateway in das Installationsprogramm ein, indem du die Details aus dem Webinterface verwendest. Abschließend kannst du für den DNS-Server "8.8.8.8" eingeben, was der öffentliche DNS-Server von Google ist.
+Dein Proxmox sollte jetzt im Setup-Prozess sein. Navigiere mit den `Pfeiltasten`, `Enter` und `Esc`. Wir empfehlen, die **Graphical** Version von Proxmox zu wählen, da diese Anleitung darauf basiert.
 
-Wenn du alles ausgefüllt hast, drücke **Weiter** und überprüfe alle ausgewählten Optionen auf der Übersichtsseite. Wenn alles korrekt aussieht, klicke auf **Installieren**, um fortzufahren!
+![](https://screensaver01.zap-hosting.com/index.php/s/MGqm3EAxYc8EBQw/preview)
 
+Warte ein paar Sekunden, bis der Setup-Prozess weitergeht. Du musst die Proxmox EULA über den Button **I agree** unten rechts akzeptieren. Auf der nächsten Seite wählst du das Ziel-Laufwerk für deine Umgebung aus. Wenn du nur eine Festplatte hast, sind die Standard-Einstellungen passend, also einfach auf **Next** klicken.
 
+![](https://screensaver01.zap-hosting.com/index.php/s/pZ8FiFJT6tJKFsS/preview)
+
+:::note
+Wenn du RAID einrichten willst, da manche unserer Dedicated Server zwei Laufwerke haben, musst du über den **Options** Button deinen gewünschten `RAID`-Modus auswählen. Wir empfehlen `RAID1`, das beide Laufwerke spiegelt.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/WqiYPowiLttzoeZ/preview)
+:::
+
+Im nächsten Schritt geht’s um allgemeine Sachen wie Sprache und Tastatur, die normalerweise automatisch erkannt werden. Füll das aus und mach weiter.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/As4J4NzytcZFrHp/preview)
+
+Jetzt musst du ein starkes Passwort und eine E-Mail-Adresse einrichten. Die E-Mail wird vom Panel genutzt, um wichtige Benachrichtigungen und Alerts zu schicken.
+
+:::important
+Merke dir das Passwort gut, denn damit loggst du dich nach der Installation zum ersten Mal ins Panel ein!
+:::
+
+![](https://screensaver01.zap-hosting.com/index.php/s/QAEaygacSXNfgot/preview)
+
+Der letzte Schritt ist die Netzwerkkonfiguration. Wähle die verfügbare Management-Schnittstelle und einen Hostnamen für deinen Server.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/EZDzsaq4aXpP4we/preview)
+
+Wechsle jetzt im Webinterface deines Dedicated Servers zum Bereich **IP-Adressen**, um eine freie IP zu finden.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/KQC4DLj6LxTX4io/preview)
+
+Such dir eine IP-Adresse aus, die du für dein Proxmox-Panel nutzen möchtest. Trage IP-Adresse, Netzmaske und Gateway im Installer ein, basierend auf den Daten aus dem Webinterface. Für den DNS-Server kannst du `8.8.8.8` eintragen – das ist Googles öffentlicher DNS.
+
+Wenn alles ausgefüllt ist, klick auf **Next** und überprüfe alle Einstellungen in der Zusammenfassung. Wenn alles passt, drück auf **Install**, um loszulegen!
 
 ## Zugriff auf das Panel
-Nachdem die Installation abgeschlossen ist und das System neu gestartet wurde, klicke im Menü auf die Option **Proxmox Environment GNU/Linux** und drücke **Enter**.
-
-Sobald das System geladen ist, solltest du eine Willkommensnachricht von Proxmox in der Konsole sehen, die die IP-Adresse und den Link enthält, über den du über einen Browser auf dein Panel zugreifen kannst (den du zuvor angegeben hast). Navigiere zu diesem Link.
+Nach der Installation und dem Neustart wählst du im Menü die Option **Proxmox Environment GNU/Linux** und drückst **Enter**. Nach dem Start siehst du eine Willkommensnachricht von Proxmox in der Konsole mit der IP-Adresse und dem Link, über den du dein Panel im Browser erreichst (die IP, die du vorher angegeben hast). Öffne diesen Link.
 
 :::note
-Dein Browser zeigt möglicherweise erneut eine Sicherheitsabfrage an, die du ignorieren und akzeptieren musst, um fortzufahren.
+Dein Browser zeigt vielleicht wieder eine Sicherheitswarnung an – einfach ignorieren und akzeptieren, um weiterzumachen.
 :::
 
-Wenn der angegebene Link nicht zugänglich ist, deutet dies darauf hin, dass du während der Einrichtung eine Konfiguration vorgenommen haben, wahrscheinlich in Bezug auf die Netzwerkkonfigurationseinstellungen.
+Wenn der Link nicht erreichbar ist, hast du wahrscheinlich bei der Netzwerkkonfiguration etwas falsch eingestellt.
 
-Nachdem du dich nun im Panel befindest, musst du dich anmelden. Dies kannst du mit dem Benutzernamen `root` und dem Passwort tun, welches du während des Installationsprozesses festgelegt hast. Stelle sicher, dass **Realm** auf `Linux PAM standard authentication` eingestellt ist.
+Im Panel meldest du dich mit dem Benutzernamen `root` und dem Passwort an, das du während der Installation vergeben hast. Achte darauf, dass der **Realm** auf `Linux PAM standard authentication` steht.
 
-![](https://github.com/zaphosting/docs/assets/42719082/4072c2ac-6f5c-4350-a5df-0635b1f433c0)
+![](https://screensaver01.zap-hosting.com/index.php/s/iKcErA9Bx5LpB3n/preview)
 
-Nach der Anmeldung kannst du die Anmeldemeldung ignorieren, indem du auf den Button **OK** drückst, um dies zu bestätigen. Und schon hast du Proxmox VE erfolgreich auf deinem dedizierten Server installiert und dich bei deinem Panel angemeldet!
-
-
-
-## Erstellen deiner ersten VM
-In diesem Abschnitt werden die grundlegenden Schritte beschrieben, die erforderlich sind, um deine erste virtuelle Maschine (VM) über dein Proxmox-Panel zu erstellen. Gehe zu "local (panel)" und wählen den Abschnitt **ISO Images** aus. Hier kannst du entweder die .iso-Datei manuell hochladen oder sie von Proxmox abrufen lassen, indem du die direkte Download-URL der ISO-Datei angibst.
-
-![](https://github.com/zaphosting/docs/assets/42719082/8182bd73-690f-434f-8394-5fdca6889a74)
-
-Danach kannst du mit der Erstellung deiner VM fortfahren. Schauee nach rechts oben und klicke auf den Button **VM erstellen**. Es öffnet sich ein neues Menü mit einer großen Auswahl an Optionen.
-
-Zunächst musst du den Abschnitt mit den allgemeinen Einstellungen konfigurieren. Standardmäßig ist der "Knoten" auf den Standardknoten (in diesem Fall "Panel") eingestellt. Du musst eine eindeutige VM-ID angeben, die standardmäßig auf `100` eingestellt ist oder sich erhöht, wenn du bereits eine VM hast. Füge nun einen Namen für deine VM hinzu, dieser kann beliebig sein.
-
-![](https://github.com/zaphosting/docs/assets/42719082/bcd2eb41-a8fc-4a44-9abb-072f9e408d10)
-
-Gehen nun schnell zum Abschnitt Betriebssystemeinstellungen. Hier solltest du das ISO-Image auswählen, das du verwenden möchtest, nämlich das, das du in einem früheren Schritt hochgeladen hast. Stellen sicher, dass du auch den Typ und die Version des Betriebssystems festlegst, das du verwendest.
-
-![](https://github.com/zaphosting/docs/assets/42719082/05d51c46-5a69-4cd7-b2e6-c3472437caf9)
-
-Wir empfehlen, den Abschnitt Systemeinstellungen standardmäßig zu belassen, da er entsprechend konfiguriert sein sollte. Gehe weiter zum Abschnitt Festplatteneinstellungen, wo du die Festplattengröße angeben kannst, die du für deine VM verwenden möchtest. Du kannst auch den Speicherpool festlegen, den du verwenden möchtest, obwohl dieser standardmäßig `local-lvm` ist. Der Rest der Einstellungen sollte standardmäßig gut funktionieren.
-
-![](https://github.com/zaphosting/docs/assets/42719082/26f11d42-8884-4bb5-b0fe-d7b4df7885a5)
-
-Der nächste Schritt ist der Abschnitt CPU-Einstellungen, in dem du die Optionen wie den Sockel und die Anzahl der Kerne, die verwendet werden sollen, festlegen kannst. Dies kannst du so konfigurieren, wie du es für deine VM benötigst.
-
-![](https://github.com/zaphosting/docs/assets/42719082/91103b8d-dadc-4305-a3fe-bf4c8f96fc27)
-
-Im Abschnitt Speichereinstellungen kannst du ebenfalls festlegen, wie viel Speicher du der VM zur Verfügung stellen möchtest und den Status des Ballooning wählen.
-
-![](https://github.com/zaphosting/docs/assets/42719082/ac0048cb-0bd4-4791-9a9f-857e5037955d)
-
-We also recommend leaving the Network settings section default as it should be configured appropriately for now. Finally, you can review all the settings that you have configured throughout this VM setup. We recommend setting the `Start after created` option on so that your VM automatically starts for you. If you are satisfied with everything, proceed to create the VM by pressing the **Finish** button.
-
-![](https://github.com/zaphosting/docs/assets/42719082/d14a8b3d-e9bb-4feb-8049-428e84c1e917)
-
-Wir empfehlen außerdem, den Abschnitt Netzwerkeinstellungen standardmäßig zu belassen, da er für den Moment angemessen konfiguriert sein sollte. Abschließend kannst du alle Einstellungen überprüfen, die du während der VM-Einrichtung vorgenommen hast. Wir empfehlen, die Option "Nach der Erstellung starten" zu aktivieren, damit deine VM automatisch für dich startet. Wenn du mit allem zufrieden bist, fahre mit der Erstellung der VM fort, indem du auf den Button **Finish** drückst.
+Nach dem Login kannst du die Abonnement-Meldung mit **OK** wegklicken. Und zack, du hast Proxmox VE erfolgreich auf deinem Dedicated Server installiert und bist im Panel!
 
 
 
+## Erstelle deine erste VM
+Hier zeigen wir dir die Basics, um deine erste Virtual Machine (VM) über dein Proxmox-Panel zu erstellen. Gehe zu `local (panel)` und wähle den Bereich **ISO Images**. Hier kannst du entweder die `.iso` Datei manuell hochladen oder Proxmox die ISO direkt per Download-URL holen lassen.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/GJjxxkPAkiRM7Fw/preview)
+
+Wenn das erledigt ist, kannst du deine VM erstellen. Klick oben rechts auf den Button **Create VM**. Es öffnet sich ein Menü mit vielen Optionen.
+
+Zuerst konfigurierst du die allgemeinen Einstellungen. Standardmäßig ist der `Node` auf den Default-Knoten (hier `panel`) gesetzt. Du musst eine eindeutige VM-ID angeben, die standardmäßig bei `100` startet oder hochzählt, wenn du schon VMs hast. Gib deiner VM einen Namen – das kann alles sein.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/6LmXZ26bnNY46yS/preview)
+
+Weiter geht’s zu den OS-Einstellungen. Wähle hier das ISO-Image aus, das du vorher hochgeladen hast. Definiere außerdem Typ und Version des Betriebssystems, das du installieren willst.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/QWjGQ7grR8ttaqZ/preview)
+
+Wir empfehlen, die Systemeinstellungen so zu belassen, wie sie sind – die sind schon passend konfiguriert. Im Bereich Festplatteneinstellungen kannst du die Größe der VM-Festplatte festlegen. Außerdem kannst du den Speicherpool auswählen, standardmäßig ist das `local-lvm`. Die restlichen Einstellungen kannst du so lassen.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/2XJyydoZwaEMDeZ/preview)
+
+Im CPU-Bereich kannst du Socket und Anzahl der CPU-Kerne festlegen. Stell das so ein, wie es für deine VM passt.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/RrWWT2wMRaQzde7/preview)
+
+Im Speicherbereich kannst du festlegen, wie viel RAM die VM bekommen soll und den Ballooning-Status wählen.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/DaXCsYLwWeMr9aJ/preview)
+
+Auch die Netzwerkeinstellungen kannst du erstmal so lassen, wie sie sind – die sind passend vorkonfiguriert. Zum Schluss kannst du alle Einstellungen nochmal überprüfen. Wir empfehlen, die Option `Start after created` zu aktivieren, damit deine VM direkt nach der Erstellung startet. Wenn alles passt, klick auf **Finish**, um die VM zu erstellen.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/EfNAZ4idcxizDsa/preview)
+
+Und so hast du deine erste VM im Proxmox-Panel erstellt! Du kannst sie jetzt in der Serverübersicht links im Panel sehen.
 
 
-## Abschluss
 
-Glückwunsch, du hast Proxmox erfolgreich installiert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+
+
+## Fazit
+
+Glückwunsch, du hast Proxmox erfolgreich auf deinem Dedicated Server installiert. Bei Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Seite! 🙂
+
+

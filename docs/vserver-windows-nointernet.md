@@ -1,7 +1,7 @@
 ---
 id: vserver-windows-nointernet
 title: "VPS: Troubleshoot No Internet"
-description: Information on how to troubleshoot and resolve network and internet issues on Windows vRootserver from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to troubleshoot and fix internet connection issues on your Windows VPS effectively → Learn more now"
 sidebar_label: Troubleshoot No Internet
 services:
   - vserver
@@ -116,10 +116,12 @@ The solution for the firewall is highly dependant on the issue that you are faci
 
 ## Reset network configuration
 
-You can reset the network configuration in the web interface administration of your VPS/rootserver by clicking on the **Reset network configuration** button on the settings page. During this process, the configurations for the IP address, subnet mask, gateway and DNS server are reset to its original state. 
+You can reset the network configuration in the web interface administration of your VPS by clicking on the **Reset network configuration** button on the settings page. During this process, the configurations for the IP address, subnet mask, gateway and DNS server are reset to its original state. 
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/YsLZZJZEaf3pemt/preview)
 
 
 ## Conclusion
 If you have followed all the steps, the connection should be possible again as usual. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

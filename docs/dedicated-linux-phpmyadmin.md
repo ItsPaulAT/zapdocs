@@ -1,9 +1,10 @@
 ---
 id: dedicated-linux-phpmyadmin
-title: "Dedicated Server: Installation of phpMyAdmin"
-description: Information on how to install and set up phpMyAdmin on your Linux dedicated server from ZAP-Hosting - ZAP-Hosting.com Documentation
+title: "Setup phpMyAdmin on a Linux Server - Manage Your Databases via Web Interface"
+description: "Discover how to manage MySQL and MariaDB databases easily with phpMyAdmin’s web interface for efficient database administration → Learn more now"
 sidebar_label: Install phpMyAdmin
 services:
+  - vserver
   - dedicated
 ---
 
@@ -13,7 +14,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 phpMyAdmin is a free, web-based tool for managing MySQL and MariaDB databases. It provides a user-friendly interface that allows users to create, edit, manage and delete databases without having to enter SQL commands manually.
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -24,7 +25,7 @@ sudo apt update -y
 sudo apt upgrade -y
 ```
 
-You must also ensure that you already have PHP installed on your system. This is essential for the use of phpMyAdmin. To find out how to install PHP, please have a look at our [Install PHP](dedicated-linux-php.md) guide.
+You must also ensure that you already have PHP installed on your system. This is essential for the use of phpMyAdmin. To find out how to install PHP, please have a look at our [Install PHP](vserver-linux-php.md) guide.
 
 :::warning Missing PHP packages
 Wenn die notwendigen PHP Pakete fehlen, dann können die PHP-Dateien von phpMyAdmin nicht korrekt vearbeitet und dargestellt werden. 
@@ -109,3 +110,5 @@ chown -R www-data:www-data /usr/share/phpmyadmin/tmp/
 ## Conclusion
 
 Congratulations, you have successfully installed and configured phpMyAdmin. You can access the web interface using the IP address and the path of your server (http://IP-Address/phpmyadmin).  For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+

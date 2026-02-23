@@ -1,10 +1,10 @@
 ---
 id: fivem-esx-spawnpoints
 title: "FiveM: Manage and customize spawnpoints with ESX"
-description: Manage and customize spawnpoints with QbCore on your FiveM server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to customize and expand spawn points in the ESX framework for enhanced gameplay experience → Learn more now"
 sidebar_label: Spawnpoints
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -54,3 +54,5 @@ A suitable resource is required to obtain the current coordinates. You will find
 ## Conclusion
 
 You have successfully changed existing spawnpoints or added new ones by following this method. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

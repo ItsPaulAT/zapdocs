@@ -1,10 +1,10 @@
 ---
 id: soulmask-server-savegames
 title: "Soulmask: Managing Soulmask Savegames"
-description: Information on how to manage savegames on your Soulmask server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to manage and back up your Soulmask Gamesaves locally and on your server for secure gameplay → Learn more now"
 sidebar_label: Manage Savegames
 services:
-  - gameserver
+  - gameserver-soulmask
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -89,3 +89,5 @@ If the save you are using has a slightly different name for the **GameXishu.json
 :::
 
 Now simply start the server again, and your save should now load successfully on the server.
+
+<InlineVoucher />

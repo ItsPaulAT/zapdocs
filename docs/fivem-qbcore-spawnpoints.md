@@ -1,10 +1,10 @@
 ---
 id: fivem-qbcore-spawnpoints
 title: "FiveM: Manage and customize spawnpoints with QbCore"
-description: Manage and customize spawnpoints with QbCore on your FiveM server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to customize and add spawn points in the QBCore framework for enhanced gameplay experience → Learn more now"
 sidebar_label: Spawnpoints
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -105,3 +105,5 @@ The end result would then be as follows:
 ## Conclusion
 
 You have successfully changed existing spawnpoints or added new ones by following this method. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: vserver-windows-change-language
 title: "VPS: Manage Languages on Windows Server"
-description: Information on how to add and manage languages on your Windows VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize your Windows server language settings for a localized experience and improve usability → Learn more now"
 sidebar_label: Add & Manage Languages
 services:
   - vserver
@@ -68,3 +68,5 @@ On this page, you will be able to select between **Windows (EN)** and **Windows 
 ![](https://screensaver01.zap-hosting.com/index.php/s/gxw8pKDr8sBBTHQ/preview)
 
 Once you have started the reinstall, please be patient as it can take some time (up to 30mins) for the server to complete the entire process.
+
+<InlineVoucher />

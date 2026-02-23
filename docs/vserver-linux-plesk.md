@@ -1,10 +1,11 @@
 ---
 id: vserver-linux-plesk
-title: "VPS: Installation of Plesk"
-description: Information on how to install Plesk on your Linux VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup Plesk on a Linux Server - Manage Websites with a Powerful Control Panel"
+description: "Discover how to manage websites and servers efficiently with Plesk for beginners and experts alike → Learn more now"
 sidebar_label: Install Plesk
 services:
   - vserver
+  - dedicated
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -207,3 +208,5 @@ The installation as well as the setup of the first domain with encryption is now
 ## Conclusion
 
 Congratulations, you have successfully installed and configured Plesk! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

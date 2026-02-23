@@ -1,10 +1,10 @@
 ---
 id: minecraft-faultyworld
 title: "Minecraft: Remove faulty chunks from world"
-description: Information on how to remove Faulty Chunks from your Minecraft world from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to fix Minecraft chunk errors and restore smooth gameplay by removing corrupted world sections → Learn more now"
 sidebar_label: Faulty World (Chunks)
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -44,3 +44,5 @@ As a result, the selected chunks have been deleted and you can now upload the wo
 
 ## Conclusion
 Congratulations, you have successfully removed the faulty chunks and should be able to play this world properly again. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

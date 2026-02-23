@@ -1,7 +1,7 @@
 ---
 id: preorders
 title: Pre-orders
-description: Information about pre-orders at ZAP-Hosting. What are pre-orders? When are servers set up? Can pre-orders be cancelled? - ZAP-Hosting.com documentation
+description: "Discover how to secure and manage pre-ordered game servers with automatic setup and flexible cancellation options → Learn more now"
 sidebar_label: Preorders
 ---
 
@@ -15,7 +15,7 @@ Some products can be ordered at ZAP-Hosting.com as pre-orders. This means that t
 
 Pre-orders are marked as pre-orders on the product page. They will have an stopwatch icon to represent this.
 
-![](https://github.com/zaphosting/docs/assets/42719082/6af93b92-69bc-49ef-adbd-2b858f3b6c01)
+![](https://screensaver01.zap-hosting.com/index.php/s/Wx9nEXzees3Bx3B/preview)
 
 ## Provision of pre-orders
 

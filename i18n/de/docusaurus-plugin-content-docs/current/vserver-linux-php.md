@@ -1,25 +1,26 @@
 ---
 id: vserver-linux-php
-title: 'VPS: Installation von PHP'
-description: Informationen darüber, wie man PHP auf deinem Linux-Server von ZAP-Hosting.com installiert - ZAP-Hosting.com Dokumentation
+title: 'PHP auf einem Linux-Server einrichten – Power für dynamische Web-Apps'
+description: "Lerne, wie du PHP auf deinem Linux-Server für Webentwicklung installierst und dein Setup für Apache oder Standalone optimierst → Jetzt mehr erfahren"
 sidebar_label: PHP installieren
 services:
   - vserver
+  - dedicated
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
- 
+
 ## Einführung
 
-PHP ist eine beliebte Allzweck-Programmiersprache, die in der Webentwicklung häufig zum Einsatz kommt. In dieser Anleitung wird der Prozess der Installation von PHP auf deinem Server behandelt.
+PHP ist eine beliebte Programmiersprache für viele Zwecke, die vor allem in der Webentwicklung stark genutzt wird. In dieser Anleitung zeigen wir dir, wie du PHP auf deinem Server installierst.
 
 <InlineVoucher />
 
-## Voraussetzungen
+## Vorbereitung
 
-Beginne damit, dich über SSH mit deinem Server zu verbinden. Wenn du nicht weißt, wie das geht, schau dir bitte unsere Anleitung [Erstzugriff (SSH)](vserver-linux-ssh.md) an.
+Verbinde dich zuerst per SSH mit deinem Server. Falls du nicht weißt, wie das geht, schau dir unsere [Erstzugang (SSH)](vserver-linux-ssh.md) Anleitung an.
 
-Nach dem Einloggen wird empfohlen, den Aktualisierungsbefehl für dein Betriebssystem auszuführen, um die Sicherheit deines Servers zu gewährleisten und ihn mit den neuesten Funktionen auf dem neuesten Stand zu halten.
+Sobald du eingeloggt bist, empfehlen wir, den Update-Befehl für dein Betriebssystem auszuführen, um deinen Server sicher und auf dem neuesten Stand zu halten.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -28,28 +29,28 @@ import TabItem from '@theme/TabItem';
 <TabItem value="ubuntu-debian" label="Ubuntu & Debian" default>
 
 ```
-sudo apt update
+  sudo apt update
 ```
 
 </TabItem>
 <TabItem value="centos" label="CentOS">
 
 ```
-sudo yum update
+  sudo yum update
 ```
 
 </TabItem>
 <TabItem value="opensuse" label="OpenSUSE">
 
 ```
-sudo zypper update
+  sudo zypper update
 ```
 
 </TabItem>
 <TabItem value="fedora" label="Fedora">
 
 ```
-sudo dnf update
+  sudo dnf update
 ```
 
 </TabItem>
@@ -57,54 +58,58 @@ sudo dnf update
 
 ## Installation
 
-Es gibt zwei Möglichkeiten, PHP auf Ihrem Linux-Server zu installieren: entweder als eigenständiges Paket oder als zusätzliches Paket für Apache. Wenn Sie Ihren eigenen Webserver verwenden, der nicht Apache ist, oder für allgemeine Aufgaben, empfehlen wir die eigenständige Methode. Andernfalls verwenden Sie für die Verwendung mit dem Apache-Webserver die Apache-Methode, um PHP als zusätzliches Paket zu installieren.
+Es gibt zwei Hauptwege, PHP auf deinem Linux-Server zu installieren: als Standalone-Version oder als zusätzliches Paket für Apache. Wenn du deinen eigenen Webserver nutzt, der nicht Apache ist, oder PHP für allgemeine Zwecke brauchst, empfehlen wir die Standalone-Methode. Für den Einsatz mit dem Apache-Webserver solltest du PHP als Apache-Paket installieren.
 
 ## Standalone
 
-Verwende den folgenden Befehl, um die neueste Version von PHP zu installieren. Wenn du bestimmte Versionen installieren möchtest, kannst du die Option `-y` gefolgt von der Version verwenden.
+Nutze den folgenden Befehl, um die neueste PHP-Version zu installieren. Wenn du eine bestimmte Version installieren möchtest, kannst du das mit dem `-y` Flag und der Versionsnummer machen.
 ```
-# Latest
+# Neueste Version
 sudo apt install php
 
-# Specific Version (e.g. php7.4)
+# Spezifische Version (z.B. php7.4)
 sudo apt -y install php[version]
 ```
 
-Überprüfe mit dem Befehl `php -v`, ob die Installation erfolgreich war. Du hast PHP erfolgreich auf deinem Server installiert. Wir empfehlen, den Abschnitt **PHP-Erweiterungen** zu lesen, um sicherzustellen, dass du alle erforderlichen Erweiterungen installierst.
+Überprüfe die erfolgreiche Installation mit dem Befehl `php -v`. Du hast PHP erfolgreich auf deinem Server installiert. Wir empfehlen dir, den Abschnitt **PHP Extensions** zu lesen, um sicherzugehen, dass du alle benötigten Erweiterungen installierst.
 
-## Verwendung von Apache
+## Mit Apache
 
-Zu Beginn solltest du Apache auf deinem Server installieren, falls du dies noch nicht getan hast. Dies kann mit dem folgenden Befehl erfolgen.
+Falls Apache noch nicht installiert ist, kannst du das mit folgendem Befehl nachholen:
 ```
 sudo apt install apache2
 ```
 
-Nach der Installation solltest du sicherstellen, dass die entsprechenden Firewall-Regeln erstellt werden, um sicherzustellen, dass der Webserver über das Internet zugänglich ist. In diesem Beispiel verwenden wir die **UFW-Firewall**, da Apache eine registrierte Anwendung dafür hat. Wenn du eine andere Firewall verwendest, stelle sicher, dass du Port 80 (HTTP) durch die Firewall zulässt.
+Nach der Installation solltest du sicherstellen, dass die passenden Firewall-Regeln gesetzt sind, damit dein Webserver aus dem Internet erreichbar ist. In diesem Beispiel nutzen wir die **UFW Firewall**, da Apache dafür eine registrierte Anwendung hat. Wenn du eine andere Firewall nutzt, stelle sicher, dass Port 80 (HTTP) freigegeben ist.
 ```
 sudo ufw allow in "Apache"
 ```
 
-Jetzt sollte dein Server erreichbar sein. Du kannst dies testen, indem du `http://[your_serverip]` in einen Internetbrowser eingibst.
+Dein Server sollte jetzt erreichbar sein. Teste das, indem du `http://[deine_serverip]` in einem Browser eingibst.
 
-Da Apache nun bereit ist, kannst du das PHP-Paket für Apache mit dem folgenden Befehl installieren.
+Mit Apache bereit, kannst du nun das PHP-Paket für Apache installieren:
 ```
 sudo apt install php libapache2-mod-php
 ```
 
-Überprüfe mit dem Befehl `php -v`, ob die Installation erfolgreich war. Du hast PHP erfolgreich neben deinem Apache-Webserver installiert. Wir empfehlen, den Abschnitt **PHP-Erweiterungen** zu lesen, um sicherzustellen, dass du alle erforderlichen Erweiterungen installierst.
+Überprüfe die Installation mit `php -v`. Du hast PHP erfolgreich zusammen mit deinem Apache-Webserver installiert. Schau dir unbedingt den Abschnitt **PHP Extensions** an, um alle nötigen Erweiterungen zu installieren.
 
-## PHP-Erweiterungen
+## PHP Extensions
 
-PHP wird mit einer großen Auswahl an Erweiterungen geliefert, die optional sind und zur Erweiterung der Funktionalität installiert werden können. Um eine Liste der verfügbaren Erweiterungen anzuzeigen, führe den folgenden Befehl aus, der die Ergebnisse des Suchbefehls in der Konsole anzeigt, indem die Ergebnisse über eine Pipeline an den Befehl `less` weitergeleitet werden.
+PHP bringt viele optionale Erweiterungen mit, die du installieren kannst, um die Funktionalität zu erweitern. Um eine Liste verfügbarer Extensions zu sehen, nutze folgenden Befehl, der die Suchergebnisse bequem mit `less` anzeigt:
+
 ```
 apt search php- | less
 ```
 
-Verwende die Pfeiltasten zum Scrollen und drücke `Q`, sobald du bereit bist, den Vorgang zu beenden. Um nun ein Erweiterungspaket zu installieren, verwende einfach den Befehl apt install wie folgt. Du kannst mehrere Erweiterungen auf einmal eingeben, die durch ein Leerzeichen getrennt sind, um die Installation zu beschleunigen.
+Mit den Pfeiltasten kannst du scrollen, mit `Q` verlässt du die Ansicht. Um eine Extension zu installieren, nutze einfach den apt install Befehl. Du kannst mehrere Extensions gleichzeitig mit Leerzeichen getrennt angeben, um Zeit zu sparen.
+
 ```
 sudo apt install [php_extension] [...]
 ```
 
-## Abschluss
+## Fazit
 
-Du hast PHP erfolgreich auf deinem Linux-Server installiert. Bei weiteren Fragen oder für Unterstützung wende dich bitte an unser Support-Team, das dir täglich zur Verfügung steht! 🙂
+Du hast PHP erfolgreich auf deinem Linux-Server installiert. Bei Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+<InlineVoucher />

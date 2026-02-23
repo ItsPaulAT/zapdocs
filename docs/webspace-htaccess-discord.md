@@ -1,7 +1,7 @@
 ---
 id: webspace-htaccess-discord
 title: "Webspace: Set up Discord forwarding via domain"
-description: Information on how to add a Discord forwarding domain to your webspace from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to redirect your domain to a specific URL using web server configuration for seamless forwarding → Learn more now"
 sidebar_label: Discord forwarding
 services:
   - webspace
@@ -51,3 +51,5 @@ You should now be able to call the redirect with your domain and the defined dis
 ## Conclusion
 
 Provided you have followed all the steps, you should have successfully configured the domain forwarding to your Discord server.  For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

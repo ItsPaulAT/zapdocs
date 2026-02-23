@@ -1,7 +1,7 @@
 ---
 id: domain-transfer
 title: "Domain: Transfer a Domain"
-description: Information about the process of transfering an existing domain at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to transfer your domain smoothly to or from ZAP-Hosting and ensure uninterrupted management of your domain → Learn more now"
 sidebar_label: Transfer Domain
 services:
   - domain
@@ -12,6 +12,8 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 ## Introduction
 
 Managing your domain is important, including the ability to transfer your domain across providers. In this guide, we will explore how you can transfer your existing domain, both to and from your ZAP-Hosting account.
+
+<InlineVoucher />
 
 ## Transferring Domain to ZAP-Hosting
 
@@ -46,3 +48,5 @@ Head over to the **Dashboard** area on your Domain's web interface panel. On thi
 ![](https://screensaver01.zap-hosting.com/index.php/s/TTHm6qFA9rfgFBn/preview)
 
 You should provide this authorization code to your new provider during setup to move your domain.
+
+<InlineVoucher />

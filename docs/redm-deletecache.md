@@ -1,10 +1,10 @@
 ---
 id: redm-deletecache
 title: "RedM: Empty Cache"
-description: Information on how to clear the cache of your RedM Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how clearing your RedM server cache improves performance and resolves errors for a smoother gaming experience → Learn more now"
 sidebar_label: Delete Cache
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -51,3 +51,5 @@ Now proceed to restart your RedM server for this to take effect. When the server
 ## Conclusion
 
 Provided that you have followed all the steps, you have successfully cleared your server cache. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

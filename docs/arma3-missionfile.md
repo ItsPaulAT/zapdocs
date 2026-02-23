@@ -1,10 +1,10 @@
 ---
 id: arma3-missionfile
 title: "Arma 3: Upload your own mission file"
-description: Information on how to add your own mission file to your Arma 3 server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to upload and load custom mission files on your Arma 3 server for a personalized gaming experience → Learn more now"
 sidebar_label: Upload your own mission file
 services:
-  - gameserver
+  - gameserver-arma3
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -32,3 +32,5 @@ There you edit the file **server.cfg** and enter the name of your mission file a
 ![](https://screensaver01.zap-hosting.com/index.php/s/6TZ7mc578pcHpbF/preview)
 
 After that, click **Save** and you can start your server. The new mission file will be loaded.
+
+<InlineVoucher />

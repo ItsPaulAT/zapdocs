@@ -1,8 +1,8 @@
 ---
 id: dedicated-windows
-title: "Dedicated Server: Installation von Windows Server"
-description: Informationen, wie du das Windows Betriebssystem auf deinem Dedicated Server von ZAP-Hosting installieren kannst - ZAP-Hosting.com Dokumentation
-sidebar_label: Windows installieren
+title: "Dedicated Server: Installation von Windows Server 2025"
+description: "Entdecke, wie du Windows Server 2025 erfolgreich auf deinem Dedicated Server installierst und konfigurierst für optimale Performance → Jetzt mehr erfahren"
+sidebar_label: Windows Server 2025
 services:
   - dedicated
 ---
@@ -10,67 +10,71 @@ services:
 import YouTube from '@site/src/components/YouTube/YouTube';
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
-
 ## Einführung
+Im Folgenden wird dir Schritt für Schritt erklärt, wie du das Windows Server Betriebssystem auf deinem Dedicated Server installierst und konfigurierst. Folge diesen Anweisungen sorgfältig, damit du das Betriebssystem erfolgreich einrichtest und optimal nutzt.
 
-Im Folgenden wird dir Schritt für Schritt erklärt, wie du das Windows Server Betriebssystem auf deinem Dedicated Server installieren und konfigurieren kannst. Folge diesen Anweisungen sorgfältig, um sicherzustellen, dass du das Betriebssystem erfolgreich einrichtest und optimal nutzt.
+
 
 :::info Windows Server 2025
-Die Einrichtungsschritte und Veranschaulichung in dieser Anleitung basieren auf dem Windows Server 2025 Betriebssystem. Ältere Versionen können vom Aufbau und Design abweichen. Die Vorgehensweise ähnelt sich allerdings. 
+
+Die Setup-Schritte und die Demonstration in dieser Anleitung basieren auf dem **Windows Server 2025** Betriebssystem. **Ältere OS-Versionen** können sich in **Aufbau** und **Optik** unterscheiden. Der Ablauf ist jedoch ähnlich.  
 :::
 
-<InlineVoucher />
+
+
+
 
 ## Vorbereitung
-
-Für die Installation und Konfiguration eines Betriebssystems ist es zunächst wichtig, dass die entsprechende ISO vom Betriebssystem gemountet wird. Für das Mounten gibt es mehrere mögliche Wege: 
+Für die Installation und Konfiguration eines Betriebssystems ist es zunächst wichtig, das passende ISO des Betriebssystems einzubinden. Es gibt mehrere Möglichkeiten, das ISO zu mounten:
 
 1. Mounten über die Ersteinrichtung
-2. Mounten über die iLO (Virtual Media)
-3. Mounten über die iLO (Remote Console)
+2. Mounten über iLO (Virtual Media)
+3. Mounten über iLO (Remote Console)
 
-Solltest du mit dem Mounten einer ISO-Datei noch nicht vertraut sein, dann schaue dir am besten unsere [Ersteinrichtung](dedicated-setup.md) oder [Eigene ISO](dedicated-iso.md) Anleitung an.
+Wenn du noch nicht vertraut bist mit dem Mounten einer ISO-Datei, empfehlen wir dir unsere [Ersteinrichtung](dedicated-setup.md) oder [Eigene ISO](dedicated-iso.md) Anleitung.
 
 
 
 ## Installation
-Nachdem die ISO-Datei erfolgreich gemountet wurde, startet die Windows Server-Installation beim nächsten Systemneustart automatisch. Zunächst müssen die Sprache und das Tastaturlayout festgelegt werden. Anschließend erfolgt die Auswahl der Setup-Option, bei der **Install Windows Server** ausgewählt werden muss.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/FoMo9mDaCzBjSMB/download)
+Sobald die ISO-Datei erfolgreich eingebunden wurde, startet die Windows Server Installation automatisch beim nächsten Neustart des Systems. Zuerst müssen Sprache und Tastaturlayout ausgewählt werden. Danach wählst du die Setup-Option, bei der **Windows Server installieren** ausgewählt werden muss.
 
-Sobald die Installation eingeleitet wurde, bereitet das System die notwendigen Komponenten vor. Dieser Vorgang kann einige Zeit in Anspruch nehmen. Nachdem dies abgeschlossen ist, muss die gewünschte Windows Server-Edition ausgewählt werden. Zur Verfügung stehen folgende Varianten:
+![img](https://screensaver01.zap-hosting.com/index.php/s/gW4cr5WDGYEdBzw/download)
+
+Sobald die Installation gestartet wurde, bereitet das System die notwendigen Komponenten vor. Dieser Vorgang kann einige Zeit dauern. Nach Abschluss musst du die gewünschte Windows Server Edition auswählen. Folgende Versionen stehen zur Verfügung:
 
 - Windows Server 2025 Standard Evaluation
 - Windows Server 2025 Standard Evaluation (Desktop Experience)
 - Windows Server 2025 Datacenter Evaluation
 - Windows Server 2025 Datacenter Evaluation (Desktop Experience)
 
-Falls du eine grafische Benutzeroberfläche sowie die Nutzung von RDP benötigst, solltest du eine der Desktop Experience Varianten wählen. Weitere Informationen zu den Unterschieden zwischen der Standard- und der Datacenter-Edition findest du auf der offiziellen [Microsoft Webseite](https://learn.microsoft.com/de-de/windows-server/get-started/editions-comparison?pivots=windows-server-2025).
+Wenn du eine grafische Benutzeroberfläche und die Nutzung von RDP benötigst, solltest du eine der Desktop Experience Varianten wählen. Weitere Infos zu den Unterschieden zwischen Standard und Datacenter Edition findest du auf der offiziellen [Microsoft Webseite](https://learn.microsoft.com/en-us/windows-server/get-started/editions-comparison?pivots=windows-server-2025).
 
-:::warning Windows Server-Editionen und Lizenzen
-
-Stelle sicher, dass du die Server-Edition auswählst, für die du einen gültigen Lizenzschlüssel besitzt. ZAP-Hosting stellt keine Windows Server-Lizenz für dieses Produkt bereit. Nach Ablauf des Testzeitraums muss die Lizenz eigenständig erworben werden.
-
+:::warning Windows Server Editionen und Lizenzen
+Achte darauf, dass du die Server-Edition auswählst, für die du einen gültigen Lizenzschlüssel besitzt. ZAP-Hosting stellt für dieses Produkt keine Windows Server Lizenz bereit. Nach Ablauf der Testphase muss die Lizenz separat erworben werden.
 :::
 
-Nach der Auswahl des gewünschten Images müssen die Hinweise und Lizenzbedingungen bestätigt sowie die Partition festgelegt werden, auf der das Betriebssystem installiert werden soll. Erstelle dazu eine neue Partition, indem du auf **Create Partition** klickst, wähle anschließend die neu erstellte Disk/Partition aus und bestätige mit Next. Zum Abschluss starte die Installation mit einem **Klick** auf Install.
+Nach der Auswahl des gewünschten Images müssen die Hinweise und Lizenzbedingungen bestätigt und die Partition ausgewählt werden, auf der das Betriebssystem installiert werden soll. Erstelle dazu eine neue Partition über **Partition erstellen**, wähle dann die neu erstellte Festplatte/Partition aus und bestätige mit Weiter. Starte abschließend die Installation durch **Klick** auf Installieren.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/BNHKJStwjJtabpf/download)
+![img](https://screensaver01.zap-hosting.com/index.php/s/2RQcBKiqoJE9MAg/download)
 
-Die Installation des Windows Server Betriebssystem wird nun durchgeführt. Während des Vorgangs startet das System einige Male neu. Es kann eine Weile dauern bis der Vorgang vollständig abgeschlossen ist. 
+Die Installation des Windows Server Betriebssystems wird nun durchgeführt. Das System startet währenddessen mehrmals neu. Der Vorgang kann einige Zeit in Anspruch nehmen.
 
-Definiere nun abschließend noch die Zugangsdaten und schon kannst du dich bei deinem aufgesetzten Betriebssystem einloggen. Speichere die Zugangsdaten sorgfältig ab, da du diese zukünftig immer zum einloggen verwenden wirst. 
+Lege die Login-Daten fest und du bist bereit, dich in dein installiertes Betriebssystem einzuloggen. Speichere die Zugangsdaten gut ab, da du sie zukünftig immer zum Einloggen benötigst.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/onGybP8Fd7iNJXK/download)
+![img](https://screensaver01.zap-hosting.com/index.php/s/FiXwH85pT24DYnJ/download)
 
 
 
 ## Konfiguration
 
-Nach der Einrichtung des Betriebssystems ist es erforderlich, den RDP-Zugang zu aktivieren, damit externe Verbindungen zugelassen werden. Gehe dazu in die Remote-Desktop-Einstellungen und aktiviere die entsprechende Option.
+Nachdem das Betriebssystem eingerichtet ist, muss der RDP-Zugang aktiviert werden, damit externe Verbindungen erlaubt sind. Gehe dazu in die Remotedesktop-Einstellungen und aktiviere die entsprechende Option.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/CYiAxJCi6nWipWS/download)
+![img](https://screensaver01.zap-hosting.com/index.php/s/gCCcTzpn69LpgSr/download)
 
 
-## Abschluss
-Glückwunsch, du hast das Windows Server Betriebssystem erfolgreich  auf deinem Dedicated Server installiert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+
+## Fazit
+Glückwunsch, du hast Windows Server 2025 erfolgreich auf deinem Dedicated Server installiert. Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Verfügung und hilft dir gerne weiter! 🙂
+
+

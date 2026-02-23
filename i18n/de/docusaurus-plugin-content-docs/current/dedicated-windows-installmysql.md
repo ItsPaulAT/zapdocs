@@ -1,9 +1,10 @@
 ---
 id: dedicated-windows-installmysql
-title: "Dedicated Server: Installation von MySQL Server"
-description: Informationen, wie du einen MySQL Server auf deinen Windows Server von ZAP-Hosting installieren und einrichten kannst - ZAP-Hosting.com Dokumentation
-sidebar_label: MySQL Server Installieren
+title: "MySQL auf einem Windows Server einrichten – Zuverlässige Datenbanken deployen und verwalten"
+description: "Lerne, wie du deinen eigenen MySQL-Datenbankserver auf einem Windows Dedicated Server einrichtest und absicherst für zuverlässiges Datenmanagement → Jetzt mehr erfahren"
+sidebar_label: MySQL installieren
 services:
+  - vserver
   - dedicated
 ---
 
@@ -11,44 +12,46 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Ein MySQL Server wird für verschiedenste Anwendungsgebiete benötigt und kann zum Beispiel wichtige Daten für einen Gameserver oder eine Website enthalten. Im Folgenden richtest du deinen eigenen MySQL Datenbankserver auf deinem Windows Dedicated Server ein.
+Ein MySQL-Server wird für verschiedene Anwendungen benötigt und kann wichtige Daten enthalten, zum Beispiel für einen Gameserver oder eine Website. Im Folgenden erklären wir dir, wie du deinen eigenen MySQL-Datenbankserver auf deinem Windows Dedicated Server einrichtest.
 
-<InlineVoucher />
+
 
 ## Installation
 
-Zu Beginn verbindest du dich via Remotedesktopverbindung auf deinem Dedicated Server und lädst dir dort die
-aktuellste Version von MariaDB herunter, diese verwenden wir als unseren Datenbankserver: [MariaDB Download](https://mariadb.org/download/?t=mariadb).
+Zuerst verbindest du dich per Remote Desktop Verbindung mit deinem Server und lädst die neueste Version von MariaDB herunter, die für den Datenbankserver verwendet wird: [MariaDB Download](https://mariadb.org/download/?t=mariadb). 
 
-Das heruntergeladene Archiv entpackst du mit WinRAR oder 7Zip und startest die darin befindliche Installationsdatei mit einem Doppelklick: 
+Entpacke das heruntergeladene Archiv mit WinRAR oder 7Zip und starte die Installationsdatei mit einem Doppelklick: 
 
-![](https://screensaver01.zap-hosting.com/index.php/s/TaDPSzNDDcaA2dt/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/53N4nAFHyrH4y3Q/preview)
 
-Im Anschluss navigierst du durch das Klicken auf **Next** durch den Installationsvorgang, bis du zur Eingabe des root Passwort aufgefordert wirst:
+Danach klickst du dich durch den Installationsprozess mit **Next**, bis du aufgefordert wirst, das Root-Passwort einzugeben:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/rdPgYifLTcPNq8j/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/eaPM9S8DFkyL2cK/preview)
 
-Dort legst du nun das Hauptpasswort für den Zugang zu deinem Datenbankserver fest, achte bitte unbedingt darauf, dass du hier ein sicheres Passwort verwendest und dass niemand außer dir dieses Passwort kennt!
+Hier kannst du das Master-Passwort für den Zugriff auf deinen Datenbankserver festlegen. Achte darauf, ein sicheres Passwort zu wählen, das niemand sonst kennt!
 
 :::info
-WICHTIG! Möchtest du von Außen via Navicat, HeidiSQL oder mithilfe eines anderen Tool auf die Datenbank zugreifen können muss zusätzlich der Punkt **Enable access from remote machins for root user** aktiviert werden! Aus Sicherheitsgründen ist dies jedoch generell nicht zu empfehlen.
+WICHTIG! Wenn du von extern mit Navicat, HeidiSQL oder einem anderen Tool auf die Datenbank zugreifen möchtest, musst du die Option **Enable access from remote machines for root user** aktivieren! Aus Sicherheitsgründen wird das generell nicht empfohlen.
 :::
 
-Im Anschluss klickst du auch hier auf **Next** bis du zum Ende der Installation gelangst, dort klickst du dann abschließend auf **Install**:
+Anschließend klickst du weiter auf **Next**, bis du ans Ende der Installation kommst, dort dann auf **Install**:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/fnwYx699HKiNfB7/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/btHcmpYicgiraY4/preview)
 
 Dein Datenbankserver ist jetzt online und einsatzbereit!
 
-## Externen Zugriff konfigurieren
+## Konfiguration des externen Zugriffs
 
-Wenn du während der Installation den Zugriff von Außen (Enable access from remote machins for root user" aktiviert hast, musst du zusätzlich noch den MySQL Port **3306** in der Windows-Firewall freigeben, dazu öffnest du diese und legst dort eine neue Regel an.
-Dafür findest du eine seperate Anleitung: [Portweiterleitung (Firewall)](vserver-windows-port.md)
+Wenn du während der Installation „Enable access from remote machines for root user“ aktiviert hast, musst du auch den MySQL-Port **3306** in der Windows-Firewall freigeben. Öffne dazu die Firewall und erstelle dort eine neue Regel.
+Eine Anleitung zum Weiterleiten von Ports in der Firewall findest du hier:
+[Portweiterleitung (Firewall)](vserver-windows-port.md)
 
-Damit ist dein MySQL Server nun auch von außen erreichbar. 
+Jetzt kannst du von extern auf deinen MySQL-Server zugreifen!
 
 
 
-## Abschluss
+## Fazit
 
-Glückwunsch, du hast den MySQL Server erfolgreich installiert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast den MySQL-Server erfolgreich installiert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Seite! 🙂
+
+

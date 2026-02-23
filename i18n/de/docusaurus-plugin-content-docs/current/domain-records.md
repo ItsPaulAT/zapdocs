@@ -1,8 +1,8 @@
 ---
 id: domain-records
-title: "Domain: Domain Records-Einstellungen"
-description: Informationen zu den Domain-Record-Einstellungen für Domains bei ZAP-Hosting - ZAP-Hosting.com Dokumentation
-sidebar_label: Domain Records
+title: "Domain: Domain-Einträge Einstellungen"
+description: "Entdecke, wie du verschiedene DNS-Eintragstypen konfigurierst und verstehst, um dein Domain-Management zu optimieren → Jetzt mehr erfahren"
+sidebar_label: Domain-Einträge
 services:
   - domain
 ---
@@ -11,104 +11,103 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Domains können ganz einfach konfiguriert werden, indem man eine Vielzahl von DNS-Eintragstypen verwendet, die unterschiedliche Aktionen ausführen. In diesem Anleitung gehen wir auf die verschiedenen Eintragstypen ein und erklären, wie sie funktionieren.
+Domains lassen sich ganz easy konfigurieren, indem du verschiedene DNS-Eintragstypen nutzt, die unterschiedliche Funktionen erfüllen. In dieser Anleitung erklären wir dir alle Eintragstypen und wie sie funktionieren.
 
-
+<InlineVoucher />
 
 ## Konfiguration
-Du kannst die Domaineinträge in deiner Domainverwaltung unter DNS-Verwaltung konfigurieren. Klicke dazu auf den grünen Button **Neuer Eintrag**. Daraufhin öffnet sich ein Popup-Fenster. Von dort aus kannst du neue Einträge nach Belieben konfigurieren und erstellen.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/ibxCxP2Be9pHbgy/download)
+Du kannst die Domain-Einträge in deiner Domain-Verwaltung unter DNS-Verwaltung einstellen. Klick dazu einfach auf den grünen **Neuer Eintrag** Button. Es öffnet sich ein Popup-Fenster, in dem du neue Einträge nach Belieben anlegen und konfigurieren kannst.
+
+![img](https://screensaver01.zap-hosting.com/index.php/s/5qGjz8jDi4sNGcQ/download)
 
 :::info
-Wir verwenden die Domain **zap-hosting.com**, um die einzelnen Arten von DNS-Einträgen zu veranschaulichen. Bitte verwende in deinem Fall deine eigene Domain.
+Wir nutzen die Domain **zap-hosting.com** als Beispiel, um die einzelnen DNS-Eintragstypen zu veranschaulichen. Bitte verwende in deinem Fall deine eigene Domain.
 :::
 
 :::warning
-Bitte stelle bei der Konfiguration eines DNS-Eintrags sicher, dass ein Punkt am Ende des Eintrags gesetzt wird, um zu definieren, dass der Domänenname vollständig ist und um Missverständnisse bei der Zuordnung im DNS-System zu vermeiden.
+Achte bei der Konfiguration eines DNS-Eintrags darauf, am Ende des Eintrags einen Punkt zu setzen, um zu kennzeichnen, dass der Domainname vollständig ist und Missverständnisse bei der Zuordnung im DNS-System zu vermeiden.
 :::
-
-
 
 ## Arten von DNS-Einträgen
 
-Es gibt verschiedene Arten von DNS-Einträgen, die unterschiedliche Bedeutungen und Zwecke haben. Die Bedeutung und Unterschiede werden im Folgenden erläutert.
+Es gibt verschiedene Arten von DNS-Einträgen, die unterschiedliche Bedeutungen und Zwecke haben. Die Bedeutung und Unterschiede erklären wir dir jetzt.
 
-### A Records
+### A-Einträge
 
-Mit einem A Record wird eine Weiterleitung von einer "**Sub-**" oder "**Hauptdomain**" auf eine "**IPv4-Adresse**" erstellt.
-
-| Name (Beispiel)   | Typ | Wert (Beispiel) | TTL  | Priorität |
-| ---------------- | ---- | --------------- | ---- | -------- |
-| zap-hosting.com. | A    | IPv4-Adresse    | 1440 | 0        |
-
-### AAAA Records
-
-Mit einem AAAA Record wird eine Weiterleitung von einer "**Sub-**" oder "**Hauptdomain**" auf eine "**IPv6-Adresse**" erstellt.
+Ein A-Eintrag wird verwendet, um eine Weiterleitung einer "**Subdomain**" oder "**Hauptdomain**" auf eine "**IPv4-Adresse**" zu erstellen.
 
 | Name (Beispiel)   | Typ | Wert (Beispiel) | TTL  | Priorität |
-| ---------------- | ---- | --------------- | ---- | -------- |
-| zap-hosting.com. | AAA  | IPv6-Adresse    | 1440 | 0        |
+| ----------------- | --- | --------------- | ---- | --------- |
+| zap-hosting.com.  | A   | IPv4-Adresse    | 1440 | 0         |
 
-### CNAME Records
 
-Mit einem CNAME Record wird eine Weiterleitung von einer "**Subdomain**" auf eine "**Sub-**" oder "**Hauptdomain**" erstellt.
+### AAAA-Einträge
 
-| Name (Beispiel) | Typ | Wert (Beispiel) | TTL  | Priorität |
-| ----------- | ---- | ------------ | ---- | -------- |
-| zap-test. | CNAME  | zap-hosting.com | 1440 | 0        |
+Ein AAAA-Eintrag wird verwendet, um eine Weiterleitung einer "**Subdomain**" oder "**Hauptdomain**" auf eine "**IPv6-Adresse**" zu erstellen.
 
-### MX Records
+| Name (Beispiel)   | Typ  | Wert (Beispiel) | TTL  | Priorität |
+| ----------------- | ---- | --------------- | ---- | --------- |
+| zap-hosting.com.  | AAAA | IPv6-Adresse    | 1440 | 0         |
 
-Mit einem MX Record wird eine Weiterleitung von einer "**Sub-**" oder "**Hauptdomain**" auf eine "**Domain**" oder einen "**A-Record**" erstellt.
-Dieser MX Record wird genutzt um einen oder mehrere Mailserver anzugeben.
-Die Priorität gibt an welcher Mailserver bevorzugt genutzt werden soll, wenn mehrere MX-Einträge bestehen.
-Die Priorität muss eine Ganzzahl zwischen 0 und 65535 sein, je niedriger der Wert desto höher die Priorität.
 
-| Name (Beispiel)   | Typ  | Wert (Beispiel)  | TTL  | Priorität |
-| ---------------- | ----- | ---------------- | ---- | -------- |
-| zap-hosting.com. | CNAME | mailserverxy.com | 1440 | 0        |
+### CNAME-Einträge
 
-### PTR Records
+Ein CNAME-Eintrag wird verwendet, um eine Weiterleitung einer "**Subdomain**" auf eine "**Subdomain**" oder "**Hauptdomain**" zu erstellen.
 
-Mit einem PTR Record wird eine Weiterleitung von einer "**IPv4-Adresse**" oder "**IPv6-Adresse**" auf eine "**Sub-**" oder "**Hauptdomain**" erstellt.
-Dieser PTR Record stellt damit das Gegenstück zu dem A oder AAAA Record dar.
+| Name (Beispiel) | Typ   | Wert (Beispiel)  | TTL  | Priorität |
+| --------------- | ----- | ---------------- | ---- | --------- |
+| zap-test.       | CNAME | zap-hosting.com. | 1440 | 0         |
 
-| Name (Beispiel)          | Typ  | Wert (Beispiel)  | TTL  | Priorität |
-| ----------------------- | ----- | ---------------- | ---- | -------- |
-| 1.0.0.127.in-addr.arpa. | PTR | zap-hosting.com. | 1440 | 0        |
 
-### RP Records
+### MX-Einträge
 
-Mit einem RP Record wird eine Information zu dem Inhaber der Domain erstellt.
-In der Regel wird dafür eine E-mail Adresse eingetragen, bei welcher das "**@**" Symbol durch ein "**Punkt**" ersetzt wird.
+Ein MX-Eintrag wird verwendet, um eine Weiterleitung einer "**Subdomain**" oder "**Hauptdomain**" auf eine "**Domain**" oder einen "**A-Eintrag**" zu erstellen. Dieser MX-Eintrag gibt einen oder mehrere Mailserver an. Die Priorität legt fest, welcher Mailserver bevorzugt genutzt wird, falls mehrere MX-Einträge vorhanden sind. Die Priorität muss eine ganze Zahl zwischen 0 und 65535 sein, je niedriger der Wert, desto höher die Priorität.
+
+| Name (Beispiel)   | Typ   | Wert (Beispiel)   | TTL  | Priorität |
+| ----------------- | ----- | ----------------- | ---- | --------- |
+| zap-hosting.com.  | MX    | mailserverxy.com. | 1440 | 0         |
+
+
+### PTR-Einträge
+
+Ein PTR-Eintrag wird verwendet, um eine Weiterleitung einer "**IPv4-Adresse**" oder "**IPv6-Adresse**" auf eine "**Subdomain**" oder "**Hauptdomain**" zu erstellen. Dieser PTR-Eintrag ist das Gegenstück zum A- oder AAAA-Eintrag.
+
+| Name (Beispiel)           | Typ  | Wert (Beispiel)    | TTL  | Priorität |
+| ------------------------- | ---- | ------------------ | ---- | --------- |
+| 1.0.0.127.in-addr.arpa.   | PTR  | zap-hosting.com.   | 1440 | 0         |
+
+
+### RP-Einträge
+
+Ein RP-Eintrag wird verwendet, um Informationen über den Besitzer der Domain bereitzustellen. Üblicherweise wird dafür eine E-Mail-Adresse eingetragen, bei der das "**@**"-Symbol durch einen "**Punkt**" ersetzt wird.
 
 | Name (Beispiel) | Typ | Wert (Beispiel)       | TTL  | Priorität |
-| -------------- | ---- | --------------------- | ---- | -------- |
-| rp.            | RP   | info.zap-hosting.com. | 1440 | 0        |
+| --------------- | --- | --------------------- | ---- | --------- |
+| rp.             | RP  | info.zap-hosting.com. | 1440 | 0         |
 
-### SRV Records
+### SRV-Einträge
 
-Mit einem SRV Record wird eine Weiterleitung von einer "**Sub-**" oder "**Hauptdomain**" auf einen "**A-Record**" erstellt.
-Dieser SRV Record wird für Anwendungen genutzt wo kein Standard Port gegeben ist und somit eine Portweiterleitung benötigt wird.
-Die Priorität gibt an welcher der Dienste bevorzugt genutzt werden soll, wenn mehrere SRV Records für die gleichen Dienste erstellt werden.
-Die Priorität muss eine Ganzzahl sein, je niedriger der Wert desto höher die Priorität.
+Ein SRV-Eintrag wird verwendet, um eine Weiterleitung einer "**Subdomain**" oder "**Hauptdomain**" auf einen "**A-Eintrag**" zu erstellen.  
+SRV-Einträge kommen bei Anwendungen zum Einsatz, die keinen Standard-Port nutzen und daher eine Portweiterleitung benötigen.  
+Die Priorität definiert, welcher Dienst bevorzugt genutzt wird, falls mehrere SRV-Einträge für denselben Dienst existieren.  
+Die Priorität muss eine ganze Zahl sein, je niedriger der Wert, desto höher die Priorität.
 
-| Name (Beispiel) | Typ | Wert (Beispiel)       | TTL  | Priorität |
-| -------------- | ---- | --------------------- | ---- | -------- |
-| zap-hosting.com. | SRV   | 0 2006 zap-hosting.com. | 1440 | 0        |
+| Name (Beispiel)   | Typ | Wert (Beispiel)           | TTL  | Priorität |
+| ----------------- | --- | ------------------------- | ---- | --------- |
+| zap-hosting.com.  | SRV | 0 2006 zap-hosting.com.   | 1440 | 0         |
 
-### TXT Records
+### TXT-Einträge
 
-Mit einem TXT Record kann frei wählbarer Text eingetragen werden. 
-Auf einigen Systemen dient der Inhalt, dazu Verwaltungsdaten zu kodieren.
-Dieser TXT Record wird genutzt um SPF, DMARC und DKIM Einträge zu erstellen.
+Ein TXT-Eintrag wird verwendet, um beliebigen Text hinzuzufügen. Auf manchen Systemen werden die Inhalte genutzt, um administrative Daten zu kodieren. Dieser TXT-Eintrag wird häufig für SPF-, DMARC- und DKIM-Einträge verwendet.
 
 | Name (Beispiel)   | Typ | Wert (Beispiel) | TTL  | Priorität |
-| ---------------- | ---- | --------------- | ---- | -------- |
-| zap-hosting.com. | TXT   | v=spf1 -all     | 1440 | 0        |
+| ----------------- | --- | --------------- | ---- | --------- |
+| zap-hosting.com.  | TXT | v=spf1 -all     | 1440 | 0         |
 
 
-## Abschluss
+## Fazit
 
-Glückwunsch, du hast deine DNS-Einträge erfolgreich erstellt und konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast deine DNS-Einträge erfolgreich erstellt und konfiguriert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Seite! 🙂
+
+<InlineVoucher />

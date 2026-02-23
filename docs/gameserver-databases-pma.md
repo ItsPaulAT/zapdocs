@@ -1,7 +1,7 @@
 ---
 id: gameserver-databases-pma
 title: 'Game server: PHPMyAdmin access'
-description: Information on how to use PHPMyAdmin with game servers from ZAP-Hosting to manage the databases - ZAP-Hosting.com documentation
+description: "Discover how to efficiently manage MySQL databases with phpMyAdmin on ZAP-Hosting game servers for seamless database control → Learn more now"
 sidebar_label: PHPMyAdmin
 services:
   - gameserver
@@ -57,3 +57,5 @@ With phpMyAdmin it is also possible to execute normal SQL commands. To do this, 
 Once you have reached the command prompt, you can enter all desired SQL commands, which are then executed by clicking on "OK".
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/jJcmLGcXAfxQgkH/preview)
+
+<InlineVoucher />

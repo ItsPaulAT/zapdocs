@@ -1,10 +1,10 @@
 ---
 id: fivem-esx-changejobgarages
 title: "FiveM: Job Garages - Adding Cars"
-description: Information on how to add cars to job garages on your FiveM server with ESX from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize and extend job garages with additional cars to enhance your gameplay experience → Learn more now"
 sidebar_label: Add Job-Garage Cars
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -42,3 +42,5 @@ Make sure that you have a comma at the end of the previous line when you add new
 ## Conclusion
 
 Provided you have followed all the steps, you should now have successfully customized or extended your Jobs garage. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

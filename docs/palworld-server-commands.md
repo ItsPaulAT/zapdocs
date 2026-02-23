@@ -1,10 +1,10 @@
 ---
 id: palworld-server-commands
 title: "Palworld: Palworld Server Commands"
-description: Information on useful commands for Palworld game from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage Palworld servers effectively using built-in commands for admin control and gameplay → Learn more now"
 sidebar_label: Server Commands
 services:
-  - gameserver
+  - gameserver-palworld
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -53,3 +53,5 @@ You must set up an Admin Password and grant yourself permission using the `/Admi
 :::note
 You cannot currently unban a person in-game as there is no command available. You would have to manually edit the `banlist.txt` file in your server directory if you wish to unban a player.
 :::
+
+<InlineVoucher />

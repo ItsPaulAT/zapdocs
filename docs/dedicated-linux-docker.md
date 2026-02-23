@@ -1,9 +1,10 @@
 ---
 id: dedicated-linux-docker
-title: "Dedicated Server: Installation of Docker"
-description: Information on how to install Docker on your Dedicated Server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup Docker on a Linux Server - Run and Manage Containers on Your Infrastructure"
+description: "Discover how to install Docker on your Linux server to run isolated applications efficiently and optimize resource use → Learn more now"
 sidebar_label: Install Docker
 services:
+  - vserver
   - dedicated
 ---
 
@@ -15,7 +16,7 @@ import TabItem from '@theme/TabItem';
 
 Docker is a lightweight, open source virtualization software to provide services or applications in isolation on a single system. In contrast to real virtual machines, no extra operating system is emulated or hosted for this, but rather only an application environment within the host system. This not only saves resources in general, but at the same time causes a low overhead compared to full virtualization. In this guide, we will cover the process of installing Docker onto your server.
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -94,7 +95,7 @@ To verify that your installation is successful, try running the **hello-world** 
 sudo docker run hello-world
 ```
 
-Upon success, you should see a useful hello message in chat with some basic information. If you are facing `Permission Denied` errors, please ensure that you enabled the **Docker Compatibility** option on your web interface and restarted the server as described in the [preparation](#preparation) section.
+Upon success, you should see a useful hello message in chat with some basic information. If you are facing `Permission Denied` errors, please ensure that you enabled the **Docker Compatibility** option on your web interface and restarted the server as described in the preparation section.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/tzJwpYRYb9Mmryo/preview)
 
@@ -151,3 +152,5 @@ sudo systemctl restart [your_service]
 ## Conclusion
 
 Congratulations, you have successfully installed and configured Docker onto your Linux server! If you have any further questions or problems, please contact our support team, who are available to help you every day!
+
+

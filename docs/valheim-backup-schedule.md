@@ -1,10 +1,10 @@
 ---
 id: valheim-backup-schedule
 title: "Valheim: Enable automated backups for servers"
-description: Information on how to enable and set up automated backups for your Valheim server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to automate Valheim backups through scheduled restarts for reliable data protection and server management → Learn more now"
 sidebar_label: Automated Backups
 services:
-  - gameserver
+  - gameserver-valheim
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -35,3 +35,5 @@ You could setup a planned restart all 6 hours, what means that all 6 hours a aut
 :::
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/rFPWnSH7EkHxoN9/preview)
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: scp-pastebin
 title: "SCP Secret Laboratory: Pastebin ID"
-description: Information on how to add a Pastebin entry to create a server description on your SCP server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to create and display a server description for your SCP server using Pastebin for better game info management → Learn more now"
 sidebar_label: Pastebin ID
 services:
-  - gameserver
+  - gameserver-scp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -52,3 +52,5 @@ Once the pastebin has been created, the pastebin ID must now be entered in the s
 ## Conclusion
 
 Congratulations, once you have successfully created the pastebin and stored it in the server settings, the server description should be displayed with the next restart. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

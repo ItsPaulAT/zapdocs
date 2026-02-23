@@ -1,48 +1,49 @@
 ---
 id: fivem-esx-becomeadminoverdatabase
 title: "FiveM: Admin werden mit ESX"
-description: Informationen, wie du Admin über Datenbank deines FiveM-Server mit ESX von ZAP-Hosting werden kannst - ZAP-Hosting.com Dokumentation
+description: "Entdecke, wie du Administratorrechte vergibst für volle Serverkontrolle und verbessertes Ingame-Management → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Admin kannst du alle verfügbaren Optionen und Funktionen, die das Spiel bietet, direkt im Spiel nutzen. Alle Schritte, die du gehen musst, um Administratorrechte für deinen Server zu vergeben, werden dir hier erklärt.  
 <InlineVoucher />
 
 ## Konfiguration
 
-Zuallererst müssen wir uns mit unserer Datenbank verbinden. Das machen wir wie folgt.
+Zuerst müssen wir uns mit unserer Datenbank verbinden. So geht's:
 
 :::info
-Ein Charakter muss erstellt sein von euch, sodass ihr diesen dann auch in der Datenbank findet.
+**Wichtig:** Ein Charakter muss von dir erstellt worden sein, damit du ihn in der Datenbank findest.
 :::
 
-**1** Datenbank TAB auswählen
+**1** Datenbank-Tab auswählen
 
-![](https://screensaver01.zap-hosting.com/index.php/s/24HeBnk2gjQ6jSA/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/cCweqBDBZ623iNF/preview)
 
 **2** Auf Verwalten klicken
 
-![](https://screensaver01.zap-hosting.com/index.php/s/FniRaWmWbXZzeDm/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/CEsFgpjYHZ26QSj/preview)
 
-**3** Uns mit unseren Daten anmelden
+**3** Mit unseren Daten einloggen
 
-Falls nötig, mit unseren Daten anmelden, welche wir hier finden:
-![](https://screensaver01.zap-hosting.com/index.php/s/888248bxBSpELXg/preview)
+Falls nötig, logge dich mit den Daten ein, die du hier findest:
+![](https://screensaver01.zap-hosting.com/index.php/s/6bktDHRRJqTNEHM/preview)
 
-**4** Die Users Tabelle öffnen
+**4** Öffne die users-Tabelle
 
-![](https://screensaver01.zap-hosting.com/index.php/s/HbRCwzxneK8MRD8/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/Js9ngeei9xQEm48/preview)
 
-**5** Eigenen Charakter finden
+**5** Finde deinen Charakter
 
-Nun suchen wir unseren Charakter und machen einen Doppelklick auf die "group" spalte. Dort muss "admin" eingetragen werden.
-![](https://screensaver01.zap-hosting.com/index.php/s/n3YxebDWiz2qXfX/preview)
+Jetzt suchen wir unseren Charakter und machen einen Doppelklick in die Spalte „group“.  
+Dort trägst du „admin“ ein.  
+![](https://screensaver01.zap-hosting.com/index.php/s/GjdTo5GxkgX26BA/preview)
 
-## Abschluss
+Das war’s auch schon. Du bist jetzt Admin auf deinem eigenen Server!
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+<InlineVoucher />

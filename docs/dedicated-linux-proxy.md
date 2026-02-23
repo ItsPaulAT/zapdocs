@@ -1,7 +1,7 @@
 ---
 id: dedicated-linux-proxy
 title: "Dedicated Server: Setup a Reverse Proxy with nginx on Linux"
-description: Information on how to setup a Reverse Proxy on your Linux Dedicated Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up a secure and efficient reverse proxy for websites and game servers to improve access and protection → Learn more now"
 sidebar_label: Reverse Proxy
 services:
   - dedicated
@@ -17,7 +17,7 @@ A reverse proxy server is a server that acts as an intermediary between the end 
 
 In this guide, we will explore the process of setting up a general-purpose reverse proxy for websites as well as one tailored towards game servers.
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -209,3 +209,5 @@ With your chosen reverse proxy now setup, we highly recommend adding an SSL Cert
 ## Conclusion
 
 Congratulations, you have successfully setup a reverse proxy for either a website or your game server (or both :), providing you with various security, reliability and performance improvements. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
+
+

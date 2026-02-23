@@ -1,45 +1,40 @@
 ---
 id: minecraft-playermanagement
-title: "Minecraft: Verwalte deine Spieler mit wenigen Klicks"
-description: Informationen darüber, wie du deine Spieler für deinen Minecraft-Server von ZAP-Hosting einfach verwalten kannst - ZAP-Hosting.com Dokumentation
+title: "Minecraft: Verwalte deine Spieler mit nur wenigen Klicks"
+description: "Verwalte Spielerrollen, Whitelist-Zugänge und Banns, um deinen Gameserver effektiv zu steuern → Jetzt mehr erfahren"
 sidebar_label: Spielerverwaltung
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
-
-
 
 ## Einführung
 
-Verwalte deine Spieler mit nur wenigen Klicks über die Gameserververwaltung. Unter Spielerverwaltung hast du die Möglichkeit, Spieler zu Operatoren zu machen, Spieler auf die Whitelist zu setzen und Spieler zu bannen, die auf dem Server nicht mehr willkommen sind. 
+Verwalte deine Spieler ganz einfach mit nur wenigen Klicks über die Gameserver-Verwaltung. Unter Spielerverwaltung hast du die Möglichkeit, Spielern Operator-Rechte zu geben, sie zur Whitelist hinzuzufügen oder Spieler zu bannen, die nicht mehr auf deinem Server willkommen sind.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/sfPXqktDCB9rqR3/preview)
+![img](https://screensaver01.zap-hosting.com/index.php/s/ijDqwZdpmkFMGdn/preview)
 
-Klicke auf den grünen Button neben der entsprechenden Liste, um einen neuen Spielereintrag hinzuzufügen. Während des Vorgangs öffnet sich ein Pop-up-Fenster, in dem du den Namen des Spielers angeben musst. 
+Klicke auf den grünen Button neben der jeweiligen Liste, um einen neuen Spieler hinzuzufügen. Dabei öffnet sich ein Pop-up-Fenster, in dem du den Namen des Spielers angeben musst.
 
-:::warning Überprüfen der Namensangaben
-Bitte beachten, dass der Benutzername korrekt angegeben wird, da keine Prüfung durchgeführt werden kann und sonst kein passender Name erkannt wird.
+:::warning Name genau prüfen
+Bitte achte darauf, den Benutzernamen korrekt anzugeben, da keine automatische Überprüfung erfolgt und sonst kein passender Name erkannt wird.
 :::
 
-Um einen Spieler wieder zu entfernen (Operatorberechtigungen entziehen, Sperre aufheben oder von der Whitelist entfernen), musst du auf den roten Button neben dem Spieler in der jeweiligen Liste klicken. Dadurch wird der Eintrag wieder entfernt. 
-
-
+Um einen Spieler wieder zu entfernen (Operator-Rechte entziehen, Bann aufheben oder von der Whitelist löschen), klicke auf den roten Button neben dem Spieler in der jeweiligen Liste. Dadurch wird der Eintrag gelöscht.
 
 ## Operatoren
-Über die Liste Operatoren können Spieler hinzugefügt werden, die Administratorberechtigungen erhalten sollen. 
+In der Operatoren-Liste kannst du Spieler hinzufügen, die Administratorrechte erhalten sollen.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/a55tmzAF9j8n2bp/preview)
+![img](https://screensaver01.zap-hosting.com/index.php/s/Kjpe8t3DFEdgPSz/preview)
 
-## Gästeliste
-Über die Gästeliste (Whitelist) können Spieler hinzugefügt werden, die eine Verbindung zum Server herstellen dürfen. Alle Spieler, die nicht auf der Liste stehen, können sich dann nicht mehr verbinden. 
+## Gästeliste
+Die Gästeliste (Whitelist) ermöglicht es dir, Spieler hinzuzufügen, die sich mit dem Server verbinden dürfen. Alle Spieler, die nicht auf der Liste stehen, können sich dann nicht mehr verbinden.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/fpMjJ7A9krQyPyB/preview)
+![img](https://screensaver01.zap-hosting.com/index.php/s/iY8dSnoXpFYfpfz/preview)
 
-## Bans
-Die Bannliste erlaubt es, Spieler hinzuzufügen, die nicht mehr auf dem Server sein sollen und deshalb gebannt werden. 
+## Banns
+In der Bannliste kannst du Spieler hinzufügen, die nicht mehr auf deinem Server sein sollen und deshalb gebannt werden.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/5K8jqwrPy3MXgYm/preview)
+![img](https://screensaver01.zap-hosting.com/index.php/s/aspGsM28fimDR3a/preview)
 
-
-## Abschluss
-Glückwunsch, du hast deine Spieler erfolgreich über die Spielerverwaltung konfiguriert und verwaltest sie nun darüber. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+## Fazit
+Glückwunsch, du hast deine Spieler erfolgreich über die Spielerverwaltung konfiguriert und nutzt sie jetzt, um sie zu managen. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Seite! 🙂

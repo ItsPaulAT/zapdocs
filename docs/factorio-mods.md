@@ -1,14 +1,16 @@
 ---
 id: factorio-mods
 title: "Factorio: Installing Mods/DLCs to your Factorio server"
-description: Information on how to install mods and DLCs to your Factorio server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your Factorio gameplay by enabling DLCs and adding mods for a customized experience → Learn more now"
 sidebar_label: Install Mods/DLCs
 services:
-  - gameserver
+  - gameserver-factorio
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableItemList from '@site/src/components/SearchableItemList/SearchableItemList';
+import items from '@site/data/lists/factorio-mods.json';
 
 ## Introduction
 
@@ -60,6 +62,16 @@ Finally, restart your server in order to automatically activate and install the 
 
 
 
+## Popular Mods
+
+Still looking for the perfect mods for your server? Browse through our carefully curated list of the most popular and highly recommended mods to enhance your gameplay and give your server the finishing touch it deserves. Get inspired and find exactly the additions that fit your project.
+
+<SearchableItemList items={items} />
+
+
+
 ## Conclusion
 
 Congratulations, you have successfully installed mods to your Factorio server. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

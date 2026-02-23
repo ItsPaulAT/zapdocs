@@ -1,10 +1,10 @@
 ---
 id: dayz-firststeps-connect
-title: "DayZ: Zum Server verbinden"
-description: Informationen über verschiedene Möglichkeiten, wie du dich mit deinem DayZ Server von ZAP-Hosting verbinden kannst - ZAP-Hosting Dokumentation
-sidebar_label: Zum Server verbinden
+title: "DayZ: Mit dem Server verbinden"
+description: "Entdecke, wie du dich reibungslos mit deinem DayZ Gameserver verbindest und alle wichtigen Tipps für ein sorgenfreies Spielerlebnis bekommst → Jetzt mehr erfahren"
+sidebar_label: Mit dem Server verbinden
 services:
-  - gameserver
+  - gameserver-dayz
 ---
 
 import Tabs from '@theme/Tabs';
@@ -13,47 +13,55 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Einführung
-
-Unsicher, wie du dich mit deinem **DayZ** Server verbinden kannst oder was du dafür benötigst? Kein Problem, wir helfen dir weiter! Wir führen dich durch alles, was du benötigst - von den erforderlichen Werkzeugen und Informationen bis hin zum eigentlichen Verbindungsprozess und den wesentlichen Punkten, die für eine reibungslose und störungsfreie Verbindung erforderlich sind. Befolge unsere Anleitung und du wirst in kürzester Zeit verbunden sein!
+Du bist dir nicht sicher, wie du dich mit deinem **DayZ** Gameserver verbindest oder was du dafür brauchst? Kein Stress, wir haben alles für dich am Start! Wir führen dich durch alles, was du wissen musst. Von den nötigen Tools und Infos bis hin zum eigentlichen Verbindungsprozess – inklusive wichtiger Tipps, damit alles smooth und ohne Probleme läuft. Folge unserer Anleitung und du bist im Handumdrehen verbunden!
 
 <InlineVoucher />
 
 
+## Voraussetzungen
 
-## Voraussetzungen 
-
-Standardmäßig wird keine zusätzliche Software für das Spiel benötigt. Wenn du jedoch Mods auf deinem Server verwenden möchtest, dann lohnt sich die Verwendung des [DZSA Launcher](https://dayzsalauncher.com/).
-
+Für das Spiel wird standardmäßig keine zusätzliche Software benötigt. Wenn du aber Mods auf deinem Server nutzen möchtest, lohnt sich der Einsatz des [DZSA Launchers](https://dayzsalauncher.com/). 
 
 
-## Server-Details abrufen
 
-Du benötigst alle relevanten Informationen, um dich mit deinem Server zu verbinden. Die Informationen zu deinem Server findest du im Dashboard des Webinterfaces deines Gameservers. Zu den wichtigen Informationen gehören die folgenden: 
+## Serverdetails besorgen
+
+Du brauchst alle relevanten Infos, um dich mit deinem Server zu verbinden. Diese findest du im Dashboard deines Gameserver-Webinterface-Panels. Wichtige Infos sind unter anderem:
 
 - IP-Adresse und Port
-- Name des Servers
-- Server-Passwort (optional)
+- Servername
+- Serverpasswort (optional)
 
-Anhand der oben genannten Informationen solltest du in der Lage sein, deinen Server zu finden und sicherzustellen, dass du dich mit dem richtigen Server verbindest. 
+Mit diesen Infos solltest du deinen Server finden und sicherstellen können, dass du dich mit dem richtigen Server verbindest.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/WPtBDPCB2AQ4bZZ/preview)
 
 ## Verbindung zum Server herstellen
 
-Die Verbindung zu einem Gameserver kann häufig auf eine oder mehrere Arten hergestellt werden. Die verfügbaren Methoden werden im Folgenden ausführlich beschrieben und erklärt. 
+Die Verbindung zu einem Gameserver kann oft auf verschiedene Arten hergestellt werden. Die verfügbaren Methoden werden hier detailliert beschrieben und erklärt.
 
 <Tabs>
-    <TabItem value="connect_solution_server_browser_ingame" label="Server Browser (Im Spiel)" default>
+    <TabItem value="connect_solution_server_browser_ingame" label="Server Browser (Im Spiel)">
 
-Um eine Verbindung zu deinem Server über den Server-Browser im Spiel herzustellen, öffne den Server-Browser im Hauptmenü. Sobald du dich in der Serverliste befindest, klicke auf **Community**. Verwende die Filteroptionen, um deinen Server anhand des Servernamens zu suchen.
+Um dich über den integrierten Server Browser im Spiel zu verbinden, öffne den Server Browser im Hauptmenü. Klicke in der Serverliste auf **Community**. Nutze die Filteroptionen, um deinen Server über den Servernamen zu suchen. 
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/Mbb4DFjeEKrZK8M/download)
 
+
+
+:::warning DayZ Server nicht gelistet
+Die Serverliste im Spiel ist bekanntlich nicht immer zuverlässig. Es kann sein, dass dein Server temporär nicht angezeigt wird. In diesem Fall nutze eine alternative Verbindungsart.
+:::
+
+
+
 </TabItem>
 
-<TabItem value="connect_solution_server_browser_expext" label="Server Browser (Experimentell & Extern)">
 
-Wenn du die experimentelle Version von DayZ verwendest, kannst du dich über den DayZ Launcher mit deinem Server verbinden. Starte dazu den Launcher und öffne **Servers**. Klicke auf den Button **Direct connect** und gebe die IP-Adresse und den Port deines Servers ein.
+
+<TabItem value="connect_solution_server_browser_expext" label="Server Browser (Experimental & Extern)">
+
+Wenn du die Experimental-Version von DayZ nutzt, kannst du dich über den DayZ Launcher mit deinem Server verbinden. Starte dazu den Launcher und öffne **Servers**. Klicke auf den Button **Direct connect** und gib die IP-Adresse sowie den Port deines Servers ein. 
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/ffaPNzmwcwe428c/download)
 
@@ -61,37 +69,40 @@ Wenn du die experimentelle Version von DayZ verwendest, kannst du dich über den
 
 <TabItem value="connect_solution_dzsa" label="DZSA Launcher (Extern)">
 
-Die offizielle Serverliste ist unzuverlässig oder du verwendest Mods? Dann lohnt es sich, stattdessen den DZSA Launcher zu verwenden. Starte den Launcher und benutze die Filter auf der linken Seite, um deinen Server anhand des Servernamens zu suchen.
+Die offizielle Serverliste ist unzuverlässig oder du nutzt Mods? Dann lohnt sich der DZSA Launcher. Öffne den Launcher und nutze die Filter links, um deinen Server über den Servernamen zu suchen. 
+
+:::warning Registriere deinen Server
+Dein Server ist standardmäßig nicht im DZSA Launcher registriert. Wir empfehlen generell, deinen Server dort anzumelden, da viele User diese Serverliste nutzen. Drücke [hier](https://dayzsalauncher.com/#/servercheck), um deinen Server zu registrieren. 
+:::
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/o5GqcZ4EcWondpn/download)
 
 </TabItem>
-
-
 </Tabs>
 
 
 
 ## Mögliche Probleme und Lösungen
 
-Die Verbindung zum Server kann nicht wie erwartet hergestellt werden? Dies kann in bestimmten Situationen vorkommen, z. B. wenn die Verbindung aufgrund von technischen Problemen fehlschlägt. Im Folgenden haben wir die häufigsten Probleme und ihre Lösungen aufgeführt:
+Die Verbindung zu einem Gameserver kann oft auf verschiedene Arten hergestellt werden. Die verfügbaren Methoden werden hier detailliert beschrieben und erklärt.
 
 #### Nicht sichtbar
 
-Eine fehlende Sichtbarkeit des Servers kann auftreten, wenn die Initialisierung nicht erfolgreich abgeschlossen wurde. Dies kann beispielsweise auf eine fehlerhafte Konfiguration oder beschädigte Dateien zurückzuführen sein. Weitere Informationen können in der Regel in der Serverkonsole oder in den Logdateien nachvollzogen werden.
+Wenn der Server nicht sichtbar ist, kann das daran liegen, dass die Initialisierung nicht erfolgreich abgeschlossen wurde. Das kann z.B. an einer fehlerhaften Konfiguration oder beschädigten Dateien liegen. Weitere Infos findest du meist in der Serverkonsole oder in den Logdateien.
 
 
 
-#### Fehlende Lösung oder nicht hilfreich
+#### Keine Lösung gefunden oder unklar
 
-Hast du nach der Fehlersuche weiterhin Probleme? In diesem Fall steht unser Support-Team täglich zur Verfügung, um dir zu helfen. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und erkläre uns dein Problem mit so vielen Einzelheiten wie möglich. Wir werden uns so schnell wie möglich darum kümmern und dir bei der Lösung des Problems helfen!
-
-
-
-
-## Abschluss
-
-Glückwunsch, vorausgesetzt, dass du alle Schritte befolgt hast, solltest du erfolgreich eine Verbindung zum Server hergestellt haben. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Du hast nach Troubleshooting immer noch Probleme? Kein Ding, unser Support-Team ist täglich für dich da. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und beschreibe dein Problem so detailliert wie möglich. Wir schauen uns das schnellstmöglich an und helfen dir, das Problem zu lösen!
 
 
 
+## Fazit
+
+Glückwunsch, wenn du alles erfolgreich befolgt hast, solltest du jetzt mit deinem Server verbunden sein. Für weitere Fragen oder Hilfe steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+
+
+
+<InlineVoucher />

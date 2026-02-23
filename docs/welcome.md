@@ -1,6 +1,7 @@
 ---
 id: welcome
-title: Welcome to the ZAP-Hosting Documentation!
+title: "Welcome to the ZAP-Hosting Documentation!"
+description: "Discover how to maximize your ZAP-Hosting products for gaming, servers, and domains with clear, expert guides → Learn more now"
 sidebar_label: Welcome!
 ---
 
@@ -10,9 +11,9 @@ import YouTube from '@site/src/components/YouTube/YouTube';
 
 ## Introduction
 
-Welcome to the comprehensive documentation of ZAP-Hosting, serving as the central hub for everything related to our products – from game servers, vRoot servers, and dedicated servers to domain & webspace, as well as voicebot & voice server. Here you will find detailed instructions, tips, and tricks to help you get the most out of your products (services) and successfully implement your projects.
+Welcome to the comprehensive documentation of ZAP-Hosting, serving as the central hub for everything related to our products. From game servers, VPS and dedicated servers to domain & webspace, as well as voicebot & voice server. Here you will find detailed instructions, tips, and tricks to help you get the most out of your products (services) and successfully implement your projects.
 
-Our goal is to make knowledge accessible and understandable. That's why we've designed our guides to be easily comprehensible to everyone – regardless of technical prior knowledge. Whether you're just starting with setting up your first game server, diving into the world of dedicated servers, registering your first domain, or configuring your voice server, our guides are aimed at providing you with an easy and clear entry point.
+Our goal is to make knowledge accessible and understandable. That's why we've designed our guides to be easily comprehensible to everyone regardless of technical prior knowledge. Whether you're just starting with setting up your first game server, diving into the world of dedicated servers, registering your first domain, or configuring your voice server, our guides are aimed at providing you with an easy and clear entry point.
 
 We cover a wide range of topics and regularly update our content to ensure you're always up to date and can apply the best practices. From basic setup guides to advanced configuration techniques.
 
@@ -138,14 +139,11 @@ Perfect and utilize the full extent of your game server. With our expertise, we 
     <Card title="Wurm Unlimited" description="Placeholder" link="https://zap-hosting.com/guides/docs/wurmunlimited-firststeps-dashboard" image="https://screensaver01.zap-hosting.com/index.php/s/BzbDjJWySW4LjtX/preview"/>
 </Cards>
 
-## vRootserver
-Utilize the full extent of your vRoot server (VPS/Root server) with our comprehensive guides. Whether you prefer Linux or Windows, our guides help you efficiently set up and manage your server.
+## VPS
+Utilize the full extent of your VPS with our comprehensive guides. Whether you prefer Linux or Windows, our guides help you efficiently set up and manage your server.
 
 <Cards>
-    <Card title="VPS (Linux)" description="Placeholder" link="https://zap-hosting.com/guides/docs/vserver-root-difference" image="https://screensaver01.zap-hosting.com/index.php/s/XmJGtYkc7d9rBai/preview" type="product-categories"/>
-    <Card title="VPS (Windows)" description="Placeholder" link="https://zap-hosting.com/guides/docs/vserver-root-difference" image="https://screensaver01.zap-hosting.com/index.php/s/XmJGtYkc7d9rBai/preview" type="product-categories"/>
-    <Card title="Root server (Linux)" description="Placeholder" link="https://zap-hosting.com/guides/docs/vserver-root-difference" image="https://screensaver01.zap-hosting.com/index.php/s/fqn5SZYRJjoikXa/preview" type="product-categories"/>
-    <Card title="Root server (Windows)" description="Placeholder" link="https://zap-hosting.com/guides/docs/vserver-root-difference" image="https://screensaver01.zap-hosting.com/index.php/s/fqn5SZYRJjoikXa/preview" type="product-categories"/>
+    <Card title="VPS (Linux/Windows)" description="Placeholder" link="https://zap-hosting.com/guides/docs/vserver-introduction" image="https://screensaver01.zap-hosting.com/index.php/s/XmJGtYkc7d9rBai/preview" type="product-categories"/>
 </Cards>
 
 ## Dedicated Server

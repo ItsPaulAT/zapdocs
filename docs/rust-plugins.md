@@ -1,13 +1,15 @@
 ---
 id: rust-plugins
 title: "Rust: Installation of plugins"
-description: Information on how to install plugins on your Rust server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your Rust server with popular plugins for customization and improved gameplay → Learn more now"
 sidebar_label: Install Plugins 
 services:
-  - gameserver
+  - gameserver-rust
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableItemList from '@site/src/components/SearchableItemList/SearchableItemList';
+import items from '@site/data/lists/rust-plugins.json';
 
 ## Introduction
 
@@ -44,5 +46,18 @@ Loaded plugin Admin Logger v2.3.4 by AK
 ```
 
 
+
+## Popular Plugins
+
+Still looking for the perfect plugins for your server?
+
+ Browse through our carefully curated list of the most popular and highly recommended plugins to enhance your gameplay and give your server the finishing touch it deserves. Get inspired and find exactly the additions that fit your project.
+
+<SearchableItemList items={items} />
+
+
 ## Conclusion
+
 Provided you have followed all the steps, you should have successfully installed your plugin.  For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

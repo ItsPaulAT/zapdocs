@@ -1,7 +1,7 @@
 ---
 id: gameserver-tebex
 title: 'Game server: Tebex monetization setup'
-description: Information on how to earn money with Tebex on your game server from ZAP-Hosting and how to set up Tebex on your server - ZAP-Hosting.com documentation
+description: "Discover how to monetize your gameserver with Tebex and boost revenue from in-game sales and ranks → Learn more now"
 sidebar_label: Tebex Monetization
 services:
   - gameserver
@@ -72,3 +72,5 @@ In some cases you may be required to enter your Tebex webstore plugin api key to
 ## Conclusion
 
 You have successfully connected Tebex with your game server service. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

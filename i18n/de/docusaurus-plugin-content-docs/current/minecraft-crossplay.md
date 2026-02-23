@@ -1,120 +1,121 @@
 ---
 id: minecraft-crossplay
-title: "Minecraft: Crossplay zwischen Minecraft Java und Bedrock-Editionen einrichten"
-description: Informationen zum Einrichten von Crossplay zwischen Minecraft Java & Bedrock Editionen auf Ihrem Minecraft-Server von ZAP-Hosting – ZAP-Hosting.com-Dokumentation
+title: "Minecraft: Crossplay zwischen Minecraft Java & Bedrock Edition einrichten"
+description: "Entdecke, wie du nahtloses Crossplay zwischen Minecraft Java und Bedrock mit den Plugins GeyserMC und Floodgate für ein verbessertes Multiplayer-Erlebnis aktivierst → Jetzt mehr erfahren"
 sidebar_label: Java & Bedrock Crossplay
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 ## Einführung
 
-Traditionell war es nicht möglich, sowohl in der Minecraft Java- als auch in der Bedrock-Edition zusammen zu spielen, da beide Editionen als vollständig getrennte Plattformen betrachtet werden. Glücklicherweise kann man heutzutage Crossplay ermöglichen, indem man spezielle Plugins für Java Edition-Server verwendet, die es Spielern der Bedrock-Edition ermöglichen, zu spielen. In dieser Anleitung werden wir den Prozess der Installation und Einrichtung des GeyserMC-Plugins zusammen mit dem Floodgate-Plugin untersuchen, um Crossplay zwischen beiden Plattformen zu ermöglichen und zu vereinfachen.
+Traditionell war gemeinsames Spielen über Minecraft Java und Bedrock Editionen hinweg nicht möglich, da beide Editionen als komplett getrennte Plattformen gelten. Glücklicherweise kannst du heutzutage Crossplay ermöglichen, indem du spezielle Plugins für Java Edition Server nutzt, die es Bedrock-Spielern erlauben, mitzuspielen. In dieser Anleitung zeigen wir dir, wie du das GeyserMC Plugin zusammen mit dem Floodgate Plugin installierst und einrichtest, um Crossplay zwischen beiden Plattformen einfach und möglich zu machen.
 
-## Voraussetzungen
+## Vorbereitung
 
-Um Crossplay einzurichten, benötigst du einen Minecraft-Server, auf dem eine der kompatiblen Java-Server-Software ausgeführt wird. Wir empfehlen die Verwendung von Paper, Spigot oder Bukkit, die die beliebtesten Optionen sind.
+Um Crossplay einzurichten, brauchst du einen Minecraft Gameserver, der eine der kompatiblen Java Server-Softwares nutzt. Wir empfehlen Paper, Spigot oder Bukkit, da diese die beliebtesten Optionen sind.
 
-Du solltest einen Minecraft Gameserver bereit haben, auf dem eines dieser Spiele installiert und aktiviert ist. Mehr dazu findest du in der [Spielwechsel](gameserver-gameswitch.md) Anleitung.
+Du solltest einen Minecraft Gameserver mit einem dieser Spiele installiert und aktiviert haben. Falls du dabei Hilfe brauchst, schau dir unsere [Game Change](gameserver-gameswitch.md) Anleitung an.
 
 ## Installation
 
-Um mit der Installation zu beginnen, gehe zum Webinterface Dashboard deines Gameservers und navigiere zum Abschnitt **Einstellungen->Plugins**. Suche auf dieser Seite das Dropdown-Menü **GeyserMC** und wähle es aus. Verwende den Button Installieren, um das Plugin automatisch auf deinem Server zu installieren und warte, bis der Fortschrittsbalken abgeschlossen ist.
+Starte die Installation, indem du dich im Dashboard deines Gameservers im Webinterface anmeldest und zum Bereich **Einstellungen->Plugins** navigierst. Dort findest du das Dropdown-Menü für **GeyserMC**. Wähle es aus und klicke auf den Installationsbutton, um das Plugin automatisch auf deinem Server zu installieren. Warte, bis die Fortschrittsanzeige abgeschlossen ist.
 
-Wir empfehlen außerdem die Installation des **Floodgate**-Plugins, welches sich im selben Abschnitt befindet, da es verschiedene Vorteile bietet, wie z. B.:
-- Bedrock-Edition-Spieler können beitreten, ohne ein Java-Konto zu benötigen.
-- Bedrock-Edition-Skins können in der Java-Edition angezeigt werden.
-- Verschiedene entwicklerbezogene Vorteile.
+Wir empfehlen außerdem, das **Floodgate** Plugin im selben Bereich zu installieren, da es dir folgende Vorteile bringt:
+- Bedrock Edition Spieler können ohne Java-Account beitreten.
+- Bedrock Skins werden in der Java Edition angezeigt.
+- Verschiedene Entwickler-Vorteile.
 
 :::note
-Das Floodgate-Plugin ist optional, aber wir empfehlen es sehr, da es das Crossplay für Bedrock-Spieler erheblich erleichtert.
+Das Floodgate Plugin ist optional, aber wir empfehlen es sehr, da es das Crossplay für Bedrock-Spieler deutlich erleichtert.
 :::
 
-![](https://screensaver01.zap-hosting.com/index.php/s/PT4NEHKFnRsCE5B/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/cagcHmzwR2yBZSo/preview)
 
-Nachdem die Plugins nun auf deinem Server installiert sind, gehe zum folgenden Abschnitt, um die Einstellungen zu konfigurieren.
+Nachdem die Plugins installiert sind, geht’s im nächsten Abschnitt an die Konfiguration.
 
 ## Plugins konfigurieren
 
-Wähle im selben Abschnitt **Plugins** im Webinterface das blaue Einstellungssymbol neben dem GeyserMC Plugin aus, um automatisch zum entsprechenden Bereich im Abschnitt **Einstellungen** zu gelangen.
+Im selben **Plugins** Bereich im Webinterface klickst du auf das blaue Zahnrad-Symbol neben dem GeyserMC Plugin. Dadurch gelangst du automatisch zum passenden Bereich in den **Einstellungen**.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/RBQ23DatqiB63KS/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/RAZKNSdePa5wBs4/preview)
 
-Hier auf dieser Seite kannst du den Servernamen und die MOTD-Zeilen anpassen, die speziell für Bedrock-Edition-Spieler angezeigt werden.
+Hier kannst du den Servernamen und die MOTD-Zeilen anpassen, die speziell für Bedrock Edition Spieler angezeigt werden.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/5F65z2yftaao7jm/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/kBzxQkmNgdsWgZb/preview)
 
-Wenn du bis zum Ende der Seite scrollst, dann kannst du auch die Ports sehen, die deinem Server zugewiesen sind.
+Scrollst du ganz nach unten, siehst du die Ports, die deinem Server zugewiesen sind.
 
-- Der **Spiele Port** ist der Hauptserverport, der verwendet werden sollte, wenn du eine Verbindung mit dem regulären Java Edition-Client herstellst.
-- Der **Port 5** ist der Port, der vom GeyserMC-Plugin verwendet wird. Du solltest diesen verwenden, wenn du eine Verbindung mit dem Bedrock Edition-Client herstellst.
+- Der **Game Port** ist der Hauptserver-Port, der für Verbindungen von regulären Java Edition Clients genutzt wird.
+- Der **Port 5** ist der Port, den das GeyserMC Plugin verwendet. Diesen solltest du für Verbindungen von Bedrock Edition Clients nutzen.
 
-Wenn du eine Verbindung von einem Client aus hestellst, dann stelle sicher, dass du den richtigen Port verwendest, der auf der Minecraft-Client-Edition basiert.
+Achte beim Verbinden darauf, den richtigen Port je nach Minecraft Edition zu verwenden.
 
 :::tip
-Für Kunden mit der **Eigene IP-Adressen** Serverkonfigurationsoption ist auf Anfrage eine benutzerdefinierte Portzuweisung möglich, um den Port nach deinen Wünschen anzupassen. Du kannst [den Support](https://zap-hosting.com/de/customer/support/) über ein Ticket kontaktieren, um dies zu beantragen.
+Kunden mit der Serverkonfiguration **Eigene IP** können auf Anfrage eine individuelle Port-Zuweisung erhalten, um den Port nach Wunsch anzupassen. Du kannst dazu einfach ein [Support-Ticket](https://zap-hosting.com/en/customer/support/) eröffnen.
 :::
 
-![](https://screensaver01.zap-hosting.com/index.php/s/k62FRXkQ8Frps2g/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/joA62kWeJ5crCmY/preview)
 
 <!--
-### Floodgate-Plugin
 
-Wenn du dich für die Installation des Floodgate Plugins entschieden hast, dann musst du die GeyserMC-Konfigurationsdatei anpassen, um es als Hauptauthentifizierungsmethode zu aktivieren. Bitte stelle sicher, dass dein Server ausgeschaltet ist, bevor du die Konfigurationsdateien bearbeitest, da sonst Änderungen überschrieben werden können.
+### Floodgate Plugin
 
-Gehe zum Abschnitt **Configs** beim Dashboard deines Gameservers und öffne die Datei `plugins/Geyser-[deine_servertype]/config.yml` über den blauen Button zum Bearbeiten.
+Falls du das Floodgate Plugin installiert hast, musst du die GeyserMC Konfigurationsdatei anpassen, um es als Haupt-Authentifizierungsmethode zu aktivieren. Bitte stelle sicher, dass dein Server ausgeschaltet ist, bevor du Konfigurationsdateien bearbeitest, da sonst Änderungen überschrieben werden könnten.
+
+Gehe im Webinterface zu **Configs** und öffne die Datei `plugins/Geyser-[dein_servertype]/config.yml` mit dem blauen Bearbeiten-Button.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/ixCtkQ5WWWacfGe/preview)
 
-Suche in dieser Datei den Parameter `auth-type` im Abschnitt `remote` und ändere diesen Wert von **online** in **floodgate**, bevor du die Datei speicherst.
+Suche in der Datei den Parameter `auth-type` im Abschnitt `remote` und ändere den Wert von **online** auf **floodgate**, bevor du speicherst.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/c6JRFxPfjGBSWZi/preview)
 
-GeyserMC verwendet nun das Floodgate Plugin für die Benutzerauthentifizierung und bietet dir verschiedene Vorteile, die bereits erläutert wurden.
+GeyserMC nutzt nun das Floodgate Plugin für die Nutzer-Authentifizierung und bietet dir die zuvor genannten Vorteile.
 -->
 
-## Verbindung und Fehlerbehebung
+## Verbinden & Fehlerbehebung
 
-Nachdem das Plugin konfiguriert wurde, starte deinen Server neu, um sicherzustellen, dass die neuen Einstellungen wirksam werden. Versuche nun, von beiden Spielversionen aus eine Verbindung zum Server herzustellen, um sicherzustellen, dass alles funktioniert.
+Nachdem du die Plugins konfiguriert hast, starte deinen Server neu, damit die neuen Einstellungen aktiv werden. Versuche dann, dich von beiden Editionen aus mit dem Server zu verbinden, um sicherzugehen, dass alles funktioniert.
 
-Stelle sicher, dass du je nach Spieledition die richtigen Ports verwendest. Dies sollte **Port 5** für Bedrock-Spieler und der **Spielport** für Java-Edition-Spieler sein, die du unter dem Abschnitt **Einstellungen** findest. Du kannst diese auch finden, indem du mit der Maus über das Informationssymbol auf dem Dashboard deines Webinterfaces hoverst.
+Achte darauf, die richtigen Ports je nach Edition zu verwenden: **Port 5** für Bedrock Spieler und den **Game Port** für Java Spieler. Diese findest du unter dem Tab **Einstellungen** oder, indem du im Dashboard des Webinterfaces über das Info-Symbol fährst.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/X8aLS5qknsHyCp3/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/M42ZkamKHieRcEz/preview)
 
-Bei Erfolg solltest du nun in der Lage sein, spielübergreifend zu spielen und sich problemlos mit Spielern aus beiden Spielversionen zu verbinden.
+Wenn alles klappt, kannst du jetzt problemlos Crossplay nutzen und dich von beiden Editionen verbinden.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/oMRWkaSs5KKbkzy/preview)
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/xyMaENLFx4BCSPF/preview)
 
-Wenn du Probleme hast, eine Verbindung zum Server herzustellen, versuche es mit den folgenden Schritten zur Fehlerbehebung, die bei den meisten Problemen helfen sollten.
+Falls du Verbindungsprobleme hast, probiere diese Schritte zur Fehlerbehebung aus, die die häufigsten Probleme lösen sollten.
 
 #### Client veraltet – Server veraltet
 
-Dieser Fehler deutet darauf hin, dass die Spielversionen von Server und Client nicht übereinstimmen. Wenn dieses Problem bei Java Edition auftritt, wechsel einfach über den Launcher zur richtigen Spielversion.
+Dieser Fehler bedeutet, dass Server- und Client-Versionen nicht übereinstimmen. Bei Java Edition kannst du einfach im Launcher die richtige Version auswählen.
 
-Bedauerlicherweise kannst du die Spielversionen bei Bedrock-Editionen nicht einfach ändern. Wenn dieses Problem bei einem Minecraft Bedrock Edition-Client auftritt, dann stelle sicher, dass du den Client und den Server auf die neuesten Versionen aktualisierst.
+Bei Bedrock Edition ist das Ändern der Version nicht so einfach. Stelle daher sicher, dass sowohl App als auch Server auf dem neuesten Stand sind.
 
-Wir empfehlen außerdem die Verwendung der Plugins ViaVersion und ViaBackwards, die die Spielversionen erweitern, von denen aus der Server zugänglich ist, sodass Benutzer mit einer niedrigeren oder höheren Spielversion weiterhin eine Verbindung zum Server herstellen können. Gehe wie zuvor zum Abschnitt **Plugins** im Webinterface und suche im Dropdown-Menü **Alle Plugins** nach **ViaVersion** und **ViaBackwards**. Verwende das grüne Download-Symbol, um diese auf deinem Server zu installieren.
+Wir empfehlen außerdem die Plugins ViaVersion und ViaBackwards zu installieren, die den Server für verschiedene Spielversionen zugänglich machen. So können Nutzer mit älteren oder neueren Versionen trotzdem verbinden. Gehe dazu im Webinterface zum Bereich **Plugins**, öffne das Dropdown-Menü **Alle Plugins** und suche nach **ViaVersion** und **ViaBackwards**. Klicke auf das grüne Download-Symbol, um sie zu installieren.
 
 :::note
-Wenn du Probleme bei der Installation des Plugins über das Webinterface hast, ist es möglich, dass das Plugin nicht über eine stabile neueste Version verfügt. In solchen Fällen empfehlen wir, eine Beta-Version des Plugins manuell von der Website herunterzuladen und per FTP hochzuladen. Weitere Informationen hierzu findest du in unserer Anleitung [Zugriff per FTP](gameserver-ftpaccess.md).
+Falls die Installation über das Webinterface nicht klappt, kann es sein, dass keine stabile neueste Version des Plugins verfügbar ist. In dem Fall empfehlen wir, eine Beta-Version manuell von der Webseite herunterzuladen und per FTP hochzuladen. Mehr dazu findest du in unserer [FTP-Zugang](gameserver-ftpaccess.md) Anleitung.
 :::
 
-![](https://screensaver01.zap-hosting.com/index.php/s/CiA3baYs9otnjbL/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/QCcndf6TGMsrw7x/preview)
 
-Sobald die Plugins installiert sind, versuche erneut, eine Verbindung herzustellen, was nun von einer größeren Anzahl von Spielversionen aus möglich sein sollte.
+Nach der Installation versuche erneut, dich zu verbinden – jetzt sollte es mit mehr Spielversionen funktionieren.
 
 #### Verbindung zur Welt nicht möglich
 
-Der häufigste Grund für diesen Fehler ist die Verwendung des falschen Ports beim Hinzufügen des Servers in deinem Client. Stelle sicher, dass du den Port verwendest, der unter **Port 5** im Abschnitt **Einstellungen** im Webinterface deines Gameservers zu finden ist, wenn du eine Verbindung von dem Bedrock-Edition-Client aus herstellst. Verwende für den Java-Edition-Client ebenfalls den Hauptwert **Spiele Port**.
+Der häufigste Grund ist, dass der falsche Port beim Hinzufügen des Servers im Client verwendet wird. Nutze für Bedrock Edition den unter **Port 5** angegebenen Port in den **Einstellungen** deines Gameservers. Für Java Edition Clients gilt der Haupt-**Game Port**.
 
-Wenn das Problem weiterhin besteht, empfehlen wir, die Konfigurationsdatei des GeyserMC-Plugins zu überprüfen, um sicherzustellen, dass die richtigen Ports automatisch eingestellt wurden. Gehe zum Abschnitt **Configs** im Webinterface und öffne die Datei `plugins/Geyser-[deine_servertype]/config.yml` über den blauen Button **Bearbeiten**.
+Wenn das Problem weiterhin besteht, überprüfe die GeyserMC Konfigurationsdatei, ob die Ports korrekt gesetzt sind. Gehe im Webinterface zu **Configs** und öffne die Datei `plugins/Geyser-[dein_servertype]/config.yml` mit dem blauen Bearbeiten-Button.
 
-Suche in dieser Datei die `Port`-Parameter in den Abschnitten `bedrock` und `remote`. Stelle sicher, dass der Bedrock-Port auf den Wert von **Port 5** im Abschnitt **Einstellungen** eingestellt ist und dass der Remote-Port entweder auf **25565** oder den **Spiele Port** eingestellt ist.
+Suche die `port`-Parameter unter den Abschnitten `bedrock` und `remote`. Stelle sicher, dass der Bedrock-Port dem Wert von **Port 5** in den **Einstellungen** entspricht und der Remote-Port auf **25565** oder den **Game Port** gesetzt ist.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/AcZ5JAasBcKQpCm/preview)
 
-## Abschluss 
+## Fazit
 
-Herzlichen Glückwunsch, du hast das GeyserMC Plugin erfolgreich auf deinem Minecraft Server installiert und konfiguriert, womit Crossplay zwischen Java- und Bedrock-Editionen nun unterstützt wird. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast erfolgreich das GeyserMC Plugin auf deinem Minecraft Gameserver installiert und konfiguriert und damit Crossplay zwischen Java und Bedrock Edition ermöglicht! Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Seite – zögere nicht, uns zu kontaktieren! 🙂

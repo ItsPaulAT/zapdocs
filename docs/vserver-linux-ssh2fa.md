@@ -1,7 +1,7 @@
 ---
 id: vserver-linux-ssh2fa
 title: "VPS: SSH two-factor authentication "
-description: Information on how to set up two-factor authentication for your Linux server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance SSH security with Google Authenticator 2FA for safer server access and protect your Linux environment → Learn more now"
 sidebar_label: 2FA (SSH)
 services:
   - vserver
@@ -17,7 +17,7 @@ Google's SSH two-factor authentication (2FA) service, known as **Google Authenti
 
 ## Installation
 
-First you need to install the Google Authenticator on your Linux VPS/Root server. Execute the following command:
+First you need to install the Google Authenticator on your Linux VPS. Execute the following command:
 
 ```
 sudo apt install libpam-google-authenticator
@@ -102,3 +102,5 @@ Now you are logged in!
 ## Conclusion
 
 Congratulations, you have successfully enabled and configured 2FA for SSH! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

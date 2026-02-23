@@ -1,10 +1,10 @@
 ---
 id: cs2-cstv
 title: "CS2: CSTV "
-description:  Information about CSTV for CS2 Server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to broadcast live game streams with delay and automatic recording for spectators and relive matches anytime → Learn more now"
 sidebar_label: CSTV
 services:
-  - gameserver
+  - gameserver-cs2
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -71,3 +71,5 @@ Manual and automatic recorded demos are stored in the main directory /gxxxxx/cs2
 
 
 With the demo playback from the game, the downloaded demo can be selected via **Load** and started via the **Play** button.
+
+<InlineVoucher />

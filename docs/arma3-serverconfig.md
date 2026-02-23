@@ -1,10 +1,10 @@
 ---
 id: arma3-serverconfig
 title: "Arma 3: Edit server configuration file"
-description: Information about the settings and configuration options of the server.cfg file of your Arma 3 server from ZAP-Hosting - ZAP-Hosting.com 
+description: "Discover how to customize your Arma 3 server settings for optimal gameplay and performance → Learn more now"
 sidebar_label: Server.cfg
 services:
-  - gameserver
+  - gameserver-arma3
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -14,7 +14,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 The Server.cfg of Arma 3 is required for the operation of any Arma 3 server and offers a variety of 
 Possibility to configure an Arma 3 server individually.
 
-The Server.cfg is edited either directly via FTP on a pre-installed game server, root server or VPS. 
+The Server.cfg is edited either directly via FTP on a pre-installed game server or VPS. 
 With a game server the menu item Configs is also available on the left side in the game server interface, from there the
 Server.cfg can be edited with a few clicks.
 
@@ -88,3 +88,5 @@ After you have edited your Server.cfg you can save it by pressing **CTRL+S**. Th
 your server is now ready to start again.
 
 
+
+<InlineVoucher />

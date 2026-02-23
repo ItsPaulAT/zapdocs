@@ -1,10 +1,10 @@
 ---
 id: enshrouded-configuration
 title: "Enshrouded: Enshrouded Server Configuration"
-description: Information about configuring a Enshrouded game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize Enshrouded server settings for optimal gameplay and server management → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-enshrouded
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -46,7 +46,7 @@ The Server must be stopped before the config can be edited, editing the config a
 
 Alternatively, for users who wish to directly edit the raw file, you can access this by heading over to the **Configs** section on your game server's webinterface and pressing the blue edit file button, as seen below:
 
-![](https://github.com/zaphosting/docs/assets/42719082/dc4699bc-33fa-447d-ac59-2960b3b080f9)
+![](https://screensaver01.zap-hosting.com/index.php/s/jPep5HzYtWnJTxT/preview)
 
 This will open up a text editor directly on the site to enable you to edit it.
 
@@ -86,3 +86,5 @@ We do not recommending changing the Port, IP or Directory settings, as these are
 | slotCount      | 4                                       | The max amount of players that can join the server (max 16) |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

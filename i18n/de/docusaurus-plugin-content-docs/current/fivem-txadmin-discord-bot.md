@@ -1,83 +1,87 @@
 ---
-
 id: fivem-txadmin-discord-bot
-title: "FiveM: txAdmin Discord Bot"  
-description: Informationen zur Einrichtung des Discord Bots für einen FiveM txAdmin Server von ZAP-Hosting – ZAP-Hosting.com Dokumentation  
-sidebar_label: txAdmin Discord Bot  
-services:  
-  - gameserver  
+title: "FiveM: txAdmin Discord Bot"
+description: "Entdecke, wie du den Discord Bot mit deinem txAdmin Server für ein besseres FiveM Server Management integrierst und nutzt → Jetzt mehr erfahren"
+sidebar_label: txAdmin Discord Bot
+services:
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
-## Einführung  
-Das txAdmin-Panel bringt viele Features für deinen FiveM Server mit – unter anderem auch eine Discord Bot-Integration. In dieser Anleitung zeigen wir dir, wie du den Discord Bot einrichtest und verwendest.
+## Einführung
+Das txAdmin Panel bringt viele Features für deinen FiveM Gameserver mit, darunter auch eine Discord Bot Integration.
+In dieser Anleitung zeigen wir dir, wie du den Discord Bot einrichtest und nutzt.
 
 <InlineVoucher />
 
 ## Vorbereitung
 
-Um den Discord Bot für deinen txAdmin-Server einzurichten, musst du dich zuerst im txAdmin-Panel einloggen. Die Login-Daten findest du auf der Übersichtsseite deines Servers, wie hier zu sehen:
+Um den Discord Bot für deinen txAdmin Server einzurichten, musst du dich zuerst in dein txAdmin Panel einloggen.
+Die Login-Daten findest du auf der Übersichtsseite deines Servers, so wie hier gezeigt:
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/Y9Ycr8FQqGQZr4w/download)
+![img](https://screensaver01.zap-hosting.com/index.php/s/69LdTK3FyNZNXid/download)
 
 :::info
-Diese Anleitung setzt voraus, dass txAdmin bereits eingerichtet ist. Wie das funktioniert, erfährst du in unserem Guide [FiveM: txAdmin Setup](fivem-txadmin-setup.md).
+
+Diese Anleitung setzt voraus, dass txAdmin bereits eingerichtet ist. Wie das geht, erfährst du in unserer [FiveM: txAdmin Setup](fivem-txadmin-setup.md) Anleitung.
+
 :::
 
 ## Einrichtung
 
-### Eine Discord Application erstellen
+### Erstellen einer Discord Anwendung
 
-Um den Bot mit txAdmin zu verbinden, musst du zuerst eine Discord Application erstellen. Dein Bot wird dieser dann zugewiesen und agiert unter deren Namen. Rufe dazu das [Discord Developer Portal](https://discord.com/developers/applications/) auf.
+Um den Bot mit txAdmin zu verbinden, musst du eine Discord Anwendung erstellen. Dein Bot wird dieser Anwendung zugewiesen und agiert unter deren Namen. Um eine solche Anwendung zu erstellen, öffne bitte [das Discord Developer Portal](https://discord.com/developers/applications/).
 
-Erstelle nun eine neue Application, indem du auf **New Application** klickst. Anschließend kannst du dieser einen Namen geben – wie hier dargestellt:
+Erstelle jetzt eine neue Anwendung, indem du auf **New Application** klickst und vergib einen Namen, wie unten zu sehen:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/YPbPtRaPEHZ7pB4/preview)
 
-Dann klickst du auf **Create**, um die Application zu erstellen. Notiere dir anschließend die Application-ID für die nächsten Schritte:
+Anschließend erstellst du die Anwendung mit einem Klick auf **Create**. Für die nächsten Schritte notiere dir bitte die Application ID:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/tzBNzKBGzX8j4EK/preview)
 
+
 ### Bot konfigurieren und Token erhalten
 
-Beim Erstellen einer Application wird auch automatisch ein Bot erstellt. Du kannst den Token ganz einfach erhalten, indem du auf **Reset Token** klickst. Anschließend bekommst du einen User Token, den du dir ebenfalls notieren solltest:
+Beim Erstellen der Anwendung wird automatisch ein Bot angelegt. Du kannst den Token ganz einfach bekommen, indem du auf **Reset Token** klickst. Danach erhältst du einen User-Token, den du dir ebenfalls notieren solltest:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/5ypmywwPJxRAFax/preview)
 
 :::caution
-Gib den Bot Token niemals weiter, damit dein Bot störungsfrei funktioniert und keine Sicherheitsprobleme verursacht. Der Token ist wie ein geheimer Schlüssel und darf nicht weitergegeben werden.
+Gib den Bot-Token niemals weiter, damit dein Bot ungestört läuft und keine Sicherheitslücken entstehen. Der Token ist wie ein geheimer Schlüssel und darf nicht geteilt werden.
 :::
 
-Auf derselben Seite musst du etwas nach unten scrollen und die Option „Server Members Intent“ aktivieren. Vergiss nicht, deine Änderungen zu speichern:
+Auf derselben Seite musst du etwas nach unten scrollen und die Option "Server Members Intent" aktivieren und deine Änderungen speichern:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/5ypmywwPJxRAFax/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/c5SnKpn4GXtGM38/preview)
 
 ### Bot zu deinem Discord einladen
 
-Um den Bot einzuladen, musst du die zuvor notierte Client-ID in den folgenden Link einsetzen und diesen im Browser öffnen, um den Bot deinem Discord-Server hinzuzufügen. So könnte der Link aussehen:
-
+Um den Bot einzuladen, musst du die zuvor notierte Client ID an der passenden Stelle in den folgenden Link einfügen, dann öffnest du den Link im Browser und fügst den Bot deinem Discord Server hinzu. So sollte der Link aussehen:
 ```
 https://discordapp.com/oauth2/authorize?&client_id=1364549558197026816&scope=bot&permissions=18432
 ```
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/yKX4ocRtrZ7zLWB/preview)
 
-### Server- und Channel-IDs abrufen
 
-Damit der Bot korrekt mit txAdmin funktioniert, musst du die Server-ID ermitteln, auf dem der Bot aktiv sein soll.
-Diese bekommst du, indem du mit Rechtsklick auf das Server-Icon klickst und dann **Server ID kopieren** auswählst. Notiere dir auch diese ID.
+### Server- und Channel-IDs herausfinden
 
-So sollte das aussehen:
-![](https://screensaver01.zap-hosting.com/index.php/s/6RywsHBecDb2Aeb/preview)
+Damit der Bot mit txAdmin richtig funktioniert, brauchst du die Server-ID, auf der der Bot aktiv sein soll.
+Diese bekommst du, indem du in Discord mit Rechtsklick auf das Server-Icon klickst und **Server-ID kopieren** auswählst. Notiere dir diese ID.
 
-Optional kannst du auch einen Channel festlegen, in dem Statusmeldungen wie geplante Neustarts angezeigt werden. Die Channel-ID kopierst du auf dieselbe Weise – nur eben für einen Channel.
-Denk daran, dass der Bot in diesem Channel Schreibrechte haben muss.
+So sieht das Beispiel aus:
+![](https://screensaver01.zap-hosting.com/index.php/s/GBZGZGRPQQo95ys/preview)
+
+Optional kannst du auch einen Channel festlegen, in dem Status-Updates wie Neustartpläne gepostet werden. Die Channel-ID kopierst du auf die gleiche Weise.
+Vergiss nicht, dass der Bot die Berechtigung haben muss, in diesem Channel Nachrichten zu lesen und zu schreiben.
 
 :::info
-Falls du die Option zum Kopieren der Server- oder Channel-ID nicht siehst, musst du zuerst den Entwicklermodus in deinen Discord-Einstellungen aktivieren:
-![](https://screensaver01.zap-hosting.com/index.php/s/EE26GrtQ6j6rHjB/preview) 
+Falls du die Option zum Kopieren der Server- oder Channel-ID nicht siehst, musst du zuerst den Entwicklermodus in deinen Discord Benutzereinstellungen aktivieren:
+![](https://screensaver01.zap-hosting.com/index.php/s/gLRRxNsLL8Eb5jj/preview)
 :::
 
 ### Einstellungen in txAdmin anpassen
@@ -88,12 +92,17 @@ Jetzt kannst du den Discord Bot in txAdmin aktivieren und alle zuvor notierten I
 
 #### Optional: Statusnachricht senden
 
-Du kannst optional eine Statusnachricht senden lassen, die den aktuellen Serverstatus, Spielerzahl usw. laufend aktualisiert. Dazu klickst du in Discord in den gewünschten Channel und gibst `/status add` ein. Stelle sicher, dass der Bot dort Nachrichten senden darf. So sollte das aussehen:
+Du kannst optional eine Statusnachricht einmalig senden, die dann ständig den aktuellen Serverstatus, Spieleranzahl usw. aktualisiert.
+Dazu klickst du in dem gewünschten Discord Channel und gibst `/status add` ein. Achte darauf, dass der Bot die Berechtigung hat, Nachrichten in diesem Channel zu senden.
+
+Das sollte dann so eine Nachricht erzeugen:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/XnzsK4NGZTHYsM6/preview)
 
-Alles in dieser Nachricht kannst du in den Discord-Einstellungen innerhalb von txAdmin anpassen.
+Alles in dieser Nachricht kannst du auf der Discord Einstellungsseite in txAdmin anpassen.
 
-## Abschluss
+## Fazit
 
-Die Einrichtung eines Discord Bots für txAdmin ermöglicht es dir, den Status deines FiveM Servers sowie weitere Informationen direkt auf deinem Discord-Server anzuzeigen. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Mit dem Discord Bot für txAdmin kannst du ganz easy den Status deines FiveM Gameservers und weitere Infos direkt in deinem Discord Server anzeigen lassen. Bei Fragen oder Problemen steht dir unser Support-Team täglich zur Verfügung – meld dich einfach! 🙂
+
+<InlineVoucher />

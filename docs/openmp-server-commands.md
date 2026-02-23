@@ -1,10 +1,10 @@
 ---
 id: openmp-server-commands
 title: "Open.mp: Open.mp Server Commands"
-description: Information on useful commands for Open.mp game from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage Open.mp server commands securely with RCON access and improve your server control → Learn more now"
 sidebar_label: Server Commands
 services:
-  - gameserver
+  - gameserver-openmp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -69,3 +69,5 @@ Ensure that RCON has been enabled, otherwise these commands will not work in-gam
 | /rcon banip [ip]               | String           | Ban an IP address from the server                                    | 
 | /rcon unbanip [ip]             | String           | Unban an IP address from the server                                  | 
 | /rcon reloadbans               | -                | Reloads the ban file                                                 |
+
+<InlineVoucher />

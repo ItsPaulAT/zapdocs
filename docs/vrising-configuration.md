@@ -1,10 +1,10 @@
 ---
 id: vrising-configuration
 title: "V Rising: Server Configuration"
-description: Information about configuring a V Rising game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize V Rising server settings for optimal gameplay and control your server environment → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-vrising
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -111,3 +111,5 @@ V Rising has a significant amount of parameters and configuration options presen
 | AllowGlobalChat          | true/false                    | Toggle the global chat                                                                                 |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

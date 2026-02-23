@@ -1,10 +1,10 @@
 ---
 id: redm-gamebuild
 title: "RedM: Enable DLC Content"
-description: Information on how to enable a DLC game build for RedM servers - ZAP-Hosting.com - Documentation
+description: "Discover how to enforce specific DLC versions on your RedM server for the latest maps, vehicles, and content → Learn more now"
 sidebar_label: Enable DLC game build
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -40,3 +40,5 @@ In order use additional DLC content such as Blood Money, you must set it in the 
 ## Conclusion
 
 Once you have picked your choice, proceed to restart your RedM server. Your server will now launch with the specified DLC build. You have successfully set a gamebuild for your RedM game server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

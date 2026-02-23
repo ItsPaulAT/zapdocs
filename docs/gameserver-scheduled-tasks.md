@@ -1,7 +1,7 @@
 ---
 id: gameserver-scheduled-tasks
 title: "Game server: Scheduled Tasks (Cron)"
-description: Create and manage scheduled tasks (cron) for your game server product from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to automate server processes with scheduled tasks for backups, service management, and commands → Learn more now"
 sidebar_label: Scheduled tasks
 services:
   - webspace
@@ -71,3 +71,5 @@ Do you want to remove existing tasks? Delete existing tasks in the list by click
 ## Conclusion
 
 Now you know how to create, manage and remove scheduled tasks. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

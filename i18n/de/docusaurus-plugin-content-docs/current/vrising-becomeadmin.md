@@ -1,57 +1,56 @@
 ---
 id: vrising-becomeadmin
 title: "V Rising: Admin werden"
-description: Informationen, wie du Admin auf deinem V Rising Server bei ZAP-Hosting wirst - ZAP-Hosting.com Dokumentation
+description: "Entdecke, wie du die vollen Administratorrechte für deinen Gameserver effizient verwaltest und vergibst → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-vrising
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Administrator kannst du alle verfügbaren Optionen und Funktionen, die das Spiel direkt bietet, nutzen. Alle Schritte, die du zur Vergabe von Administratorrechten für deinen Server durchführen musst, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
-### Berechtigungen hinzufügen
+### Rechte hinzufügen
 
-Die Verwaltung der Admin Berechtigungen erfolgt über die **adminlist.txt**. Diese lässt sich im Webinterface unter Configs verwalten. Für das Hinzufügen eines Admins wird die SteamID64 vom Spieler benötigt. Diese erhältst du, in dem du dein Steam Profil aufrufst und dort dann an einer beliebigen Stelle einen Rechtsklick machst. Dort hast du dann die Möglichkeit, die Seiten URL zu kopieren. Im Anschluss kann die URL auf einer der folgenden Webseiten angeben werden: https://steamid.io/ https://steamrep.com/ https://steamidfinder.com/ 
+Die Verwaltung der Admin-Rechte erfolgt über die **adminlist.txt** Konfigurationsdatei. Du findest diese Datei im Webinterface unter dem Menüpunkt Configs. Um einen Admin hinzuzufügen, benötigst du die SteamID64 des Spielers. Diese bekommst du, indem du dein Steam-Profil öffnest und mit einem Rechtsklick irgendwo auf der Seite das Kontextmenü öffnest. Dort kannst du die URL der Seite kopieren. Die URL kannst du dann auf einer der folgenden Webseiten eingeben: https://steamid.io/ https://steamrep.com/ https://steamidfinder.com/ 
 
-![](https://screensaver01.zap-hosting.com/index.php/s/W27gwqdcg7EFiAB/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/QT5HRX4t966kRjQ/preview)
 
-Dort angelangt gibst du beim Feld deine Steam Profil URL an, welche du kopiert hast und erhältst dadurch dann deine SteamID64. Diese wird dann in der **adminlist.txt** Konfigurationsdatei eingetragen. Gehe dazu im Webinterface in deine Gameserver Verwaltung in die Kategorie Configs und rufe die adminlist.txt Konfigurationsdatei auf. 
+Gib dort deine kopierte Steam-Profil-URL in das Feld ein, und du erhältst deine SteamID64. Füge die SteamID64 in die **adminlist.txt** Konfigurationsdatei ein. Gehe dazu im Webinterface deiner Gameserver-Verwaltung in den Bereich Configs und öffne die adminlist.txt.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/ZrDAnfR8aYmaxiM/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/Y35BDx5xJ5zLGoS/preview)
 
 :::info
-Solltest du mehreren Spielern Admin Berechtigungen zuweisen wollen, dann müssen die SteamIDs jeweils in einer eigenen Zeile eingetragen werden. 
+Wenn du mehreren Spielern Admin-Rechte vergeben möchtest, muss jede SteamID in einer eigenen Zeile stehen.
 :::
 
+### Rechte aktivieren
 
+Bevor du die Admin-Rechte im Spiel nutzen kannst, musst du die Konsole für dein Spiel aktivieren. Verbinde dich mit deinem Server und gehe in die Einstellungen. Dort musst du die Option **Console Enabled** aktivieren. Die Konsole kannst du standardmäßig mit der Gravis-Taste (`^`) auf der Tastatur öffnen. Die Admin-Rechte kannst du dann in der Konsole mit dem Befehl `adminauth` aktivieren.
 
-### Berechtigungen aktivieren
+![](https://screensaver01.zap-hosting.com/index.php/s/MLS9wbcC56ZomAb/preview)
 
-Für die Zuweisung der Admin Berechtigungen im Spiel musst du nun noch die Konsole bei deinem Spiel aktivieren. Verbinde dich dafür mit deinem Server und gehe im Anschluss in die Einstellungen. In den Einstellungen muss dann die Option **Console Enabled** aktiviert werden. Die Konsole lässt sich standardmäßig mit der Gravis Taste auf der Tastatur öffnen. In der Konsole können die Admin-Berechtigungen dann mit dem `adminauth` Befehl aktiviert werden. 
+### Admin-Befehlsliste
 
-![](https://screensaver01.zap-hosting.com/index.php/s/H94YsC7drocDFxq/preview)
+Hier eine kurze Übersicht der gängigsten Admin-Befehle, die du auf deinem Server ausführen kannst.
 
+|                          |                                                         |
+| ------------------------ | ------------------------------------------------------- |
+| adminauth                | Vergabe von Admin-Rechten                               |
+| admindeauth              | Entzug von Admin-Rechten                                |
+| banuser [Name/IP/UserID] | Bannt einen bestimmten Spieler per Name, IP oder UserID |
+| banned                   | Zeigt eine Liste aller gebannten Nutzer                 |
+| bancharacter             | Bannt einen bestimmten Charakter                         |
+| give [Name]              | Gibt dir einen bestimmten Gegenstand im Spiel           |
+| giveset                  | Ermöglicht das Ausprobieren verschiedener Rüstungs- und Waffensets |
+| kick [Name/IP/UserID]    | Kickt einen bestimmten Spieler per Name, IP oder UserID |
+| unban [Name/IP/UserID]   | Entbannt einen bestimmten Spieler per Name, IP oder UserID |
 
-### Admin Befehlsliste
+## Fazit
 
-Hier findest du eine kurze Übersicht über die gängigsten Admin-Befehle, welche du auf deinem Server ausführen kannst. 
+Glückwunsch, du hast die Administratorrechte erfolgreich eingerichtet. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
 
-|                          |                                                              |
-| ------------------------ | ------------------------------------------------------------ |
-| adminauth                | Zuweisung von Administrationsberechtigungen                  |
-| admindeauth              | Aufhebung von Administrationsberechtigungen                  |
-| banuser [name/IP/userID] | Einen bestimmten Spieler anhand des Namens, der IP oder der Benutzer-ID sperren |
-| banned                   | Zeigt eine Liste aller gesperrten Spieler an                 |
-| bancharacter             | Wird verwendet, um ein bestimmtes Character zu verbieten     |
-| give [name]              | Liefert dir einen bestimmten Gegenstand im Spiel.            |
-| giveset                  | Ermöglicht die Erkundung verschiedener Rüstungs- und Waffensets |
-| kick [name/IP/userID]    | Einen bestimmten Spieler anhand des Namens, der IP oder der Benutzer-ID kicken |
-| unban [name/IP/userID]   | Einen bestimmten Spieler anhand des Namens, der IP oder der Benutzer-ID entsperren |
-
-## Abschluss
-
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+<InlineVoucher />

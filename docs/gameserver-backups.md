@@ -1,7 +1,7 @@
 ---
 id: gameserver-backups
 title: 'Game server: Create, download and import backups'
-description: Information on how to create, download and restore backups for your game server from ZAP-Hosting -ZAP-Hosting.com 
+description: "Discover how to easily create and restore manual or automatic backups for your game server to protect your data → Learn more now"
 sidebar_label: Backups
 services:
   - gameserver
@@ -49,3 +49,5 @@ If you want to download or delete backups you have to connect to the storage ser
 ![](https://screensaver01.zap-hosting.com/index.php/s/q3E8XTX8gRQoasY/preview)
 
 There, you can view the user credentials of your storage server and the currently used storage space. If you are connected via FTP, you can download or delete the backups there.
+
+<InlineVoucher />

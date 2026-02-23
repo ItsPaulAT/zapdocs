@@ -1,71 +1,73 @@
 ---
 id: rust-becomeadmin
-title: "Rust: Admin auf eigenem Server werden"
-description: Informationen, wie du dich zum Admin auf deinem Rust-Server von ZAP-Hosting machen kannst - ZAP-Hosting.com Dokumentation
+title: "Rust: Werde Admin auf deinem eigenen Server"
+description: "Entdecke, wie du Administratorrechte vergibst, um volle Kontrolle über deinen Server zu haben und dein Game effektiv zu managen → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-rust
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Admin kannst du alle verfügbaren Optionen und Funktionen, die das Spiel bietet, direkt im Spiel nutzen. Alle Schritte, die du durchführen musst, um Administratorrechte für deinen Server zu vergeben, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
-## Admin werden via RCON
+## Admin werden mit RCON
 
-Mithilfe eines RCON Tools kannst du auf deinem Server beliebige Befehle ausführen, auch Adminrechte können so vergeben werden.
-Zuerst musst du die [Verbindung via RCON](rust-connectrcon.md) herstellen.
+Mit RCON kannst du direkt einen Befehl ausführen, um dich selbst zum Admin zu machen.  
+Zuerst musst du dich [per RCON verbinden](rust-connectrcon.md).
 
-Sobald du verbunden bist, navigiere in das Feld, in welchem du Konsolenbefehle ausführen kannst. In unserem Beispiel nutzen wir **RustAdmin**.
+Sobald du verbunden bist, navigiere zu der Stelle, an der du Konsolenbefehle eingeben kannst. In unserem Beispiel nutzen wir RustAdmin.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/fr4eoPj8YybX4kw/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/zpJH32AHCySP8qT/preview)
 
-Um dir Adminrechte zu geben, kannst du dort nun folgenden Befehl ausführen:
+Hier gibst du den entsprechenden Befehl ein:  
 `ownerid Steam64ID`
 
 :::info
-Bitte ersetze **Steam64ID** durch deine Steam64ID. Mit diesem Tool kannst du deine [Steam64ID herausfinden](https://steamid.io/)
+Ersetze **Steam64ID** bitte durch deine echte Steam64ID. Deine Steam64ID findest du mit diesem [Tool](https://steamid.io/)
 :::
 
-Im Anschluss hast du direkt Adminrechte auf deinem Server. 
+Danach wirst du direkt zum Admin gemacht.
 
 :::info
-Solltest du im Spiel online sein, während du diesen Befehl ausführt, musst du den Server einmal verlassen und erneut betreten, damit die Adminrechte aktiv werden.
+Wenn du währenddessen im Spiel bist, solltest du dich einfach neu auf dem Server einloggen.
 :::
 
-Nun bist du Administrator. :) 
+Und schon bist du Administrator! :)
 
-## Adminrechte via FTP setzen
+## Admin werden per FTP
 
-Ein weiterer Weg dir Adminrechte auf deinem Server zu geben ist via FTP.
-Zuerst musst du auf deinen Server via [Zugriff per FTP](gameserver-ftpaccess.md).
+Alternativ kannst du dir die Adminrechte auch direkt über FTP vergeben.  
+Zuerst musst du dich mit [FTP-Zugang verbinden](gameserver-ftpaccess.md).
 
-Nachdem du dich via FTP verbunden hast, navigierst du in folgendes Verzeichnis: 
+Nachdem du erfolgreich verbunden bist, navigiere zu folgendem Verzeichnis:
 
-`/g#####/rust/server/<your_server_save>/cfg`
+`/g#####/rust/server/<dein_server_save>/cfg`
 
-In diesem Verzeichnis **erstellst** du eine **neue Datei** mit dem Namen **users.cfg**
+In diesem Ordner musst du eine **neue Datei** erstellen. Diese nennst du **users.cfg**
 
-In dieser Datei kannst du für jeden Admin einen Eintrag erstellen, dieser sollte so aussehen:
+In dieser Datei fügst du deine Einträge im folgenden Format hinzu:
 
 `<role> <Steam64ID> <reason/user>`
 
 :::info
-Ersetze dort **Steam64ID** mit deiner Steam64ID.  Mit diesem Tool kannst du deine [Steam64ID herausfinden](https://steamid.io/)
+Ersetze **Steam64ID** bitte durch deine echte Steam64ID. Deine Steam64ID findest du mit diesem [Tool](https://steamid.io/)
 :::
 
-Hier findest du ein Beispiel, wie ein fertiger Eintrag aussehen kann:
+Ein Beispiel-Eintrag sieht so aus:
 
 ```
-ownerid 76561198114248380 "Hier kannst du zum Beispiel deinen Namen eintragen..."
-moderatorid 76561198114248380 "Und hier den Namen des zweiten Administrators..."
+ownerid 76561198114248380 "Du kannst hier zur Referenz alles reinschreiben"
+moderatorid 76561198114248380 "Test-Person"
 ```
 :::info
-Nun musst du deinen Server einmal neu starten, damit die Änderungen wirksam werden.
+Du musst deinen Server neu starten, damit die Änderungen wirksam werden.
 :::
 
-## Abschluss
+## Fazit
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast die Administratorrechte erfolgreich eingerichtet. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+<InlineVoucher />

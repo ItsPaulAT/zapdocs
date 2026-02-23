@@ -1,7 +1,7 @@
 ---
 id: csgo-gotv
 title: "CSGO: Information about GOTV"
-description: Information about GOTV on Counter-Strike Go servers from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how GOTV enables live game broadcasts and replay recordings for enhanced spectator experiences in CS:GO and similar games → Learn more now"
 sidebar_label: GOTV
 services:
   - gameserver
@@ -79,3 +79,5 @@ The above commands are mandatory so that the GOTV master server is activated and
 |           tv_stop            |                 Stops the GOTV transmission                  |
 |        tv_stoprecord         |            Stops recording a GOTV demo              |
 |           tv_title           |           Defines the name of the GOTV transmission           |
+
+<InlineVoucher />

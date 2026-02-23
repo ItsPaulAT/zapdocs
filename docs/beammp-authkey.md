@@ -1,10 +1,10 @@
 ---
 id: beammp-authkey
 title: "BeamMP: Create an Auth Key"
-description: Information on how to create an Auth Key for your BeamMP server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to generate and apply an Auth Key to list your server publicly and manage access effectively → Learn more now"
 sidebar_label: Create an Auth Key
 services:
-  - gameserver
+  - gameserver-beammp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -55,3 +55,5 @@ Now we open the settings of our game server and scroll down, here we can now spe
 Now we save the settings and restart the server.
 
 Done! The key is now applied and the server should list itself shortly.
+
+<InlineVoucher />

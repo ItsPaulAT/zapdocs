@@ -1,10 +1,10 @@
 ---
 id: gmod-ttt
 title: "Garry's Mod: Configuration"
-description: Information about the configuration options for your Garry's Mod TTT server from ZAP-Hosting -ZAP-Hosting.com documentation
+description: "Discover how to optimize your TTT server settings for better gameplay and rounds management → Learn more now"
 sidebar_label: Garry's Mod TTT Configuration
 services:
-  - gameserver
+  - gameserver-gmod
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -179,3 +179,5 @@ When you have changed all variables as desired, the next Step is to save your ch
 ![](https://screensaver01.zap-hosting.com/index.php/s/LyEsQQ8Af8AwWj9/preview)
 
 After that, you're able to start your server!
+
+<InlineVoucher />

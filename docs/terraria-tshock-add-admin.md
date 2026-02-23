@@ -1,10 +1,10 @@
 ---
 id: terraria-tshock-add-admin
 title: "Terraria: Become a server admin (tShock)"
-description: Information on how to become an admin on your Terraria server with tShock from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign administrator permissions on your Terraria server for full control and management → Learn more now"
 sidebar_label: Become admin (tShock)
 services:
-  - gameserver
+  - gameserver-terraria
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -59,3 +59,5 @@ Of course you replace **USERNAME** with your name and **PASSWORD** with the pass
 ![](https://screensaver01.zap-hosting.com/index.php/s/ewTra2Fi2yia9jS/preview)
 
 Now you are logged in as admin on your server and can manage it with different commands.
+
+<InlineVoucher />

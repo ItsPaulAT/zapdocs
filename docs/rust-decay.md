@@ -1,10 +1,10 @@
 ---
 id: rust-decay
 title: "Rust: Modify Decay"
-description: Information, how to adjust the decay on your Rust server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to adjust Rust server decay rates and save configurations for better gameplay control → Learn more now"
 sidebar_label: Decay
 services:
-  - gameserver
+  - gameserver-rust
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -41,3 +41,5 @@ To save our changes, its required to send
 
 If your console now shows `Config Saved` the server has taken your changes.
 
+
+<InlineVoucher />

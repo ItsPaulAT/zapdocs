@@ -1,10 +1,10 @@
 ---
 id: gmod-servercfg
 title: "Garry's Mod: Server.cfg settings"
-description: Information about the server.cfg settings for your Garry's Mod server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Configure your Garry's Mod server settings to customize gameplay and spawn limits for an optimized experience → Learn more now"
 sidebar_label: Garry's Mod Server.cfg Modification
 services:
-  - gameserver
+  - gameserver-gmod
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -66,3 +66,5 @@ If you have changed everything as desired, you just need to save your changes.
 ![](https://screensaver01.zap-hosting.com/index.php/s/zpaddQA5EXfSRM3/preview)
 
 After a server reboot all changes are live.
+
+<InlineVoucher />

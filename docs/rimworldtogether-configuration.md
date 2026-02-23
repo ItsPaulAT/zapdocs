@@ -1,7 +1,7 @@
 ---
 id: rimworldtogether-configuration
 title: "RimWorld Together: Server Configuration"
-description: Information about configuring a RimWorld Together game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore RimWorld Together server settings to customize gameplay and manage access for a tailored multiplayer experience → Learn more now"
 sidebar_label: Server Configuration
 services:
   - gameserver
@@ -51,3 +51,5 @@ Now adjust the `WhitelistedUsers` parameter, adding the in-game usernames of peo
 You can adjust a wide range of difficulty parameters for your RimWorld Together servers via the **DifficultyValues.json** file.
 
 Adjusting the Savegame settings is also possible through the **WorldConfig.json** file. It is recommended that you don't edit this whilst being deep into your playthrough as it may ruin the experience.
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: lotr-rtm-firststeps-connect
 title: "The Lord of the Rings: Return to Moria: Connect to the server"
-description: "Information about various ways on how to connect to your The Lord of the Rings: Return to Moria server from ZAP-Hosting - ZAP-Hosting.com Documentation"
+description: "Discover how to connect seamlessly to your The Lord of the Rings: Return to Moria server and enjoy uninterrupted gameplay → Learn more now"
 sidebar_label: Connect to the server
 services:
-  - gameserver
+  - gameserver-lotr-rtm
 ---
 
 import Tabs from '@theme/Tabs';
@@ -13,7 +13,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Introduction
-Not sure how to connect to your **The Lord of the Rings: Return to Moria** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need – from the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
+Not sure how to connect to your **The Lord of the Rings: Return to Moria** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need. From the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
 
 <InlineVoucher />
 
@@ -70,3 +70,5 @@ Congratulations, provided you have successfully followed everything, you should 
 
 
 
+
+<InlineVoucher />

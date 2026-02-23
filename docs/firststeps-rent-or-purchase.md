@@ -1,7 +1,7 @@
 ---
 id: firststeps-rent-or-purchase
 title: Rental or Lifetime
-description: Information about the differences of rental and lifetime servers from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover the benefits of lifetime servers for flexible, long-term hosting solutions and choose the best option for your needs → Learn more now"
 sidebar_label: Rental or Lifetime
 ---
 
@@ -52,7 +52,7 @@ Both rental and lifetime options are available for the majority of our products.
 | Product           | Rent | Lifetime |
 | ----------------- | ---- | -------- |
 | Gameserver        | ✓    | ✓        |
-| vRootserver       | ✓    | ✓        |
+| VPS       | ✓    | ✓        |
 | Dedicated Server  | ✓    | ✓        |
 | Domain            | ✓    | X        |
 | Webspace          | ✓    | ✓        |

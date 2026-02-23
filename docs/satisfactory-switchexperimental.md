@@ -1,10 +1,10 @@
 ---
 id: satisfactory-switchexperimental
 title: "Satisfactory: Experimental Build"
-description: Information on Experimental Build for Satisfactory from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover the benefits and risks of using Satisfactory's experimental build to access major updates early and enhance your gameplay experience → Learn more now"
 sidebar_label: Experimental Build
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -93,3 +93,5 @@ That's all, now you will have to wait for Epic Games to download and install the
 
 </TabItem>
 </Tabs>
+
+<InlineVoucher />

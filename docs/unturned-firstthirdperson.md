@@ -1,10 +1,10 @@
 ---
 id: unturned-firstthirdperson
 title: "Unturned: Set 1st/3rd person for server"
-description: Information on how to set the 1st or 3rd person perspective on your Unturned server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize your Unturned server's player perspective between first, third, or both views for enhanced gameplay → Learn more now"
 sidebar_label: 1st/3rd Person
 services:
-  - gameserver
+  - gameserver-unturned
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -56,3 +56,5 @@ perspective both
 
 
 The next time you start your server, the desired option should be enabled!
+
+<InlineVoucher />

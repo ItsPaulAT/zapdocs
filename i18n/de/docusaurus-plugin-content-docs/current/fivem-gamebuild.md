@@ -1,23 +1,23 @@
 ---
 id: fivem-gamebuild
 title: "FiveM: DLC-Inhalte aktivieren"
-description: Informationen zur Aktivierung eines DLC Game Builds für FiveM Server - ZAP-Hosting.com - Dokumentation
-sidebar_label: DLC-Inhalte aktivieren
+description: "Entdecke, wie du bestimmte DLC-Versionen auf deinem FiveM-Gameserver erzwingst, um die neuesten Maps, Fahrzeuge und Inhalte zu nutzen → Jetzt mehr erfahren"
+sidebar_label: DLC Gamebuild aktivieren
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Die Erzwingung des Game Builds ermöglicht es dir, eine bestimmte DLC-Version auf deinem Server zu erzwingen, sodass du mit den neuesten Karten, Kleidungsstücken, Fahrzeugen und mehr spielen kannst! 
+Das Erzwingen eines Gamebuilds erlaubt es dir, eine bestimmte DLC-Version auf deinem Server festzulegen, damit du mit den neuesten Maps, Outfits, Fahrzeugen und mehr zocken kannst!
 
 <InlineVoucher />
 
 ## Verfügbare Gamebuilds
 
-Hier findest du eine Übersicht über alle verfügbaren DLCs und dessen Build-IDs:
+Hier findest du eine Übersicht aller verfügbaren DLCs und deren Build IDs:
 
 | Build ID |        Build Name         |
 | :------: | :-----------------------: |
@@ -31,20 +31,26 @@ Hier findest du eine Übersicht über alle verfügbaren DLCs und dessen Build-ID
 |   3095   |       The Chop Shop       |
 |   3258   |  Bottom Dollar Bounties   |
 |   3407   |    Agents of Sabotage     |
+|   3570   |        Money Fronts       |
 
 
-## Build aktivieren
 
-Um zusätzliche DLC-Inhalte wie Cayo Perico, den Tuner-DLC oder Los Santos Summer Special zu verwenden, musst du dies in der Konfiguration deines Servers festlegen. Um den DLC Build zu setzen, musst du dein txAdmin-Interface öffnen und zu den FXServer-Einstellungen navigieren. ![](https://screensaver01.zap-hosting.com/index.php/s/PfQ59DJ7B6DnpYi/preview)
+## Gamebuild aktivieren
 
-Füge nun einfach deinen gewünschten Gamebuild im Abschnitt **Zusätzliche Argumente** mittels des set-Befehls hinzu und ersetze dabei `BUILD_ID_CHOICE` durch einen Wert aus der Tabelle:
+Um zusätzliche DLC-Inhalte wie Cayo Perico, das Tuner DLC oder Los Santos Summer Special zu nutzen, musst du das in der Konfiguration deines Servers einstellen. Öffne dazu dein txAdmin Interface und gehe zu den FXServer Einstellungen.
+
+![](https://screensaver01.zap-hosting.com/index.php/s/HxmnfPEdcDJgZLX/preview)
+
+Füge nun einfach deinen gewünschten Gamebuild im Bereich **Additional Arguments** mit dem set-Befehl hinzu, wobei du `BUILD_ID_CHOICE` durch eine ID aus der Tabelle ersetzt:
 
 ```
-+set sv_enforceGameBuild BUILD_ID_AUSWAHL
++set sv_enforceGameBuild BUILD_ID_CHOICE
 ```
 
 
 
-## Abschluss
+## Fazit
 
-Wenn du deine Wahl getroffen hast, starte deinen FiveM Server neu. Dein Server startet nun mit dem angegebenen DLC-Build. Du hast erfolgreich ein Game Build für deinen FiveM Gameserver eingestellt. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Nachdem du deine Wahl getroffen hast, starte deinen FiveM-Gameserver neu. Dein Server startet jetzt mit dem angegebenen DLC-Gamebuild. Du hast erfolgreich einen Gamebuild für deinen FiveM-Gameserver gesetzt. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+<InlineVoucher />

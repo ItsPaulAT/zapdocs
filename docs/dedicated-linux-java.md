@@ -1,9 +1,10 @@
 ---
 id: dedicated-linux-java
-title: "Dedicated Server: Installation of Java"
-description: Information on how to install Java on your server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup Java on a Linux Server - Run Java Based Applications and Services"
+description: "Learn how to install Java on various Linux systems to run Java applications smoothly and ensure your environment is properly set up → Learn more now"
 sidebar_label: Install Java
 services:
+  - vserver
   - dedicated
 ---
 
@@ -13,7 +14,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 Java is a very popular programming language that is used worldwide for numerous programs and services. To run these programs based on Java it is absolutely necessary that Java is installed on the system. In the following you will learn how to install Java on your system for the offered Linux operating systems. 
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -81,3 +82,4 @@ OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.20.04, mixed mode)
 ```
 
 In this case Java 11 was successfully installed on your system. Now you can easily run your Java applications on your system. 
+

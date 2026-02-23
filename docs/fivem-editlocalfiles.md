@@ -1,10 +1,10 @@
 ---
 id: fivem-editlocalfiles
 title: "FiveM: Locales files (Language variables)"
-description: Information on how to edit the locales files of your FiveM server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to customize and add languages to your resource for a personalized experience → Learn more now"
 sidebar_label: Locales Files (Language)
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -48,3 +48,5 @@ The language used can be defined via the configuration file `config.lua` in the 
 ## Conclusion
 
 Congratulations, assuming you have followed all the steps, you have successfully edited the locale file of your resource.  For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

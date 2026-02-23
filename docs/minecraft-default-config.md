@@ -1,10 +1,10 @@
 ---
 id: minecraft-default-config
 title: "Minecraft: Server Config settings"
-description: Information about the server config settings of your Minecraft server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to optimize Minecraft server settings for performance and stability while customizing gameplay experience → Learn more now"
 sidebar_label: Server Config
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -61,7 +61,7 @@ If you cannot identify the IDs of the respective game modes, you will find a lis
 
 ### server-port
 
-You can assign a fixed port to your server via which it will be accessible in connection with the IP. If you want to run several servers on your root server as an example, a different port must be defined for each server. This option can usually remain untouched and is usually only required for a BungeeCord network.
+You can assign a fixed port to your server via which it will be accessible in connection with the IP. If you want to run several servers on your server as an example, a different port must be defined for each server. This option can usually remain untouched and is usually only required for a BungeeCord network.
 
 ### enable-command-block
 
@@ -217,3 +217,5 @@ However, we always recommend installing an AntiCheat in the form of a plugin!
 ### function-permission-level
 
 Specifies the OP level with which commands can be executed. At level 4, these can stop the server as an example or kick or ban players.
+
+<InlineVoucher />

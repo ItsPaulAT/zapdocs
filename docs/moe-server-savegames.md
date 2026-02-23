@@ -1,10 +1,10 @@
 ---
 id: moe-server-savegames
 title: "Myth of Empires: Managing Savegames"
-description: Information on how to manage savegames on your Myth of Empires server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to securely manage and back up your Myth of Empires game saves for seamless gameplay continuity → Learn more now"
 sidebar_label: Manage Savegames
 services:
-  - gameserver
+  - gameserver-moe
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -73,3 +73,5 @@ Using your Savegame will require you to select it in your server configuration. 
 In this section, find the **Map Name** parameter in the Basic settings section, and your uploaded world should now be found here. If you do not see it, ensure that you restart your server after uploading.
 
 You have successfully added a Savegame to your game server.
+
+<InlineVoucher />

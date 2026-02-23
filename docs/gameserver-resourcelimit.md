@@ -1,7 +1,7 @@
 ---
 id: gameserver-resourcelimit
 title: 'Game server: Resource limit - Unlocking a game server'
-description: Information on how to unlock your game server if it has been locked due to exceeding the resource limit - ZAP-Hosting.com documentation
+description: "Understand why your game server is suspended due to resource limits and explore solutions to restore operation → Learn more now"
 sidebar_label: Resource limit
 services:
   - gameserver
@@ -67,3 +67,5 @@ Option 1 and 2 didn't help you or are not quite comprehensible? Don't worry! Fee
 ## Conclusion
 
 By following one or more of the solution approaches, you should have successfully resolved the issue and restored the functionality of your server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

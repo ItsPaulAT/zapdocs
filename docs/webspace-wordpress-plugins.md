@@ -1,7 +1,7 @@
 ---
 id: webspace-wordpress-plugins
 title: "Webspace: WordPress Plugins"
-description: Information on how to install WordPress Plugins on a Webspace product from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to enhance your WordPress site with plugins to add features and improve performance → Learn more now"
 sidebar_label: Plugins
 services:
   - webspace
@@ -40,3 +40,5 @@ Your plugins should always be kept up to date. WordPress makes this task much ea
 ## Conclusion
 
 Congratulations, you have successfully installed your first WordPress plugin. If you have any further questions or problems, please contact our support team, who are available to help you every day!
+
+<InlineVoucher />

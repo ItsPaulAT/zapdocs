@@ -1,10 +1,10 @@
 ---
 id: fivem-installels
 title: "FiveM: Installing ELS on your server"
-description: Information on how to install ELS on your FiveM server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up and enable ELS-FiveM with carmods for enhanced gameplay on your server → Learn more now"
 sidebar_label: Install ELS
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -57,3 +57,5 @@ Make sure that the previous line always ends with a comma.
 :::
 
 Done! Our Carmod should be ELS enabled and functional after a restart of the server.
+
+<InlineVoucher />

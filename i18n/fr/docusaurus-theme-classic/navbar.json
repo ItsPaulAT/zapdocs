@@ -1,0 +1,50 @@
+{
+  "title": {
+    "message": "Documentation ZAP-Hosting",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "ZAP-Hosting",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.General": {
+    "message": "Général",
+    "description": "Navbar item with label General"
+  },
+  "item.label.Gameserver": {
+    "message": "Serveur de jeux",
+    "description": "Navbar item with label Gameserver"
+  },
+  "item.label.VPS": {
+    "message": "VPS",
+    "description": "Navbar item with label VPS"
+  },
+  "item.label.Dedicated Server": {
+    "message": "Serveur dédié",
+    "description": "Navbar item with label Dedicated Server"
+  },
+  "item.label.Voicebot & Voiceserver": {
+    "message": "Bot vocal & serveur vocal",
+    "description": "Navbar item with label Voicebot & Voiceserver"
+  },
+  "item.label.Domain": {
+    "message": "Domaine",
+    "description": "Navbar item with label Domain"
+  },
+  "item.label.Webspace": {
+    "message": "Hébergement web",
+    "description": "Navbar item with label Webspace"
+  },
+  "item.label.Software": {
+    "message": "Logiciels",
+    "description": "Navbar item with label Software"
+  },
+  "item.label.Rent a Server": {
+    "message": "Louer un serveur",
+    "description": "Navbar item with label Rent a Server"
+  },
+  "item.label.ZAP-Hosting": {
+    "message": "ZAP-Hosting",
+    "description": "Navbar item with label ZAP-Hosting"
+  }
+}

@@ -1,10 +1,10 @@
 ---
 id: minecraft-pluginuploader
 title: "Minecraft: Server Using ZAP-Hosting Plugin Uploader"
-description: Information on how to use the plugin uploader to upload plugins to your Minecraft server from ZAP-Hosting via the web interface - ZAP-Hosting.com documentation
+description: "Discover how to manage Minecraft server plugins easily for Spigot or Bukkit servers and enhance your gameplay experience → Learn more now"
 sidebar_label: Plugin Uploader
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -104,3 +104,5 @@ Suggested solutions:
 
 - In that case, you can simply remove the plugin entry by clicking the uninstall button.
 - Alternatively, you can try clicking the Synchronize button.
+
+<InlineVoucher />

@@ -1,10 +1,11 @@
 ---
 id: vserver-linux-gitlab
-title: "VPS: Install GitLab on Linux"
-description: Information on how to set up GitLab on your Linux VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup GitLab on a Linux Server - Host Your Own DevOps Platform"
+description: "Discover how to efficiently set up GitLab on Linux to streamline DevOps workflows and enhance team collaboration → Learn more now"
 sidebar_label: Install GitLab
 services:
   - vserver
+  - dedicated
 ---
 
 import Tabs from '@theme/Tabs';
@@ -44,8 +45,6 @@ The following requirements are recommended by the official [GitLab Team](https:/
 :::info
 For the most accurate and up-to-date specification information, please refer to GitLab's official [Hardware Requirements](https://docs.gitlab.com/ee/install/requirements.html) documentation.
 :::
-
-## Preparation
 
 A connection has to be established via a SSH client in order to install GitLab on your Linux server. Please view our [Initial access (SSH)](vserver-linux-ssh.md) guide to learn more about this.
 
@@ -335,3 +334,5 @@ sudo ufw enable
 Congratulations, you have successfully installed GitLab! If you have any further questions or problems, please contact our support team, who are available to help you every day!
 
 If you wish to perform additional setup, we recommend reading the [Official GitLab Documentation](https://docs.gitlab.com/ee/install/next_steps.html) for next steps.
+
+<InlineVoucher />

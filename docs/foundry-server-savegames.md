@@ -1,10 +1,10 @@
 ---
 id: foundry-server-savegames
 title: "Foundry: Managing Foundry Savegames"
-description: Information on how to manage savegames on your Foundry server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to securely back up and manage your Foundry Gamesaves locally and on your server for seamless gameplay continuity → Learn more now"
 sidebar_label: Manage Savegames
 services:
-  - gameserver
+  - gameserver-foundry
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -78,3 +78,5 @@ In order to use a specific Savegame, you will have to edit a configuration file.
 Simply head over to the **Settings** section on your game server's webinterface and find the **Savename** setting.
 
 Change this setting to the name of the savegame folder that you uploaded in the previous step. Once ready, ensure that you save at the bottom using the green **Save** button and then restart your server.
+
+<InlineVoucher />

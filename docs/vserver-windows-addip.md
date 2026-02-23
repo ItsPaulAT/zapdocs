@@ -1,7 +1,7 @@
 ---
 id: vserver-windows-addip
 title: "VPS: Configure additional IP addresses on Windows"
-description: Information on how to add additional IPs to your Windows VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to optimize server performance and security by using multiple IP addresses for better service isolation → Learn more now"
 sidebar_label: Additional IP addresses
 services:
   - vserver
@@ -62,3 +62,5 @@ Now, the additional IP address is added via the **Advanced TCP/IP Settings**. To
 The IP address has now been successfully configured and added. You can check the current status of the IP addresses by navigating to the **IP Addresses** section in the server management. There, the newly added IP address should be displayed as reachable.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/xBZGM72WX4nqXS6/preview)
+
+<InlineVoucher />

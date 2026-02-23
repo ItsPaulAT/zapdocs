@@ -1,7 +1,7 @@
 ---
 id: vserver-linux-password-change
 title: "VPS: Change root password for Linux server"
-description: Information on how to change the root password for your Linux VPS from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to securely change and manage your server password via web interface or console for enhanced access control → Learn more now"
 sidebar_label: Change Password
 services:
   - vserver
@@ -56,3 +56,5 @@ If both passwords are not equal, then the console will stop the operation. in th
 :::info
 Important: If you change the password via Console, it cannot be displayed for 3 hours in our web interface under Access and Security.
 :::
+
+<InlineVoucher />

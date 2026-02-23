@@ -1,61 +1,59 @@
 ---
 id: ark-becomeadmin
 title: "ARK: Admin werden"
-description: Informationen, wie du Admin auf deinem ARK-Server bei ZAP-Hosting wirst - ZAP-Hosting.com Dokumentation
+description: "Entdecke, wie du deinen Gameserver mit voller Admin-Kontrolle verwaltest und das Spielerlebnis verbesserst → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-ark
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Admin kannst du alle verfügbaren Optionen und Funktionen, die das Spiel direkt bietet, im Spiel nutzen. Alle Schritte, die du zur Vergabe von Administratorrechten für deinen Server durchführen musst, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
 ## Konfiguration
 
-Damit man sich selbst oder auch anderen Spielern Administrator-Rechte zuweisen kann, muss als erstes ein Serveradmin Passwort definiert werden. Das definieren des Passworts erfolgt über die Einstellungen in unserem Interface:
+Administratorrechte erlauben es dir, Änderungen direkt im Spiel auf deinem Server vorzunehmen, ohne die Config anpassen zu müssen. Um dir selbst oder anderen Spielern Adminrechte zu vergeben, musst du zuerst ein Server-Admin-Passwort festlegen. Dieses Passwort wird in den Einstellungen unseres Webinterfaces definiert.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/mJrDsH34G2iCq3c/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/kLEsKbT6RN6c7Na/preview)
 
-Nach dem definieren des Passworts muss der Server neu gestartet werden. Im Anschluss kannst du dich mit deinem Server verbinden und über die Konsole im Spiel mit dem folgenden Befehl und deinem Server Admin Passwort als Admin einloggen:
+Nachdem das Passwort festgelegt wurde, muss der Server neu gestartet werden. Danach kannst du dich mit deinem Server verbinden und dich über die Ingame-Konsole mit folgendem Befehl und deinem Server-Admin-Passwort als Admin einloggen:
 
 ```
 enableCheats password
 ```
 
+Anschließend kannst du alle Serverbefehle als Admin ausführen. Im Folgenden findest du eine Übersicht der am häufigsten genutzten Befehle.
 
+## Häufig genutzte Befehle
 
-Danach kannst du sämtliche Server-Befehle als Admin ausführen. Im folgenden findest du eine Übersicht von den am häufigsten benutzten Befehle. 
-
-
-
-## Häufig verwendete Befehle
-
-| Befehl                                         | Beschreibung                                                 |
+| Befehl                                         | Beschreibung                                                  |
 | ---------------------------------------------- | ------------------------------------------------------------ |
-| setcheatplayer TRUE/FALSE                      | Aktiviert / deaktiviert das Cheat-Menu                       |
-| admincheat AllowPlayerToJoinNoCheck SteamID    | Spieler zur Whitelist hinzufügen                             |
-| admincheat DisallowPlayerToJoinNoCheck SteamID | Spieler von der Whitelist entfernen                          |
-| admincheat SetMessageOfTheDay Nachricht        | Bestimmt die Nachricht des Tages (MOTD). Wenn ein Spieler sich mit dem Server des Spiels verbindet, erscheint diese Nachricht |
-| admincheat broadcast Nachricht                 | Verschickt eine Nachricht an alle auf dem Server befindenden Spieler |
-| admincheat god                                 | Aktiviert die Unsterblichkeit für den eigenen Spieler        |
-| admincheat fly                                 | Aktiviert das Fliegen für den eigenen Spieler                |
-| admincheat walk                                | Deaktiviert das Fliegen für den eigenen Spieler              |
-| admincheat teleport                            | Teleportiert den eigenen Spieler in die Richtung in die er gerade schaut |
-| admincheat slomo                               | Verändert sowohl die Geschwindigkeit des Servers als auch die Bewegungsgeschwindigkeit aller Spieler |
-| admincheat playersonly                         | Hiermit werden alle Bewegungen der Kreatur angehalten und die Herstellung von Crafting gestoppt/verhindert |
-| admincheat ghost                               | Aktiviert Noclip für den eigenen Spieler                     |
-| admincheat forcetame                           | Ermöglicht das sofortige zähmen von Dinosaurier und reiten ohne Sattel |
-| admincheat listplayers                         | Listet alle Spieler mitsamt der SteamId64 auf                |
-| admincheat banplayer SteamId64                 | Spieler anhand der SteamID64 bannen                          |
-| admincheat unbanplayer SteamId64               | Spieler anhand der SteamID64 entbannen                       |
-| admincheat setplayerpos x y z                  | Teleportiert den eigenen Spieler zu gewünschten Position     |
-| admincheat saveworld                           | Speichert den aktuellen Stand der Welt                       |
-| admincheat addexperience Menge                 | Fügt dem Spieler Erfahrung hinzu                             |
-| admincheat settimeofday Zeit                   | Ändert die Tageszeit des Gameservers. Beispiel: "admincheat settimeofday 12:00" |
+| setcheatplayer TRUE/FALSE                      | Aktiviert / deaktiviert das Cheat-Menü                        |
+| admincheat AllowPlayerToJoinNoCheck SteamID    | Spieler zur Whitelist hinzufügen                              |
+| admincheat DisallowPlayerToJoinNoCheck SteamID | Spieler von der Whitelist entfernen                           |
+| admincheat SetMessageOfTheDay Nachricht        | Definiert die Message of the Day (MOTD). Diese erscheint, wenn sich ein Spieler mit dem Gameserver verbindet |
+| admincheat broadcast Nachricht                 | Sendet eine Nachricht an alle Spieler auf dem Server         |
+| admincheat god                                 | Aktiviert Unsterblichkeit für den eigenen Spieler            |
+| admincheat fly                                 | Aktiviert Fliegen für den eigenen Spieler                     |
+| admincheat walk                                | Deaktiviert Fliegen für den eigenen Spieler                   |
+| admincheat teleport                            | Teleportiert deinen Spieler in die Richtung, in die du gerade schaust |
+| admincheat slomo                               | Ändert sowohl die Geschwindigkeit des Servers als auch die Bewegungsgeschwindigkeit aller Spieler |
+| admincheat playersonly                         | Stoppt alle Kreaturenbewegungen und verhindert Crafting      |
+| admincheat ghost                               | Aktiviert Noclip für den eigenen Spieler                      |
+| admincheat forcetame                           | Ermöglicht sofortiges Zähmen von Dinos und Reiten ohne Sattel |
+| admincheat listplayers                         | Listet alle Spieler inklusive SteamId64 auf                  |
+| admincheat banplayer SteamId64                 | Bannt Spieler über die SteamID64                              |
+| admincheat unbanplayer SteamId64               | Entbannt Spieler über die SteamID64                           |
+| admincheat setplayerpos x y z                  | Teleportiert den eigenen Spieler an die gewünschte Position  |
+| admincheat saveworld                           | Speichert den aktuellen Zustand der Welt                      |
+| admincheat addexperience Menge                 | Fügt dem Spieler Erfahrung hinzu                              |
+| admincheat settimeofday Zeit                   | Ändert die Tageszeit auf dem Gameserver. Beispiel: "admincheat settimeofday 12:00" |
 
-## Abschluss
+## Fazit
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Glückwunsch, du hast die Administratorrechte erfolgreich konfiguriert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+<InlineVoucher />

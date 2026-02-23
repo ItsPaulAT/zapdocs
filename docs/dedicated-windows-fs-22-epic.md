@@ -1,9 +1,10 @@
 ---
 id: dedicated-windows-fs-22-epic
-title: "Dedicated Server: Farming Simulator 2022 (Epic Games) Dedicated Server Windows Setup"
-description: Information about setting up a Farming Simulator 2022 Dedicated Server (Epic Games version) on a Windows Dedicated Server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Farming Simulator 2022 (Epic Games) Dedicated Server Windows Setup"
+description: "Discover how to set up a dedicated server for Farming Simulator 22 Epic Games version with optimized performance and unique requirements → Learn more now"
 sidebar_label: Farming Simulator 2022 (Epic Games)
 services:
+  - vserver
   - dedicated
 ---
 
@@ -12,7 +13,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 ## Introduction
 Setting up a server for Farming Simulator 22 Epic Games version differs slightly from the process for a standard server. This guide will walk you through the process, focusing on the unique aspects of the Epic Games version.
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -112,7 +113,7 @@ It is important that you run the server **first** and the web interface **afterw
 
 ## Step 6: Port Forwarding
 
-In order to ensure that your server is accessible to the public, you must alter port forwarding rules for the ports that the dedicated server process is using. You can do this either through PowerShell commands directly, which is easier, or regularly through the Windows Defender Firewall page.
+In order to ensure that your server is accessible to the public, you must alter port forwarding rules for the ports that the VPS/Dedicated Server process is using. You can do this either through PowerShell commands directly, which is easier, or regularly through the Windows Defender Firewall page.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -142,7 +143,7 @@ These commands will automatically create firewall rules which are necessary for 
 
 Use the search function on Windows to open up **Windows Firewall Settings with Advanced Security**. You may have to press **Advanced Settings** to open up the necessary window if you open up the base Windows Firewall page.
 
-![](https://github.com/zaphosting/docs/assets/42719082/5fb9f943-7e51-4d8f-9df4-2f5ff60857d3)
+![](https://screensaver01.zap-hosting.com/index.php/s/DjH5Z6T9HBoEadS/preview)
 
 You must create new rules for your Farming Simulator 22 server. To do this, click on the incoming and outgoing rules as described below and add them for the following protocols and ports:
 - TCP incoming and outgoing: 3724, 27015
@@ -159,3 +160,5 @@ Launch the game and navigate to the multiplayer menu. Look for the server name, 
 Once you locate the server, click on it to connect. If prompted, enter the password, which will also be visible on the web interface.
 
 You have successfully installed Farming Simulator 22 (Epic Games version) on your Windows Dedicated Server.
+
+

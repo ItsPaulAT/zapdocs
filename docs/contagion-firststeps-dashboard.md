@@ -1,10 +1,10 @@
 ---
 id: contagion-firststeps-dashboard
 title: "Contagion: Dashboard overview"
-description: Information about the dashboard of an Contagion server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to efficiently manage and optimize your Contagion server with a clear overview of all key features and options → Learn more now"
 sidebar_label: Dashboard
 services:
-  - gameserver
+  -   - gameserver-corekeeper-contagion
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -48,16 +48,20 @@ Thanks to this information, you get a good insight into the usage of your server
 
 ### DDoS Manager
 
-The **DDoS Manager** allows you to view past attacks and thus get a better overview of potential threats. Furthermore, you have the option to activate notifications for ongoing DDoS attacks on your server to be able to react quickly to such incidents.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/pertwX6DzWXECyx/preview)
+View past DDoS attacks to better assess potential threats and patterns. Enable notifications for ongoing DDoS attacks on your server to react quickly when an incident occurs.
 
-Moreover, you can customize the protection provided that you have booked your own IP address. There are two different options available:
+Depending on the server location and the DDoS protection available there, you can also monitor active attacks in real time. This includes detailed traffic insights, showing both legitimate traffic and the amount of traffic blocked by the mitigation systems. This level of transparency helps you understand how the protection is working and enables you to identify potential risks early.
 
-- **Sensor Mode:** In this mode the protection is enabled, but inactive. As soon as an attack is detected, the protection becomes active and filters the attack to ensure the stability of your server.
-- **Permanent:** This setting means that the protection is permanently active and enabled. All incoming attacks are continuously filtered to protect your system from possible DDoS attacks. (Only recommended for continuous attacks)
+:::info DDoS manager access missing?
+Use of the DDoS Manager requires either a dedicated IP address or the additional option "DDoS Manager Overview". If your current package does not include these components, you can add them at any time by upgrading your service.
+:::
 
-These customization options allow you to adjust the DDoS protection to your individual needs and thus increase the security of your server.
+![img](https://screensaver01.zap-hosting.com/index.php/s/ScCCCY52CMLgfyE/preview)
+
+
+
+
 
 :::warning
 The use of the DDoS Manager is only possible if either an own IP address or the option "DDoS Manager Overview" has been booked as an additional option. If these components are missing from your current package, you can add them at any time by upgrading.
@@ -132,7 +136,7 @@ Have you noticed that some of your changes are partially overwritten? Please be 
 
 ### Games
 
-Under **Games** you always have the possibility to change the game variant of your existing game or to install another game in general.  Games with the same slot price can be selected directly under **Available Games**. For all other games an adjustment of the slot price is required first. More information about this can be found in the [Game Change](gameserver-gameswitch.md) guide.
+Under **Games** you always have the possibility to change the game variant of your existing game or to install another game in general.  Games with the same slot price can be selected directly under **Available Games**. For all other games an adjustment of the slot price is required first. More information about this can be found in the [Game Change](  - gameserver-corekeeper-gameswitch.md) guide.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/xkkECw7o52fAMWk/preview)
 
@@ -148,11 +152,17 @@ Moreover, you can also enable the email notification feature for automatic updat
 
 
 
+### Scheduled Tasks
+
+Create scheduled tasks that run automatically at defined times to automate various processes on your server. You can set whether a task should run once or repeat as needed. Supported task types include starting, stopping or restarting services, restarting the server if it’s online, creating backups or executing custom commands. 
+
+![](https://screensaver01.zap-hosting.com/index.php/s/P6DeWiRC3tDqG2z/preview)
+
 ### Restart planner
 
 Do you want to schedule server restarts at specific times? The Restart Planner allows you to set up scheduled automatic restarts of your game server. With this feature, you can set up restarts at specific times or at regular intervals.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/Y6WciDS7YP98P4m/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/Y6WciDS7YP98P4m/preview)
 
 
 
@@ -164,7 +174,7 @@ In the **Tools** section of your navigation panel, you will find a range of sub-
 
 ### FTP-Browser
 
-Using the **FTP Browser**, you will get all the necessary information to establish a connection to the FTP access. The FTP access allows you direct access to the files of your game server. We recommend using an external FTP program such as **Filezilla** or **WinSCP** for optimal use. If you are not familiar with how to use FTP, we recommend taking a look at our [FTP Access](gameserver-ftpaccess.md) guide which may help you.
+Using the **FTP Browser**, you will get all the necessary information to establish a connection to the FTP access. The FTP access allows you direct access to the files of your game server. We recommend using an external FTP program such as **Filezilla** or **WinSCP** for optimal use. If you are not familiar with how to use FTP, we recommend taking a look at our [FTP Access](  - gameserver-corekeeper-ftpaccess.md) guide which may help you.
 
 ![img](https://screensaver01.zap-hosting.com/index.php/s/sX85i9HyzR9wmAM/preview)
 
@@ -212,3 +222,5 @@ The **News** provides you with a comprehensive overview of all announcements and
 - Other relevant information that may be relevant to the use of your service
 
 By checking the **News** regularly, you'll stay informed and be able to adjust your service accordingly to get the most out of your server.
+
+<InlineVoucher />

@@ -1,9 +1,10 @@
 ---
 id: dedicated-windows-javascript
-title: 'Dedicated Server: Installation of JavaScript'
-description: Information on how to install and run JavaScript on your Windows server from ZAP-Hosting.com - ZAP-Hosting.com documentation
+title: "Setup JavaScript Runtime on a Windows Server - Enable Modern Web Application Execution"
+description: "Discover how to install and set up Node.js, Deno, and Bun on Windows to run JavaScript efficiently → Learn more now"
 sidebar_label: Install JavaScript
 services:
+  - vserver
   - dedicated
 ---
 
@@ -13,7 +14,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 This guide provides steps for the installation of Node.js, Deno and Bun on Windows. The steps provided below must be executed via RDP, if you don't know how to connect to your server via RDP, please have a look at our [Initial Access (RDP)](vserver-windows-userdp.md) guide.
 
-<InlineVoucher />
+
 
 ## Installation
 
@@ -70,7 +71,7 @@ Once finished, you can simply press `Finish` on the final page and start using N
 
 ### Update Node.js to latest version
 
-Running `node -v` will show you the installed version of Node.js. From time to time, you should check that you're running the latest LTS version. To update Node.js, you need to follow the provided [Install JavaScript](dedicated-windows-javascript.md#installing-nodejs-runtime) guide section again.
+Running `node -v` will show you the installed version of Node.js. From time to time, you should check that you're running the latest LTS version. To update Node.js, you need to follow the provided [Install JavaScript](dedicated-windows-javascript.md) guide section again.
 
 ### Running Node.js & npm
 
@@ -205,6 +206,8 @@ Now you can run the provided code with the `bun index.ts` command and check the 
 ## Conclusion
 
 Congratulations, you have successfully installed JavaScript. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+
 
 
 

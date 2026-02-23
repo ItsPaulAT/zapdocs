@@ -1,10 +1,10 @@
 ---
 id: vrising-server-savegames
 title: "V Rising: Managing V Rising Savegames"
-description: Information on how to manage savegames on your V Rising server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to manage and back up your V Rising game saves for secure multiplayer gaming experiences → Learn more now"
 sidebar_label: Manage Savegames
 services:
-  - gameserver
+  - gameserver-vrising
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -80,3 +80,5 @@ In order to use a specific Savegame, you will have to edit a configuration file.
 Simply head over to the **Settings** section on your game server's webinterface and find the **Savename** setting.
 
 Change this setting to the name of the savegame folder that you uploaded in the previous step. Once ready, ensure that you save at the bottom using the green **Save** button and then restart your server.
+
+<InlineVoucher />

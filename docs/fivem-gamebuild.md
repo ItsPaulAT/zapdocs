@@ -1,10 +1,10 @@
 ---
 id: fivem-gamebuild
 title: "FiveM: Enable DLC Content"
-description: Information on how to enable a DLC game build for FiveM servers - ZAP-Hosting.com - Documentation
+description: "Discover how to enforce specific DLC versions on your FiveM server to access the latest maps, vehicles, and content → Learn more now"
 sidebar_label: Enable DLC game build
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -31,6 +31,7 @@ This is an overview of all available DLC and its Build IDs:
 |   3095   |       The Chop Shop       |
 |   3258   |  Bottom Dollar Bounties   |
 |   3407   |    Agents of Sabotage     |
+|   3570   |        Money Fronts       |
 
 
 
@@ -51,3 +52,5 @@ Now simply add your desired gamebuild in the **Additional Arguments** section th
 ## Conclusion
 
 Once you have picked your choice, proceed to restart your FiveM server. Your server will now launch with the specified DLC build. You have successfully set a gamebuild for your FiveM game server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

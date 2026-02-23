@@ -1,10 +1,10 @@
 ---
 id: fivem-proxy
 title: "FiveM: Setup a Reverse Proxy"
-description: Information on how to setup a Reverse Proxy for your FiveM server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your FiveM server security and reliability with a reverse proxy setup for better DDoS protection and performance → Learn more now"
 sidebar_label: Reverse Proxy
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -221,8 +221,10 @@ You can verify this by analysing the IP Address of players, which should all be 
 
 With your FiveM reverse proxy now setup, we highly recommend adding an SSL Certificate to your used domains to ensure that the site transmits data securely via HTTPS.
 
-Please check out our [Install Certbot](vserver-linux-certbot.md) guide, which covers the entire process of requesting and automatically renewing SSL Certificates for your domain(s).
+Please check out our [Install Certbot](dedicated-linux-certbot.md) guide, which covers the entire process of requesting and automatically renewing SSL Certificates for your domain(s).
 
 ## Conclusion
 
 Congratulations, you have successfully setup a reverse proxy for your FiveM server, providing you with various security, reliability and performance improvements. For further questions or assistance, please don’t hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

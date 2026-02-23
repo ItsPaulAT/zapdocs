@@ -1,10 +1,10 @@
 ---
 id: openmp-firststeps-dashboard
 title: "Open.mp: Dashboard Overview"
-description: Information about the dashboard of a Open.mp server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to efficiently manage and optimize your Open.mp server with a clear overview of key features and controls → Learn more now"
 sidebar_label: Dashboard
 services:
-  - gameserver
+  - gameserver-openmp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -27,7 +27,7 @@ In the **Product Administration** section, you will find all the necessary pages
 
 The **Dashboard** of your server is the heart of the administration. All basic and essential information about your service is clearly presented here. This includes, for example, information about the location, status, IP: Port, used memory, game in progress, server name, map and the number of available slots. In addition, the utilization of the CPU, memory and RAM is also displayed.
 
-![](https://github.com/zaphosting/docs/assets/42719082/b518433e-d93c-49d8-9a03-d35df9bb3d83)
+![](https://screensaver01.zap-hosting.com/index.php/s/zLM2rEzAx5WYD3X/preview)
 
 In the dashboard you also have the option of starting, stopping or restarting your service, to have full control over its operation. Furthermore, you can access the live console to get real-time information about the server's state and take direct action if necessary.
 
@@ -38,20 +38,21 @@ In the dashboard you also have the option of starting, stopping or restarting yo
 
 ### DDoS Manager
 
-The **DDoS Manager** allows you to view past attacks and thus get a better overview of potential threats. Furthermore, you have the option to activate notifications for ongoing DDoS attacks on your server to be able to react quickly to such incidents.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/pertwX6DzWXECyx/preview)
 
-Moreover, you can customize the protection provided that you have booked your own IP address. There are two different options available:
+View past DDoS attacks to better assess potential threats and patterns. Enable notifications for ongoing DDoS attacks on your server to react quickly when an incident occurs.
 
-- **Sensor Mode:** In this mode the protection is enabled, but inactive. As soon as an attack is detected, the protection becomes active and filters the attack to ensure the stability of your server.
-- **Permanent:** This setting means that the protection is permanently active and enabled. All incoming attacks are continuously filtered to protect your system from possible DDoS attacks. (Only recommended for continuous attacks)
+Depending on the server location and the DDoS protection available there, you can also monitor active attacks in real time. This includes detailed traffic insights, showing both legitimate traffic and the amount of traffic blocked by the mitigation systems. This level of transparency helps you understand how the protection is working and enables you to identify potential risks early.
 
-These customization options allow you to adjust the DDoS protection to your individual needs and thus increase the security of your server.
-
-:::info
-The use of the DDoS Manager is only possible if either an own IP address or the option "DDoS Manager Overview" has been booked as an additional option. If these components are missing from your current package, you can add them at any time by upgrading.
+:::info DDoS manager access missing?
+Use of the DDoS Manager requires either a dedicated IP address or the additional option "DDoS Manager Overview". If your current package does not include these components, you can add them at any time by upgrading your service.
 :::
+
+![](https://screensaver01.zap-hosting.com/index.php/s/ScCCCY52CMLgfyE/preview)
+
+
+
+
 
 
 
@@ -79,7 +80,7 @@ The **Event Log** provides you with a comprehensive overview of all activities r
 
 The **Live Console** offers you a real-time view of all current events on your server. Here you can see information about the activities of the players as well as possible error messages and system messages. This overview allows you to get a comprehensive view of what is happening on your server and to detect possible problems at an early stage.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/dktDADkq3bzG3F6/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/J9SsmSrPXnG7P9w/preview)
 
 Additionally to monitoring the events, you can also send commands directly to the server in the **Live Console**. This can be useful to adjust settings, perform certain actions, or respond quickly to problems that arise.
 
@@ -154,6 +155,12 @@ Moreover, you can also enable the email notification feature for automatic updat
 
 
 
+### Scheduled Tasks
+
+Create scheduled tasks that run automatically at defined times to automate various processes on your server. You can set whether a task should run once or repeat as needed. Supported task types include starting, stopping or restarting services, restarting the server if it’s online, creating backups or executing custom commands. 
+
+![](https://screensaver01.zap-hosting.com/index.php/s/P6DeWiRC3tDqG2z/preview)
+
 ### Restart planner
 
 Do you want to schedule server restarts at specific times? The Restart Planner allows you to set up scheduled automatic restarts of your game server. With this feature, you can set up restarts at specific times or at regular intervals.
@@ -220,3 +227,5 @@ The **News** provides you with a comprehensive overview of all announcements and
 - Other relevant information that may be relevant to the use of your service
 
 By checking the **News** regularly, you'll stay informed and be able to adjust your service accordingly to get the most out of your server.
+
+<InlineVoucher />

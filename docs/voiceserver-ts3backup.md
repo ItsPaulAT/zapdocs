@@ -1,7 +1,7 @@
 ---
 id: voiceserver-ts3backup
 title: "Voiceserver: Create, download and import backups"
-description: Information on how to create, download and restore backups for your TeamSpeak server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to easily create and manage backups with free storage and upgrade options for secure data protection → Learn more now"
 sidebar_label: Backups
 services:
   - voiceserver
@@ -32,7 +32,7 @@ The import of external backups (snapshots) is not possible for security reasons.
 :::
 
 </TabItem>
-<TabItem value="self_hosted" label="Self hosted (vRootserver/Dedicated Server)">
+<TabItem value="self_hosted" label="Self hosted (VPS/Dedicated Server)">
 
 As with the TeamSpeak Server product, if you use the GS/TS3 interface, you can create a backup (snapshot) with a click via the TeamSpeak Server service administration. However, you can also create a backup manually using the login details of the TeamSpeak instance (Query) and the external application YatQA. 
 
@@ -56,3 +56,5 @@ Created backups (snapshots) can be downloaded from your storage server via FTP. 
 ## Conclusion
 
 You have successfully created a backup if you have followed all the steps mentioned. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

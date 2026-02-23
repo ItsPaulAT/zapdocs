@@ -1,10 +1,10 @@
 ---
 id: redm-locale
 title: "RedM: Change language / location (flag)"
-description: Information on how to customize the language and location (flag) on a RedM server - ZAP-Hosting.com documentation
+description: "Discover how to customize RedM server languages and flags to enhance player experience and localization → Learn more now"
 sidebar_label: Language / location (flag)
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -71,3 +71,5 @@ The value of the **sets-locale** command has the **root-AQ** value by default. T
 ## Conclusion
 
 The last step is to restart the server to make sure that the change is applied. After that you can reload the server list in your RedM client and should be able to see the change you just made. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

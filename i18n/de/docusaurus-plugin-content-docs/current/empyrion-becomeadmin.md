@@ -1,45 +1,45 @@
 ---
 id: empyrion-becomeadmin
 title: "Empyrion: Admin werden"
-description: Informationen, wie du Admin auf deinem Empyrion-Server bei ZAP-Hosting wirst - ZAP-Hosting.com Dokumentation
+description: "Lerne, wie du Administratorrechte vergibst, um volle Kontrolle über deinen Server zu haben und Spiel-Funktionen effektiv zu managen → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-empyrion
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Administrator kannst du alle verfügbaren Optionen und Funktionen, die das Spiel bietet, direkt im Spiel nutzen. Alle Schritte, die du zur Vergabe von Administratorrechten für deinen Server durchführen musst, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
-## Steam64ID lokalisieren
+## Steam64ID finden
 
-Zuerst müsste die Steam64ID lokalisiert werden.
-Dafür kann diese Seite genutzt werden: [SteamID-Lookup](https://steamid.io/lookup).
-Die ID wird später in die Konfigurationsdatei eingetragen.
+Zuerst musst du deine Steam64ID herausfinden.  
+Dafür kannst du das folgende Tool nutzen: [SteamID Lookup](https://steamid.io/lookup).  
+Die ID wird später in der Konfigurationsdatei eingetragen.
 
-Hier ist ein Beispiel zu sehen, wie die Steam64ID lokalisiert wird.
+Hier ein Beispiel, wie du deine SteamID bekommst, indem du deinen Profil-Link eingibst:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/i3nGooRzAENRJms/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/3LQXKFg58qXCCHw/preview)
 
-## Admin Konfig konfigurieren
+## adminconfig konfigurieren
 
-Die "**adminconfig.yaml**" welche bearbeitet werden muss befindet sich in dem "**Saves**" Verzeichnis.
-Um dieses Verzeichnis zu öffnen, muss die Anleitung für die [Zugriff per FTP](gameserver-ftpaccess.md) befolgt werden.
+Die Datei "**adminconfig.yaml**", die du bearbeiten musst, befindet sich im Verzeichnis "**Saves**".  
+Um dieses Verzeichnis zu öffnen, folge bitte der Anleitung zum [Zugriff via FTP](gameserver-ftpaccess.md).
 
-![](https://screensaver01.zap-hosting.com/index.php/s/dqBCQfQ7wjJoC7G/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/XtfdjdgoxcqXsWx/preview)
 
-Standardmäßig stehen dort folgende Werte vorgeschrieben drin:
+Folgende Werte sind standardmäßig eingetragen:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/kk6Z5xQM3xdbpDP/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/Tpf23riFnGfZAsP/preview)
 
-Die vorher rausgesuchte Steam64ID muss dort nun hinter "**Id:**" geschrieben werden.
+Die zuvor ermittelte Steam64ID muss jetzt hinter "**Id:**" eingetragen werden.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/C6fFxT2Mw3XtWLf/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/RHEr44CGsaLQWyY/preview)
 
-Mit "**Permission**" wird der Rang bestimmt, welcher dem User gegeben werden soll.
-Die Ränge werden wie folgt vergeben:
+Mit "**Permission**" wird der Rang bestimmt, der dem Nutzer zugewiesen werden soll.  
+Die Ränge sind wie folgt vergeben:
 
 Permission | Rang
 -----|-------
@@ -47,6 +47,9 @@ Permission | Rang
 6 | Moderator
 9 | Admin
 
-## Abschluss
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+## Fazit
+
+Glückwunsch, du hast die Administratorrechte erfolgreich konfiguriert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+<InlineVoucher />

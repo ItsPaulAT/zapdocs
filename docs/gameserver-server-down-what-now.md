@@ -1,7 +1,7 @@
 ---
 id: gameserver-server-down-what-now
 title: 'Game server: Server down - What now?'
-description: Information on what to do if your game server from ZAP-Hosting has crashed or is down - ZAP-Hosting.com documentation
+description: "Learn how to diagnose game server crashes by analyzing log files to identify errors and find effective solutions → Learn more now"
 sidebar_label: Server crash - What to do?
 services:
   - gameserver
@@ -61,3 +61,5 @@ The reinstallation can be started under "Settings" on the left side. Afterwards 
 ## Reinstallation without success
 
 Unfortunately, this is the worst case that can happen. Then it is unfortunately only possible to have the server checked via chat or a ticket, because then it is a more serious problem. In this case we will do our best to solve the problem as soon as possible so that you can use your service as usual.
+
+<InlineVoucher />

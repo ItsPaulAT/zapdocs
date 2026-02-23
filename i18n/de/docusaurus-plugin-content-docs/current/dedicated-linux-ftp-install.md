@@ -1,9 +1,10 @@
 ---
 id: dedicated-linux-ftp-install
-title: "Dedicated Server: Installation eines FTP-Servers"
-description: Informationen, wie du einen FTP Server auf deinen Dedicated Server von ZAP-Hosting installieren und einrichten kannst - ZAP-Hosting.com Dokumentation
-sidebar_label: FTP Server installieren
+title: "ProFTPD auf einem Linux Server einrichten – Sicheren FTP-Service hosten"
+description: "Entdecke, wie du einen sicheren FTP-Server auf Linux mit FileZilla Server einrichtest und verwaltest, um Dateiübertragungen und Benutzerzugriffe zu optimieren → Jetzt mehr erfahren"
+sidebar_label: FTP-Server installieren
 services:
+  - vserver
   - dedicated
 ---
 
@@ -11,56 +12,48 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Das **FTP (File Transfer Protocol)** ist ein Netzwerkprotokoll, das dazu dient, Dateien über ein TCP/IP-Netzwerk zu übertragen. Das Protokoll wurde entwickelt, um den einfachen Austausch von Dateien zwischen Systemen zu ermöglichen. Mit dem **FileZilla Server** kann solch ein FTP-Server auf einem Linux Betriebssystem eingerichtet werden. Der FileZilla Server ist dabei einfach zu installieren und zu konfigurieren und bietet zahlreiche Funktionen wie die Möglichkeit, Benutzerkonten einzurichten, Zugriffsrechte zu verwalten und Dateien zu übertragen. In dieser Anleitung werden wir uns mit der Installation und Konfiguration des **FileZilla Server**-Dienstes auf einem Linux-Server beschäftigen.
+Das **FTP (File Transfer Protocol)** ist ein Netzwerkprotokoll, das zum Übertragen von Dateien über ein TCP/IP-Netzwerk verwendet wird. Das Protokoll wurde entwickelt, um den einfachen Austausch von Dateien zwischen Systemen zu ermöglichen. Mit dem **FileZilla Server** kannst du einen solchen FTP-Server auf einem Linux-Betriebssystem einrichten. Der FileZilla Server ist einfach zu installieren und zu konfigurieren und bietet zahlreiche Features wie das Anlegen von Benutzerkonten, das Verwalten von Zugriffsrechten und das Übertragen von Dateien. In dieser Anleitung zeigen wir dir, wie du den **FileZilla Server** auf einem Linux-Gameserver installierst und konfigurierst.
 
-<InlineVoucher />
+## Wie installiere ich den FTP-Server und füge einen Benutzer hinzu?
 
-## Wie installiere ich den FTP Server, und füge einen Nutzer hinzu? 
+Um einen FTP-Benutzer hinzuzufügen, musst du zuerst den FTP-Server installieren. Verbinde dich dafür einmal per SSH (z.B. mit Putty) mit deinem Server.
 
-Als Erstes muss ein FTP Server installiert werden. Dafür verbindest du dich ein mal via SSH(Putty) mit dem Server.
+Um den FTP-Server zu installieren, gib folgenden Befehl ein: **apt-get install proftpd**. Bestätige die Abfrage mit **Y** und drücke Enter:
 
-Um den FTP Server nun zu installieren, gibst du folgendes ein **apt-get install proftpd**. Die Abfrage musst du dann noch mit einem **Y** und Enter bestätigen:
+![](https://screensaver01.zap-hosting.com/index.php/s/MWzQMoq5yrRXP7Y/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/r6y2AydtyCkPs2d/preview)
+Jetzt müssen wir noch die Konfiguration anpassen. Öffne dazu die Konfigurationsdatei mit: **nano /etc/proftpd/proftpd.conf** und bestätige. Danach öffnet sich die Datei im Nano-Editor:
 
-Jetzt müssen wir noch die Konfiguration anpassen. Dafür geben wir ein mal folgendes ein **nano /etc/proftpd/proftpd.conf** und bestätigen. Anschließend wird die Konfigurationsdatei im Nanoeditor geöffnet:
+![](https://screensaver01.zap-hosting.com/index.php/s/8X4A6MZEr27YqFf/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/b4NB48jYok4xKYm/preview)
+Folgende Einträge müssen hinzugefügt werden:
 
-Folgende Einträge müssen hinzugefügt werden: 
+![](https://screensaver01.zap-hosting.com/index.php/s/7ykDgQeP2qTHSbm/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/fbnRMxCteweDjQi/preview)
+Jetzt muss der FTP-Server neu gestartet werden, damit die Änderungen wirksam werden. Das machst du mit dem Befehl: **service proftpd restart**
 
-Jetzt muss der FTP-Server neu gestartet werden, sodass die Änderungen übernommen werden. Dies kann man mit folgendem Befehl mache: **service proftpd restart**
+## Wie füge ich einen FTP-Benutzer hinzu?
 
-## Wie füge ich einen FTP Nutzer hinzu? 
+Um einen neuen FTP-Benutzer anzulegen, müssen wir zuerst eine FTP-Gruppe erstellen. Das geht mit dem Befehl **addgroup ftpuser**. Das sieht dann so aus:
 
-Um jetzt den neuen FTP Nutzer anzulegen, müssen wir erst eine FTP Gruppe erstellen. Dies machen wir mit dem Befehl **addgroup ftpuser**. Dies sieht dann so aus: 
+![](https://screensaver01.zap-hosting.com/index.php/s/eQ2yfySHYx3Wzcp/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/LaSfAQEyQmJNWbP/preview)
+Jetzt können wir unseren ersten FTP-Benutzer mit den Befehlen **adduser benutzerftp -shell /bin/false -home /var/www** und anschließend **adduser benutzerftp ftpuser** hinzufügen.
 
+Danach wirst du aufgefordert, ein Passwort zu vergeben:
 
-Jetzt können wir unseren ersten FTP Benutzer hinzufügen, mit den Befehlen: **adduser benutzerftp -shell /bin/false -home /var/www** und anschließend **adduser benutzerftp ftpuser**.
+![](https://screensaver01.zap-hosting.com/index.php/s/4cmAAMcBaoTQ4QD/preview)
 
-Nun werden wir aufgefordert, ein Passwort zu setzen: 
+Anschließend musst du bestätigen, dass die Eingaben korrekt sind:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/qRDExHyDMsZb3rn/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/6bNjWnr7ie3Cnty/preview)
 
+Der letzte Schritt ist, den neuen Benutzer der Gruppe zuzuweisen via **adduser benutzerftp ftpuser**:
 
-Anschließend müssen wir noch bestätigen, dass die Eingaben auch korrekt sind: 
+![](https://screensaver01.zap-hosting.com/index.php/s/bj277RHHMBQtPbp/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/FMs2a5ZDQb8Ttsc/preview)
+Jetzt kannst du dich mit den eingerichteten Daten verbinden:
 
-Als letzten Schritt müssen wir den neuen User nun noch der Gruppe zuweisen per **adduser benutzerftp ftpuser** :
+![](https://screensaver01.zap-hosting.com/index.php/s/7toWfnRSmQzGL9r/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/iyq7FzmFSrKtCb6/preview)
-
-Nun können wir mit unseren angegebenen Informationen verbinden:
-
-![](https://screensaver01.zap-hosting.com/index.php/s/T5jEf5c87DGjMLa/preview)
-
-
-![](https://screensaver01.zap-hosting.com/index.php/s/KXXNYKsM9TccKBt/preview)
-
-
-
+![](https://screensaver01.zap-hosting.com/index.php/s/oHsAKpc7MHqEQCF/preview)

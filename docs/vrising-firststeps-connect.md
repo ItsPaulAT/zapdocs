@@ -1,10 +1,10 @@
 ---
 id: vrising-firststeps-connect
 title: "V Rising: Connect to V Rising Server"
-description: Information about connecting to a V Rising server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to connect to your V Rising server directly or via server list for seamless gameplay setup → Learn more now"
 sidebar_label: Connect to Server
 services:
-  - gameserver
+  - gameserver-vrising
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -48,3 +48,5 @@ Please check out our [Server Configuration](vrising-configuration.md) in order t
 Once this is done, in the main menu select **Play**, followed by the **Online Play** option and once again press **Show all Servers** in the bottom right. You can now use the server browser to find your server using the provided filters such as name search, game mode, difficulty and much much more.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/CGoZBkRsGTwkTQg/preview)
+
+<InlineVoucher />

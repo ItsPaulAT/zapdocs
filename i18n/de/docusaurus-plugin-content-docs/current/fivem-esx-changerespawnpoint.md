@@ -1,10 +1,10 @@
 ---
 id: fivem-esx-changerespawnpoint
-title: "FiveM: Respawnpoint setzen"
-description: Informationen, wie den Respwanpunkt auf deinem FiveM-Server mit ESX von ZAP-Hosting setzen/ändern kannst - ZAP-Hosting.com Dokumentation
-sidebar_label: Respawnpoint setzen
+title: "FiveM: Respawnpunkt setzen"
+description: "Entdecke, wie du Ambulanz-Respawnpunkte in ESX aktualisierst, um das Gameplay anzupassen und die Serververwaltung zu verbessern → Jetzt mehr erfahren"
+sidebar_label: Respawnpunkt ändern
 services:
-  - gameserver
+  - gameserver-fivem
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -12,9 +12,9 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 :::warning Archivierte Anleitung
-Dieses Dokument wurde archiviert. Dokumente werden archiviert, wenn sie nicht mehr relevant, nicht mehr korrekt oder nicht mehr auf dem neuesten Stand sind. Es wurde aus den folgenden Gründen archiviert:
+Dieses Dokument wurde archiviert. Dokumente werden archiviert, wenn sie nicht mehr relevant, falsch oder veraltet sind. Es wurde aus folgenden Gründen archiviert:
 
-**Grund**: Die Methode zur Umsetzung ist für eine veraltete ESX-Version. Dieser Ansatz kann nicht für die aktuelle ESX-Version verwendet werden, da sich die Struktur verändert hat.
+**Grund**: Die Umsetzungs-Methode basiert auf einer veralteten ESX-Version. Dieser Ansatz funktioniert nicht mit der aktuellen ESX-Version, da sich die Struktur geändert hat.
 ::::
 
 
@@ -25,28 +25,31 @@ ESX muss installiert sein
 
 <InlineVoucher />
 
-📔 Vorbereitungen
+📔 Vorbereitung
 
-Um die Koordinaten herausfinden zu können brauchen wir ein Coords Script wie dieses hier:
+Um die Koordinaten zu finden, brauchen wir ein Coords-Script wie dieses hier:
 [CoordsScript](https://github.com/qalle-fivem/qalle_coords)
-Installiere diese wie in der [Ressourcen installieren](fivem-installresources.md) Anleitung beschrieben. 
-Haben wir dieses Script installiert. Drücken wir Ingame */coords*
-Damit erhalten wir dann die Koordinaten.
+Installiere es so: [Ressourcen installieren](fivem-installresources.md)
+Haben wir das Script installiert, drücken wir ingame */coords*
+So erhalten wir die Koordinaten.
 
 📑 Config bearbeiten
 
-Haben wir unsere Koordinaten, gehen wir in den Config TAB
+Sobald wir unsere Koordinaten haben, gehen wir zum Config TAB
 
-![](https://screensaver01.zap-hosting.com/index.php/s/m8nBzFw8naxNS87/preview)
+Hier drücken wir **STRG + F** und suchen nach **ambulance**
+Dann öffnen wir diese Datei.
+Jetzt scrollen wir runter, bis wir **Config_RespawnPoint** finden.
 
-Hier drücken wir dann **STR + F** und suchen nach **ambulance**. Diese Datei öffnen wir dann. Hier scrollen wir dann nach unten, bis wir **Config_RespawnPoint** finden.
+![](https://screensaver01.zap-hosting.com/index.php/s/6FYfkgfPfEWK6sj/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/QBBTFEtBidMrfY3/preview)
+Jetzt bearbeiten wir diese und ersetzen die Koordinaten.
+Danach einfach auf Speichern klicken und fertig.
 
-Diese bearbeiten wir nun und ersetzen die Koordinaten. Danach nur noch auf Speichern und das wars.
-
-![](https://screensaver01.zap-hosting.com/index.php/s/kMTNStgri9FgXHk/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/ZEcfQt69SX5if3Q/preview)
 
 :::info
-Nach einem Serverneustart, werden die Änderungen übernommen.
+Nach einem Server-Neustart werden die Änderungen aktiv.
 :::
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: corekeeper-connecttoserver
 title: "Core Keeper: Core Keeper connect to server"
-description: Instructions on how to connect to the Core Keeper server - ZAP-Hosting.com documentation 
+description: "Discover how to connect to your Core Keeper game server for seamless multiplayer gameplay and enjoy your gaming experience → Learn more now"
 sidebar_label: Connect to the server
 services:
-  - gameserver
+  -   - gameserver-corekeeper
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -30,3 +30,5 @@ Once there, enter the IP and port that is shown on your game server dashboard:
 ![](https://screensaver01.zap-hosting.com/index.php/s/R9nRFWFrS9Fbwox/preview)
 
 The client will connect to your server after clicking "Connect".
+
+<InlineVoucher />

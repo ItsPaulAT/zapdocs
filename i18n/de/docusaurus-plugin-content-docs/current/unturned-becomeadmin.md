@@ -1,59 +1,58 @@
 ---
 id: unturned-becomeadmin
-title: "Unturned: Server-Admin werden"
-description: Informationen, wie du dich zum Admin auf deinem Unturned Server von ZAP-Hosting machen kannst - ZAP-Hosting.com Dokumentation
+title: "Unturned: Werde Server-Admin"
+description: "Entdecke, wie du Administratorrechte vergibst für volle Serverkontrolle und verbessertes Ingame-Management → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-unturned
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Admin kannst du alle verfügbaren Optionen und Funktionen, die das Spiel bietet, direkt im Spiel nutzen. Alle Schritte, die du zur Vergabe von Administratorrechten für deinen Server durchführen musst, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
-## Vorbereitungen
+## Vorbereitung
 
-Um Admins auf einem Server hinzufügen zu können, muss hierbei eine Konfigurationsdatei bearbeitet werden. Damit es hierbei keine Probleme bei der Übernahme der Änderungen gibt, stelle bitte sicher, dass dein Server hierbei zuvor gestoppt wird!
+Um Admins auf einem Server hinzufügen zu können, muss eine Konfigurationsdatei bearbeitet werden. Damit es keine Probleme bei der Übernahme der Änderungen gibt, stelle bitte sicher, dass dein Server vorher gestoppt ist!
 
-Zudem wird die jeweilige Steam-ID (64er) benötigt, sodass der Server den Spieler auch identifizieren kann, sobald der Name als Beispiel geändert wird. Hierzu kann als Beispiel [dieses Tool](https://steamidfinder.com/) verwendet werden. Auf der Seite des Tools angekommen, können die benötigen Informationen in der Regel durch die Eingabe des Namens ermittelt werden.
+Außerdem wird die jeweilige Steam ID (64) benötigt, damit der Server den Spieler auch identifizieren kann. Dieses [Tool](https://steamidfinder.com/) kann dafür beispielhaft genutzt werden.  
+Auf der Seite des Tools kannst du die benötigten Infos meist einfach durch Eingabe des Namens herausfinden.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/72YkRLBXE77NJQ5/preview)
 
-## Konfigurationsdateien öffnen
+## Config-Dateien öffnen
 
-Es gibt zwei Möglichkeiten die Dateien eines Servers bearbeiten zu können.
-Zum einen wäre dies via [Zugriff per FTP](gameserver-ftpaccess.md) möglich und einmal durch den Config-Editor im Webinterface selbst.
+Es gibt zwei Wege, die Dateien auf einem Server zu bearbeiten.  
+Der eine Weg wäre über den [FTP-Zugang](gameserver-ftpaccess.md).
 
-In diesem Fall verwenden wir den eingebauten Editor des Webinterfaces.
-Hierzu muss in der linken Sidebar des Servers unter dem Reiter "Einstellungen" der Menü-Punkt "Configs" geöffnet werden.
+Der andere Weg ist die Nutzung des Config Editors direkt im Webinterface.  
+Hier verwenden wir den eingebauten Editor des Webinterfaces. Dafür muss im linken Sidebar-Menü des Servers unter dem Tab „Einstellungen“ der Menüpunkt „Configs“ geöffnet werden.  
+![](https://screensaver01.zap-hosting.com/index.php/s/x872MGFpMLbTBj2/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/GPTxWpmfYY9CKbd/preview)
+Das System lädt jetzt alle verfügbaren Configs und listet sie anschließend auf. Hier ist ein bisschen Geduld gefragt, der Vorgang dauert meist ein paar Sekunden. Sobald alle Config-Dateien geladen sind, muss die Datei „commands.dat“ bearbeitet werden. Einfach auf den blauen Button „Datei öffnen“ klicken, dann öffnet sich die Datei im Webeditor.
 
-Das System lädt nun alle verfügbaren Configs und listet dieses dann auf. Hierbei ist ein wenig Geduld gefragt, dieser Vorgang dauert in der Regel wenige Sekunden.
-Sobald alle Konfigurationsdateien geladen wurden, muss die Datei "commands.dat" bearbeitet werden. Hierzu reicht ein Klick auf den blauen Button "Datei öffnen", worauf die Datei im Web-Editor geöffnet wird.
+![](https://screensaver01.zap-hosting.com/index.php/s/9mZyJKX6xCTeDeA/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/4BFfETwJFDktBcX/preview)
+## Admins hinzufügen
 
-## Admins ernennen
+In der Config können jetzt Admins oder der Owner ernannt werden. Beachte bitte, dass der Owner-Rang nur einmal vergeben werden kann!
 
-Es können jetzt Admin oder auch Owner in der Config ernannt werden.
-Hierbei ist zu beachten, dass der Owner-Rank nur einmal vergeben werden kann!
+Dafür muss in einer neuen Zeile folgendes eingetragen werden, wenn der Owner-Rang vergeben werden soll:
 
-Hierzu muss in einer neuen Zeile im Fall für die Vergabe des Owner-Ranges folgendes eingetragen werden:
+`owner Steam64IDReplacedHere //<-- Muss mit deiner eigenen Steam64-ID ersetzt werden`
 
-`owner 0123456789 //<-- Muss durch deine eigene Steam-ID ersetzt werden`
+Für die Vergabe eines Administrators wird „owner“ einfach durch „admin“ ersetzt:
 
-Im Fall von Administratoren wird das "owner" einfach nur durch "admin" ersetzt.
+`admin Steam64IDReplacedHere //<-- Muss mit deiner eigenen Steam64-ID ersetzt werden`
 
-`admin 0123456789 //<-- Muss durch deine eigene Steam-ID ersetzt werden`
+![](https://screensaver01.zap-hosting.com/index.php/s/i6PpdsfK6spBECj/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/7t4pdGg3Da24aTx/preview)
+Nachdem alle Ränge in der Config eingetragen wurden, kann die Config mit einem Klick auf „Speichern“ gesichert werden. Der Server kann jetzt neu gestartet werden und alle in der Config eingetragenen Spieler erhalten automatisch ihren Rang.
 
-Nachdem alle Ränge in der Config vergeben worden sind, kann die Config mit einem Klick auf "Speichern" gespeichert werden.
-Der Server kann nun wieder gestartet werden und alle in die Config eingetragenen Spieler erhalten ihren Rang automatisch.
+## Fazit
 
-## Abschluss
+Glückwunsch, du hast die Administratorrechte erfolgreich konfiguriert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+<InlineVoucher />

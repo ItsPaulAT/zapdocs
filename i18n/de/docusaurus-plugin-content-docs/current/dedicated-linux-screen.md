@@ -1,19 +1,20 @@
 ---
 id: dedicated-linux-screen
-title: "Dedicated Server: Installation von Screen"
-description: Informationen zur Installation von screen auf deinem Linux Dedicated Server von ZAP-Hosting - ZAP-Hosting.com Dokumentation
+title: "Screen auf einem Linux-Server einrichten – Persistent Terminal-Sessions managen"
+description: "Entdecke, wie du mit Screen auf Linux mehrere Terminal-Sessions verwaltest für mehr Produktivität und persistente Sessions → Jetzt mehr erfahren"
 sidebar_label: Screen installieren
 services:
+  - vserver
   - dedicated
 ---
 
 ## Einführung
 
-Screen ist ein Terminal-Multiplexer für Unix-ähnliche Betriebssysteme, wie Linux. Er ermöglicht Benutzern die Verwaltung mehrerer Terminalsitzungen innerhalb eines einzigen Fensters oder einer Remoteverbindung. In dieser Anleitung gehen wir auf die Installationsschritte ein und geben Hinweise zur Verwendung, damit du dich besser mit der Nutzung von Screen vertraut machen kannst.
+Screen ist ein Terminal-Multiplexer für Unix-ähnliche Betriebssysteme wie Linux. Damit kannst du mehrere Terminal-Sessions in einem einzigen Fenster oder einer Remote-Verbindung verwalten. In dieser Anleitung zeigen wir dir die Installationsschritte und geben dir Tipps zur Nutzung, damit du Screen easy bedienen kannst.
 
-## Voraussetzungen
+## Vorbereitung
 
-Bevor du irgendetwas auf einem Server installierst, ist es empfehlenswert, den Update-Befehl für dein Betriebssystem auszuführen, damit dein Server sicher bleibt.
+Bevor du irgendwas auf deinem Server installierst, solltest du unbedingt den Update-Befehl für dein Betriebssystem ausführen, um deinen Server sicher und aktuell zu halten.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -43,7 +44,7 @@ sudo zypper update
 <TabItem value="fedora" label="Fedora">
 
 ```
-sudo dnf update
+ sudo dnf update
 ```
 
 </TabItem>
@@ -51,7 +52,7 @@ sudo dnf update
 
 ## Installation
 
-Die Installation des Screen Dienstprogramms ist so einfach wie das Ausführen des folgenden Befehls, abhängig von deiner Linux-Distribution:
+Screen zu installieren ist super easy, einfach den passenden Befehl für deine Linux-Distribution ausführen:
 
 <Tabs>
 <TabItem value="ubuntu-debian" label="Ubuntu & Debian" default>
@@ -84,70 +85,71 @@ sudo dnf install screen
 </TabItem>
 </Tabs>
 
-## Grundlegende Screen Nutzung
+## Grundlegende Screen-Nutzung
 
-Wie bereits erwähnt, können Benutzer mit screen mehrere Sitzungen erstellen. Um eine solche Sitzung zu starten, musst du einfach den folgenden Befehl ausführen, wobei du `[name]` durch etwas beliebiges ersetzen kannst.
+Wie schon gesagt, kannst du mit Screen mehrere Sessions anlegen. Um eine neue zu starten, gib einfach folgenden Befehl ein und ersetze `[name]` durch einen beliebigen Namen.
+
 ```
 screen -S [name]
 ```
 
 :::info
-Beachte die Groß- und Kleinschreibung der Befehle in dieser Anleitung, insbesondere in Bezug auf alle Parameterflags.
+Beachte, dass die Befehle in dieser Anleitung case-sensitive sind, besonders bei den Parameter-Flags.
 :::
 
-Es öffnet sich daraufhin ein neuer Screen, in dem du ein beliebiges Skript oder Programm starten kannst, welches du auch nach dem Schließen der Remoteverbindung weiterlaufen lassen möchtest.
+Damit öffnet sich eine neue Screen-Session, in der du Skripte oder Programme starten kannst, die auch nach dem Schließen der Remote-Verbindung weiterlaufen.
 
-Du kannst einen Screen verlassen, indem du `STRG + A`, gefolgt von `D` benutzt oder einfach `exit` als Befehl in die Konsole eingibst.
+Eine Screen-Session kannst du mit `CTRL + A` gefolgt von `D` verlassen (detachen) oder einfach mit `exit` im Terminal beenden.
 
 :::tip
-Du kannst alle aktiven Sitzungen/ Screens mit dem Befehl `screen -ls` oder `screen -list` durchsuchen.
+Alle aktiven Sessions/Screens kannst du mit `screen -ls` oder `screen -list` anzeigen lassen.
 :::
 
-Um zu einem zuvor erstellten Screen zurückzukehren, kannst du den Befehl `screen -r [Name]` ausführen, der dich sofort zu dem entsprechenden Screen zurückbringt.
+Um zu einer bestehenden Session zurückzukehren, nutze den Befehl `screen -r [name]`, der dich direkt zur gewünschten Session bringt.
 
 ## Screen Parameter-Flags
 
-Screen hat viele „-“-Parameterflags, die du zur Konfiguration der Befehle verwenden kannst. Einige der wichtigsten sind unten in der Tabelle aufgeführt.
+Screen bietet viele `-` Parameter-Flags, mit denen du die Befehle anpassen kannst. Die wichtigsten findest du hier in der Tabelle:
 
-| Flag           | Alias | Information                                                  |
-| -------------- | ----- | ------------------------------------------------------------ |
-| -v             |       | Zeigt die aktuelle Version des Bildschirms                   |
-| -S `[name]`    |       | Startet einen neuen Screen namens `[name]`                   |
-| -ls            | -list | Listet alle laufenden Screens auf                            |
-| -wipe `[name]` |       | Löschung von Screens mit optionalem Parameter `[name]`       |
-| -r `[name]`    |       | Erneutes Verbinden mit dem Screen `[name]`                   |
-| -d -r `[name]` |       | Trenne dich von deinem aktuellen Screen und schließe ihn wieder an `[name]` an. |
+| Flag | Alias | Info |
+| ---- | ----- | ---- |
+| -v   | | Zeigt die aktuelle Screen-Version an |
+| -S `[name]` | | Startet eine neue Screen-Session mit dem Namen `[name]` |
+| -ls | -list | Listet alle laufenden Screens auf |
+| -wipe `[name]` | | Löscht Screens, optional mit dem Namen `[name]` |
+| -r `[name]` | | Hängt dich an die Screen-Session `[name]` an |
+| -d -r `[name]` | | Trennt deine aktuelle Session und hängt dich an `[name]` an |
 
 :::tip
-Du kannst alle verfügbaren Parameter durchsuchen, indem du `screen -h` ausführst, womit du eine umfassende Liste erhältst.
+Alle verfügbaren Parameter findest du mit `screen -h` – das gibt dir eine ausführliche Übersicht.
 :::
 
-## Erweiterte Screen Nutzung
+## Fortgeschrittene Screen-Nutzung
 
-### Verwendung der Fenster
+### Fensterverwaltung
 
-Now that you've familiarized yourself with the basic commands of screens it's time to learn some shortcuts to help you navigate through your sessions more effectively. Inside any screen you can create multiple separate windows for different tasks.
+Jetzt, wo du die Basics kennst, zeigen wir dir ein paar Shortcuts, mit denen du deine Sessions noch besser managen kannst. Innerhalb einer Screen-Session kannst du mehrere Fenster für verschiedene Tasks anlegen.
 
 :::note 
-Alle Shortcuts in diesem Teil der Anleitung müssen nach dem Betätigen von `STRG + A` ausgeführt werden.
+Alle Shortcuts hier funktionieren erst, nachdem du `CTRL + A` gedrückt hast.
 :::
 
-Wenn du `C` drückst, wird ein neues leeres Fenster in deinem aktuellen Verzeichnis erstellt. Um zwischen den Fenstern zu navigieren, kannst du `N` (nächste) oder `P` (vorherige) oder `"` drücken und das gewünschte Fenster mit den Pfeiltasten aus der Liste auswählen.
+`C` erstellt ein neues, leeres Fenster im aktuellen Verzeichnis. Zwischen Fenstern wechselst du mit `N` (nächstes), `P` (vorheriges) oder `"` – dann kannst du mit den Pfeiltasten das gewünschte Fenster auswählen.
 
-Standardmäßig haben alle Fenster den gleichen Namen (normalerweise der Name der Shell, die du gerade verwendest). Um dies zu ändern, führe den Befehl `A` aus und wähle einen neuen Namen. 
+Standardmäßig haben alle Fenster denselben Namen (meist der Name der Shell). Mit `A` kannst du den Fenstern einen neuen Namen geben.
 
-Um ein Fenster zu löschen, kannst du `K` drücken.
+Und mit `K` kannst du ein Fenster löschen.
 
-#### Geteilte Fenster
+#### Fenster teilen
 
-Um zwei Fenster in einer geteilten Konfiguration laufen zu lassen, kannst du `S` (horizontal) oder `|` (vertikal) ausführen und mit `Tab` zwischen ihnen navigieren. 
+Um zwei Fenster nebeneinander anzuzeigen, kannst du `S` für horizontal oder `|` für vertikal nutzen und mit `Tab` zwischen den Fenstern wechseln.
 
-::: tip
-Nachdem du ein neues geteiltes Fenster erstellt hast, benutze `Tab` und führe `"` aus, um ein vorheriges Fenster in der zweiten Ansicht des geteilten Fensters zu öffnen.
+:::tip
+Nach dem Erstellen eines geteilten Fensters wechsel mit `Tab` dorthin und öffne mit `"` ein vorheriges Fenster in der zweiten Ansicht.
 :::
 
-Du kannst diese Fenster so oft teilen, wie du willst, aber der RAM-Verbrauch des Servers könnte exponentiell ansteigen, wie du es bei Multitasking erwarten würdest.
+Du kannst so viele Fenster teilen, wie du willst – aber denk dran, dass der RAM-Verbrauch auf deinem Server dadurch schnell steigen kann, wenn du viele Tasks parallel laufen lässt.
 
-## Abschluss
+## Fazit
 
-Wir hoffen, dass diese Anleitung für dich hilfreich war, um dir zu zeigen, wie das Screen Dienstprogramm in Linux funktioniert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Wir hoffen, diese Anleitung hat dir geholfen, Screen auf Linux zu verstehen und effektiv zu nutzen. Falls du noch Fragen hast oder Hilfe brauchst, steht dir unser Support-Team täglich zur Seite! 🙂

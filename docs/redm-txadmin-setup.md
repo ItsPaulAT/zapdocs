@@ -1,10 +1,10 @@
 ---
 id: redm-txadmin-setup
 title: "RedM: txAdmin Setup"
-description: Information on how to set up the TxAdmin interface for RedM game servers from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to efficiently manage and monitor your RedM server with txAdmin’s full-featured web panel → Learn more now"
 sidebar_label: txAdmin Setup
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -98,3 +98,5 @@ Finally, click on **Save & Run Server**. This completes the txAdmin setup, and y
 ## Additional support
 
 For txAdmin-specific support, please contact the txAdmin team through their [official website](https://txadm.in/) or join the community on [Discord](https://discord.gg/txAdmin/). The community and support team are ready to assist with any questions or issues you might encounter while using txAdmin, ensuring you have the best possible experience managing your server.
+
+<InlineVoucher />

@@ -1,7 +1,7 @@
 ---
 id: source-gsltoken
 title: Using game server login tokens
-description: Information on how to create and use a login token for your Source game server from ZAP-Hosting.com - ZAP-Hosting.com documentation
+description: "Discover how GSL tokens secure Steam game servers by linking bans to accounts, ensuring safer and compliant server hosting → Learn more now"
 sidebar_label: GSL-Token
 services:
   - gameserver
@@ -72,3 +72,5 @@ Especially with CS:GO game server there are some plugins which are not allowed t
 **What happens if my GSL token is banned?**
 
 If a token is banned, then as a result the account and all associated tokens are also banned. This means that the game server is no longer publicly accessible. Also, the account can no longer be used for operating further game servers in the future. Nevertheless, the Steam Account can still be used for playing. No further punishments are to be expected in this regard.
+
+<InlineVoucher />

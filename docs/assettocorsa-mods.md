@@ -1,10 +1,10 @@
 ---
 id: assettocorsa-mods
 title: "Assetto Corsa: Installing mods on a server"
-description: Information on how to install mods on your Assetto Corsa server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to set up and customize your Assetto Corsa server for optimal gameplay experience → Learn more now"
 sidebar_label: Install Mods
 services:
-  - gameserver
+  - gameserver-assettocorsa
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -92,3 +92,5 @@ Now we open the "Server" folder, where the AcServerManager is located, there is 
 ![](https://screensaver01.zap-hosting.com/index.php/s/dfDYjZjADkpfdDc/preview)
 
 After the content is uploaded, the carmods are installed and active after a server restart.
+
+<InlineVoucher />

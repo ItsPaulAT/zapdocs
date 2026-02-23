@@ -1,7 +1,7 @@
 ---
 id: source-metamod-addadmins
 title: Become a server admin
-description: Information on how to become an admin on your Source game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to become an admin by obtaining your Steam ID and setting up permissions for server management → Learn more now"
 sidebar_label: Become admin
 services:
   - gameserver
@@ -103,3 +103,5 @@ Depending on which rights are to be assigned, the respective flags can be writte
 With the command 'admin' in the chat or 'sm_admin' in the console the menu can be called.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/jwLWXJ99XeJJGSK/preview)
+
+<InlineVoucher />

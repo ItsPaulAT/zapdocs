@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "ZAP-Hosting Docs",
+    "message": "ZAP-Hosting Anleitung",
     "description": "The title in the navbar"
   },
   "logo.alt": {
@@ -19,16 +19,32 @@
     "message": "Dedicated Server",
     "description": "Navbar item with label Dedicated Server"
   },
-  "item.label.Domain & Webspace": {
-    "message": "Domain & Webspace",
-    "description": "Navbar item with label Domain & Webspace"
-  },
   "item.label.Voicebot & Voiceserver": {
     "message": "Voicebot & Voiceserver",
     "description": "Navbar item with label Voicebot & Voiceserver"
   },
-  "item.label.vRootserver": {
-    "message": "vRootserver",
-    "description": "Navbar item with label vRootserver"
+  "item.label.VPS": {
+    "message": "VServer",
+    "description": "Navbar item with label VPS"
+  },
+  "item.label.Domain": {
+    "message": "Domain",
+    "description": "Navbar item with label Domain"
+  },
+  "item.label.Webspace": {
+    "message": "Webspace",
+    "description": "Navbar item with label Webspace"
+  },
+  "item.label.Software": {
+    "message": "Software",
+    "description": "Navbar item with label Software"
+  },
+  "item.label.Rent a Server": {
+    "message": "Server mieten",
+    "description": "Navbar item with label Rent a Server"
+  },
+  "item.label.ZAP-Hosting": {
+    "message": "ZAP-Hosting",
+    "description": "Navbar item with label ZAP-Hosting"
   }
 }

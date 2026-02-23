@@ -1,10 +1,11 @@
 ---
 id: vserver-linux-nextcloud
-title: "VPS: Installation of Nextcloud"
-description: Information on how to set up a Nextcloud server on your server from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "Setup Nextcloud on a Linux Server - Build Your Private Cloud Storage"
+description: "Discover how to set up a high-performance Nextcloud server on Linux for optimal cloud hosting → Learn more now"
 sidebar_label: Install Nextcloud
 services:
   - vserver
+  - dedicated
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -40,8 +41,6 @@ The following requirements are recommended by the developers and are based on ou
 | Database         | MySQL or MariaDB 5.5+ (recommended),  SQLite (only recommended for testing and minimal-instances) |
 | Web server       | Apache 2.4 with `mod_php` or `php-fpm` (recommended)         |
 | PHP              | 5.6, 7.0 (recommended), 7.1 (recommended), 7.2               |
-
-## Preparation
 
 A connection has to be established via a SSH client in order to install the cloud on a Linux server. In case you are not sure how to use SSH, here is a guide how to do so: [Initial access (SSH)](vserver-linux-ssh.md)
 
@@ -535,3 +534,5 @@ With such **Apps** it is possible to further individualize Nextcloud according t
 ## Conclusion
 
 Congratulations, you have successfully installed Nextcloud! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

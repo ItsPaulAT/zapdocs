@@ -1,10 +1,10 @@
 ---
 id: satisfactory-commands
 title: "Satisfactory: Console Commands"
-description: Information about possible console commands for your Satisfactory server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to optimize your Satisfactory gameplay with essential console commands and keybind tips → Learn more now"
 sidebar_label: Console Commands
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -72,3 +72,5 @@ Any command which is mentioned on this page is for vanilla Satisfactory.
 | Gamma "value"      | Integer (default 50)          | Sets your game's brightness level         | 
 
 For an extensive list of commands, please visit [the Satisfactory wiki](https://satisfactory.fandom.com/wiki/Console) which covers a range of more technical commands in-depth.
+
+<InlineVoucher />

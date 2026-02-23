@@ -1,10 +1,10 @@
 ---
 id: openmp-configuration
 title: "Open.mp: Open.mp Server Configuration"
-description: Information about configuring an Open.mp game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to customize Open.mp server settings to optimize your gameplay experience and server performance → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-openmp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -45,7 +45,7 @@ The Server must be stopped before the config can be edited, editing the config a
 
 For users who wish to directly edit the file and all of the configuration options, you can access this by heading over to the **Configs** section on your game server's webinterface and pressing the blue edit file button, as seen below:
 
-![](https://github.com/zaphosting/docs/assets/42719082/6a147644-8bfb-4e5d-bff5-3e2c5d999e64)
+![](https://screensaver01.zap-hosting.com/index.php/s/CTKjYX6ryo8JoWn/preview)
 
 This will open up a text editor directly on the site to enable you to edit it.
 
@@ -135,3 +135,5 @@ We do not recommending changing the Port or IP settings, as these are automatica
 | network.player_timeout         | Time in miliseconds after which a player will timeout when no data is sent to server         |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

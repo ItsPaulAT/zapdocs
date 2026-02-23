@@ -1,10 +1,10 @@
 ---
 id: scp-colored-servername
 title: "SCP Secret Laboratory: Colored Servername"
-description: Information on how to color the server name on your SCP server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to customize your server name with colored text for better visibility and style → Learn more now"
 sidebar_label: Colored Servername
 services:
-  - gameserver
+  - gameserver-scp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -43,3 +43,5 @@ When you're done with your customization, save them.
 :::info
 Start your server, then your server name will be colored now.
 :::
+
+<InlineVoucher />

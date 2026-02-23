@@ -1,7 +1,7 @@
 ---
 id: dedicated-windows-ark
 title: "Dedicated Server: ARK Survival Evolved Dedicated Server Windows Setup"
-description: Information about setting up an ARK Survival Evolved Dedicated Server on a Dedicated Server - ZAP-Hosting.com documentation
+description: "Discover how to set up an ARK: Survival Evolved Dedicated Server on a Windows VPS for seamless multiplayer gaming → Learn more now"
 sidebar_label: ARK Survival Evolved Dedicated Server Setup
 services:
   - dedicated
@@ -12,11 +12,11 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 
-Got a Windows VPS or root server and want to install game servers on it? For example an ARK: Survival Evolved Dedicated Server? Then you are at the right place! In the following we will explain step by step how you can install such a service on your server. Connect to your VPS or root server via RDP to set up your ARK: Survival Evolved Dedicated Server. In case you don't know how to connect to your server via RDP, we recommend you to have a look at the [Initial Access (RDP)](vserver-windows-userdp.md) guide.
+Got a Windows VPS and want to install game servers on it? For example an ARK: Survival Evolved Dedicated Server? Then you are at the right place! In the following we will explain step by step how you can install such a service on your server. Connect to your VPS via RDP to set up your ARK: Survival Evolved Dedicated Server. In case you don't know how to connect to your server via RDP, we recommend you to have a look at the [Initial Access (RDP)](vserver-windows-userdp.md) guide.
 
 <YouTube videoId="YOz_SqsUkg4" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/BF23kJKNsFQyeyX/preview" title="ARK: Survival Evolved Dedicated Server Setup on Windows VPS" description="Feel like you understand better when you see things in action? We’ve got you! Dive into our video that breaks it all down for you. Whether you're in a rush or just prefer to soak up information in the most engaging way possible!"/>
 
-<InlineVoucher />
+
 
 ## Preparation
 
@@ -92,3 +92,5 @@ The actual setup is already complete. Further configuration changes can be made 
 At the end of the setup, you can now start the server by executing the **start-ark.bat** file you created earlier. This should open the server's console and start the server startup process. If everything goes as expected, the server should be visible in the server list after a successful start.
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/cENfRQGxK4NjM3Y/preview)
+
+

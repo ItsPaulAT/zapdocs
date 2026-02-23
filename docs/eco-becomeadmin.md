@@ -1,10 +1,10 @@
 ---
 id: eco-becomeadmin
 title: "ECO: Become an Admin"
-description: Information on how to become an admin on your ECO server at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign administrator permissions for full server control and efficient game management → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-eco
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -102,3 +102,5 @@ More available commands can be found in the official [ECO Wiki](https://eco.game
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

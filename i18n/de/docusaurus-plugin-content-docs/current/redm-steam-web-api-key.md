@@ -1,41 +1,41 @@
 ---
 id: redm-steam-web-api-key
-title: "RedM: Steam Web API Key setup"
-description: Information on setting up a Steam Web API key from ZAP-Hosting - ZAP-Hosting.com documentation
+title: "RedM: Steam Web API Key Einrichtung"
+description: "Erfahre, wie du einen Steam Web API Key für RedM bekommst und aktivierst, um Authentifizierung zu ermöglichen und deinen Server optimal einzurichten → Jetzt mehr erfahren"
 sidebar_label: Steam Web API Key
 services:
-  - gameserver
+  - gameserver-redm
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Ein Steam-Web-API-Schlüssel hat wichtige Funktionen für RedM. Dazu gehört die Authentifizierung durch den API-Schlüssel, wenn Steam als Identifikator von verschiedenen Skripten und/oder Ressourcen verwendet wird.
+Ein Steam Web API Key ist für RedM super wichtig. Er wird unter anderem für die Authentifizierung per API Key genutzt, wenn Steam als Identifikator von verschiedenen Scripts und/oder Ressourcen verwendet wird.
 
 <InlineVoucher />
 
-## Voraussetzungen
+## Vorbereitung
 
-Um einen API-Schlüssel anzufordern, ist ein nicht eingeschränkter Steam-Account erforderlich. Eingeschränkte Steam-Konten haben einen eingeschränkten Zugang zu den Funktionen von Steam, sodass es ohne vollen Zugang nicht möglich ist, einen API-Schlüssel anzufordern. Du musst mindestens **5,00 USD** im Steam-Store ausgeben, um dein Konto und dessen Funktionen freizuschalten.
+Du brauchst ein uneingeschränktes Steam-Konto, um einen API Key anzufordern. Eingeschränkte Steam-Konten haben nur begrenzten Zugriff auf Steam-Funktionen, daher ist es ohne vollen Zugriff nicht möglich, einen API Key zu beantragen. Du musst mindestens **5,00 USD** im Steam Store ausgeben, um dein Konto und dessen Funktionen freizuschalten.
 
-## Anfordern eines API-Schlüssels
+## API Key anfordern
 
-Nachdem du dein Steam-Konto eingerichtet hast, solltest du in der Lage sein, deinen eigenen Steam-Web-API-Schlüssel anzufordern. Dazu musst du dich [auf der Steam-Website] (https://steamcommunity.com/dev/apikey) mit deinem Steam-Kontonamen und Passwort anmelden.
+Sobald dein Steam-Konto bereit ist, kannst du deinen eigenen Steam Web API Key anfordern. Melde dich dazu [auf der Steam-Webseite](https://steamcommunity.com/dev/apikey) mit deinem Steam-Benutzernamen und Passwort an.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/f4zTKdgnLgKZsY5/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/Wm8rdwwFPbt7D5W/preview)
 
-Nach der Anmeldung musst du einen Domainnamen eingeben, die Nutzungsbedingungen für die Steam Web API bestätigen und auf den Button **Registrieren** klicken. Die Domain sollte auf deine **Server IP** *(ohne Port)* eingestellt sein, also gib diese dort an. 
+Nach dem Login musst du einen Domainnamen eingeben, die Nutzungsbedingungen der Steam Web API bestätigen und auf den **Register**-Button klicken. Die Domain solltest du auf deine **Server-IP** *(ohne Port)* setzen, also gib diese dort ein.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/J5P9Dw2Lqr2ZrfN/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/GNmZXzTn9JJ8cBo/preview)
 
-Wenn alles erfolgreich war, solltest du deinen eigenen Steam-Web-API-Schlüssel sehen können, wie unten dargestellt.
+Wenn alles geklappt hat, solltest du deinen eigenen Steam Web API Key sehen können, wie im Bild unten.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/tHW7ZFJfG7CMYET/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/m8WoXg3WcjeaQrW/preview)
 
-## Aktivierung eines API-Schlüssels
+## API Key aktivieren
 
-Jetzt, wo du deinen Steam Web API Key hast, musst du ihn in deiner Serverkonfigurationsdatei (`server.cfg`) bei deinem RedM Gameserver ablegen. Du kannst auf deine server.cfg Konfigurationsdatei über das **txAdmin Interface** im **CFG Editor** aufrufen. Suchen eine vorhandene Zeile oder erstellen eine neue, falls sie nicht existiert, und füge folgendes hinzu, wobei du `YOUR_KEY_HERE` durch den von dir erzeugten Schlüssel ersetzt:
+Jetzt, wo du deinen Steam Web API Key hast, musst du ihn in deine Serverkonfiguration (`server.cfg`) auf deinem RedM Gameserver eintragen. Du kannst auf deine `server.cfg` über die **txAdmin-Oberfläche** unter **CFG Editor** zugreifen. Suche eine bestehende Zeile oder erstelle eine neue, falls sie nicht existiert, und füge Folgendes ein, wobei du `YOUR_KEY_HERE` durch deinen generierten Key ersetzt: 
 
 ```
 set steam_webApiKey "YOUR_KEY_HERE"
@@ -45,6 +45,8 @@ set steam_webApiKey "YOUR_KEY_HERE"
 
 
 
-## Abschluss
+## Fazit
 
-Abschließend kannst du deinen Server neu starten. Dein Steam Web API Key wird geladen, wenn dein Server das nächste Mal vollständig gestartet ist. Du hast erfolgreich einen Steam Web API Key zu deinem RedM Gameserver hinzugefügt. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Starte deinen Server anschließend neu. Dein Steam Web API Key wird beim nächsten vollständigen Start deines Servers geladen. Du hast erfolgreich einen Steam Web API Key in deinen RedM Gameserver integriert. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Verfügung! 🙂
+
+<InlineVoucher />

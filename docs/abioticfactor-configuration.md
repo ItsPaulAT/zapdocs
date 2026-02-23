@@ -1,10 +1,10 @@
 ---
 id: abioticfactor-configuration
 title: "Abiotic Factor: Server Configuration"
-description: Information about configuring a Abiotic Factor game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize Abiotic Factor server settings to optimize your gameplay experience and server performance → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-abioticfactor
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -105,3 +105,5 @@ In the table below, we will summarise a few key gameplay settings that are found
 | AllowRecipeSharing           | true/false | Toggle whether players can share item recipes                           |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

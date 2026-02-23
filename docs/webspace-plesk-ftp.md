@@ -1,7 +1,7 @@
 ---
 id: webspace-plesk-ftp
 title: "Webspace: Setting up FTP access for webspace"
-description: Information on how to set up FTP access for your webspace from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to manage multiple FTP accesses for collaborative web projects and control folder permissions effectively → Learn more now"
 sidebar_label: FTP access
 services:
   - webspace
@@ -55,3 +55,5 @@ The default port is "**21**".
 This message occurs when the FTP account name is used by someone else on the system.
 The ordered web space was created on a system with several customers, if one of these customers now uses the name, no other customer can use it.
 In such a case another account name would have to be chosen.
+
+<InlineVoucher />

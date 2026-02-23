@@ -1,10 +1,10 @@
 ---
 id: valheim-savegame
 title: "Valheim: Managing savegames on servers"
-description: Information on how to manage savegames and worlds on your Valheim server from ZAP-Hosting and how to add existing worlds to your server - ZAP-Hosting.com documentation
+description: "Discover how to manage, download, and restore your Valheim savegames efficiently using the Savegame-Manager → Learn more now"
 sidebar_label: Manage Savegames
 services:
-  - gameserver
+  - gameserver-valheim
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -78,3 +78,5 @@ Once we have saved the restart, we can also add more than one daily or weekly re
 ![](https://screensaver01.zap-hosting.com/index.php/s/BddatyGLAZZWnCA/preview)
 
 Done! Your Server will now restart at those specific times, the Savegame will be saved during those Restarts.
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: enshrouded-firststeps-connect
 title: "Enshrouded: Connect to the server"
-description: Information about various ways on how to connect to your Enshrouded server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to connect seamlessly to your Enshrouded server and ensure a smooth gaming experience → Learn more now"
 sidebar_label: Connect to the server
 services:
-  - gameserver
+  - gameserver-enshrouded
 ---
 
 import Tabs from '@theme/Tabs';
@@ -13,7 +13,7 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 
 ## Introduction
-Not sure how to connect to your **Enshrouded** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need – from the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
+Not sure how to connect to your **Enshrouded** server or what you need to get started? No worries, we’ve got you covered! We will walk you through everything you need. From the required tools and information to the actual connection process, along with key considerations to ensure a smooth and trouble-free connection experience. Follow our guide and you'll be connected in no time!
 
 <InlineVoucher />
 
@@ -29,7 +29,7 @@ You will require all the relevant information necessary to connect to your serve
 
 Using the information mentioned above, you should be able to locate your server and ensure that you connect to the correct server.
 
-![img](https://github.com/zaphosting/docs/assets/42719082/aaeee832-8cd0-4ac0-9769-f498eace4892)
+![img](https://screensaver01.zap-hosting.com/index.php/s/xaBYEZXr5wPWjnG/preview)
 
 
 
@@ -85,3 +85,5 @@ Congratulations, provided you have successfully followed everything, you should 
 
 
 
+
+<InlineVoucher />

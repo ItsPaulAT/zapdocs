@@ -1,10 +1,10 @@
 ---
 id: dayz-becomeadmin
 title: "DayZ: Become an Admin"
-description: Information on becoming an admin for your DayZ game server from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to gain full server control by assigning admin rights and managing game options effectively → Learn more now"
 sidebar_label: Become an Admin
 services:
-  - gameserver
+  - gameserver-dayz
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -62,3 +62,5 @@ Below you will find a list of a few available commands that you can use with you
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

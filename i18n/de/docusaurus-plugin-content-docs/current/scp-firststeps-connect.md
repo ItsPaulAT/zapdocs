@@ -1,69 +1,72 @@
 ---
 id: scp-firststeps-connect
-title: "SCP Secret Laboratory: Zum Server verbinden"
-description: Informationenen zum Verbindungsaufbau eines SCP Secret Laboratory Server von ZAP-Hosting - ZAP-Hosting.com Dokumentation
-sidebar_label: Zum Server verbinden
+title: "SCP Secret Laboratory: Mit dem Server verbinden"
+description: "Lerne, wie du dich erfolgreich mit deinem Gameserver verbindest, indem du die Voraussetzungen und Serverinfos verstehst – für ein reibungsloses Gaming-Erlebnis → Jetzt mehr erfahren"
+sidebar_label: Mit dem Server verbinden
 services:
-  - gameserver
+  - gameserver-scp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Du bist dir unsicher, was du allgemein zum Verbinden deines Servers benötigst oder wie das genau vonstattengeht? Keine Sorge! Wir werden dir im Folgenden Schritt für Schritt erklären, was du für die Verbindung zu deinem Server benötigst, wie du dich im Anschluss damit verbindest und was es dabei allgemein zu beachten gibt. Damit sollte es dir problemlos möglich sein, dich erfolgreich mit deinem Server zu verbinden! :)
+Bist du unsicher, was du generell brauchst, um dich mit deinem Server zu verbinden oder wie das genau funktioniert? Kein Stress! Wir erklären dir im Folgenden Schritt für Schritt, was du brauchst, um dich mit deinem Server zu verbinden, wie du das machst und worauf du generell achten solltest. So kannst du dich ohne Probleme erfolgreich mit deinem Server verbinden! :)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/2d8fzHa8HdTnD76/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/QRWLSKmSRSCYsmj/preview)
 
 <InlineVoucher />
 
-## Voraussetzungen
+## Vorbereitung
 
-Zunächst gilt es zu klären, welche Voraussetzungen erfüllt werden müssen, damit eine Verbindung zum Server möglich ist. Das beinhaltet beispielsweise das Spiel, zusätzliche Inhalte (Erweiterungen) und die allgemeinen Server-Informationen wie IP-Adresse, Port und Servername. 
+Zuerst muss geklärt werden, welche Voraussetzungen erfüllt sein müssen, damit eine Verbindung zum Server möglich ist. Dazu gehören zum Beispiel das Spiel, zusätzliche Inhalte (Erweiterungen) und die allgemeinen Serverinfos wie IP-Adresse, Port und Servername.
 
 
 
 ### Spiel / Inhalte
 
-Für die Verbindung zu deinem Gameserver ist es zwingend notwendig, dass du das Spiel bereits besitzt. Dies wird von uns beim Mieten eines Servers nicht bereitgestellt. Es werden ansonsten keine weiteren Inhalte benötigt. 
+Für die Verbindung zu deinem Gameserver ist es Pflicht, dass du das Spiel bereits besitzt. Dieses wird beim Server mieten nicht von uns bereitgestellt. Weitere Inhalte sind nicht erforderlich.
 
 
 
-### Server Informationen
+### Serverinformationen
 
-Sofern alle Voraussetzungen von **Spiel / Inhalte** erfüllt sind, benötigst du nun Informationen deines Servers. Klicke dazu in deinem Dashboard auf deinen Gameserver Dienst. In der Übersicht siehst du nun alle allgemeinen Informationen zu deinem Server. 
+Vorausgesetzt, alle Voraussetzungen unter **Spiel / Inhalte** sind erfüllt, brauchst du die Infos zu deinem Server. Klicke in deinem Dashboard auf deinen Gameserver-Service. Die Übersicht zeigt dir jetzt alle allgemeinen Infos zu deinem Server.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/DgTmxRmfYTW5MRd/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/YpiLt9Byz8A292y/preview)
 
-Zu den relevanten Informationen gehören hierbei die **IP-Adresse** und der **Port**. Diese solltest du dir merken/notieren, da du diese gleich für deinen ersten Verbindungsaufbau zu deinem Server benötigst. 
+Wichtig sind vor allem die **IP-Adresse** und der **Port**. Merke dir diese, denn du brauchst sie für deine erste Verbindung zum Server.
+
+
 
 
 
 ## Mit dem Server verbinden
 
-Nachdem alle Voraussetzungen erfüllt worden sind, kann nun damit begonnen werden eine Verbindung zum Server herzustellen. Starte dafür dein Spiel und navigiere im Anschluss zu Spiel Starten -> Start -> Spiel beitreten und klicke dort auf Server hinzufügen.
+Wenn alle Voraussetzungen erfüllt sind, kannst du mit der Verbindung zum Server starten. Starte dazu dein Spiel und navigiere zum Tab **Server**. Klicke dort auf Direkt verbinden:
 
-![](https://screensaver01.zap-hosting.com/index.php/s/RnbfWzx6xr5BAF4/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/58L9WNxqydmHDfP/preview)
 
-
- Trage nun die IP und Port deines Servers ein. Daraufhin kann die Verbindung hergestellt werden, in dem der **Verbinden** Button geklickt wird:
-
-![](https://screensaver01.zap-hosting.com/index.php/s/kffc9W7k45GWW6C/preview)
+Gib die IP und den Port deines Servers ein. Danach kannst du die Verbindung über den **Verbinden**-Button herstellen:
 
 
 
+![](https://screensaver01.zap-hosting.com/index.php/s/sQN2nPwTnTbZ8qj/preview)
 
-## Mögliche Probleme und Lösungsansätze
 
-Die Verbindung zum Server kann nicht wie erwartet hergestellt werden? Dies kann in bestimmten Situationen vorkommen, z. B. wenn die Verbindung aufgrund von technischen Problemen fehlschlägt. Im Folgenden haben wir die häufigsten Probleme und ihre Lösungen aufgeführt: 
+
+## Mögliche Probleme und Lösungen
+
+Die Verbindung klappt nicht wie erwartet? Das kann in bestimmten Situationen passieren, wenn die Verbindung aus technischen Gründen scheitert. Wir haben die häufigsten Probleme und ihre Lösungen für dich zusammengestellt:
 
 
 
 ### Nicht sichtbar
 
-Eine fehlende Sichtbarkeit des Servers kann dann vorliegen, wenn die Initialisierung aus einem bestimmten Grund nicht erfolgreich abgeschlossen wurde. Das kann beispielsweise durch eine fehlerhafte Konfiguration, fehlerhafte Plugins oder beschädigten Dateien liegen. Weitere Informationen lassen sich in der Regel in der Server-Konsole oder den Log-Dateien nachvollziehen.
+Wenn der Server nicht sichtbar ist, kann das daran liegen, dass die Initialisierung aus irgendeinem Grund nicht erfolgreich abgeschlossen wurde. Das kann zum Beispiel an einer fehlerhaften Konfiguration, defekten Mods/Plugins oder beschädigten Dateien liegen. Weitere Infos findest du meist in der Serverkonsole oder in Logdateien.
 
 
 
-Hast du nach der Fehlersuche weiterhin Probleme? In diesem Fall steht unser Support-Team täglich zur Verfügung, um dir zu helfen. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** auf unserer Website und erkläre uns dein Problem mit so vielen Einzelheiten wie möglich. Wir werden uns so schnell wie möglich darum kümmern und dir bei der Lösung des Problems helfen!
- 🙂
+Die genannten Lösungen haben dein Problem nicht gelöst oder treffen nicht zu? Dann sind wir täglich im Support für dich da. Erstelle einfach ein **[Ticket](https://zap-hosting.com/en/customer/support/)** und schildere uns dein Problem. Wir schauen uns das so schnell wie möglich an und helfen dir bei der Lösung! 🙂
+
+<InlineVoucher />

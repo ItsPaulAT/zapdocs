@@ -1,7 +1,7 @@
 ---
 id: vserver-linux-gs-interface
 title: "VPS: Gameserver/TS3 Interface"
-description: Information on how to install TS and game server via the game server/TS3 interface with just a few clicks - ZAP-Hosting.com documentation
+description: "Discover how to easily set up game and voice servers on Linux VPS without prior knowledge using an automated interface → Learn more now"
 sidebar_label: GS/TS3 Interface
 services:
   - vserver
@@ -12,9 +12,9 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 
-If game server products don't meet your taste or expectations, or if you need your service in other ways, using a VPS or root server is often a better option. However, you often face the challenge that not all services are automated or pre-installed. Setting up services such as game servers, Teamspeak 3 servers, and music bots must be done independently.
+If game server products don't meet your taste or expectations, or if you need your service in other ways, using a VPS is often a better option. However, you often face the challenge that not all services are automated or pre-installed. Setting up services such as game servers, Teamspeak 3 servers, and music bots must be done independently.
 
-To solve this problem, we have developed a practical solution for our Linux-based VPS, root server, or dedicated server. The so-called Gameserver/Teamspeak 3 Server interface (GS/TS3 Interface)!
+To solve this problem, we have developed a practical solution for our Linux-based VPS or dedicated server. The so-called Gameserver/Teamspeak 3 Server interface (GS/TS3 Interface)!
 
 <YouTube videoId="V6qyQFPp_Ls" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/frWNEMQqcMxzRcM/preview" title="Setup a Game Server using Linux VPS with NO EXPERIENCE!" description="Feel like you understand better when you see things in action? We’ve got you! Dive into our video that breaks it all down for you. Whether you're in a rush or just prefer to soak up information in the most engaging way possible!"/>
 
@@ -22,13 +22,13 @@ To solve this problem, we have developed a practical solution for our Linux-base
 
 ## Use case
 
-With the user-friendly GS/TS3 interface, you can install Teamspeak 3 or other selected game server services on your Linux-based VPS, root server, or dedicated server with just a few clicks. No prior knowledge is required for this installation. The setup of all required packages, server files, and the actual installation are fully automated, saving you time and effort.
+With the user-friendly GS/TS3 interface, you can install Teamspeak 3 or other selected game server services on your Linux-based VPS or dedicated server with just a few clicks. No prior knowledge is required for this installation. The setup of all required packages, server files, and the actual installation are fully automated, saving you time and effort.
 
 :::warning
 The GS/TS3 interface feature can be used with the following operating systems:
 
-- Debian: 10, 11
-- Ubuntu: 20.04
+- Debian: 10, 11, 12
+- Ubuntu: 20.04, 22.04
 
 (*) We are already working on making other and newer operating systems and (versions) available in the near future.
 :::
@@ -44,8 +44,6 @@ The GS/TS3 interface supports the setup of game servers, voice servers, and musi
 | Game server  | ✔️    |
 | Voice server | ✔️    |
 | Musicbot (Sinuxbot)   | ✔️    |
-
-<p style={{textAlign: 'center'}}>List updated last on 07.11.2024</p>
 
 
 
@@ -159,3 +157,5 @@ There is no licence installed on the Teamspeak 3 server by default. This means t
 ## Conclusion
 
 Congratulations, you have successfully installed and configured our GS/TS3 interface! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

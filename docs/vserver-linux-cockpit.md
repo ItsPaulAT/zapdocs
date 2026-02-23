@@ -1,10 +1,11 @@
 ---
 id: vserver-linux-cockpit
-title: "VPS: Installation of Cockpit "
-description: Guide to install Cockpit on Linux - ZAP-Hosting.com documentation
+title: "Setup Cockpit on a Linux Server - Manage Your Server via Web Interface"
+description: "Discover how to manage Linux servers efficiently with Cockpit’s web interface for beginners and experts alike → Learn more now"
 sidebar_label: Install Cockpit
 services:
   - vserver
+  - dedicated
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -42,3 +43,5 @@ The login takes place with the normal login data of the server/user.
 ## Conclusion
 
 Congratulations, you have successfully installed and configured Cockpit! If you have any further questions or problems, please contact our support team, who are available to help you every day! 
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: minecraft-add-own-world
 title: "Minecraft: Adding your own world to the server"
-description: Information on how to add your own world to your Minecraft server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to upload and configure custom Minecraft worlds on your server for a personalized gaming experience → Learn more now"
 sidebar_label: Add your own world
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -32,5 +32,7 @@ Now the newly uploaded world only needs to be configured in the **server.propert
 
 
 After restarting the server, the new world should now be applied. Enjoy your new world! 🙂
+
+<InlineVoucher />
 
 <InlineVoucher />

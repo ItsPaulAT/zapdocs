@@ -1,10 +1,10 @@
 ---
 id: moe-configuration
 title: "Myth of Empires: Server Configuration"
-description: Information about configuring a Myth of Empires game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize your Myth of Empires server for optimal gameplay and control → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-moe
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -88,3 +88,5 @@ We do not recommending changing the Port, IP or Directory settings, as these are
 | difficulty     | 1                                       | Difficulty of your world                                    |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

@@ -1,35 +1,37 @@
 ---
 id: minecraft-add-own-world
-title: "Minecraft: Eigene Welt zum Server hinzufügen"
-description: Informationen, wie du eine eigene Welt zu deinem Minecraft-Server von ZAP-Hosting hinzufügen kannst - ZAP-Hosting.com Dokumentation
+title: "Minecraft: Eigene Welt auf dem Server hinzufügen"
+description: "Lerne, wie du eigene Minecraft-Welten auf deinem Server hochlädst und konfigurierst für ein persönliches Spielerlebnis → Jetzt mehr erfahren"
 sidebar_label: Eigene Welt hinzufügen
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Du möchtest eine eigene oder aus dem Internet heruntergeladene Welt auf deinem Server benutzen? Dann bist du hier genau richtig! Alles, was du dafür benötigst, ist deine Welt und einen FTP-Client. Falls du noch nicht weißt, was ein FTP-Client ist und wie du diesen benutzen kannst, dann schaue am besten in die folgende Anleitung: [Zugriff per FTP](gameserver-ftpaccess.md)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/NN5e5EQbxnnXH87/preview)
+Du willst deine eigene Welt oder eine aus dem Internet heruntergeladene Welt auf deinem Server nutzen? Dann bist du hier genau richtig! Alles, was du brauchst, ist deine Welt und ein FTP-Client. Falls du nicht weißt, was ein FTP-Client ist und wie man ihn benutzt, schau dir am besten diese Anleitung an: [Zugriff via FTP](gameserver-ftpaccess.md)
 
-<YouTube videoId="5tII3C9yO3g" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/7mkFxRLiTk2DmKi/preview" title="How to upload custom MAPS on your Minecraft Server" description="Hast du das Gefühl, dass du etwas besser verstehst, wenn du es in Aktion siehst? Wir haben etwas für dich! Tauche ab in unser Video, welches alles für dich zusammenfasst. Egal, ob du es eilig hast oder einfach nur Informationen auf möglichst verständliche Art und Weise aufnehmen möchtest!"/>
+![](https://screensaver01.zap-hosting.com/index.php/s/Rmx6c6n2rP5MqBz/preview)
 
-Wenn die Verbindung zum Server per FTP hergestellt wurde, dann kann mit der Einrichtung der eigenen Welt begonnen werden. Dafür muss zunächst das entsprechende Verzeichnis aufgerufen werde, wo sich die aktuelle Welt befindet. Diese befindet sich im folgenden Verzeichnis: /gXXXXX/modpack/
+<YouTube videoId="5tII3C9yO3g" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/SbB6iZmdZtMAPaS/preview" title="Wie du eigene MAPS auf deinem Minecraft Gameserver hochlädst" description="Lernst du besser, wenn du Dinge in Aktion siehst? Kein Problem! Unser Video erklärt dir alles Schritt für Schritt. Egal ob du es eilig hast oder lieber entspannt und anschaulich lernen willst!"/>
 
-![](https://screensaver01.zap-hosting.com/index.php/s/LRyw78YfTExHAFR/preview)
+Sobald die Verbindung zum Server über FTP steht, kannst du mit dem Einrichten deiner eigenen Welt starten. Dazu musst du zuerst in das passende Verzeichnis wechseln, in dem die aktuelle Welt liegt. Dieses findest du hier: /gXXXXX/modpack/
 
-In das Verzeichnis muss nun die neue Welt hochgeladen werden. Hierbei kann entweder der alte **world** Ordner entweder gelöscht und ersetzt werden oder die neue Welt unter einem anderen Namen hochgeladen werden. In dem Beispiel laden wir die Welt unter einem anderen Namen hoch:
+![](https://screensaver01.zap-hosting.com/index.php/s/85KLwjPYt3yjHZt/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/ALswtmYGiRPtA7e/preview)
+Die neue Welt muss jetzt in dieses Verzeichnis hochgeladen werden. Du kannst entweder den alten **world**-Ordner löschen und ersetzen oder die neue Welt unter einem anderen Namen hochladen. In diesem Beispiel laden wir die Welt mit einem neuen Namen hoch:
 
-Jetzt muss die neu hochgeladene Welt nur noch in der **server.properties** Config eingetragen werden. Diese findest du in der **Gameserver Verwaltung** unter **Configs**. Dort muss der Wert vom **level-name=** Befehl angepasst werden:
+![](https://screensaver01.zap-hosting.com/index.php/s/3DYD5ANgNsCNpkE/preview)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/SqH24c8YDySWfDi/preview)
+Jetzt muss die neu hochgeladene Welt nur noch in der **server.properties** konfiguriert werden. Die Datei findest du in der **Gameserver-Verwaltung** unter **Configs**. Dort musst du den Wert des Befehls **level-name=** anpassen:
 
+![](https://screensaver01.zap-hosting.com/index.php/s/idoHWafC3g4AbYL/preview)
 
-Nach erneuten Starten des Servers sollte jetzt die neue Welt verwendet werden. Viel Spaß auf deiner neuen Welt! 🙂
+Nach einem Neustart des Servers sollte die neue Welt nun geladen werden. Viel Spaß mit deiner neuen Welt! 🙂
+
+<InlineVoucher />
 
 <InlineVoucher />

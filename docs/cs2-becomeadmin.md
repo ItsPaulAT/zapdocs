@@ -1,10 +1,10 @@
 ---
 id: cs2-becomeadmin
 title: "CS2: Become admin"
-description: Information on how to become an admin on your CS2 server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to assign and manage administrator permissions for full server control in CS2 gameplay → Learn more now"
 sidebar_label: Become admin
 services:
-  - gameserver
+  - gameserver-cs2
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -68,3 +68,5 @@ The immunity check is not automatically carried out by CounterStrikeSharp. It is
 ## Conclusion
 
 Congratulations, you have successfully configured the administrator permissions. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

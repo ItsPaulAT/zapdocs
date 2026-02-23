@@ -1,10 +1,10 @@
 ---
 id: amongus-connection
 title: "Among Us: Connecting to the server"
-description: Information on how to connect to your Impostor - Among Us server - ZAP-Hosting.com documentation
+description: "Discover how to set up and connect to your Among Us server for seamless multiplayer gameplay → Learn more now"
 sidebar_label: Connection to the Server
 services:
-  - gameserver
+  - gameserver-amongus
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -64,3 +64,5 @@ Otherwise the server will not be displayed.
 If it is a "Private" server you have to click on "Enter Code" in the main menu.
 Here you enter the code that the creator of the server can see in the lobby.
 
+
+<InlineVoucher />

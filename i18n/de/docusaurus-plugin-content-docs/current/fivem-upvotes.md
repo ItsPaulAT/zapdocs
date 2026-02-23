@@ -1,7 +1,7 @@
 ---
 id: fivem-upvotes
 title: "FiveM: Upvotes und Server Boosts"
-description: Informationen zu Upvotes für FiveM Server und wie du deinen Server in der Serverliste boosten kannst - ZAP-Hosting.com Dokumentation
+description: "Entdecke, wie du das Ranking und die Sichtbarkeit deines FiveM-Gameservers mit Upvotes für langfristiges oder schnelles Popularitätswachstum pushen kannst → Jetzt mehr erfahren"
 sidebar_label: Upvotes
 services:
   - fivem-upvotes
@@ -13,63 +13,59 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
 
-Mit den sogenannten FiveM Upvotes hast du die Möglichkeit deinen eigenen oder einen beliebigen Server in der Serverliste höher platzieren zu lassen. So mehr aktive Upvote-Punkte ein Server hat, desto höher wird dieser eingestuft. 
+FiveM Upvotes/Burst Upvotes bieten dir die Möglichkeit, das Ranking deines eigenen oder eines anderen Gameservers in der Serverliste zu boosten. Je mehr Upvote-Punkte ein Server sammelt, desto höher wird er in den Rankings platziert.
 
-<YouTube videoId="H-bdMJTQkSM" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/L3ejePpDytLHJWx/preview" title="Get FiveM Upvotes FAST!" description="Hast du das Gefühl, dass du etwas besser verstehst, wenn du es in Aktion siehst? Wir haben etwas für dich! Tauche ab in unser Video, welches alles für dich zusammenfasst. Egal, ob du es eilig hast oder einfach nur Informationen auf möglichst verständliche Art und Weise aufnehmen möchtest!"/>
+<YouTube videoId="H-bdMJTQkSM" imageSrc="https://screensaver01.zap-hosting.com/index.php/s/3NafFXm8AdQoyWM/preview" title="Schnell FiveM Upvotes bekommen!" description="Du verstehst besser, wenn du Dinge in Aktion siehst? Kein Problem! Unser Video erklärt dir alles step-by-step. Egal ob du es eilig hast oder lieber auf die unterhaltsamste Art lernst!"/>
 
 
 
 ## Upvotes vs Burst Upvotes
 
-FiveM Upvotes und FiveM Burst Upvotes sind beides Methoden, um die Sichtbarkeit und Popularität eines FiveM-Servers zu steigern. FiveM Upvotes sind kontinuierliche Stimmen, die über einen längeren Zeitraum verwendet werden, um eine langfristige Sichtbarkeit in den Server-Rankings zu sichern. FiveM Burst Upvotes hingegen sind eine für kurzfristige Aktionen, bei der in kurzer Zeit viele Stimmen verwendet werden, um den Server kurzfristig schnell in den Rankings nach oben zu bringen.
+FiveM Upvotes und FiveM Burst Upvotes sind beides Methoden, um die Sichtbarkeit und Beliebtheit eines FiveM-Gameservers zu steigern. FiveM Upvotes sind kontinuierliche Votes, die über einen längeren Zeitraum genutzt werden, um langfristige Sichtbarkeit in den Serverrankings zu sichern. FiveM Burst Upvotes hingegen sind für kurzfristige Aktionen gedacht, bei denen viele Votes in kurzer Zeit eingesetzt werden, um den Server schnell in den Rankings nach oben zu bringen.
 
 
 
-## Upvotes erhalten
+## Upvotes kaufen
 
-Die FiveM Upvotes können in [unserem Shop](https://zap-hosting.com/de/shop/product/fivem-upvotes/) erworben werden. Während des Bestellvorgangs hast du die Möglichkeit, die Anzahl der Upvotes, Laufzeit, FiveM Benutzername und Abrechnungsart zu bestimmen. 
+Die FiveM Upvotes kannst du in [unserem Shop](https://zap-hosting.com/en/shop/product/fivem-upvotes/) erwerben. Während des Bestellvorgangs kannst du die Anzahl der Upvotes, die Laufzeit, deinen FiveM-Benutzernamen und die Zahlungsmethode auswählen. 
 
-:::info
-Warnung zum Zahlungsvorgang
-FiveM Upvotes können nicht mit ZAP Coins erworben werden, da es sich um ein externes Produkt handelt. Die Bezahlung muss über gängige Zahlungsmethoden wie PayPal oder Kreditkarte erfolgen.
+:::warning Achtung beim Bezahlvorgang
+FiveM Upvotes können nicht mit ZAP Coins bezahlt werden, da es sich um ein externes Produkt handelt. Die Zahlung muss über akzeptierte Methoden wie PayPal oder Kreditkarte erfolgen.
 :::
 
-Für die Verwendung der FiveM Upvotes ist die Verknüpfung zu deinem FiveM Account notwendig. Denn die Upvotes werden diesem Account zugewiesen, worüber du dann im Anschluss die Upvotes im Spiel nach deinen Wünschen zuweisen kannst. 
+Für die Nutzung der FiveM Upvotes ist es notwendig, dein FiveM-Konto zu verknüpfen. Die Upvotes werden diesem Konto zugeordnet, das du dann im Spiel nach Belieben zum Zuweisen der Upvotes nutzen kannst. 
 
-![](https://screensaver01.zap-hosting.com/index.php/s/iDk5NoM2gpWs3Ay/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/2fT6CyCfzo4wEe5/download)
 
-![](https://screensaver01.zap-hosting.com/index.php/s/BX2rZtJex6fqepS/preview)
 
-Nachdem dies bestätigt wurde, kann die Bestellung abgeschlossen werden. Die Informationen werden im Anschluss umgehend an FiveM übermittelt und dort verarbeitet. Sobald dieser Vorgang abgeschlossen wurde, stehen dir die Upvotes bei uns zur Verfügung und können über das Interface verwaltet werden. Ab diesem Zeitpunkt beginnt ebenfalls die Laufzeit der Upvotes. 
+Sobald dies bestätigt wurde, kann die Bestellung abgeschlossen werden. Die Informationen werden dann sofort an FiveM weitergeleitet und dort verarbeitet. Sobald dieser Prozess abgeschlossen ist, stehen dir die Upvotes zur Verfügung und können über die Oberfläche verwaltet werden. Die Laufzeit der Upvotes startet ebenfalls zu diesem Zeitpunkt. 
 
 
 
 ## Upvotes zuweisen
 
-Sobald die Upvotes im Webinterface sichtbar sind, können diese über den FiveM Client zugewiesen werden. Klicke dafür in der Serverliste bei dem Server deiner Wahl auf das Upvotes Icon. 
+Sobald die Upvotes in der Oberfläche sichtbar sind, kannst du sie über den FiveM-Client zuweisen. Klicke dazu auf das Upvotes-Symbol in der Serverliste für den gewünschten Gameserver. 
+Als Bestätigung sollte sich ein Pop-up öffnen, das bestätigt, dass die Upvotes erfolgreich zugewiesen wurden.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/eyCidKx9eJenF6m/preview)
-
-
-
-Als Bestätigung sollte sich nun ein Pop-up öffnen, in dem bestätigt wird, dass die Upvotes erfolgreich zugewiesen wurden. 
-
-![](https://screensaver01.zap-hosting.com/index.php/s/oA4xPReeaoJ8XXa/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/onkKXJGpWoGYWa2/download)
 
 
 
 ## Upvotes zurücksetzen
 
-alls die Upvotes an einen anderen Server zugewiesen werden sollen oder beim Zuweisen der Upvotes ein Fehler aufgetreten ist, können diese über das Dashboard zurückgesetzt werden. Das Zurücksetzen der Upvotes wird ein paar Minuten dauern, bis es von Cfx.re übernommen wurde.
+Falls die Upvotes einem anderen Server zugewiesen werden sollen oder beim Zuweisen ein Fehler aufgetreten ist, kannst du sie über das Dashboard zurücksetzen. Das Zurücksetzen der Upvotes dauert ein paar Minuten, bis es von Cfx.re übernommen wurde. 
 
-![](https://screensaver01.zap-hosting.com/index.php/s/mCsTDgLSZqFyXrL/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/LjcYptAkZ6dfH8Y/preview)
 
-:::danger Reset Cooldown Zeitraum
-Cfx.re setzt eine Upvote **Cooldown-Periode** voraus. Die Zuweisung von Upvotes ist daher nur einmal pro Tag für einen Server deiner Wahl möglich. Nach der Zuweisung musst du **24 Stunden** warten, bis du diese erneut zuweisen kannst. 
+:::danger Cooldown-Zeit beim Zurücksetzen
+Cfx.re setzt eine Upvote-**Cooldown-Zeit** durch. Die Zuweisung von Upvotes ist daher nur einmal täglich für einen Server deiner Wahl möglich. Nach der Zuweisung musst du **24 Stunden** warten, bis du erneut zuweisen kannst. 
 :::
 
 
 
-## Abschluss
 
-Du hast deine Upvotes erfolgreich erhalten und weißt wie du diese verwaltest. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+## Fazit
+
+Du hast deine Upvotes erfolgreich erhalten und weißt, wie du sie verwaltest. Bei weiteren Fragen oder wenn du Hilfe brauchst, steht dir unser Support-Team täglich zur Seite! 🙂
+
+<InlineVoucher />

@@ -1,10 +1,10 @@
 ---
 id: minecraft-pregenerate-world
-title: "Minecraft: Welt vorgenerieren (Chunks)"
-description: Informationen darüber, wie du deine Welt (Chunks) auf deinem Minecraft-Server von ZAP-Hosting vorgenerieren kannst - ZAP-Hosting.com Dokumentation
-sidebar_label: Welt vorgenerieren (Chunks)
+title: "Minecraft: Welt vorab generieren (Chunks)"
+description: "Entdecke, wie du Minecraft-Welten effizient mit Plugins oder Mods vorab generierst für flüssigeres Gameplay und optimierte Serverperformance → Jetzt mehr erfahren"
+sidebar_label: Welt vorab generieren (Chunks)
 services:
-  - gameserver
+  - gameserver-minecraft
 ---
 
 import Tabs from '@theme/Tabs';
@@ -12,92 +12,94 @@ import TabItem from '@theme/TabItem';
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Möchtest du deine Welt nicht erst während des Spielens, sondern bereits im Voraus schnell, effizient und sicher vorab generieren? Minecraft bietet standardmäßig keine integrierte Funktion dafür. Allerdings kann dies durch speziell dafür vorgesehene Plugins oder Mods umgesetzt werden. Wie du diese benutzt und welche Aspekte es dabei zu beachten gibt, wird im Folgenden genauer erläutert.
+Willst du deine Welt schnell, effizient und sicher vorab generieren, statt während des Spielens? Minecraft bietet standardmäßig keine integrierte Funktion dafür. Mit speziell entwickelten Plugins oder Mods lässt sich das aber realisieren. Wie du diese nutzt und worauf du achten musst, erklären wir dir hier genauer.
 
 
 
-## Voraussetzungen
+## Vorbereitung
 
-Zunächst muss sichergestellt werden, dass dein Server für die Nutzung von Plugins oder Mods ausgelegt ist. Für die Nutzung  wird die Verwendung  einer der folgenden Minecraft-Varianten vorausgesetzt: 
+Zuerst musst du sicherstellen, dass dein Server für den Einsatz von Plugins oder Mods ausgelegt ist. Folgende Minecraft-Varianten sind für die Nutzung erforderlich:
 
 - Minecraft: Forge, Minecraft Fabric (Mods)
-- Minecraft: Spigot, Minecraft Bukkit, Minecraft: Paper Spigot (Plugins) 
+- Minecraft: Spigot, Minecraft Bukkit, Minecraft: Paper Spigot (Plugins)
 
-Falls du derzeit keine dieser Minecraft-Varianten nutzt, kannst du die [Spielwechsel](gameserver-gameswitch.md) Option verwenden, um das gewünschte Spiel auszuwählen.
+Falls du aktuell keine dieser Minecraft-Varianten nutzt, kannst du über die [Spielwechsel(gameserver-gameswitch.md) Option das gewünschte Spiel auswählen.
 
 
 ## Installation
-Die gängigste Methode zur Vorab-Generierung von Chunks ist die Nutzung von [Chunky](https://github.com/pop4959/Chunky), das für zahlreiche Server-Implementierungen sowohl als Plugin als auch in einer Mod-Variante verfügbar ist. In diesem Beispiel wird die Chunk-Generierung anhand von Chunky erläutert und veranschaulicht.
+Die gängigste Methode, um Chunks vorab zu generieren, ist die Nutzung von [Chunky](https://github.com/pop4959/Chunky), das für zahlreiche Server-Implementierungen sowohl als Plugin als auch als Mod-Version verfügbar ist. In diesem Beispiel erklären und zeigen wir die Chunk-Generierung mit Chunky.
 
-| Variante | Download                                                     |
+| Variante | Download |
 | -------- | ------------------------------------------------------------ |
-| Mod      | [Forge](https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator-forge) [Fabric](https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator) |
-| Plugin   | [Spigot/Bukkit](https://www.spigotmc.org/resources/chunky.81534/) |
+| Mod | [Forge](https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator-forge) [Fabric](https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator) |
+| Plugin | [Spigot/Bukkit](https://www.spigotmc.org/resources/chunky.81534/) |
 
-Lade **Chunky** entweder als Plugin oder Mod herunter und installiere es auf deinem Server. Falls du nicht genau weißt, wie [Plugins](minecraft-pluginuploader.md) oder [Mods](minecraft-forge-fabric-add-mods-modpacks) installiert werden, hilft dir die entsprechende Anleitung dazu weiter.
-
-
+Lade **Chunky** entweder als Plugin oder Mod herunter und installiere es auf deinem Server. Falls du nicht genau weißt, wie man [Plugins](minecraft-pluginuploader.md) oder [Mods](minecraft-forge-fabric-add-mods-modpacks) installiert, helfen dir die entsprechenden Anleitungen weiter.
 
 
-## Anwendung
 
-Nachdem **Chunky** erfolgreich installiert wurde, kannst du mit der Generierung der Chunks beginnen. Der Prozess wird mit dem Befehl `chunky start` gestartet.
 
-Falls du die Generierung vorübergehend unterbrechen und später fortsetzen möchtest, kannst du dies mit den Befehlen `chunky pause` und `chunky continue` tun. Um den Vorgang vollständig zu beenden, verwende `chunky cancel`. Die Befehle kannst du entweder über die Live Konsole oder als Operator direkt im Spiel auf deinem Server ausführen.
+## Nutzung
 
-:::warning Übermäßige Auslastung
-Eine dauerhafte Überschreitung der Resourcen Limits über einen längeren Zeitraum kann zu einer temporären Sperrung führen. Um dies zu vermeiden, sollte die Chunk-Generierung in einem ausgewogenen Tempo und Umfang erfolgen, sodass die Systemlast im akzeptablen Bereich bleibt.
+Sobald **Chunky** erfolgreich installiert ist, kannst du mit der Generierung der Chunks starten. Der Prozess wird mit dem Befehl `chunky start` gestartet.
 
-Weitere Informationen zu den Ressourcengrenzen und möglichen Maßnahmen kann aus unserer [Ressourcelimit](gameserver-resourcelimit.md) Anleitung entnommen werden. 
+Wenn du die Generierung vorübergehend unterbrechen und später fortsetzen möchtest, kannst du das mit den Befehlen `chunky pause` und `chunky continue` machen. Um den Vorgang komplett zu beenden, nutze `chunky cancel`. Die Befehle kannst du entweder über die Live-Konsole oder als Operator direkt im Spiel auf deinem Server ausführen.
+
+:::warning Überlastung vermeiden
+Ein dauerhaftes Überschreiten der Ressourcenlimits über längere Zeit kann zu einer temporären Sperrung führen. Um das zu vermeiden, sollte die Chunk-Generierung in einem ausgewogenen Tempo und Umfang stattfinden, sodass die Systemlast im akzeptablen Bereich bleibt.
+
+Weitere Infos zu Ressourcenlimits und möglichen Maßnahmen findest du in unserer [Ressourcenlimit](gameserver-resourcelimit.md) Anleitung. 
 :::
 
 
 
-## Commands
+## Befehle
 
-In diesem Abschnitt können alle Befehle entnommen werden, die von Chunky für die Generierung und Verwaltung von Chunks angewendet werden können. 
+Hier findest du alle Befehle, die Chunky zur Generierung und Verwaltung von Chunks nutzt.
 
-#### Task Management
+#### Aufgabenverwaltung
 
-| Befehl          | Beschreibung                                                 |
+| Befehl          | Beschreibung                                                  |
 | --------------- | ------------------------------------------------------------ |
-| chunky start    | Startet eine neue Aufgabe zur Erzeugung von Chunks aus der aktuellen Auswahl |
-| chunky pause    | Pausiert die aktuellen Chunk-Generierungsaufgaben und speichert den Fortschritt |
-| chunky continue | Führt aktuelle oder gespeicherte Chunk-Generierungsaufgaben weiter aus |
-| chunky cancel   | Stoppt die aktuellen Chunk-Generierungsaufgaben und bricht den Fortschritt ab. |
+| chunky start    | Startet eine neue Chunk-Generierungsaufgabe aus der aktuellen Auswahl |
+| chunky pause    | Pausiert die laufenden Chunk-Generierungsaufgaben und speichert den Fortschritt |
+| chunky continue | Setzt laufende oder gespeicherte Chunk-Generierungsaufgaben fort |
+| chunky cancel   | Stoppt die laufenden Chunk-Generierungsaufgaben und bricht den Fortschritt ab |
 
 
 
-#### Selection
+#### Auswahl
 
-| Befehl                                     | Beschreibung                                                 |
+| Befehl                                    | Beschreibung                                                  |
 | ------------------------------------------ | ------------------------------------------------------------ |
-| chunky world [world]                       | Setzt die aktuell ausgewählte Welt                           |
-| chunky shape `<shape>`                     | Setzt die zu erzeugende Form                                 |
-| chunky center [`<x>` `<z>`]                | Legt die aktuelle Position des Mittelblocks fest             |
-| chunky radius `<radius>`                   | Legt den aktuellen Radius fest                               |
-| chunky worldborder                         | Setzt den Mittelpunkt und den Radius so, dass sie mit der Weltgrenze in der ausgewählten Welt übereinstimmen |
-| chunky spawn                               | Setzt den Mittelpunkt auf den Spawn-Punkt                    |
-| chunky corners `<x1>` `<z1>` `<x2>` `<z2>` | Setzt die Auswahl nach Eckkoordinaten                        |
-| chunky pattern `<pattern>`                 | Legt das bevorzugte Generierungsmuster fest                  |
-| chunky slection                            | Anzeige der aktuellen Auswahl                                |
+| chunky world [world]                       | Setzt die aktuell ausgewählte Welt                            |
+| chunky shape `<shape>`                     | Legt die Form der Generierung fest                            |
+| chunky center [`<x>` `<z>`]                | Setzt den aktuellen Mittelpunkt-Block                         |
+| chunky radius `<radius>`                   | Legt den aktuellen Radius fest                                |
+| chunky worldborder                         | Setzt Mittelpunkt und Radius passend zur Weltgrenze der ausgewählten Welt |
+| chunky spawn                               | Setzt den Mittelpunkt auf den Spawnpunkt                      |
+| chunky corners `<x1>` `<z1>` `<x2>` `<z2>` | Setzt die Auswahl anhand von Eckkoordinaten                   |
+| chunky pattern `<pattern>`                 | Legt das bevorzugte Generierungsmuster fest                   |
+| chunky slection                            | Zeigt die aktuelle Auswahl an                                 |
 
 
 
 
 
-#### Miscellaneous
+#### Sonstiges
 
-| Befehl                    | Beschreibung                                                 |
-| ------------------------- | ------------------------------------------------------------ |
-| chunky silent             | Umschalten der Anzeige von Aktualisierungsmeldungen          |
-| chunky quiet `<interval>` | Lege das Ruheintervall in Sekunden für Aktualisierungsmeldungen fest |
-| chunky progress           | Zeige den Fortschritt vor der Generierung im Spiel für alle Aufgaben an |
-| chunky reload             | Aktualisiert die Konfiguration                               |
-| chunky trim               | Lösche Chunks außerhalb der Auswahl                          |
+| Befehl                   | Beschreibung                                           |
+| ------------------------- | ----------------------------------------------------- |
+| chunky silent             | Schaltet die Anzeige von Update-Meldungen ein/aus     |
+| chunky quiet `<interval>` | Legt das Intervall in Sekunden für Update-Meldungen fest |
+| chunky progress           | Zeigt den Fortschritt der Vorab-Generierung im Spiel für alle Aufgaben an |
+| chunky reload             | Lädt die Konfiguration neu                            |
+| chunky trim               | Löscht Chunks außerhalb der Auswahl                   |
 
 
 
-## Abschluss
+## Fazit
 
-Durch das Befolgen der Schritte hast du **Chunky** erfolgreich installiert und kannst nun deine Welt (Chunks) vorab generieren. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+Wenn du die Schritte befolgt hast, hast du Chunky erfolgreich installiert und kannst jetzt deine Welt (Chunks) vorab generieren. Glückwunsch! Wenn du alles richtig gemacht hast, solltest du erfolgreich eine Verbindung zum Server aufgebaut haben. Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Seite! 🙂
+
+<InlineVoucher />

@@ -1,27 +1,26 @@
 ---
 id: eco-becomeadmin
 title: "ECO: Admin werden"
-description: Informationen, wie du Admin auf deinem ECO-Server bei ZAP-Hosting wirst - ZAP-Hosting.com Dokumentation
+description: "Entdecke, wie du Administratorrechte vergibst für volle Serverkontrolle und effizientes Spielmanagement → Jetzt mehr erfahren"
 sidebar_label: Admin werden
 services:
-  - gameserver
+  - gameserver-eco
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Einführung
-Die Zuweisung von Administratorberechtigungen ermöglicht dir eine einfache und umfangreiche Verwaltung mit voller Kontrolle deines Servers. Als Administrator hast du die Möglichkeit alle verfügbaren Optionen und Funktionen, die das Spiel bereitstellt, direkt im Spiel anzuwenden. Im folgenden werden dir alle notwendigen Schritte erläutert, die du benötigst, um dir die Administratorberechtigungen für deinen Server zuzuweisen. 
+Die Vergabe von Administratorrechten ermöglicht dir eine einfache und umfassende Verwaltung mit voller Kontrolle über deinen Server. Als Admin kannst du alle verfügbaren Optionen und Funktionen, die das Spiel bietet, direkt im Spiel nutzen. Alle Schritte, die du zur Vergabe von Administratorrechten für deinen Server durchführen musst, werden im Folgenden beschrieben.  
 <InlineVoucher />
 
 ## Konfiguration
+Das Hinzufügen eines Admins erfolgt über die **Users.eco** Config, die du im Interface unter Configs findest.
 
-Das Hinzufügen eines Admins erfolgt über die **Users.eco** Config, welche du im Interface unter Configs findest.
-
-![](https://screensaver01.zap-hosting.com/index.php/s/iNJQ8Nk6HjbGHro/preview)
-
+![](https://screensaver01.zap-hosting.com/index.php/s/ACgPpyPfGmnmi8X/preview)
 
 
-Um einen neuen Spieler als Admin hinzuzufügen, muss der folgende Teil in der **Users.eco** Config angepasst werden:
+
+Um einen neuen Spieler als Admin hinzuzufügen, muss der folgende Abschnitt in der **Users.eco** Config angepasst werden:
 
 ```xml
   "Admins": {
@@ -34,25 +33,25 @@ Um einen neuen Spieler als Admin hinzuzufügen, muss der folgende Teil in der **
 
 
 
-Im Feld **values** wird der Spieler eingetragen, der Admin werden soll. Bei mehreren Admins werden diese mit einem Kommazeichen getrennt hinzugefügt. Zum Identifizieren des Spielers wird die SteamID64 verwendet. 
+Der Spieler, der Admin werden soll, wird im Feld **values** eingetragen. Bei mehreren Admins werden diese durch Kommas getrennt hinzugefügt. Zur Identifikation des Spielers wird die SteamID64 verwendet. 
 
-Diese findest du, indem du zunächst einmal dein Steam Profil aufrufst und dort dann an einer beliebigen Stelle Rechtsklick drückst. Dort kann dann die Steam URL des Profils kopiert werden.
+Diese findest du, indem du dein Steam-Profil aufrufst und dann mit der rechten Maustaste irgendwo auf das Profil klickst. Dort kannst du die Steam-URL deines Profils kopieren.
 
-![img](https://screensaver01.zap-hosting.com/index.php/s/Fk9jDfeqsWS5kNE/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/YQoe4tpFzbRTAqd/preview)
 
 
 
-Im Anschluss kann die URL auf einer der folgenden Webseiten angeben werden:
+Anschließend muss die URL auf einer der folgenden Webseiten eingegeben werden:
 
 - https://steamrep.com/
 - https://steamidfinder.com/
 - https://steamid.io/
 
-![](https://screensaver01.zap-hosting.com/index.php/s/WZjtKno2AfrBHDR/preview)
+![](https://screensaver01.zap-hosting.com/index.php/s/3RSya5KbWGfcgHr/preview)
 
 
 
-Dadurch erhältst du dort die sowohl die allgemeinen Accountinformationen als auch die Steam ID. Diese wird dann bei **values** eingetragen. Das sieht dann folgendermaßen aus: 
+Dort erhältst du allgemeine Account-Informationen sowie die Steam ID. Diese wird dann im Feld **values** eingetragen. Das Ergebnis sieht dann so aus:
 
 ```xml
   "Admins": {
@@ -60,7 +59,7 @@ Dadurch erhältst du dort die sowohl die allgemeinen Accountinformationen als au
       "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
       "$values": [
 			"123456789",
-			"weitereSteamID"
+			"anotherSteamID"
 	]
     }
   },
@@ -68,7 +67,7 @@ Dadurch erhältst du dort die sowohl die allgemeinen Accountinformationen als au
 
 
 
-Nach einem Neustart des Servers wurde den dort eingetragenen Spielern Administrator Berechtigungen zugewiesen. Wenn du weitere Admins hinzufügen möchtest, dann musst du das im Anschluss nicht mehr immer über die Config machen. Stattdessen kannst du das im Spiel mit dem folgenden Befehl machen:
+Nach einem Server-Neustart haben die dort eingetragenen Spieler Administratorrechte. Wenn du weitere Admins hinzufügen möchtest, musst du das nicht immer über die Config machen. Stattdessen kannst du das auch direkt im Spiel mit folgendem Befehl erledigen:
 
 ```
 /admin [player]
@@ -76,31 +75,32 @@ Nach einem Neustart des Servers wurde den dort eingetragenen Spielern Administra
 
 
 
-Im Folgenden findest du eine Übersicht von häufig verwendeten Admin Befehlen, die du als Admin ausführen kannst.
+Im Folgenden findest du eine Übersicht der häufig genutzten Admin-Befehle, die du als Admin ausführen kannst.
 
 
 
-## Häufig verwendete Befehle
+## Häufig genutzte Befehle
 
-|               Befehl               |                    Beschreibung                    |
-| :--------------------------------: | :------------------------------------------------: |
-|             /allblocks             |                Erzeugt alle Blöcke                 |
-|          /allconstructed           | Erstellt sämtliche für Spieler erstellbaren Blöcke |
-|             /allplants             |            Erzeugt alle Pflanzenblöcke             |
-|             /allskills             |           Schaltet alle Fähigkeiten frei           |
-|            /allterrain             |           Erzeugt alle grabbaren Blöcke            |
-|          /allworldobjects          |           Erzeugt alle Objekte der Welt            |
-|      /kick [player],(reason)       |                   Spieler kicken                   |
-|       /ban [player],(reason)       |                   Spieler bannen                   |
-|     /give [itemname],(amount)      |            Sich einen Gegenstand geben             |
-| /giveskillpoints [player],(amount) | Fähigkeitspunkte an einen anderen Spieler vergeben |
-|                /fly                |           Schaltet den Flugmodus ein/aus           |
-|         /move [x],[y],[z]          |       Versetzt Spieler zur Position x, y, z;       |
-|       /removeadmin [player]        |          Entfernt einen Spieler als Admin          |
+|              Befehl               |                      Beschreibung                       |
+| :------------------------------: | :----------------------------------------------------: |
+|             /allblocks             |                   Spawnt alle Blöcke                   |
+|          /allconstructed           |         Spawnt alle vom Spieler errichtbaren Blöcke    |
+|             /allplants             |                Spawnt alle Pflanzenblöcke              |
+|             /allskills             |                   Schaltet alle Skills frei            |
+|            /allterrain             |               Spawnt alle abbaubaren Blöcke            |
+|          /allworldobjects          |                Spawnt alle Weltobjekte                 |
+|      /kick [player],(reason)       |                      Kickt einen Spieler               |
+|       /ban [player],(reason)       |                      Bannt einen Spieler               |
+|     /give [itemname],(amount)      |                 Gibt dir selbst einen Gegenstand       |
+| /giveskillpoints [player],(amount) |           Vergibt Skillpunkte an einen anderen Spieler |
+|                /fly                |                    Schaltet den Flugmodus an/aus       |
+|         /move [x],[y],[z]          | Bewegt dich zu Position x, y, z; xyz sind ganze Zahlen |
+|       /removeadmin [player]        |               Entfernt einen Spieler als Admin         |
 
-Noch weitere verfügbare Befehle findest du in der offiziellen [ECO Wiki](https://eco.gamepedia.com/Chat_Befehls).
+Weitere Befehle findest du in der offiziellen [ECO Wiki](https://eco.gamepedia.com/Chat_Commands).
 
+## Fazit
 
-## Abschluss
+Glückwunsch, du hast die Administratorrechte erfolgreich konfiguriert. Bei weiteren Fragen oder Problemen steht dir unser Support-Team täglich zur Verfügung und hilft dir gerne weiter! 🙂
 
-Glückwunsch, du hast erfolgreich die Administratorberechtigungen konfiguriert. Für weitere Fragen oder Hilfe zögere bitte nicht, unser Support-Team zu kontaktieren, das dir täglich zur Verfügung steht! 🙂
+<InlineVoucher />

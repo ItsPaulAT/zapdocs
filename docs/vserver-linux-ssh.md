@@ -1,7 +1,7 @@
 ---
 id: vserver-linux-ssh
 title: "VPS: Initial access with SSH"
-description: Information on how to access your server from ZAP-Hosting with SSH for the first time - ZAP-Hosting.com documentation
+description: "Explore popular SSH clients for managing Linux servers via console and understand how to connect securely using Putty → Learn more now"
 sidebar_label: Initial access (SSH)
 services:
   - vserver
@@ -121,3 +121,5 @@ For optimal use of the SSH client, it is essential to know the basic commands. I
 | nslookup | Query DNS information | nslookup |
 | ping | Check network connection | ping [OPTIONS] DESTINATION
 
+
+<InlineVoucher />

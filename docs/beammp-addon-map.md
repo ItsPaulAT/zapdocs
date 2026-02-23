@@ -1,10 +1,10 @@
 ---
 id: beammp-addon-map
 title: "BeamMP: Install Addon Map"
-description: Information on how to install an addon map for your BeamMP server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your BeamMP server with custom map addons for improved multiplayer gameplay → Learn more now"
 sidebar_label: Install Addon Map
 services:
-  - gameserver
+  - gameserver-beammp
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -97,3 +97,5 @@ Simply drag and drop the map addon `.zip` file into this location to upload the 
 ## Conclusion
 
 After you followed all the steps, proceed to restart your BeamMP server. You have successfully installed an addon map on your BeamMP game server. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />

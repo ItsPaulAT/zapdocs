@@ -1,10 +1,10 @@
 ---
 id: unturned-rocketmod-plugins
 title: "Unturned: Install plugins on server"
-description: Information on how to install plugins on your Unturned Rocketmod server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Learn how to install and activate plugins on an Unturned Rocket Mod server to enhance gameplay and server functionality → Learn more now"
 sidebar_label: Install Plugins
 services:
-  - gameserver
+  - gameserver-unturned
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -54,3 +54,5 @@ The server is now online with the desired plugin:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/ZZLPBprWoBZfTQ6/preview)
 
+
+<InlineVoucher />

@@ -1,13 +1,15 @@
 ---
 id: domain-introduction
 title: "Domain: Introduction"
-description: Introduction and information about the Domain product from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to secure a personalized domain at competitive prices for your website or server needs → Learn more now"
 sidebar_label: Introduction
 services:
   - domain
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableAccordion from '@site/src/components/SearchableAccordion/SearchableAccordion';
+import items from '@site/data/faqs/domain-introduction.json';
 
 ## Introduction
 
@@ -15,6 +17,8 @@ Are you looking for a domain at a fair price? Then ZAP-Hosting is the right plac
 
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/ESkLyeoLMTTENHG/preview)
+
+<InlineVoucher />
 
 ## Ordering
 
@@ -59,3 +63,9 @@ Due to the favorable price, administration and associated possibilities, a Domai
 - Mail service
 - Company identity and branding
 - Digital marketing and advertising
+
+## Frequently Asked Questions
+Got more questions about our Domain product? Get answers to everything you want to know about features, benefits, setup and how to use it effectively. This way you get the info you need to make the most of our Domain product. And if something is still unclear, just reach out and we are here to help you right away.
+<SearchableAccordion items={items} />
+
+<InlineVoucher />

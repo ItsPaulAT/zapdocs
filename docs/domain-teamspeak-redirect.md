@@ -1,7 +1,7 @@
 ---
 id: domain-teamspeak-redirect
 title: "Domain: Set up TeamSpeak 3 forwarding"
-description: Information on how to set up a forwarding from a domain to a TS server at ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to simplify connecting to your TeamSpeak 3 server using custom domains or subdomains for easy access → Learn more now"
 sidebar_label: TeamSpeak 3 forwarding
 services:
   - domain
@@ -22,6 +22,8 @@ This way, no one has to remember the complicated IP address consisting of number
 By default, **new** TeamSpeak 3 servers will now receive a `.zap.cloud` alias with a random prefix which can be used to connect.
 :::
 
+<InlineVoucher />
+
 ## Using TSDNS quick setup
 
 We have implemented a new TSDNS system for our TeamSpeak 3 servers, which allows you to setup a subdomain for your TeamSpeak 3 server in just a few clicks! If you don't have a domain with us, skip to the next section to manually setup DNS records.
@@ -34,7 +36,7 @@ For this quick setup feature, you would need to [purchase a perfect domain direc
 
 In our example, you can see us create a new subdomain using the `.zap.cloud` domain, which will lead us to our TeamSpeak 3 server when used.
 
-![](https://github.com/zaphosting/docs/assets/42719082/5b311ff1-625c-4f6d-82b8-6847d432beb9)
+![](https://screensaver01.zap-hosting.com/index.php/s/Mi3wK7cY639Rp3x/preview)
 
 :::note
 Please note, it can take up to 3 hours for the domain to propagate and start functioning.
@@ -139,3 +141,5 @@ The **Name** field contains the name of the service, which in this case is our T
 The field **Type** indicates what type of entry it is, in this case it is a **SRV** entry.
 The field **value** contains the port and the domain with subdomain, in this case **0 1234 ts.teamspeak-server.de**, where **1234** is the **port of the TeamSpeak 3 server** and **ts.teamspeak-server.de** is the domain with subdomain to which the forwarding is done. 
 The value **0** is no longer relevant and always remains the same. The fields **TTL** and **Prio** are also not affected.
+
+<InlineVoucher />

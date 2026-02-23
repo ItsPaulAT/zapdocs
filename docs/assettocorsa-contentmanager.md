@@ -1,10 +1,10 @@
 ---
 id: assettocorsa-contentmanager
 title: "Assetto Corsa: Configure Server with Content Manager"
-description: Information on how to configure your Assetto Corsa server from ZAP-Hosting using the Content Manager - ZAP-Hosting.com documentation
+description: "Discover how to efficiently configure and manage your game server settings for optimal performance and customization → Learn more now"
 sidebar_label: Configure Server with Content Manager
 services:
-  - gameserver
+  - gameserver-assettocorsa
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
@@ -87,3 +87,5 @@ For AssettoServer:
 ```
 
 After that you can click on "Upload Content", the config, track and cars that have been configured will be uploaded automatically, then you only need to start your server!
+
+<InlineVoucher />

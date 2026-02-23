@@ -1,13 +1,15 @@
 ---
 id: ark-mods
 title: "ARK: Installing mods"
-description: Information on how to install mods on your ARK server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how to enhance your ARK server with popular Steam Workshop mods and customize your gameplay experience → Learn more now"
 sidebar_label: Install Mods
 services:
-  - gameserver
+  - gameserver-ark
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableItemList from '@site/src/components/SearchableItemList/SearchableItemList';
+import items from '@site/data/lists/ark-mods.json';
 
 ## Install Mods
 
@@ -60,3 +62,13 @@ This one must then be added to the interface under Steam Workshop. If you want t
 
 
 After a restart of the game server, the mods are automatically downloaded and installed correctly.
+
+
+## Popular Mods
+
+Still looking for the perfect mods for your server? Browse through our carefully curated list of the most popular and highly recommended mods to enhance your gameplay and give your server the finishing touch it deserves. Get inspired and find exactly the additions that fit your project.
+
+<SearchableItemList items={items} />
+
+
+<InlineVoucher />

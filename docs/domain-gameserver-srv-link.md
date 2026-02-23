@@ -1,7 +1,7 @@
 ---
 id: domain-gameserver-srv-link
 title: "Domain: Set up game server forwarding"
-description: Information on how to set up a forwarding from your domain to a game server - ZAP-Hosting.com documentation
+description: "Discover how to forward your domain or subdomain to a game server for easy access and improved connectivity → Learn more now"
 sidebar_label: Gameserver forwarding
 services:
   - domain
@@ -11,6 +11,8 @@ import InlineVoucher from '@site/src/components/InlineVoucher';
 
 ## Introduction
 You can either forward your domain completely or only a subdomain to your game server. This is useful because it allows people to connect to your game server via a domain, instead of having to remember complicated IP addresses composed of numbers only. In this guide, we will cover the process of setting up a domain to forward to your game server via DNS records.
+
+<InlineVoucher />
 
 :::info
 Please note that it can always take up to 24 hours until changes to DNS entries become active!
@@ -134,3 +136,5 @@ At the end of the entry a dot must be written, without this dot the system tries
 :::
 
 If this hint is not followed, the system will redirect `fivem.testserver-domain.de` to `fivem.testserver-domain.de.testserver-domain.de` and the redirection will fail.
+
+<InlineVoucher />

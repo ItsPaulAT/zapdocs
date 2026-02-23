@@ -1,7 +1,7 @@
 ---
 id: source-custom-content
 title: Installing custom content and mods on game servers
-description: Information on how to install custom content and mods on your Source game server (e.g. CSS or Garry's Mod) from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Discover how custom content enhances gameplay in source games like Counter-Strike and Garry's Mod with maps, skins, and sounds → Learn more now"
 sidebar_label: Custom Content
 services:
   - gameserver
@@ -99,3 +99,5 @@ When you are done collecting, you will need to go back to the collection, right 
 At the end this has to be added at Steam Workshop in your game server administration:
 
 ![](https://screensaver01.zap-hosting.com/index.php/s/6gCM5rWoeBeg57M/preview)
+
+<InlineVoucher />

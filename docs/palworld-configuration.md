@@ -1,10 +1,10 @@
 ---
 id: palworld-configuration
 title: "Palworld: Palworld Server Configuration"
-description: Information about configuring a Palworld game server from ZAP-Hosting - ZAP-Hosting.com documentation
+description: "Explore how to customize Palworld server settings for a tailored gaming experience and optimize your gameplay → Learn more now"
 sidebar_label: Server Configuration
 services:
-  - gameserver
+  - gameserver-palworld
 ---
 
 import YouTube from '@site/src/components/YouTube/YouTube';
@@ -43,7 +43,7 @@ The Server must be stopped before the config can be edited, editing the config a
 
 Alternatively, for users who wish to directly edit the raw file, you can access this by heading over to the **Configs** section on your game server's webinterface and pressing the blue edit file button, as seen below:
 
-![](https://github.com/zaphosting/docs/assets/42719082/53c8acad-7347-4c3e-85bf-5ae0ad423fc6)
+![](https://screensaver01.zap-hosting.com/index.php/s/2fNGG7jBdGRekKP/preview)
 
 This will open up a text editor directly on the site to enable you to edit it.
 
@@ -137,3 +137,5 @@ These are less important server configuration options, mostly for altering the g
 | PalEggDefaultHatchingTime          | Time(h) to incubate massive egg                  |
 
 After you complete your changes, make sure to save the file where appropriate and restart your server. The next time your server starts up, it will use the settings that you have provided.
+
+<InlineVoucher />

@@ -1,13 +1,15 @@
 ---
 id: satisfactory-mods
 title: "Satisfactory: Installing Mods to your Satisfactory server"
-description: Information on how to install mods to your Satisfactory server and game client from ZAP-Hosting - ZAP-Hosting.com Documentation
+description: "Discover how to enhance your Satisfactory gameplay with unofficial mods and improve your server experience → Learn more now"
 sidebar_label: Install Mods
 services:
-  - gameserver
+  - gameserver-satisfactory
 ---
 
 import InlineVoucher from '@site/src/components/InlineVoucher';
+import SearchableItemList from '@site/src/components/SearchableItemList/SearchableItemList';
+import items from '@site/data/lists/satisfactory-mods.json';
 
 ## Introduction
 
@@ -71,6 +73,18 @@ Once ready, switch the game installation profile on the Satisfactory Mod Manager
 
 You should now be able to connect to your server as usual, using the **Server Manager** area of the main menu.
 
+
+
+## Popular Mods
+
+Still looking for the perfect mods for your server? Browse through our carefully curated list of the most popular and highly recommended mods to enhance your gameplay and give your server the finishing touch it deserves. Get inspired and find exactly the additions that fit your project.
+
+<SearchableItemList items={items} />
+
+
+
 ## Conclusion
 
 You have successfully setup mods onto your Satisfactory server using the Satisfactory Mod Manager tool. For further questions or assistance, please don't hesitate to contact our support team, which is available daily to assist you! 🙂
+
+<InlineVoucher />
